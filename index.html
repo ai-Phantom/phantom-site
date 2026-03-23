@@ -1747,45 +1747,49 @@ function applyQuotes(quotes) {
 }
 
 async function fetchTickerPrices() {
-  const syms = TICKER_SYMS.join(',');
+  const FINNHUB_KEY = "d70j32pr01quoska263gd70j32pr01quoska2640";
 
-  // Source 1: Yahoo Finance v8 direct
+  // Fetch each symbol from Finnhub quote endpoint
   try {
-    const r = await fetch(
-      `https://query1.finance.yahoo.com/v8/finance/quote?symbols=${syms}`,
-      { signal: AbortSignal.timeout(5000) }
+    const results = await Promise.allSettled(
+      TICKER_SYMS.map(sym =>
+        fetch(`https://finnhub.io/api/v1/quote?symbol=${sym}&token=${FINNHUB_KEY}`,
+          { signal: AbortSignal.timeout(5000) })
+          .then(r => r.ok ? r.json() : null)
+          .then(d => d && d.c ? { symbol: sym, price: d.c, change: d.d, changePercent: d.dp } : null)
+      )
     );
-    if (r.ok) {
-      const d = await r.json();
-      const q = d?.quoteResponse?.result || [];
-      if (q.length > 0) { applyQuotes(q); return; }
-    }
-  } catch(e) {}
 
-  // Source 2: Yahoo via allorigins proxy
-  try {
-    const yahooUrl = encodeURIComponent(`https://query2.finance.yahoo.com/v8/finance/quote?symbols=${syms}`);
-    const r2 = await fetch(`https://api.allorigins.win/get?url=${yahooUrl}`, { signal: AbortSignal.timeout(7000) });
-    if (r2.ok) {
-      const wrapper = await r2.json();
-      const d2 = JSON.parse(wrapper.contents || '{}');
-      const q2 = d2?.quoteResponse?.result || [];
-      if (q2.length > 0) { applyQuotes(q2); return; }
-    }
-  } catch(e) {}
+    const quotes = results
+      .filter(r => r.status === 'fulfilled' && r.value)
+      .map(r => r.value);
 
-  // Source 3: Financial Modeling Prep (free, CORS open, no key for basic quotes)
+    if (quotes.length > 0) {
+      // Convert to format applyQuotes expects
+      const formatted = quotes.map(q => ({
+        symbol: q.symbol,
+        regularMarketPrice: q.price,
+        regularMarketChange: q.change,
+        regularMarketChangePercent: q.changePercent,
+      }));
+      applyQuotes(formatted);
+      return;
+    }
+  } catch(e) { console.warn('Finnhub fetch error:', e); }
+
+  // Fallback: Financial Modeling Prep
   try {
-    const r3 = await fetch(
+    const syms = TICKER_SYMS.join(',');
+    const r = await fetch(
       `https://financialmodelingprep.com/api/v3/quote-short/${syms}?apikey=demo`,
       { signal: AbortSignal.timeout(5000) }
     );
-    if (r3.ok) {
-      const q3 = await r3.json();
-      if (Array.isArray(q3) && q3.length > 0) { applyQuotes(q3); return; }
+    if (r.ok) {
+      const q = await r.json();
+      if (Array.isArray(q) && q.length > 0) { applyQuotes(q); return; }
     }
   } catch(e) {}
-  // All sources failed — fallback data already showing, nothing more to do
+  // All sources failed — fallback data showing
 }
 
 // Build immediately with fallback data, then try to get live prices
