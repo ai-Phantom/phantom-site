@@ -1,0 +1,69 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check index.html exists
+        run: |
+          if [ ! -f index.html ]; then
+            echo "❌ index.html not found!"
+            exit 1
+          fi
+          echo "✅ index.html found ($(wc -c < index.html) bytes)"
+
+      - name: Check for critical script tags
+        run: |
+          if ! grep -q "supabase" index.html; then
+            echo "❌ Supabase client missing from index.html"
+            exit 1
+          fi
+          if ! grep -q "sentry-cdn.com" index.html; then
+            echo "❌ Sentry script missing from index.html"
+            exit 1
+          fi
+          if ! grep -q "phantom-traders-backend.onrender.com" index.html; then
+            echo "❌ Backend API URL missing from index.html"
+            exit 1
+          fi
+          echo "✅ All critical script tags present"
+
+      - name: Check for test/debug code
+        run: |
+          if grep -q "sk_test_" index.html; then
+            echo "❌ Test Stripe key found in index.html — remove before deploying!"
+            exit 1
+          fi
+          if grep -q "console.log('DEBUG" index.html; then
+            echo "⚠️  Debug console.log found — consider removing"
+          fi
+          echo "✅ No test credentials found"
+
+      - name: File size check
+        run: |
+          SIZE=$(wc -c < index.html)
+          echo "📦 index.html size: ${SIZE} bytes"
+          if [ $SIZE -lt 100000 ]; then
+            echo "❌ index.html seems too small (${SIZE} bytes) — possible corruption"
+            exit 1
+          fi
+          echo "✅ File size looks good"
+
+      - name: Deployment summary
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "✅ All checks passed!"
+          echo "🚀 Cloudflare Pages will deploy automatically"
+          echo "🌐 Site: https://aiphantomtraders.com"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
