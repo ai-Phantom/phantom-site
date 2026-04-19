@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!-- Sentry Frontend Error Monitoring -->
 <script src="https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js" crossorigin="anonymous"></script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://js.sentry-cdn.com https://browser.sentry-cdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gzdhauxqrfbhbrfcscna.supabase.co https://finnhub.io wss://ws.finnhub.io https://www.google-analytics.com https://phantom-traders-backend.onrender.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://browser.sentry-cdn.com;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://js.sentry-cdn.com https://browser.sentry-cdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gzdhauxqrfbhbrfcscna.supabase.co https://phantom-traders-backend.onrender.com https://www.google-analytics.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://browser.sentry-cdn.com https://fonts.googleapis.com https://fonts.gstatic.com;">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phantom Traders — Institutional-Grade Portfolio Intelligence</title>
@@ -72,7 +72,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://gzdhauxqrfbhbrfcscna.supabase.co">
-<link rel="preconnect" href="https://finnhub.io">
+<link rel="preconnect" href="https://phantom-traders-backend.onrender.com">
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -941,42 +941,24 @@ function applyQuotes(quotes) {
     if (badge) { badge.textContent = '● LIVE'; badge.style.color = 'var(--green)'; }
   }
 }
-const FINNHUB_KEY = "d70j32pr01quoska263gd70j32pr01quoska2640";
+const MARKET_API = "https://phantom-traders-backend.onrender.com/market";
 async function fetchTickerPrices() {
   try {
-    const results = await Promise.allSettled(
-      TICKER_SYMS.map(sym =>
-        fetch(`https://finnhub.io/api/v1/quote?symbol=${sym}&token=${FINNHUB_KEY}`,
-          { signal: AbortSignal.timeout(5000) })
-          .then(r => r.ok ? r.json() : null)
-          .then(d => d && d.c ? { symbol: sym, price: d.c, change: d.d, changePercent: d.dp } : null)
-      )
-    );
-    const quotes = results
-      .filter(r => r.status === 'fulfilled' && r.value)
-      .map(r => r.value);
-    if (quotes.length > 0) {
-      const formatted = quotes.map(q => ({
-        symbol: q.symbol,
-        regularMarketPrice: q.price,
-        regularMarketChange: q.change,
-        regularMarketChangePercent: q.changePercent,
-      }));
-      applyQuotes(formatted);
-      return;
-    }
-  } catch(e) { console.warn('Finnhub fetch error:', e); }
-  try {
-    const syms = TICKER_SYMS.join(',');
     const r = await fetch(
-      `https://financialmodelingprep.com/api/v3/quote-short/${syms}?apikey=demo`,
-      { signal: AbortSignal.timeout(5000) }
+      `${MARKET_API}/quote?symbols=${TICKER_SYMS.join(',')}`,
+      { signal: AbortSignal.timeout(6000) }
     );
-    if (r.ok) {
-      const q = await r.json();
-      if (Array.isArray(q) && q.length > 0) { applyQuotes(q); return; }
+    if (!r.ok) return;
+    const quotes = await r.json();
+    if (Array.isArray(quotes) && quotes.length > 0) {
+      applyQuotes(quotes.map(q => ({
+        symbol: q.symbol,
+        regularMarketPrice: q.c,
+        regularMarketChange: q.d,
+        regularMarketChangePercent: q.dp,
+      })));
     }
-  } catch(e) {}
+  } catch(e) { console.warn('Quote fetch error:', e); }
 }
 buildTicker();
 fetchTickerPrices();
@@ -4939,6 +4921,36 @@ async function handleLogout() {
   }, 600);
 }
 window._ptSession = null;
+// Fetch authoritative plan + profile from backend and write to localStorage.
+// Runs on every session check so a stale 'free' plan (from a cold-start /auth/me
+// failure at login) gets corrected on the next page load.
+async function syncPlanFromBackend(session) {
+  try {
+    const resp = await fetch('https://phantom-traders-backend.onrender.com/auth/me', {
+      headers: { 'Authorization': 'Bearer ' + session.access_token }
+    });
+    if (!resp.ok) return null;
+    const me = await resp.json();
+    const stored = JSON.parse(localStorage.getItem('pt_user') || '{}');
+    const prevPlan = stored.plan;
+    stored.user_id             = me.user_id || session.user.id;
+    stored.email               = me.email || session.user.email;
+    stored.full_name           = me.full_name || stored.full_name || '';
+    stored.plan                = me.plan || 'free';
+    stored.subscription_status = me.subscription_status || 'inactive';
+    stored.discord_linked      = !!me.discord_linked;
+    localStorage.setItem('pt_user', JSON.stringify(stored));
+    if (prevPlan !== stored.plan) {
+      if (typeof updateNavAuth === 'function') updateNavAuth();
+      if (typeof updateDemoBar === 'function') updateDemoBar();
+      if (typeof updateAcctPage === 'function') updateAcctPage();
+    }
+    return stored;
+  } catch(e) {
+    console.warn('syncPlanFromBackend failed:', e);
+    return null;
+  }
+}
 (async function checkSession() {
   try {
     const { data } = await supabaseClient.auth.getSession();
@@ -4956,7 +4968,7 @@ window._ptSession = null;
       setTimeout(async function() {
         if (typeof updateNavAuth === 'function') updateNavAuth();
         if (typeof updateDemoBar === 'function') updateDemoBar();
-        // Load real portfolio for Pro/Elite on page load
+        await syncPlanFromBackend(session);
         const su = JSON.parse(localStorage.getItem('pt_user') || '{}');
         if ((su.plan === 'pro' || su.plan === 'elite') && typeof loadUserPortfolio === 'function') {
           try {
@@ -4988,6 +5000,9 @@ supabaseClient.auth.onAuthStateChange((event, session) => {
       if (typeof updateNavAuth === 'function') updateNavAuth();
       if (typeof updateDemoBar === 'function') updateDemoBar();
     }, 100);
+    if (event === 'SIGNED_IN' && typeof syncPlanFromBackend === 'function') {
+      syncPlanFromBackend(session);
+    }
   }
   if (event === 'SIGNED_OUT') {
     window._ptSession = null;
@@ -5182,32 +5197,28 @@ async function searchSymbol(query) {
   if (!query || query.length < 1) return [];
   try {
     const r = await fetch(
-      `https://finnhub.io/api/v1/search?q=${encodeURIComponent(query)}&token=${FINNHUB_KEY}`,
+      `${MARKET_API}/search?q=${encodeURIComponent(query)}`,
       { signal: AbortSignal.timeout(4000) }
     );
     if (!r.ok) return [];
-    const d = await r.json();
-    return (d.result || [])
-      .filter(s => s.type === 'Common Stock' || s.type === 'ETP' || s.type === 'ADR')
-      .slice(0, 8)
-      .map(s => ({ symbol: s.symbol, name: s.description }));
+    const results = await r.json();
+    return (Array.isArray(results) ? results : []).map(s => ({ symbol: s.symbol, name: s.description }));
   } catch(e) { return []; }
 }
 async function fetchRealPrices(holdings) {
   if (!holdings || holdings.length === 0) return {};
   const prices = {};
   try {
-    const results = await Promise.allSettled(
-      holdings.map(h =>
-        fetch(`https://finnhub.io/api/v1/quote?symbol=${h.symbol}&token=${FINNHUB_KEY}`,
-          { signal: AbortSignal.timeout(5000) })
-          .then(r => r.ok ? r.json() : null)
-          .then(d => d && d.c ? { symbol: h.symbol, price: d.c, change: d.d, changePct: d.dp, prevClose: d.pc } : null)
-      )
+    const syms = holdings.map(h => h.symbol).join(',');
+    const r = await fetch(
+      `${MARKET_API}/quote?symbols=${syms}`,
+      { signal: AbortSignal.timeout(8000) }
     );
-    results.forEach(r => {
-      if (r.status === 'fulfilled' && r.value) {
-        prices[r.value.symbol] = r.value;
+    if (!r.ok) return prices;
+    const quotes = await r.json();
+    (Array.isArray(quotes) ? quotes : []).forEach(q => {
+      if (q && q.c) {
+        prices[q.symbol] = { symbol: q.symbol, price: q.c, change: q.d, changePct: q.dp, prevClose: q.pc };
       }
     });
   } catch(e) { console.warn('Real price fetch error:', e); }
@@ -5386,9 +5397,10 @@ async function fetchSymbolPreview(sym) {
   const preview = document.getElementById('holdingPreview');
   if (!preview) return;
   try {
-    const r = await fetch(`https://finnhub.io/api/v1/quote?symbol=${sym}&token=${FINNHUB_KEY}`, { signal: AbortSignal.timeout(4000) });
+    const r = await fetch(`${MARKET_API}/quote?symbols=${sym}`, { signal: AbortSignal.timeout(4000) });
     if (!r.ok) return;
-    const d = await r.json();
+    const quotes = await r.json();
+    const d = Array.isArray(quotes) && quotes[0] ? quotes[0] : null;
     if (d && d.c) {
       const chg = d.dp || 0;
       const color = chg >= 0 ? 'var(--green)' : 'var(--red)';
@@ -9207,16 +9219,12 @@ async function refreshLivePrices() {
   ])];
   if (syms.length === 0) return;
   try {
-    const results = await Promise.allSettled(
-      syms.map(sym =>
-        fetch(`https://finnhub.io/api/v1/quote?symbol=${sym}&token=${FINNHUB_KEY}`, { signal: AbortSignal.timeout(5000) })
-          .then(r => r.ok ? r.json() : null)
-      )
-    );
-    syms.forEach((sym, i) => {
-      const r = results[i];
-      if (r.status === 'fulfilled' && r.value && r.value.c) {
-        LIVE.prices[sym] = { price: r.value.c, change: r.value.d, changePercent: r.value.dp, prev: r.value.pc, high: r.value.h, low: r.value.l };
+    const r = await fetch(`${MARKET_API}/quote?symbols=${syms.join(',')}`, { signal: AbortSignal.timeout(8000) });
+    if (!r.ok) return;
+    const quotes = await r.json();
+    (Array.isArray(quotes) ? quotes : []).forEach(q => {
+      if (q && q.c) {
+        LIVE.prices[q.symbol] = { price: q.c, change: q.d, changePercent: q.dp, prev: q.pc, high: q.h, low: q.l };
       }
     });
     renderLiveDashboard();
