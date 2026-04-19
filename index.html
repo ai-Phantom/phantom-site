@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!-- Sentry Frontend Error Monitoring -->
 <script src="https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js" crossorigin="anonymous"></script>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://www.googletagmanager.com https://www.google-analytics.com https://js.sentry-cdn.com https://browser.sentry-cdn.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gzdhauxqrfbhbrfcscna.supabase.co https://phantom-traders-backend.onrender.com https://www.google-analytics.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://browser.sentry-cdn.com https://fonts.googleapis.com https://fonts.gstatic.com;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://esm.sh https://www.googletagmanager.com https://www.google-analytics.com https://js.sentry-cdn.com https://browser.sentry-cdn.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://gzdhauxqrfbhbrfcscna.supabase.co https://phantom-traders-backend.onrender.com https://www.google-analytics.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io https://browser.sentry-cdn.com https://fonts.googleapis.com https://fonts.gstatic.com;">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phantom Traders — Institutional-Grade Portfolio Intelligence</title>
@@ -1094,8 +1094,14 @@ function isRateLimited(action, maxAttempts, windowMs) {
 
 
 function escapeHtml(str) {
-  if (!str) return '';
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;')
+    .replace(/`/g,'&#96;');
 }
 
 async function handleLogin() {
@@ -5941,7 +5947,7 @@ async function openBillingPortal() {
     // Update nav demo link text based on plan
     const navDemoLink = document.getElementById('navDemoLink');
     const navDemoLinkMobile = document.getElementById('navDemoLinkMobile');
-    const isPaidUser = plan && plan !== 'free';
+    const isPaidUser = data.plan && data.plan !== 'free';
     const linkText = isPaidUser ? 'Your Portfolio ✦' : 'Live Demo ✦';
     if (navDemoLink) navDemoLink.textContent = linkText;
     if (navDemoLinkMobile) navDemoLinkMobile.textContent = linkText;
