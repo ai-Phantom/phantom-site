@@ -1,4 +1,4 @@
-const CACHE_NAME = 'phantom-v3';
+const CACHE_NAME = 'phantom-v4';
 const SHELL = ['/logo.jpeg', '/manifest.json'];
 
 self.addEventListener('install', e => {

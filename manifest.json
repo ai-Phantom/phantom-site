@@ -1,7 +1,7 @@
 {
   "name": "Phantom Traders",
   "short_name": "Phantom",
-  "description": "Institutional-grade portfolio intelligence for independent traders",
+  "description": "Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0c0f",
