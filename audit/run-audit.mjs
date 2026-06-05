@@ -51,10 +51,12 @@ async function auditPage(browser, viewport, page) {
 
   const entry = { id: page.id, viewport, url: BASE + '/' + page.hash, ok: false };
   try {
-    const resp = await pg.goto(BASE + '/' + page.hash, { waitUntil: 'networkidle', timeout: 45000 });
+    // 'load' (not 'networkidle'): this SPA's analytics + 60s poll mean the
+    // network never goes fully idle, which would push every page to timeout.
+    const resp = await pg.goto(BASE + '/' + page.hash, { waitUntil: 'load', timeout: 30000 });
     entry.httpStatus = resp?.status();
     entry.title = await pg.title();
-    await pg.waitForTimeout(page.id === 'home' ? 9000 : 1500); // let ticker fetch resolve on home
+    await pg.waitForTimeout(page.id === 'home' ? 9000 : 1200); // let ticker fetch resolve on home
 
     if (page.id === 'home' && viewport === 'desktop') {
       const ticker = await pg.evaluate(() => {
