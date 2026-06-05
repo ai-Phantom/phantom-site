@@ -1,0 +1,13 @@
+{
+  "name": "phantom-site-audit",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Live audit harness for aiphantomtraders.com — renders every page, screenshots desktop+mobile, scrapes the live ticker to test for stale market data, and collects console errors.",
+  "scripts": {
+    "audit": "node run-audit.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
