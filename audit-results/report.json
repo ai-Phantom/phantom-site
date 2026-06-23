@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8080",
-  "startedAt": "2026-06-23T15:18:49.154Z",
+  "startedAt": "2026-06-23T15:37:15.024Z",
   "pages": [
     {
       "id": "home",
@@ -9,9 +9,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -35,9 +35,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -61,9 +61,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -75,6 +75,8 @@
       "httpStatus": 200,
       "consoleErrors": [
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -85,9 +87,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -124,9 +126,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -151,6 +153,8 @@
       "httpStatus": 200,
       "consoleErrors": [
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -174,9 +178,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -200,9 +204,9 @@
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
         "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
+        "Failed to load resource: net::ERR_FAILED",
+        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
         "Failed to load resource: net::ERR_FAILED"
       ]
     },
@@ -225,12 +229,7 @@
       "url": "http://localhost:8080/#page-legal",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
-        "Failed to load resource: net::ERR_FAILED"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "docs",
@@ -251,12 +250,7 @@
       "url": "http://localhost:8080/#page-docs",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=SPY,QQQ,IWM,NVDA,TSLA,AAPL,MSFT,AMZN,META,GOOGL,AMD,NFLX,COIN,PLTR,MSTR,SMCI,CRWD,ORCL,UBER,PYPL,MARA,RIOT,HOOD,SO",
-        "Failed to load resource: net::ERR_FAILED",
-        "Access to fetch at 'https://phantom-traders-backend.onrender.com/market/quote?symbols=AAPL,MSFT,NVDA,GOOGL,META,AMZN,TSLA,AMD,QCOM,ORCL,CRM,NFLX,UBER,COIN,INTC' from origin 'http://localhost:8080' has",
-        "Failed to load resource: net::ERR_FAILED"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "store",
@@ -355,7 +349,7 @@
       "NKE": "—",
       "COF": "—"
     },
-    "clock": "MARKET · 15:18:59 ET"
+    "clock": "MARKET · 15:37:25 ET"
   },
   "marketApi": null,
   "featureErrors": [
@@ -480,5 +474,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-06-23T15:21:01.956Z"
+  "finishedAt": "2026-06-23T15:39:29.341Z"
 }
