@@ -174,6 +174,14 @@ Requires a real browser the live host will serve:
 
 ## Suggested next actions (need your go-ahead)
 
-- [ ] Patch Critical 1 (ticker reads `market_cache`; LIVE badge gated on real fetch)
-- [ ] Apply Critical 2 RLS migration (after confirming no client reads those tables)
-- [ ] Patch Critical 3 (strip fake `aggregateRating` + gate review counts)
+- [x] Patch Critical 1 — ticker reads Supabase `home_quotes` view (fresh prices, no 2024 fallback literals)
+- [x] Apply Critical 2 RLS migration (2026-06-23) — confirmed zero of the 26 backend tables are
+  read by any client path (frontend only touches user-facing RLS'd tables); enabled RLS (no
+  policies = service-role-only) on all 26 via Supabase SQL Editor. Verification query returns zero
+  RLS-disabled public tables. Migration committed to `phantom-traders-backend`
+  (`rls_lockdown_backend_tables.sql`).
+- [x] Patch Critical 3 (2026-06-23) — `aggregateRating` removed from JSON-LD; fabricated
+  storefront stats (`312+ Students`, `4.8★ Avg Rating`, `Students enrolled`) replaced with
+  factual product counts (9 courses / 5 mastery guides / lifetime access); dead testimonials
+  carousel (invented names/quotes) deleted; unused per-item `rating`/`reviews` data fields
+  stripped. Real reviews still flow via the user submission form → `testimonials` table → admin tab.
