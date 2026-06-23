@@ -1,52 +1,60 @@
-# Lighthouse (desktop) — 2026-06-23T21:27:30.988Z
+# Lighthouse (desktop) — 2026-06-23T22:51:59.241Z
 
 URL: https://aiphantomtraders.com/
 
 ## Scores
-- performance: 86
+- performance: 76
 - accessibility: 94
 - best-practices: 81
 - seo: 85
 
 ## performance — opportunities
-- Total Blocking Time (230 ms)
-- Speed Index (1.9 s)
+- Total Blocking Time (310 ms)
+- Cumulative Layout Shift (0.149)
+    · {"cumulativeLayoutShiftMainFrame":0.1485954223488867,"newEngineResult":{"cumulativeLayoutShift":0.1485954223488867,"cumulativeLayoutShiftMainFrame":0.1485954223488867},"newEngineResultDiffered":false}
+- Speed Index (1.8 s)
 - Use efficient cache lifetimes (Est savings of 19 KiB)
-    · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/f95a7f38c08f/main.js?","cacheLifetimeMs":14400000,"wastedBytes":6079.879999999999}
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5237.499999999999}
+    · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/f95a7f38c08f/main.js?","cacheLifetimeMs":14400000,"wastedBytes":6254.639999999999}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5276.899999999999}
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447","cacheLifetimeMs":86400000,"wastedBytes":4668.400000000001}
-    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2284}
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1152.5999999999997}
+    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2282.4}
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1112.7999999999997}
+- Layout shift culprits
+    · {"type":"table","headings":[{"key":"node","valueType":"node","subItemsHeading":{"key":"extra"},"label":"Element"},{"key":"score","valueType":"numeric","subItemsHeading":{"key":"cause","valueType":"text"},"granularity":0.001,"label":"Layout ...
 - Optimize DOM size
     · {"statistic":"Total elements","value":{"type":"numeric","granularity":1,"value":4745}}
-    · {"statistic":"Most children","node":{"type":"node","lhId":"page-20-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":86...
-    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-21-SPAN","path":"1,HTML,1,BODY,6,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,...
+    · {"statistic":"Most children","node":{"type":"node","lhId":"page-11-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":86...
+    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-17-SPAN","path":"1,HTML,1,BODY,6,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,...
 - Forced reflow
     · {"type":"table","headings":[{"key":"source","valueType":"source-location","label":"Source"},{"key":"reflowTime","valueType":"ms","granularity":1,"label":"Total reflow time"}],"items":[{"source":{"type":"text","value":"[unattributed]"},"refl...
 - Network dependency tree
-- Max Potential First Input Delay (190 ms)
+- Max Potential First Input Delay (170 ms)
 - Reduce unused CSS (Est savings of 16 KiB)
-    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":15950,"wastedPercent":77.11527914884282,"totalBytes":20683}
+    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":15877,"wastedPercent":77.11527914884282,"totalBytes":20589}
 - Reduce unused JavaScript (Est savings of 147 KiB)
-    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":162698,"wastedBytes":68298,"wastedPercent":41.97858835548187}
+    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":162682,"wastedBytes":68294,"wastedPercent":41.98034601728411}
     · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","totalBytes":52024,"wastedBytes":43407,"wastedPercent":83.43478367326951}
-    · {"url":"https://aiphantomtraders.com/","totalBytes":76341,"wastedBytes":38993,"wastedPercent":51.07767010486965}
+    · {"url":"https://aiphantomtraders.com/","totalBytes":74440,"wastedBytes":38455,"wastedPercent":51.65917323479622}
 - Avoid serving legacy JavaScript to modern browsers
     · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","wastedBytes":0,"subItems":{"type":"subitems","items":[{"signal":"@babel/plugin-transform-regenerator","location":{"type":"source-location","url":"https://www.googletagmanage...
 - Serve static assets with an efficient cache policy (3 resources found)
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447","debugData":{"type":"debugdata","public":true,"max-age":86400},"cacheLifetimeMs":86400000,"cacheHitProbability":0.6,"totalBytes":116...
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":52375,"wastedBytes":5237.499...
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11526,"wastedBytes":1...
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":52769,"wastedBytes":5276.899...
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11128,"wastedBytes":1...
 - Avoid an excessive DOM size (4,739 elements)
     · {"statistic":"Total DOM Elements","value":{"type":"numeric","granularity":1,"value":4739}}
     · {"node":{"type":"node","lhId":"1-120-SPAN","path":"1,HTML,1,BODY,6,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,"bottom":2762,"left":1219,...
-    · {"node":{"type":"node","lhId":"1-121-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-331,"right":9661,"wi...
-- Minimize main-thread work (2.0 s)
-    · {"group":"scriptEvaluation","groupLabel":"Script Evaluation","duration":807.5379999999888}
-    · {"group":"other","groupLabel":"Other","duration":466.2399999999979}
-    · {"group":"styleLayout","groupLabel":"Style & Layout","duration":369.3590000000005}
-    · {"group":"paintCompositeRender","groupLabel":"Rendering","duration":227.2100000000045}
-    · {"group":"parseHTML","groupLabel":"Parse HTML & CSS","duration":123.17900000000002}
+    · {"node":{"type":"node","lhId":"1-121-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-321,"right":9671,"wi...
+- Minimize main-thread work (2.1 s)
+    · {"group":"scriptEvaluation","groupLabel":"Script Evaluation","duration":836.6589999999902}
+    · {"group":"other","groupLabel":"Other","duration":443.2019999999975}
+    · {"group":"styleLayout","groupLabel":"Style & Layout","duration":384.90299999999985}
+    · {"group":"paintCompositeRender","groupLabel":"Rendering","duration":204.30700000000303}
+    · {"group":"parseHTML","groupLabel":"Parse HTML & CSS","duration":130.13900000000027}
+- Avoid large layout shifts (3 layout shifts found)
+    · {"node":{"type":"node","lhId":"page-2-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,1,DIV","selector":"body > div#page-landing > section.v2-hero > div.v2-hero-glow","boundingRect":{"top":-175,"bottom":625,"left":268,"right":1068,"width":800,"h...
+    · {"node":{"type":"node","lhId":"page-6-DIV","path":"1,HTML,1,BODY,6,DIV,0,SECTION,3,DIV,0,DIV,5,DIV","selector":"section.v2-hero > div.v2-tape > div#v2TapeTrack > div.v2-tape-item","boundingRect":{"top":847,"bottom":865,"left":393,"right":52...
+    · {"node":{"type":"node","lhId":"page-1-DIV","path":"1,DIV","selector":"div#splashScreen > div","boundingRect":{"top":0,"bottom":0,"left":0,"right":0,"width":0,"height":0},"snippet":"<div style=\"margin-top: 20px; width: 120px; height: 2px; b...
 - Image elements do not have explicit `width` and `height`
     · {"url":"https://aiphantomtraders.com/logo.jpeg","node":{"type":"node","lhId":"1-184-IMG","path":"1,HTML,1,BODY,6,DIV,5,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG","selector":"div.v2-footer-grid > div > div > img","boundingRect":{"top":3649,"botto...
 
@@ -62,9 +70,9 @@ URL: https://aiphantomtraders.com/
 
 ## best-practices — opportunities
 - Uses deprecated APIs (3 warnings found)
-    · {"value":"SharedStorage","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":7716}}
+    · {"value":"SharedStorage","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1455}}
     · {"value":"StorageType.persistent is deprecated. Please use standardized navigator.storage instead.","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"networ...
-    · {"value":"Fledge","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":7716}}
+    · {"value":"Fledge","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1455}}
 
 ## seo — opportunities
 - Links are not crawlable
