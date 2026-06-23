@@ -85,10 +85,13 @@ async function auditPage(browser, viewport, page, exercise) {
     entry.httpStatus = resp?.status();
     await pg.waitForTimeout(page.id === 'home' ? 9000 : 1500);
 
-    // SOURCE-CODE LEAK scan
-    const cleaned = await pg.evaluate(SCAN);
-    const leaks = findLeaks(cleaned);
-    if (leaks.length) report.leaks.push({ page: page.id, viewport, samples: leaks });
+    // SOURCE-CODE LEAK scan (pre-interaction)
+    const scanNow = async (phase) => {
+      const cleaned = await pg.evaluate(SCAN);
+      const leaks = findLeaks(cleaned);
+      if (leaks.length) report.leaks.push({ page: page.id, viewport, phase, samples: leaks });
+    };
+    await scanNow('load');
 
     // ticker scrape on home/desktop
     if (page.id === 'home' && viewport === 'desktop') {
@@ -104,7 +107,7 @@ async function auditPage(browser, viewport, page, exercise) {
       if (stale.length) report.findings.push({ severity: 'CRITICAL', finding: `Ticker shows hardcoded 2024 fallback for ${stale.join(', ')} under badge "${report.ticker.badge}".` });
     }
 
-    if (exercise) await exerciseFeatures(pg, page.id);
+    if (exercise) { await exerciseFeatures(pg, page.id); await scanNow('after-clicks'); }
 
     await pg.screenshot({ path: `${ART}${page.id}-${viewport}.png`, fullPage: true });
     entry.ok = true;
