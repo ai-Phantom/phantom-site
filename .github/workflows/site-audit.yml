@@ -93,14 +93,20 @@ jobs:
         if: always()
         run: |
           node -e '
-            const fs=require("fs");
-            let m; try{ m=JSON.parse(fs.readFileSync(".lighthouseci/manifest.json","utf8")); }catch(e){ console.log("no lighthouse manifest"); process.exit(0); }
-            const run=(Array.isArray(m)?m:[m]).find(x=>x&&x.summary)||{}; const s=run.summary||{};
-            const order=["performance","accessibility","best-practices","seo","pwa"];
-            const lines=order.filter(k=>k in s).map(k=>"- "+k+": "+Math.round(s[k]*100));
+            const fs=require("fs"), dir=".lighthouseci";
+            let files=[]; try{ files=fs.readdirSync(dir).filter(f=>/^lhr-.*\.json$/.test(f)); }catch(e){}
+            if(!files.length){ console.log("no lhr json"); process.exit(0); }
+            const lhr=JSON.parse(fs.readFileSync(dir+"/"+files[files.length-1],"utf8"));
+            const cats=lhr.categories||{}, audits=lhr.audits||{};
+            let out="# Lighthouse (desktop) — "+new Date().toISOString()+"\n\nURL: "+(lhr.finalUrl||lhr.requestedUrl||"")+"\n\n## Scores\n";
+            for(const k of Object.keys(cats)) out+="- "+k+": "+Math.round((cats[k].score||0)*100)+"\n";
+            for(const k of Object.keys(cats)){
+              const fails=(cats[k].auditRefs||[]).filter(r=>r.weight>0).map(r=>audits[r.id]).filter(a=>a&&a.score!==null&&a.score<0.9);
+              if(fails.length){ out+="\n## "+k+" — opportunities\n"; for(const a of fails) out+="- "+a.title+(a.displayValue?" ("+a.displayValue+")":"")+"\n"; }
+            }
             fs.mkdirSync("audit-results",{recursive:true});
-            fs.writeFileSync("audit-results/lighthouse.md","# Lighthouse (desktop) — "+new Date().toISOString()+"\n\nURL: "+(run.url||"")+"\n\n"+(lines.join("\n")||"_no scores parsed_")+"\n");
-            console.log(lines.join("\n"));
+            fs.writeFileSync("audit-results/lighthouse.md",out);
+            console.log(out);
           '
           cat audit-results/lighthouse.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
           git config user.name "phantom-audit-bot"
