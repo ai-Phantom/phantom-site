@@ -174,6 +174,10 @@ Requires a real browser the live host will serve:
 
 ## Suggested next actions (need your go-ahead)
 
-- [ ] Patch Critical 1 (ticker reads `market_cache`; LIVE badge gated on real fetch)
+- [x] Patch Critical 1 — ticker reads Supabase `home_quotes` view (fresh prices, no 2024 fallback literals)
 - [ ] Apply Critical 2 RLS migration (after confirming no client reads those tables)
-- [ ] Patch Critical 3 (strip fake `aggregateRating` + gate review counts)
+- [x] Patch Critical 3 (2026-06-23) — `aggregateRating` removed from JSON-LD; fabricated
+  storefront stats (`312+ Students`, `4.8★ Avg Rating`, `Students enrolled`) replaced with
+  factual product counts (9 courses / 5 mastery guides / lifetime access); dead testimonials
+  carousel (invented names/quotes) deleted; unused per-item `rating`/`reviews` data fields
+  stripped. Real reviews still flow via the user submission form → `testimonials` table → admin tab.

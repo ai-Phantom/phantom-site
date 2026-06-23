@@ -3998,7 +3998,7 @@ const COURSES = {
     id:'foundations', icon:'📗', tier:'beginner', level:'Beginner',
     title:'Stock Market Foundations',
     subtitle:'The complete starting point. Master how markets work before you spend a dollar.',
-    duration:'1.5 hrs', lessons:8, price:9, rating:4.9, reviews:312,
+    duration:'1.5 hrs', lessons:8, price:9,
     what_you_learn:[
       'How stock markets actually work and who the participants are',
       'How to read any stock quote in under 10 seconds',
@@ -4088,7 +4088,7 @@ const COURSES = {
     id:'technical', icon:'📊', tier:'beginner', level:'Beginner',
     title:'Technical Analysis Fundamentals',
     subtitle:'Read any chart with confidence. Identify trends, reversals, and high-probability entry points.',
-    duration:'2 hrs', lessons:12, price:9, rating:4.8, reviews:248,
+    duration:'2 hrs', lessons:12, price:9,
     what_you_learn:[
       'Why technical analysis works and when to use it vs fundamental analysis',
       'Read candlestick charts fluently — bodies, wicks, and what they reveal about buyer/seller battles',
@@ -4160,7 +4160,7 @@ const COURSES = {
     id:'portfolio-build', icon:'🏗️', tier:'beginner', level:'Beginner',
     title:'Building Your First Portfolio',
     subtitle:'From a blank brokerage account to a diversified, risk-scored portfolio in Phantom Traders.',
-    duration:'1 hr', lessons:6, price:9, rating:4.9, reviews:189,
+    duration:'1 hr', lessons:6, price:9,
     what_you_learn:[
       'The three pillars of a good portfolio: diversification, risk management, return optimisation',
       'What the 11 market sectors are and why you need exposure across at least 4',
@@ -4224,7 +4224,7 @@ const COURSES = {
     id:'momentum', icon:'⚡', tier:'intermediate', level:'Intermediate',
     title:'Momentum & Swing Trading',
     subtitle:'Build a rules-based system for identifying momentum setups with documented positive expectancy.',
-    duration:'3 hrs', lessons:15, price:29, rating:4.8, reviews:156,
+    duration:'3 hrs', lessons:15, price:29,
     what_you_learn:[
       'The academic evidence behind momentum — why it persists and why most retail traders fail to capture it',
       'Identify the 3 highest-probability momentum setups including the bull flag and volume breakout',
@@ -4283,7 +4283,7 @@ const COURSES = {
     id:'options', icon:'🎯', tier:'intermediate', level:'Intermediate',
     title:'Options Trading Complete',
     subtitle:'From your first call option to running a consistent income strategy. The complete curriculum.',
-    duration:'3.5 hrs', lessons:18, price:29, rating:4.7, reviews:203,
+    duration:'3.5 hrs', lessons:18, price:29,
     what_you_learn:[
       'Exactly what options are, why they exist, and the specific rights each contract gives you',
       'How options are priced — intrinsic value, time value, and the role of implied volatility',
@@ -4343,7 +4343,7 @@ const COURSES = {
     id:'tax-course', icon:'🔥', tier:'intermediate', level:'Intermediate',
     title:'Tax Strategy for Traders',
     subtitle:'Keep more of what you earn. Legal, practical, and built around the Phantom Traders tax tools.',
-    duration:'1.5 hrs', lessons:10, price:19, rating:4.9, reviews:94,
+    duration:'1.5 hrs', lessons:10, price:19,
     what_you_learn:[
       'The exact tax rates on short-term vs long-term capital gains and how a single holding period decision can save thousands',
       'The wash-sale rule — how it works, common triggers most traders miss, and how to avoid it',
@@ -4380,7 +4380,7 @@ const COURSES = {
     id:'risk-mgmt', icon:'🏛️', tier:'expert', level:'Advanced',
     title:'Portfolio Risk Management',
     subtitle:'Build a portfolio that survives bear markets and compounds through bull markets. Institutional-grade risk tools.',
-    duration:'4 hrs', lessons:20, price:39, rating:5.0, reviews:62,
+    duration:'4 hrs', lessons:20, price:39,
     what_you_learn:[
       'Standard deviation, variance, and what they actually mean for your portfolio in practice',
       'Calculate and manage your portfolio\'s weighted beta for precise market sensitivity control',
@@ -4426,7 +4426,7 @@ const COURSES = {
     id:'algo', icon:'⚙️', tier:'expert', level:'Advanced',
     title:'Algorithmic Trading Intro',
     subtitle:'Write your first automated trading strategy. Connect to the Phantom Traders API. Run real backtests.',
-    duration:'3 hrs', lessons:14, price:39, rating:4.6, reviews:41,
+    duration:'3 hrs', lessons:14, price:39,
     what_you_learn:[
       'What algorithmic trading actually is — and what distinguishes systematic from discretionary trading',
       'Set up your Python environment and authenticate with the Phantom Traders API in under 10 minutes',
@@ -4475,7 +4475,7 @@ const COURSES = {
     id:'institutional', icon:'📡', tier:'expert', level:'Advanced',
     title:'Institutional Portfolio Management',
     subtitle:'Think, measure, and operate at an institutional level — regardless of your portfolio size.',
-    duration:'3 hrs', lessons:16, price:39, rating:4.9, reviews:28,
+    duration:'3 hrs', lessons:16, price:39,
     what_you_learn:[
       'The core differences between institutional and retail portfolio management — and why the frameworks scale to any size',
       'Write an Investment Policy Statement (IPS) that keeps you disciplined during volatile markets',
@@ -4660,54 +4660,54 @@ function answerQuiz(btn, chosen, correct) {
 }
 const STORE_ITEMS = [
   {id:'bundle-beginner', stripePrice:'price_1TE0VKBGuYguz5hx1iUpcCRq', icon:'🎓', tier:'bundle', level:'Beginner', title:'Beginner Bundle',
-   price:20, origPrice:60, rating:4.9, reviews:312, color:'#7eff5c',
+   price:20, origPrice:60, color:'#7eff5c',
    desc:'The complete starting point. 3 structured courses covering markets, charts, and portfolio building.',
    includes:['Stock Market Foundations (8 lessons)','Technical Analysis Complete (12 lessons)','Building Your First Portfolio (6 lessons)','Lesson recaps + quiz on every lesson','Lifetime access + updates'],
   },
   {id:'bundle-intermediate', stripePrice:'price_1TDqm8BGuYguz5hx4W0u5ZZB', icon:'⚡', tier:'bundle', level:'Intermediate', title:'Intermediate Bundle',
-   price:60, origPrice:170, rating:4.8, reviews:248, color:'#4d9fff',
+   price:60, origPrice:170, color:'#4d9fff',
    desc:'Everything in Beginner plus Momentum, Options, and Tax Strategy. The full toolkit for an active trader.',
    includes:['All 3 Beginner courses included','Momentum & Swing Trading (15 lessons)','Options Trading Complete (18 lessons)','Tax Strategy for Traders (10 lessons)','Bonus: position sizing calculator'],
   },
   {id:'bundle-expert', stripePrice:'price_1TDqmoBGuYguz5hxwIIce6ze', icon:'👑', tier:'bundle', level:'All levels', title:'Expert Bundle — All Access',
-   price:100, origPrice:500, rating:5.0, reviews:94, color:'#f5c842',
+   price:100, origPrice:500, color:'#f5c842',
    desc:'All 9 courses unlocked. Every lesson, every strategy, every tool. The only bundle serious traders need.',
    includes:['All 9 courses — 86 lessons total','Everything in Beginner + Intermediate','Portfolio Risk Management (20 lessons)','Algorithmic Trading + API access (14 lessons)','Institutional Portfolio Management (16 lessons)','Lifetime access + all future updates'],
   },
   {id:'foundations', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',    icon:'📗', tier:'beginner', level:'Beginner',     title:'Stock Market Foundations',
-   price:9,  origPrice:19, rating:4.9, reviews:312, color:'#7eff5c',
+   price:9,  origPrice:19, color:'#7eff5c',
    desc:'How markets work, order types, and your first trade. The foundation every trader needs.',
   },
   {id:'technical', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',      icon:'📊', tier:'beginner', level:'Beginner',     title:'Technical Analysis Complete',
-   price:9,  origPrice:19, rating:4.8, reviews:248, color:'#4d9fff',
+   price:9,  origPrice:19, color:'#4d9fff',
    desc:'Candlesticks, support/resistance, RSI, MACD, and chart patterns. Read any chart confidently.',
   },
   {id:'portfolio-build', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',icon:'🏗️', tier:'beginner', level:'Beginner',     title:'Building Your First Portfolio',
-   price:9,  origPrice:19, rating:4.9, reviews:189, color:'#7eff5c',
+   price:9,  origPrice:19, color:'#7eff5c',
    desc:'Diversification, position sizing, and setting up your first 10-stock portfolio in Phantom Traders.',
   },
   {id:'momentum', stripePrice:'price_1TDqgwBGuYguz5hxz3uWlJRr',       icon:'⚡', tier:'intermediate', level:'Intermediate', title:'Momentum & Swing Trading',
-   price:29, origPrice:97, rating:4.8, reviews:156, color:'#7eff5c',
+   price:29, origPrice:97, color:'#7eff5c',
    desc:'Build a repeatable momentum system. Setup identification, entries, stops, and trade management.',
   },
   {id:'options', stripePrice:'price_1TDqhaBGuYguz5hxusiFUDTn',        icon:'🎯', tier:'intermediate', level:'Intermediate', title:'Options Trading Complete',
-   price:29, origPrice:127, rating:4.7, reviews:203, color:'#4d9fff',
+   price:29, origPrice:127, color:'#4d9fff',
    desc:'Calls, puts, spreads, the Greeks, income strategies, and IV rank. The complete options curriculum.',
   },
   {id:'tax-course', stripePrice:'price_1TDqiHBGuYguz5hxL2R3Casn',     icon:'🔥', tier:'intermediate', level:'Intermediate', title:'Tax Strategy for Traders',
-   price:19, origPrice:79, rating:4.9, reviews:94,  color:'#f5c842',
+   price:19, origPrice:79,  color:'#f5c842',
    desc:'Loss harvesting, wash-sale rules, quarterly payments, and working with your CPA.',
   },
   {id:'risk-mgmt', stripePrice:'price_1TDqirBGuYguz5hxAjPXd2dL',      icon:'🏛️', tier:'expert',  level:'Advanced',     title:'Portfolio Risk Management',
-   price:39, origPrice:197, rating:5.0, reviews:62, color:'#f5c842',
+   price:39, origPrice:197, color:'#f5c842',
    desc:'HHI concentration scoring, Sharpe ratio, beta weighting, drawdown control, and factor exposure.',
   },
   {id:'algo', stripePrice:'price_1TDqjLBGuYguz5hxljUZFCi1',           icon:'⚙️', tier:'expert',  level:'Advanced',     title:'Algorithmic Trading Intro',
-   price:39, origPrice:167, rating:4.6, reviews:41, color:'#4d9fff',
+   price:39, origPrice:167, color:'#4d9fff',
    desc:'Build automated strategies with the Phantom Traders API. Python-based with working templates.',
   },
   {id:'institutional', stripePrice:'price_1TDqkQBGuYguz5hx8pJEJ6tD',  icon:'&#128225;', tier:'expert',  level:'Advanced',     title:'Institutional Portfolio Management',
-   price:39, origPrice:247, rating:4.9, reviews:28, color:'#f5c842',
+   price:39, origPrice:247, color:'#f5c842',
    desc:'Multi-portfolio management, performance attribution, compliance, and $1M+ AUM frameworks.',
   },
   // ── EBOOK + COURSE BUNDLES ────────────────────────────────────
@@ -4755,32 +4755,32 @@ const STORE_ITEMS = [
   },
 
   {id:'discord-monthly', stripePrice:'price_1TDqbqBGuYguz5hxzJTT61dK', icon:'&#128172;', tier:'subscription', level:'Community', title:'Discord Community — Monthly',
-   price:15, origPrice:null, billing:'month', rating:4.9, reviews:342, color:'#5865F2',
+   price:15, origPrice:null, billing:'month', color:'#5865F2',
    desc:'Full access to 18 channels, live voice rooms, trade signals, leaderboard, and all server roles. Included free with Elite plan.',
    includes:['18 channels including trade signals','Daily premarket + after-hours voice calls','PT alerts piped direct to Discord','Monthly P&L leaderboard + challenges','Rookie &#x2192; Desk role progression'],
   },
   {id:'discord-annual', stripePrice:'price_1TDqd9BGuYguz5hxu4tUrZMg', icon:'&#128172;', tier:'subscription', level:'Community', title:'Discord Community — Annual',
-   price:135, origPrice:180, billing:'year', rating:4.9, reviews:342, color:'#5865F2',
+   price:135, origPrice:180, billing:'year', color:'#5865F2',
    desc:'Everything in monthly Discord access, billed annually. Save $25 vs monthly — or get it free with Elite.',
    includes:['All monthly Discord features','Priority support response','Early access to new channels','Annual member badge + role','2 months free vs monthly'],
   },
   {id:'portfolio-mgr-monthly', stripePrice:'price_1TEtzRPddnEAOUngGm0Ri56o', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Portfolio Manager — Monthly',
-   price:20, origPrice:null, billing:'month', rating:4.8, reviews:198, color:'#4d9fff',
+   price:20, origPrice:null, billing:'month', color:'#4d9fff',
    desc:'The full Phantom Traders Pro dashboard. Live prices, AI risk scoring, tax harvesting, screener, trade journal, and alerts.',
    includes:['Live price feeds (30s refresh)','AI risk score + 3-mode insights','Tax harvesting engine + PDF export','Stock screener + AI recommendations','Price alerts: all 6 types + SMS','Unlimited trade journal entries'],
   },
   {id:'portfolio-mgr-annual', stripePrice:'price_1TEtzRPddnEAOUngVca0PJAu', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Portfolio Manager — Annual',
-   price:199, origPrice:240, billing:'year', rating:4.8, reviews:198, color:'#4d9fff',
+   price:199, origPrice:240, billing:'year', color:'#4d9fff',
    desc:'Full Pro dashboard billed annually. Includes everything in monthly plus Elite features and API access.',
    includes:['Everything in monthly plan','Elite analytics suite','Discord Community included','API access for automation','Multi-portfolio support','2 months free vs monthly','Priority email support'],
   },
   {id:'elite-monthly', stripePrice:'price_1TEtzRPddnEAOUngsJ9zcwkT', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite Trader — Monthly',
-   price:50, origPrice:null, billing:'month', rating:5.0, reviews:67, color:'#f5c842',
+   price:50, origPrice:null, billing:'month', color:'#f5c842',
    desc:'The ultimate Phantom Traders experience. Everything in Pro plus multi-portfolio management, advanced AI insights, SMS alerts, priority support, early feature access, and Discord Community included.',
    includes:['Everything in Pro plan','Multi-portfolio management','Advanced AI insights','SMS price alerts','Priority support','Early access to new features','Discord Community included free'],
   },
   {id:'elite-annual', stripePrice:'price_1TEtzQPddnEAOUngFbNfRqQe', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite Trader — Annual',
-   price:499, origPrice:600, billing:'year', rating:5.0, reviews:67, color:'#f5c842',
+   price:499, origPrice:600, billing:'year', color:'#f5c842',
    desc:'Full Elite access at 17% off. Multi-portfolio, advanced AI, SMS alerts, priority support, early features, and Discord included. Save $101 vs monthly.',
    includes:['Everything in Elite Monthly','Save $101 vs monthly billing','Priority email support','All future feature updates','Discord Community included','Annual member badge'],
   },
@@ -4838,7 +4838,6 @@ function renderStore() {
     const inCart    = cart.some(c => c.id === item.id);
     const tc        = TIER_COLOR[item.tier] || '#7eff5c';
     const tLabel    = TIER_LABEL[item.tier] || item.tier.toUpperCase();
-    const stars     = '&#9733;'.repeat(Math.floor(item.rating || 0));
     const saves     = item.origPrice ? item.origPrice - item.price : 0;
     const includesList = item.includes
       ? `<ul style="list-style:none;padding:0;margin:0 0 12px;">${item.includes.map(inc =>
@@ -5791,129 +5790,9 @@ function renderSectorRotation(period) {
     </div>`;
   }).join('');
 }
-const TESTIMONIALS = [
-  {
-    stars:5, date:'November 2024',
-    text:'"The risk score alone paid for itself. I finally understood why my portfolio swung harder than the market — 51% tech concentration will do that. Reduced it to 28% and my drawdowns got cut in half."',
-    init:'MR', color:'var(--green)', bg:'rgba(126,255,92,.15)',
-    name:'Marcus R.', role:'Day Trader · Member since Oct 2024'
-  },
-  {
-    stars:5, date:'January 2025',
-    text:'"Built my own spreadsheet for years. Phantom Traders replaced it in a weekend and does ten times more. The tax harvesting tool flagged $2,300 in losses I missed in my first month."',
-    init:'SK', color:'var(--blue)', bg:'rgba(77,159,255,.15)',
-    name:'Sarah K.', role:'Swing Trader · Options focus'
-  },
-  {
-    stars:5, date:'February 2025',
-    text:'"The AI screener recommended MSFT when I had zero tech services exposure. Added it, up 22% since. I was skeptical about AI recommendations but this one works — it\'s looking at things I\'d never manually screen for."',
-    init:'JT', color:'var(--gold)', bg:'rgba(245,200,66,.15)',
-    name:'James T.', role:'Long-term investor · Portfolio Manager subscriber'
-  },
-  {
-    stars:5, date:'December 2024',
-    text:'"The sector allocation chart made me realize I thought I was diversified — I wasn\'t. Five healthcare stocks don\'t count as diversification. The HHI score is brutal and accurate."',
-    init:'AL', color:'var(--green)', bg:'rgba(126,255,92,.15)',
-    name:'Anika L.', role:'Self-directed investor · Member since Nov 2024'
-  },
-  {
-    stars:5, date:'March 2025',
-    text:'"I\'ve tried six portfolio trackers. This is the first one that feels like it was made by someone who actually trades. The journal auto-imports from my brokerage and the P&L breakdown is exactly what I need for tax time."',
-    init:'DW', color:'var(--blue)', bg:'rgba(77,159,255,.15)',
-    name:'Derek W.', role:'Active trader · 4 portfolios tracked'
-  },
-  {
-    stars:5, date:'April 2025',
-    text:'"Took the Options course and it actually filled in gaps I had after years of trading. The section on IV rank and strategy selection clicked in a way that no YouTube video ever did. Made back the course price on my next trade."',
-    init:'RN', color:'var(--gold)', bg:'rgba(245,200,66,.15)',
-    name:'Rachel N.', role:'Options trader · Intermediate bundle'
-  },
-  {
-    stars:5, date:'May 2025',
-    text:'"The alerts system is incredibly flexible. I have price alerts, RSI alerts, and portfolio concentration alerts all running. Got a concentration alert on my energy position two days before XOM dropped 6%. Sold half, felt like a genius."',
-    init:'CP', color:'var(--green)', bg:'rgba(126,255,92,.15)',
-    name:'Carlos P.', role:'Momentum trader · Elite plan subscriber'
-  },
-  {
-    stars:5, date:'June 2025',
-    text:'"I manage portfolios for my parents and myself using the multi-portfolio feature. Switching between them takes two clicks. The performance attribution shows me exactly which holdings are actually contributing versus just taking up allocation."',
-    init:'YM', color:'var(--blue)', bg:'rgba(77,159,255,.15)',
-    name:'Yuki M.', role:'Family portfolio manager · Elite plan'
-  },
-  {
-    stars:5, date:'July 2025',
-    text:'"Went through the entire Momentum course in a weekend. The bull flag setups it teaches are clean and specific — not the vague \'look for breakouts\' advice you get everywhere else. My win rate went from 48% to 61% over the following three months."',
-    init:'TO', color:'var(--gold)', bg:'rgba(245,200,66,.15)',
-    name:'Tyler O.', role:'Swing trader · Expert Bundle'
-  },
-  {
-    stars:5, date:'August 2025',
-    text:'"The screener found me three momentum setups in sectors I never look at — industrials and energy. I\'d been living in tech. All three worked. It\'s like having a research assistant who never sleeps."',
-    init:'BH', color:'var(--green)', bg:'rgba(126,255,92,.15)',
-    name:'Brittany H.', role:'Sector trader · Pro plan'
-  },
-  {
-    stars:5, date:'October 2025',
-    text:'"The Discord community alone is worth the subscription. Pre-market voice calls every morning, a trade-along channel that keeps you accountable, and a leaderboard that actually motivates. I\'ve learned more in three months here than in years of solo trading."',
-    init:'KC', color:'var(--blue)', bg:'rgba(77,159,255,.15)',
-    name:'Kevin C.', role:'Community member · Discord annual'
-  },
-  {
-    stars:5, date:'December 2025',
-    text:'"The tax tool caught a wash-sale violation I was about to make. I sold NVDA at a loss and was literally about to rebuy it two weeks later. The warning banner stopped me. That one alert probably saved me $800 in disallowed losses."',
-    init:'PM', color:'var(--gold)', bg:'rgba(245,200,66,.15)',
-    name:'Priya M.', role:'Long-term investor · Tax harvesting user'
-  },
-];
-let currentTestiSet = 0;
-const TESTI_PER_SET = 3;
-function renderTestimonials(setIdx) {
-  const track = document.getElementById('testimonialTrack');
-  if (!track) return;
-  const start = setIdx * TESTI_PER_SET;
-  const group = TESTIMONIALS.slice(start, start + TESTI_PER_SET);
-  track.style.opacity = '0';
-  track.style.transform = 'translateY(10px)';
-  track.style.transition = 'opacity .3s, transform .3s';
-  setTimeout(() => {
-    track.innerHTML = group.map(r => `
-      <div class="testimonial">
-        <div style="display:flex;gap:3px;margin-bottom:12px;">${'&#9733;'.repeat(r.stars)}<span style="margin-left:6px;font-size:10px;color:var(--muted);font-family:var(--mono);">${r.date}</span></div>
-        <div class="testimonial-text">${r.text}</div>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" style="background:${r.bg};color:${r.color}">${r.init}</div>
-          <div>
-            <div class="testimonial-name">${r.name}</div>
-            <div class="testimonial-role">${r.role}</div>
-          </div>
-        </div>
-      </div>`).join('');
-    track.style.opacity = '1';
-    track.style.transform = 'translateY(0)';
-  }, 200);
-  document.querySelectorAll('.testi-dot').forEach((d, i) => {
-    d.style.background = i === setIdx ? 'var(--green)' : 'var(--border2)';
-    d.style.transform  = i === setIdx ? 'scale(1.3)' : 'scale(1)';
-  });
-  currentTestiSet = setIdx;
-}
-function cycleTestimonials(dir) {
-  const total = Math.ceil(TESTIMONIALS.length / TESTI_PER_SET);
-  const next  = (currentTestiSet + dir + total) % total;
-  renderTestimonials(next);
-}
-function goToTestimonials(idx) {
-  renderTestimonials(idx);
-}
-(function() {
-  let autoTimer = setInterval(() => cycleTestimonials(1), 7000);
-  document.addEventListener('click', e => {
-    if (e.target.closest('[onclick*="cycleTestimonials"],[onclick*="goToTestimonials"]')) {
-      clearInterval(autoTimer);
-      autoTimer = setInterval(() => cycleTestimonials(1), 7000);
-    }
-  });
-})();
+// Testimonials carousel removed (C3 audit): displayed fabricated reviews.
+// Real user reviews are submitted via the testimonial form + shown in admin (testimonials table).
+
 async function loginWithGoogle() {
   const { error } = await supabaseClient.auth.signInWithOAuth({
     provider: 'google',
@@ -9032,16 +8911,16 @@ async function openBillingPortal() {
           </div>
           <div style="display:flex;gap:20px;flex-wrap:wrap;">
             <div style="text-align:center;">
-              <div style="font-family:var(--display);font-size:40px;color:var(--green);letter-spacing:2px;">312+</div>
-              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Students</div>
-            </div>
-            <div style="text-align:center;">
-              <div style="font-family:var(--display);font-size:40px;color:var(--blue);letter-spacing:2px;">9</div>
+              <div style="font-family:var(--display);font-size:40px;color:var(--green);letter-spacing:2px;">9</div>
               <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Courses</div>
             </div>
             <div style="text-align:center;">
-              <div style="font-family:var(--display);font-size:40px;color:var(--gold);letter-spacing:2px;">4.8&#9733;</div>
-              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Avg Rating</div>
+              <div style="font-family:var(--display);font-size:40px;color:var(--blue);letter-spacing:2px;">5</div>
+              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Mastery Guides</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:var(--display);font-size:40px;color:var(--gold);letter-spacing:2px;">&#8734;</div>
+              <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Lifetime Access</div>
             </div>
           </div>
         </div>
@@ -9066,8 +8945,8 @@ async function openBillingPortal() {
           <p style="font-size:14px;color:var(--muted);max-width:480px;line-height:1.7;">Structured courses built by active traders. Buy once, keep forever. All purchases include lifetime access and future updates.</p>
         </div>
         <div style="text-align:center;flex-shrink:0;">
-          <div style="font-family:var(--display);font-size:48px;color:var(--green);letter-spacing:2px;">312+</div>
-          <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Students enrolled</div>
+          <div style="font-family:var(--display);font-size:48px;color:var(--green);letter-spacing:2px;">14</div>
+          <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Courses &amp; guides</div>
         </div>
       </div>
 
