@@ -6,8 +6,8 @@ name: Live Site Audit
 
 on:
   push:
-    branches: ["claude/pt-website-audit-playwright-iAQxp", "main"]
-    paths: ["index.html", "404.html", "functions/**", "_headers", "_redirects", "audit/**", ".github/workflows/site-audit.yml"]
+    branches: ["claude/**", "main"]
+    paths: ["index.html", "src/**", "build.mjs", "package.json", "404.html", "functions/**", "_headers", "_redirects", "audit/**", ".github/workflows/site-audit.yml"]
   workflow_dispatch:
     inputs:
       base_url:
