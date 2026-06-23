@@ -44,6 +44,10 @@ jobs:
           python3 -m http.server 8080 --directory "$GITHUB_WORKSPACE" &
           for i in $(seq 1 20); do curl -sf http://localhost:8080/ >/dev/null && break; sleep 0.5; done
 
+      - name: Let production deploy settle (main)
+        if: ${{ github.ref_name == 'main' && github.event.inputs.base_url == '' }}
+        run: sleep 90
+
       - name: Run render + feature audit
         working-directory: audit
         env:
@@ -81,6 +85,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Let production deploy settle (main)
+        if: ${{ github.ref_name == 'main' && github.event.inputs.base_url == '' }}
+        run: sleep 90
       - name: Lighthouse (desktop)
         uses: treosh/lighthouse-ci-action@v12
         with:
