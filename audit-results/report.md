@@ -1,10 +1,10 @@
-# Live audit + feature test — https://aiphantomtraders.com
+# Live audit + feature test — http://localhost:8080
 
-2026-06-23T17:50:06.988Z → 2026-06-23T17:53:57.417Z
+2026-06-23T18:23:17.028Z → 2026-06-23T18:26:59.012Z
 
 ## Findings
 
-- None flagged.
+- **HIGH** — No /market/quote response observed — backend likely cold (Render free tier).
 
 ## Source-code leak (visible raw code on page)
 
@@ -17,70 +17,70 @@ _No errors thrown while clicking tabs / dropdowns / FAQ / CTAs._
 
 ## Live ticker (homepage grid + tape)
 
-Clock `MARKET · 17:50:16 ET`
+Clock `MARKET · 18:23:26 ET`
 
 | Symbol | Grid % | Tape px |
 |---|---:|---:|
-| SPY | −0.96% | 737.24 |
-| QQQ | −2.69% | 718.11 |
-| IWM | −0.45% | 296.83 |
-| NVDA | −3.10% | 202.19 |
-| TSLA | −5.20% | 383.98 |
-| AAPL | +0.98% | 299.91 |
-| MSFT | +1.89% | 374.28 |
-| AMZN | +0.72% | 234.47 |
-| META | +0.35% | 565.81 |
-| GOOGL | −0.60% | 347.58 |
-| AMD | −5.47% | 521.47 |
-| NFLX | +0.62% | 73.33 |
-| COIN | −3.18% | 159.59 |
-| PLTR | −0.78% | 118.57 |
-| MSTR | −3.73% | 105.38 |
-| SMCI | −5.22% | 33.61 |
-| CRWD | +1.96% | 688.71 |
+| SPY | −1.22% | 735.28 |
+| QQQ | −3.02% | 715.66 |
+| IWM | −0.83% | 295.70 |
+| NVDA | −3.36% | 201.64 |
+| TSLA | −5.98% | 380.82 |
+| AAPL | +0.52% | 298.54 |
+| MSFT | +1.72% | 373.66 |
+| AMZN | +1.04% | 235.22 |
+| META | −0.12% | 563.18 |
+| GOOGL | −0.98% | 346.24 |
+| AMD | −5.82% | 519.53 |
+| NFLX | +0.59% | 73.31 |
+| COIN | −3.59% | 158.93 |
+| PLTR | −1.18% | 118.09 |
+| MSTR | −4.19% | 104.87 |
+| SMCI | −5.84% | 33.39 |
+| CRWD | +1.57% | 686.04 |
 | ORCL | −3.18% | 172.14 |
 | UBER | −0.03% | 77.47 |
-| PYPL | −1.04% | 41.90 |
-| MARA | +1.08% | 15.01 |
-| RIOT | +1.12% | 28.95 |
-| HOOD | −0.79% | 104.88 |
-| SOFI | +2.28% | 17.49 |
-| BAC | +0.82% | 57.84 |
-| INTC | −5.37% | 133.37 |
-| DIS | +0.80% | 103.27 |
-| SNAP | −3.89% | 4.45 |
-| LYFT | −0.56% | 14.14 |
-| TGT | +3.82% | 134.69 |
-| NKE | −0.65% | 42.91 |
-| COF | −1.28% | 198.13 |
+| PYPL | −1.39% | 41.75 |
+| MARA | +0.20% | 14.88 |
+| RIOT | +0.77% | 28.85 |
+| HOOD | −1.95% | 103.65 |
+| SOFI | +1.35% | 17.33 |
+| BAC | +0.68% | 57.76 |
+| INTC | −5.87% | 132.66 |
+| DIS | +0.88% | 103.35 |
+| SNAP | −2.59% | 4.51 |
+| LYFT | −1.34% | 14.03 |
+| TGT | +3.47% | 134.23 |
+| NKE | −1.00% | 42.76 |
+| COF | −1.71% | 197.26 |
 
 ## Market API
 
-`200`
+_no /market/quote call observed_
 
 ## Pages
 
 | Page | Viewport | HTTP | OK | Console errs |
 |---|---|---|---|---|
-| home | desktop | 200 | ✅ | 0 |
-| home | mobile | 200 | ✅ | 0 |
-| features | desktop | 200 | ✅ | 0 |
-| features | mobile | 200 | ✅ | 0 |
-| pricing | desktop | 200 | ✅ | 0 |
-| pricing | mobile | 200 | ✅ | 0 |
-| products | desktop | 200 | ✅ | 0 |
-| products | mobile | 200 | ✅ | 0 |
-| blog | desktop | 200 | ✅ | 0 |
-| blog | mobile | 200 | ✅ | 0 |
-| discord | desktop | 200 | ✅ | 0 |
-| discord | mobile | 200 | ✅ | 0 |
-| dashboard | desktop | 200 | ✅ | 0 |
-| dashboard | mobile | 200 | ✅ | 0 |
-| signup | desktop | 200 | ✅ | 0 |
-| signup | mobile | 200 | ✅ | 0 |
-| legal | desktop | 200 | ✅ | 0 |
-| legal | mobile | 200 | ✅ | 0 |
-| docs | desktop | 200 | ✅ | 0 |
-| docs | mobile | 200 | ✅ | 0 |
-| store | desktop | 200 | ✅ | 0 |
-| store | mobile | 200 | ✅ | 0 |
+| home | desktop | 200 | ✅ | 2 |
+| home | mobile | 200 | ✅ | 2 |
+| features | desktop | 200 | ✅ | 2 |
+| features | mobile | 200 | ✅ | 2 |
+| pricing | desktop | 200 | ✅ | 2 |
+| pricing | mobile | 200 | ✅ | 2 |
+| products | desktop | 200 | ✅ | 2 |
+| products | mobile | 200 | ✅ | 2 |
+| blog | desktop | 200 | ✅ | 2 |
+| blog | mobile | 200 | ✅ | 2 |
+| discord | desktop | 200 | ✅ | 2 |
+| discord | mobile | 200 | ✅ | 2 |
+| dashboard | desktop | 200 | ✅ | 2 |
+| dashboard | mobile | 200 | ✅ | 2 |
+| signup | desktop | 200 | ✅ | 2 |
+| signup | mobile | 200 | ✅ | 2 |
+| legal | desktop | 200 | ✅ | 2 |
+| legal | mobile | 200 | ✅ | 2 |
+| docs | desktop | 200 | ✅ | 2 |
+| docs | mobile | 200 | ✅ | 2 |
+| store | desktop | 200 | ✅ | 2 |
+| store | mobile | 200 | ✅ | 2 |
