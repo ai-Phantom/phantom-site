@@ -11387,6 +11387,9 @@ if (_origUpdateAcctPage) {
 // ── Run 30-day check on every page load (if logged in) ───────────
 window.addEventListener('load', () => {
   setTimeout(check30DayModal, 2000);
+  // Warm the Render backend (free tier sleeps after ~15 min) so the first
+  // auth/signup request is fast. Fire-and-forget; no-cors avoids console noise.
+  try { fetch('https://phantom-traders-backend.onrender.com/health', { mode: 'no-cors' }).catch(function(){}); } catch(e) {}
 });
 
 // ── Track referral source on landing ─────────────────────────────

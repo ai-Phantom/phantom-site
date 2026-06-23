@@ -1,0 +1,25 @@
+name: Backend Keep-Alive
+
+# Render free tier sleeps after ~15 min idle, which makes the first auth/signup
+# request slow. Ping the backend on an interval during active hours so the dyno
+# stays warm. (Homepage market data no longer depends on Render — this is for
+# auth + referrals.) Windowed to ~9am–11pm ET to stay within free instance hours.
+
+on:
+  schedule:
+    - cron: "*/10 13-23 * * *"  # 13:00–23:50 UTC
+    - cron: "*/10 0-4 * * *"    # 00:00–04:50 UTC
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake Render backend
+        run: |
+          base="https://phantom-traders-backend.onrender.com"
+          for path in "/health" "/" ; do
+            code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 50 "$base$path" || echo "ERR")
+            echo "$path -> $code"
+            [ "$code" != "ERR" ] && break
+          done
