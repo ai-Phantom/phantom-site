@@ -63,12 +63,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
     {"@type":"Offer","name":"Pro Plan Annual","price":"199","priceCurrency":"USD","billingIncrement":"year"},
     {"@type":"Offer","name":"Elite Plan Monthly","price":"50","priceCurrency":"USD","billingIncrement":"month"},
     {"@type":"Offer","name":"Elite Plan Annual","price":"499","priceCurrency":"USD","billingIncrement":"year"}
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "312"
-  }
+  ]
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://gzdhauxqrfbhbrfcscna.supabase.co">
@@ -1525,7 +1520,7 @@ window.v2Subscribe = function(plan){
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V3M3 21h18M7 16v-5M11 16V8M15 16v-7M19 16v-3"/></svg>
           </div>
           <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">PORTFOLIO MANAGER</div>
-          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Pro Tool · ★4.8 (198 reviews)</div>
+          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Pro Tool</div>
           <div style="display:flex;align-items:baseline;margin-bottom:4px;">
             <span class="v2-display v2-price-amt" data-mo="20" data-yr="199" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$199</span>
             <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
@@ -1558,7 +1553,7 @@ window.v2Subscribe = function(plan){
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7l4 4 5-7 5 7 4-4v11H3z"/></svg>
           </div>
           <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">ELITE TRADER</div>
-          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Best Value · ★5.0 (67 reviews)</div>
+          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Best Value</div>
           <div style="display:flex;align-items:baseline;margin-bottom:4px;">
             <span class="v2-display v2-price-amt" data-mo="50" data-yr="499" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$499</span>
             <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
@@ -1584,7 +1579,7 @@ window.v2Subscribe = function(plan){
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 9 9 0 01-4-1l-5 1 1.3-4A8.5 8.5 0 1121 11.5z"/></svg>
           </div>
           <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">DISCORD COMMUNITY</div>
-          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Standalone · ★4.9 (342 reviews)</div>
+          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Standalone</div>
           <div style="display:flex;align-items:baseline;margin-bottom:4px;">
             <span class="v2-display v2-price-amt" data-mo="15" data-yr="135" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$135</span>
             <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
@@ -4954,13 +4949,6 @@ function renderStore() {
       <div style="padding:16px;flex:1;display:flex;flex-direction:column;">
         <div style="font-size:10px;color:var(--muted2);font-family:var(--mono);letter-spacing:.4px;margin-bottom:6px;">${item.level}</div>
         <div style="font-size:14px;font-weight:700;line-height:1.3;margin-bottom:6px;">${item.title}</div>
-        <!-- Stars -->
-        <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px;">
-          <span style="color:#f5c842;font-size:12px;letter-spacing:.5px;">${stars}</span>
-          <span style="font-size:11px;font-family:var(--mono);color:var(--muted);">${item.rating}
-            <span style="color:var(--muted2);">(${(item.reviews||0).toLocaleString()})</span>
-          </span>
-        </div>
         <!-- Desc -->
         <div style="font-size:12px;color:var(--muted);line-height:1.65;flex:1;margin-bottom:10px;">${item.desc}</div>
         <!-- Includes list for bundles -->
@@ -8280,11 +8268,7 @@ async function openBillingPortal() {
       <h1 class="v2-headline" style="font-size:64px;">Invest in your <span class="v2-headline-accent">edge.</span></h1>
       <p class="v2-hero-sub" style="margin:0 auto 28px;">Structured courses, bundles, and ebook mastery libraries built by active traders. Buy once, keep forever.</p>
       <div style="display:inline-flex;gap:28px;padding:12px 24px;background:var(--bg-elev-1);border:1px solid var(--border-default);border-radius:8px;flex-wrap:wrap;">
-        <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);letter-spacing:0.08em;"><span style="color:var(--text-primary);font-weight:700;font-size:13px;">312+</span> STUDENTS</div>
-        <div style="width:1px;background:var(--border-default);"></div>
         <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);letter-spacing:0.08em;"><span style="color:var(--text-primary);font-weight:700;font-size:13px;">9</span> COURSES · <span style="color:var(--text-primary);font-weight:700;font-size:13px;">5</span> EBOOKS</div>
-        <div style="width:1px;background:var(--border-default);"></div>
-        <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);letter-spacing:0.08em;"><span style="color:var(--reactor-bright);font-weight:700;font-size:13px;">★ 4.8</span> AVG RATING</div>
       </div>
       <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);margin-top:20px;letter-spacing:0.1em;">ALL PURCHASES INCLUDE LIFETIME ACCESS · FUTURE UPDATES INCLUDED</div>
     </div>
