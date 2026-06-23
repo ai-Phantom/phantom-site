@@ -314,7 +314,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 .v2-discord-embed-field-val.green{color:#10b981;}
 .v2-discord-embed-field-val.red{color:#ef4444;}
 .v2-discord-embed-foot{margin-top:10px;padding-top:8px;border-top:1px solid #1e1f22;display:flex;justify-content:space-between;font-size:11px;color:#949ba4;}
-.v2-discord-embed-foot-link{color:#1e90ff;font-weight:600;}
+.v2-discord-embed-foot-link{color:#5aa9ff;font-weight:600;}
 
 /* ── V2 FAQ ── */
 .v2-faq-grid{display:grid;grid-template-columns:1fr 2fr;gap:64px;}
@@ -621,19 +621,19 @@ window._supabaseReady = new Promise(function(resolve) {
 <div class="mobile-menu-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-header">
-    <a class="nav-logo" onclick="showPage('landing');toggleMobileMenu()">
-      <img class="nav-logo-mark" src="logo.jpeg" alt="Phantom Traders">
+    <a class="nav-logo" href="#" onclick="showPage('landing');toggleMobileMenu();return false;">
+      <img class="nav-logo-mark" src="logo.jpeg" alt="Phantom Traders" width="160" height="106">
       <span class="nav-logo-text">PHANTOM TRADERS</span>
     </a>
     <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close">&times;</button>
   </div>
   <div class="mobile-menu-body">
-    <a class="mobile-menu-link" onclick="showPage('landing');toggleMobileMenu()">Home</a>
-    <a class="mobile-menu-link" onclick="showPage('features');toggleMobileMenu()">Features</a>
-    <a class="mobile-menu-link" onclick="showPage('pricing');toggleMobileMenu()">Pricing</a>
-    <a class="mobile-menu-link" onclick="showPage('products');toggleMobileMenu()">Education</a>
-    <a class="mobile-menu-link" onclick="showPage('blog');toggleMobileMenu()">Blog</a>
-    <a class="mobile-menu-link" onclick="showPage('discord');toggleMobileMenu()">Discord</a>
+    <a class="mobile-menu-link" href="#" onclick="showPage('landing');toggleMobileMenu();return false;">Home</a>
+    <a class="mobile-menu-link" href="#page-features" onclick="showPage('features');toggleMobileMenu();return false;">Features</a>
+    <a class="mobile-menu-link" href="#page-pricing" onclick="showPage('pricing');toggleMobileMenu();return false;">Pricing</a>
+    <a class="mobile-menu-link" href="#page-products" onclick="showPage('products');toggleMobileMenu();return false;">Education</a>
+    <a class="mobile-menu-link" href="#page-blog" onclick="showPage('blog');toggleMobileMenu();return false;">Blog</a>
+    <a class="mobile-menu-link" href="#page-discord" onclick="showPage('discord');toggleMobileMenu();return false;">Discord</a>
     <div class="mobile-menu-divider"></div>
     <button class="v2-btn v2-btn-ghost" style="width:100%;margin-bottom:10px;justify-content:center;" onclick="showPage('login');toggleMobileMenu()">Sign in</button>
     <button class="v2-btn v2-btn-primary" style="width:100%;justify-content:center;" onclick="showPage('signup');toggleMobileMenu()">Join Discord <span class="opacity-60">$15/mo</span></button>
@@ -1198,7 +1198,7 @@ window.v2Subscribe = function(plan){
               <div class="v2-discord-embed med">
                 <div class="v2-discord-embed-head"><span class="v2-discord-embed-band med">● MEDIUM</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">SWING · 1DTE</span></div>
                 <div class="v2-discord-embed-title"><span class="v2-discord-embed-ticker">SOFI</span><span class="v2-discord-embed-strike">17C</span><span class="v2-discord-embed-price">@ 0.54</span></div>
-                <div class="v2-discord-embed-body"><span style="color:#1e90ff;font-family:'JetBrains Mono',monospace;">MACD_X · LuxAlgo SMC · Donchian</span> aligned. Fired at score <strong style="color:#10b981;">60</strong>.</div>
+                <div class="v2-discord-embed-body"><span style="color:#5aa9ff;font-family:'JetBrains Mono',monospace;">MACD_X · LuxAlgo SMC · Donchian</span> aligned. Fired at score <strong style="color:#10b981;">60</strong>.</div>
                 <div class="v2-discord-embed-fields">
                   <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Entry</div><div class="v2-discord-embed-field-val">$0.54</div></div>
                   <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Contracts</div><div class="v2-discord-embed-field-val">18</div></div>
@@ -1667,7 +1667,7 @@ window.v2Subscribe = function(plan){
 <div id="page-login" class="page">
   <nav id="authNav" style="position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(10,12,15,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);">
     <a class="nav-logo" onclick="showPage('landing')" style="cursor:pointer;text-decoration:none;">
-      <img class="nav-logo-mark" loading="lazy" src="logo.jpeg" alt="Phantom Traders">
+      <img class="nav-logo-mark" loading="lazy" src="logo.jpeg" alt="Phantom Traders" width="160" height="106">
       <span class="nav-logo-text">PHANTOM TRADERS</span>
     </a>
     <div style="font-size:13px;color:var(--muted);">Don't have an account? <a onclick="showPage('signup')" style="color:var(--green);cursor:pointer;">Sign up free →</a></div>
@@ -1676,7 +1676,7 @@ window.v2Subscribe = function(plan){
   <div class="auth-page">
     <div class="auth-card">
       <div class="auth-logo">
-        <img class="nav-logo-mark" loading="lazy" src="logo.jpeg" alt="Phantom Traders">
+        <img class="nav-logo-mark" loading="lazy" src="logo.jpeg" alt="Phantom Traders" width="160" height="106">
         <span style="font-family:var(--display);font-size:18px;letter-spacing:2px;">PHANTOM TRADERS</span>
       </div>
       <h1 class="auth-title">WELCOME<br>BACK.</h1>
@@ -8124,10 +8124,10 @@ async function openBillingPortal() {
               <div class="v2-discord-embed high">
                 <div class="v2-discord-embed-head"><span class="v2-discord-embed-band high">● HIGH</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">SCALP · 0DTE</span></div>
                 <div class="v2-discord-embed-title"><span class="v2-discord-embed-ticker">NVDA</span><span class="v2-discord-embed-strike">1180C</span><span class="v2-discord-embed-price">@ 4.85</span></div>
-                <div class="v2-discord-embed-body">Cluster <span style="color:#1e90ff;font-family:'JetBrains Mono',monospace;">NVDA·0DTE·CALL·trend_up</span> fired at score <strong style="color:#10b981;">87</strong>. Regime fit 0.91.</div>
+                <div class="v2-discord-embed-body">Cluster <span style="color:#5aa9ff;font-family:'JetBrains Mono',monospace;">NVDA·0DTE·CALL·trend_up</span> fired at score <strong style="color:#10b981;">87</strong>. Regime fit 0.91.</div>
                 <div style="margin-bottom:12px;">
                   <div style="display:flex;justify-content:space-between;font-size:10px;color:#949ba4;margin-bottom:4px;font-family:'JetBrains Mono',monospace;letter-spacing:0.08em;"><span>EDGE SCORE</span><span style="color:#10b981;">87 / 100</span></div>
-                  <div style="height:6px;background:#1e1f22;border-radius:3px;overflow:hidden;"><div style="width:87%;height:100%;background:linear-gradient(90deg,#1e90ff,#10b981);"></div></div>
+                  <div style="height:6px;background:#1e1f22;border-radius:3px;overflow:hidden;"><div style="width:87%;height:100%;background:linear-gradient(90deg,#5aa9ff,#10b981);"></div></div>
                 </div>
                 <div class="v2-discord-embed-fields">
                   <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Edge</div><div class="v2-discord-embed-field-val green">+2.41 R</div></div>
@@ -8221,7 +8221,7 @@ async function openBillingPortal() {
               <div style="color:var(--reactor-bright);margin-bottom:8px;">// accent colors</div>
               <div>HIGH: <span style="color:var(--green-bright);">#10b981</span></div>
               <div>MED:  <span style="color:var(--amber);">#f59e0b</span></div>
-              <div>LOW:  <span style="color:var(--reactor-bright);">#1e90ff</span></div>
+              <div>LOW:  <span style="color:var(--reactor-bright);">#5aa9ff</span></div>
               <div>WIN:  <span style="color:var(--green-bright);">#10b981</span></div>
               <div>LOSS: <span style="color:var(--red);">#ef4444</span></div>
             </div>
