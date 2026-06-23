@@ -1,0 +1,278 @@
+{
+  "base": "https://aiphantomtraders.com",
+  "startedAt": "2026-06-23T14:48:52.073Z",
+  "pages": [
+    {
+      "id": "home",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "home",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "features",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-features",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "features",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-features",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "pricing",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-pricing",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "pricing",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-pricing",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "products",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-products",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "products",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-products",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "blog",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-blog",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "blog",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-blog",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "discord",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-discord",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "discord",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-discord",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "dashboard",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "signup",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-signup",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "signup",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-signup",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "legal",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-legal",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "legal",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-legal",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "docs",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-docs",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "docs",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-docs",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    },
+    {
+      "id": "store",
+      "viewport": "desktop",
+      "url": "https://aiphantomtraders.com/#page-store",
+      "ok": true,
+      "httpStatus": 403,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 403 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "%c%d font-size:0;color:transparent NaN",
+        "%c%d font-size:0;color:transparent NaN",
+        "Failed to load resource: the server responded with a status of 401 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ]
+    },
+    {
+      "id": "store",
+      "viewport": "mobile",
+      "url": "https://aiphantomtraders.com/#page-store",
+      "ok": true,
+      "httpStatus": 200,
+      "consoleErrors": []
+    }
+  ],
+  "leaks": [],
+  "ticker": {
+    "prices": {},
+    "badge": null,
+    "clock": null
+  },
+  "marketApi": {
+    "status": 200,
+    "body": "[]"
+  },
+  "featureErrors": [],
+  "findings": [],
+  "finishedAt": "2026-06-23T14:50:05.585Z"
+}
