@@ -1354,15 +1354,18 @@ window.v2Subscribe = function(plan){
       });
     }
     function fetchQuotes(){
-      fetch(MARKET_API + '/quote?symbols=' + TICKERS.join(','), { signal: AbortSignal.timeout(6000) })
+      // Read fresh quotes from Supabase market_cache via the curated public
+      // home_quotes view. The Render /market/quote endpoint returns [] (empty),
+      // so Supabase is the reliable source for real prices.
+      fetch(_SUPA_URL + '/rest/v1/home_quotes?select=ticker,price,day_chg_pct', {
+        headers: { apikey: _SUPA_KEY, Authorization: 'Bearer ' + _SUPA_KEY },
+        signal: AbortSignal.timeout(6000)
+      })
         .then(function(r){ return r.ok ? r.json() : []; })
-        .then(function(qs){
-          if(!Array.isArray(qs)) return;
-          qs.forEach(function(q){
-            var sym = q.symbol || q.ticker; if(!sym) return;
-            var c  = (q.c  != null ? q.c  : q.price);
-            var dp = (q.dp != null ? q.dp : q.changesPercentage);
-            if(dp != null) applyQuote(sym, c, dp);
+        .then(function(rows){
+          if(!Array.isArray(rows)) return;
+          rows.forEach(function(q){
+            if(q && q.ticker != null && q.day_chg_pct != null) applyQuote(q.ticker, q.price, q.day_chg_pct);
           });
         })
         .catch(function(){});
