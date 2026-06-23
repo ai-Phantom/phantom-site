@@ -1,11 +1,10 @@
-# Live audit + feature test — http://localhost:8080
+# Live audit + feature test — https://aiphantomtraders.com
 
-2026-06-23T15:37:15.024Z → 2026-06-23T15:39:29.341Z
+2026-06-23T15:42:44.478Z → 2026-06-23T15:45:01.780Z
 
 ## Findings
 
 - **HIGH** — Homepage ticker grid only populated 0/32 symbols with real % — backend cold or symbol coverage gap.
-- **HIGH** — No /market/quote response observed — backend likely cold (Render free tier).
 
 ## Source-code leak (visible raw code on page)
 
@@ -39,7 +38,7 @@ _No raw source detected in visible text._
 
 ## Live ticker (homepage grid + tape)
 
-Clock `MARKET · 15:37:25 ET`
+Clock `MARKET · 15:42:54 ET`
 
 | Symbol | Grid % | Tape px |
 |---|---:|---:|
@@ -78,31 +77,31 @@ Clock `MARKET · 15:37:25 ET`
 
 ## Market API
 
-_no /market/quote call observed_
+`200`
 
 ## Pages
 
 | Page | Viewport | HTTP | OK | Console errs |
 |---|---|---|---|---|
-| home | desktop | 200 | ✅ | 4 |
-| home | mobile | 200 | ✅ | 4 |
-| features | desktop | 200 | ✅ | 4 |
-| features | mobile | 200 | ✅ | 4 |
-| pricing | desktop | 200 | ✅ | 4 |
-| pricing | mobile | 200 | ✅ | 4 |
-| products | desktop | 200 | ✅ | 4 |
-| products | mobile | 200 | ✅ | 4 |
-| blog | desktop | 200 | ✅ | 4 |
-| blog | mobile | 200 | ✅ | 4 |
-| discord | desktop | 200 | ✅ | 4 |
-| discord | mobile | 200 | ✅ | 4 |
-| dashboard | desktop | 200 | ✅ | 4 |
-| dashboard | mobile | 200 | ✅ | 4 |
-| signup | desktop | 200 | ✅ | 4 |
-| signup | mobile | 200 | ✅ | 4 |
-| legal | desktop | 200 | ✅ | 4 |
+| home | desktop | 200 | ✅ | 0 |
+| home | mobile | 200 | ✅ | 0 |
+| features | desktop | 200 | ✅ | 0 |
+| features | mobile | 200 | ✅ | 0 |
+| pricing | desktop | 200 | ✅ | 0 |
+| pricing | mobile | 200 | ✅ | 0 |
+| products | desktop | 200 | ✅ | 0 |
+| products | mobile | 200 | ✅ | 0 |
+| blog | desktop | 200 | ✅ | 0 |
+| blog | mobile | 200 | ✅ | 0 |
+| discord | desktop | 200 | ✅ | 0 |
+| discord | mobile | 200 | ✅ | 0 |
+| dashboard | desktop | 200 | ✅ | 0 |
+| dashboard | mobile | 200 | ✅ | 0 |
+| signup | desktop | 200 | ✅ | 0 |
+| signup | mobile | 200 | ✅ | 0 |
+| legal | desktop | 200 | ✅ | 0 |
 | legal | mobile | 200 | ✅ | 0 |
-| docs | desktop | 200 | ✅ | 4 |
+| docs | desktop | 200 | ✅ | 0 |
 | docs | mobile | 200 | ✅ | 0 |
-| store | desktop | 200 | ✅ | 4 |
-| store | mobile | 200 | ✅ | 4 |
+| store | desktop | 200 | ✅ | 0 |
+| store | mobile | 200 | ✅ | 0 |
