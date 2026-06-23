@@ -67,7 +67,10 @@ jobs:
             echo "No result changes to commit."
           else
             git commit -m "audit: live render + feature-test results [skip ci]"
-            git push origin HEAD:${GITHUB_REF_NAME}
+            for i in 1 2 3 4; do
+              git push origin HEAD:${GITHUB_REF_NAME} && break
+              git pull --rebase origin ${GITHUB_REF_NAME} || true
+            done
           fi
 
       - name: Job summary
@@ -85,6 +88,31 @@ jobs:
           configPath: ./audit/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
+
+      - name: Summarize + commit Lighthouse scores
+        if: always()
+        run: |
+          node -e '
+            const fs=require("fs");
+            let m; try{ m=JSON.parse(fs.readFileSync(".lighthouseci/manifest.json","utf8")); }catch(e){ console.log("no lighthouse manifest"); process.exit(0); }
+            const run=(Array.isArray(m)?m:[m]).find(x=>x&&x.summary)||{}; const s=run.summary||{};
+            const order=["performance","accessibility","best-practices","seo","pwa"];
+            const lines=order.filter(k=>k in s).map(k=>"- "+k+": "+Math.round(s[k]*100));
+            fs.mkdirSync("audit-results",{recursive:true});
+            fs.writeFileSync("audit-results/lighthouse.md","# Lighthouse (desktop) — "+new Date().toISOString()+"\n\nURL: "+(run.url||"")+"\n\n"+(lines.join("\n")||"_no scores parsed_")+"\n");
+            console.log(lines.join("\n"));
+          '
+          cat audit-results/lighthouse.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          git config user.name "phantom-audit-bot"
+          git config user.email "actions@github.com"
+          git add audit-results/lighthouse.md 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "lighthouse scores [skip ci]"
+            for i in 1 2 3 4; do
+              git push origin HEAD:${GITHUB_REF_NAME} && break
+              git pull --rebase origin ${GITHUB_REF_NAME} || true
+            done
+          fi
 
   firecrawl:
     runs-on: ubuntu-latest

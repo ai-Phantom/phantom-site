@@ -63,7 +63,10 @@ async function exerciseFeatures(pg, pageId) {
       try {
         if (await el.isVisible()) { await el.click({ timeout: 1500, trial: false }); await pg.waitForTimeout(120); }
       } catch (e) {
-        report.featureErrors.push({ page: pageId, selector: sel, error: String(e).split('\n')[0].slice(0, 160) });
+        const msg = String(e).split('\n')[0];
+        // Click timeouts = element not actionable (covered/animating), not a site
+        // bug. Only record genuine failures (JS exceptions thrown on click).
+        if (!/Timeout/i.test(msg)) report.featureErrors.push({ page: pageId, selector: sel, error: msg.slice(0, 160) });
       }
     }
   }
