@@ -1,6 +1,6 @@
 # Live audit + feature test — http://localhost:8080
 
-2026-06-23T15:37:15.024Z → 2026-06-23T15:39:29.341Z
+2026-06-23T15:42:31.944Z → 2026-06-23T15:44:44.670Z
 
 ## Findings
 
@@ -39,7 +39,7 @@ _No raw source detected in visible text._
 
 ## Live ticker (homepage grid + tape)
 
-Clock `MARKET · 15:37:25 ET`
+Clock `MARKET · 15:42:41 ET`
 
 | Symbol | Grid % | Tape px |
 |---|---:|---:|
@@ -90,19 +90,19 @@ _no /market/quote call observed_
 | features | mobile | 200 | ✅ | 4 |
 | pricing | desktop | 200 | ✅ | 4 |
 | pricing | mobile | 200 | ✅ | 4 |
-| products | desktop | 200 | ✅ | 4 |
+| products | desktop | 200 | ✅ | 0 |
 | products | mobile | 200 | ✅ | 4 |
-| blog | desktop | 200 | ✅ | 4 |
+| blog | desktop | 200 | ✅ | 2 |
 | blog | mobile | 200 | ✅ | 4 |
-| discord | desktop | 200 | ✅ | 4 |
+| discord | desktop | 200 | ✅ | 0 |
 | discord | mobile | 200 | ✅ | 4 |
-| dashboard | desktop | 200 | ✅ | 4 |
-| dashboard | mobile | 200 | ✅ | 4 |
+| dashboard | desktop | 200 | ✅ | 0 |
+| dashboard | mobile | 200 | ✅ | 0 |
 | signup | desktop | 200 | ✅ | 4 |
-| signup | mobile | 200 | ✅ | 4 |
+| signup | mobile | 200 | ✅ | 0 |
 | legal | desktop | 200 | ✅ | 4 |
 | legal | mobile | 200 | ✅ | 0 |
-| docs | desktop | 200 | ✅ | 4 |
+| docs | desktop | 200 | ✅ | 0 |
 | docs | mobile | 200 | ✅ | 0 |
 | store | desktop | 200 | ✅ | 4 |
 | store | mobile | 200 | ✅ | 4 |
