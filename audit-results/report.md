@@ -1,10 +1,11 @@
-# Live audit + feature test — https://aiphantomtraders.com
+# Live audit + feature test — http://localhost:8080
 
-2026-06-23T15:12:23.618Z → 2026-06-23T15:14:42.689Z
+2026-06-23T15:18:49.154Z → 2026-06-23T15:21:01.956Z
 
 ## Findings
 
-- None flagged.
+- **HIGH** — Homepage ticker grid only populated 0/32 symbols with real % — backend cold or symbol coverage gap.
+- **HIGH** — No /market/quote response observed — backend likely cold (Render free tier).
 
 ## Source-code leak (visible raw code on page)
 
@@ -38,75 +39,70 @@ _No raw source detected in visible text._
 
 ## Live ticker (homepage grid + tape)
 
-Clock `MARKET · 15:12:33 ET`
+Clock `MARKET · 15:18:59 ET`
 
 | Symbol | Grid % | Tape px |
 |---|---:|---:|
-| SPY | −1.10% | 99.00 |
-| QQQ | −1.80% | 260.00 |
-| IWM | +2.50% | 421.00 |
-| DIA | −2.20% | 582.00 |
-| NVDA | +2.90% | 743.00 |
-| TSLA | +0.60% | 204.00 |
-| AAPL | −0.30% | 365.00 |
-| MSFT | +1.00% | 526.00 |
-| AMZN | −0.70% | 687.00 |
-| META | −1.40% | 148.00 |
-| GOOGL | +2.10% | 309.00 |
-| AMD | −1.80% | 470.00 |
-| AVGO | +2.50% | 631.00 |
-| NFLX | +0.20% | 92.00 |
-| COIN | −2.90% | 253.00 |
-| PLTR | +0.60% | 414.00 |
-| MSTR | −0.30% | 575.00 |
-| SMCI | −1.00% | 736.00 |
-| CRWD | +1.70% | 197.00 |
-| ORCL | −1.40% | 358.00 |
-| UBER | +2.10% | 519.00 |
-| SHOP | +2.80% | 680.00 |
-| SNOW | −2.50% | 141.00 |
-| DDOG | +0.20% | 302.00 |
-| NET | +0.90% | 463.00 |
-| ABNB | −0.60% | 624.00 |
-| PYPL | +1.30% | 85.00 |
-| SQ | −1.00% | 246.00 |
-| MARA | −1.70% | 407.00 |
-| RIOT | +2.40% | 568.00 |
-| GLD | −2.10% | 729.00 |
-| TLT | +2.80% | 190.00 |
-| USO | +0.50% | 351.00 |
-| XLF | −0.20% | 512.00 |
-| XLE | +0.90% | 673.00 |
-| ARKK | −0.60% | 134.00 |
-| VIX | −1.30% | 295.00 |
+| SPY | · | — |
+| QQQ | · | — |
+| IWM | · | — |
+| NVDA | · | — |
+| TSLA | · | — |
+| AAPL | · | — |
+| MSFT | · | — |
+| AMZN | · | — |
+| META | · | — |
+| GOOGL | · | — |
+| AMD | · | — |
+| NFLX | · | — |
+| COIN | · | — |
+| PLTR | · | — |
+| MSTR | · | — |
+| SMCI | · | — |
+| CRWD | · | — |
+| ORCL | · | — |
+| UBER | · | — |
+| PYPL | · | — |
+| MARA | · | — |
+| RIOT | · | — |
+| HOOD | · | — |
+| SOFI | · | — |
+| BAC | · | — |
+| INTC | · | — |
+| DIS | · | — |
+| SNAP | · | — |
+| LYFT | · | — |
+| TGT | · | — |
+| NKE | · | — |
+| COF | · | — |
 
 ## Market API
 
-`200`
+_no /market/quote call observed_
 
 ## Pages
 
 | Page | Viewport | HTTP | OK | Console errs |
 |---|---|---|---|---|
-| home | desktop | 200 | ✅ | 0 |
-| home | mobile | 200 | ✅ | 0 |
-| features | desktop | 200 | ✅ | 0 |
-| features | mobile | 200 | ✅ | 0 |
-| pricing | desktop | 200 | ✅ | 0 |
-| pricing | mobile | 200 | ✅ | 0 |
-| products | desktop | 200 | ✅ | 0 |
-| products | mobile | 200 | ✅ | 0 |
-| blog | desktop | 200 | ✅ | 0 |
-| blog | mobile | 200 | ✅ | 0 |
-| discord | desktop | 200 | ✅ | 0 |
-| discord | mobile | 200 | ✅ | 0 |
-| dashboard | desktop | 200 | ✅ | 0 |
-| dashboard | mobile | 200 | ✅ | 0 |
-| signup | desktop | 200 | ✅ | 0 |
-| signup | mobile | 200 | ✅ | 0 |
-| legal | desktop | 200 | ✅ | 0 |
-| legal | mobile | 200 | ✅ | 0 |
-| docs | desktop | 200 | ✅ | 0 |
-| docs | mobile | 200 | ✅ | 0 |
-| store | desktop | 200 | ✅ | 0 |
-| store | mobile | 200 | ✅ | 0 |
+| home | desktop | 200 | ✅ | 4 |
+| home | mobile | 200 | ✅ | 4 |
+| features | desktop | 200 | ✅ | 4 |
+| features | mobile | 200 | ✅ | 4 |
+| pricing | desktop | 200 | ✅ | 4 |
+| pricing | mobile | 200 | ✅ | 2 |
+| products | desktop | 200 | ✅ | 4 |
+| products | mobile | 200 | ✅ | 4 |
+| blog | desktop | 200 | ✅ | 4 |
+| blog | mobile | 200 | ✅ | 4 |
+| discord | desktop | 200 | ✅ | 4 |
+| discord | mobile | 200 | ✅ | 2 |
+| dashboard | desktop | 200 | ✅ | 4 |
+| dashboard | mobile | 200 | ✅ | 4 |
+| signup | desktop | 200 | ✅ | 4 |
+| signup | mobile | 200 | ✅ | 4 |
+| legal | desktop | 200 | ✅ | 4 |
+| legal | mobile | 200 | ✅ | 4 |
+| docs | desktop | 200 | ✅ | 4 |
+| docs | mobile | 200 | ✅ | 4 |
+| store | desktop | 200 | ✅ | 4 |
+| store | mobile | 200 | ✅ | 4 |
