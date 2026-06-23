@@ -100,15 +100,26 @@ async function auditPage(browser, viewport, page, exercise) {
     // ticker scrape on home/desktop
     if (page.id === 'home' && viewport === 'desktop') {
       report.ticker = await pg.evaluate(() => {
-        const out = {};
-        document.querySelectorAll('#tickerTrack [data-ticker]').forEach((el) => {
-          const s = el.getAttribute('data-ticker'); const p = el.querySelector('.tk-price')?.textContent?.replace(/[^0-9.]/g, '');
-          if (s && p && !(s in out)) out[s] = parseFloat(p);
+        const grid = {};
+        document.querySelectorAll('#v2LiveGrid .v2-ticker-card').forEach((el) => {
+          const s = el.querySelector('.v2-ticker-sym')?.textContent?.trim();
+          const p = el.querySelector('.v2-ticker-pct')?.textContent?.trim();
+          if (s && !(s in grid)) grid[s] = p;
         });
-        return { prices: out, badge: document.getElementById('tickerLiveBadge')?.textContent?.trim() || null, clock: document.getElementById('navLiveClock')?.textContent?.trim() || null };
+        const tape = {};
+        document.querySelectorAll('#v2TapeTrack .v2-tape-item').forEach((el) => {
+          const s = el.querySelector('.v2-tape-sym')?.textContent?.trim();
+          const px = el.querySelector('.v2-tape-px')?.textContent?.trim();
+          if (s && !(s in tape)) tape[s] = px;
+        });
+        return { grid, tape, clock: document.getElementById('navLiveClock')?.textContent?.trim() || null };
       });
-      const stale = Object.entries(STALE_FALLBACK).filter(([s, v]) => report.ticker.prices[s] != null && Math.abs(report.ticker.prices[s] - v) < 1).map(([s]) => s);
-      if (stale.length) report.findings.push({ severity: 'CRITICAL', finding: `Ticker shows hardcoded 2024 fallback for ${stale.join(', ')} under badge "${report.ticker.badge}".` });
+      // Real-data check: grid % should be populated (not the '·' placeholder) for at least half the symbols.
+      const gridVals = Object.values(report.ticker.grid || {});
+      const populated = gridVals.filter((v) => v && v !== '·' && /%/.test(v)).length;
+      if (gridVals.length && populated < gridVals.length / 2) {
+        report.findings.push({ severity: 'HIGH', finding: `Homepage ticker grid only populated ${populated}/${gridVals.length} symbols with real % — backend cold or symbol coverage gap.` });
+      }
     }
 
     if (exercise) { await exerciseFeatures(pg, page.id); await scanNow('after-clicks'); }
@@ -138,8 +149,12 @@ md.push('## Source-code leak (visible raw code on page)', '');
 if (report.leaks.length) for (const l of report.leaks) { md.push(`### ${l.page} (${l.viewport})`, '```', ...l.samples, '```', ''); }
 else md.push('_No raw source detected in visible text._', '');
 md.push('## Feature click-test errors', '', report.featureErrors.length ? report.featureErrors.map((e) => `- \`${e.page}\` ${e.selector}: ${e.error}`).join('\n') : '_No errors thrown while clicking tabs / dropdowns / FAQ / CTAs._', '');
-md.push('', '## Live ticker', '');
-if (report.ticker) { md.push(`Badge \`${report.ticker.badge}\` · Clock \`${report.ticker.clock}\``, '', '| Symbol | Shown |', '|---|---:|', ...Object.entries(report.ticker.prices).map(([s, v]) => `| ${s} | ${v} |`)); } else md.push('_not captured_');
+md.push('', '## Live ticker (homepage grid + tape)', '');
+if (report.ticker) {
+  md.push(`Clock \`${report.ticker.clock}\``, '', '| Symbol | Grid % | Tape px |', '|---|---:|---:|');
+  const syms = [...new Set([...Object.keys(report.ticker.grid || {}), ...Object.keys(report.ticker.tape || {})])];
+  md.push(...syms.map((s) => `| ${s} | ${report.ticker.grid?.[s] ?? '—'} | ${report.ticker.tape?.[s] ?? '—'} |`));
+} else md.push('_not captured_');
 md.push('', '## Market API', '', report.marketApi ? `\`${report.marketApi.status}\`` : '_no /market/quote call observed_', '');
 md.push('## Pages', '', '| Page | Viewport | HTTP | OK | Console errs |', '|---|---|---|---|---|', ...report.pages.map((p) => `| ${p.id} | ${p.viewport} | ${p.httpStatus ?? '—'} | ${p.ok ? '✅' : '❌'} | ${p.consoleErrors.length} |`));
 const mdStr = md.join('\n');

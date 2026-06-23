@@ -1342,21 +1342,49 @@ window.v2Subscribe = function(plan){
   <!-- ─── Inline JS for home animations ─── -->
   <script>
   (function(){
-    var TICKERS = ['SPY','QQQ','IWM','DIA','NVDA','TSLA','AAPL','MSFT','AMZN','META','GOOGL','AMD','AVGO','NFLX','COIN','PLTR','MSTR','SMCI','CRWD','ORCL','UBER','SHOP','SNOW','DDOG','NET','ABNB','PYPL','SQ','MARA','RIOT','GLD','TLT','USO','XLF','XLE','ARKK','VIX'];
+    // Curated to symbols the backend serves real, fresh quotes for (no blanks).
+    var TICKERS = ['SPY','QQQ','IWM','NVDA','TSLA','AAPL','MSFT','AMZN','META','GOOGL','AMD','NFLX','COIN','PLTR','MSTR','SMCI','CRWD','ORCL','UBER','PYPL','MARA','RIOT','HOOD','SOFI','BAC','INTC','DIS','SNAP','LYFT','TGT','NKE','COF'];
+    var MARKET_API = 'https://phantom-traders-backend.onrender.com/market';
+    var quoteEls = {}; // sym -> { gridPct: el|null, tapes: [{px,pct}, ...] }
 
-    // ── Live ticker grid ──
+    function applyQuote(sym, c, dp){
+      var refs = quoteEls[sym]; if(!refs) return;
+      var up = dp >= 0;
+      var pctTxt = (up ? '+' : '−') + Math.abs(dp).toFixed(2) + '%';
+      if(refs.gridPct){ refs.gridPct.textContent = pctTxt; refs.gridPct.className = 'v2-ticker-pct ' + (up?'up':'down'); }
+      (refs.tapes||[]).forEach(function(tp){
+        if(c != null) tp.px.textContent = Number(c).toFixed(2);
+        tp.pct.textContent = (up?'▲':'▼') + ' ' + Math.abs(dp).toFixed(2) + '%';
+        tp.pct.className = 'v2-tape-pct ' + (up?'up':'down');
+      });
+    }
+    function fetchQuotes(){
+      fetch(MARKET_API + '/quote?symbols=' + TICKERS.join(','), { signal: AbortSignal.timeout(6000) })
+        .then(function(r){ return r.ok ? r.json() : []; })
+        .then(function(qs){
+          if(!Array.isArray(qs)) return;
+          qs.forEach(function(q){
+            var sym = q.symbol || q.ticker; if(!sym) return;
+            var c  = (q.c  != null ? q.c  : q.price);
+            var dp = (q.dp != null ? q.dp : q.changesPercentage);
+            if(dp != null) applyQuote(sym, c, dp);
+          });
+        })
+        .catch(function(){});
+    }
+
+    // ── Live ticker grid (real % from /market/quote) ──
     var grid = document.getElementById('v2LiveGrid');
     if(grid){
-      TICKERS.forEach(function(t,i){
-        var seed = (i*37+11) % 100;
-        var trend = seed > 50 ? '+' : '−';
-        var pct = ((seed % 30)/10).toFixed(2);
+      TICKERS.forEach(function(t){
         var el = document.createElement('div');
         el.className = 'v2-ticker-card';
         el.dataset.sym = t;
         el.innerHTML = '<div class="v2-ticker-sym">'+t+'</div>'+
-          '<div class="v2-ticker-pct '+(trend==='+'?'up':'down')+'">'+trend+pct+'%</div>';
+          '<div class="v2-ticker-pct">·</div>';
         grid.appendChild(el);
+        quoteEls[t] = quoteEls[t] || { tapes: [] };
+        quoteEls[t].gridPct = el.querySelector('.v2-ticker-pct');
       });
       // Random fire animation
       setInterval(function(){
@@ -1369,23 +1397,26 @@ window.v2Subscribe = function(plan){
       }, 600);
     }
 
-    // ── Ticker tape ──
+    // ── Ticker tape (real price + % from /market/quote) ──
     var tape = document.getElementById('v2TapeTrack');
     if(tape){
-      var html = '';
-      TICKERS.forEach(function(t,i){
-        var seed = (i*23+7) % 100;
-        var up = seed > 45;
-        var pct = ((seed%40)/10 + 0.1).toFixed(2);
-        var price = (50 + (seed*7) % 800).toFixed(2);
-        html += '<div class="v2-tape-item">'+
-          '<span class="v2-tape-sym">'+t+'</span>'+
-          '<span class="v2-tape-px">'+price+'</span>'+
-          '<span class="v2-tape-pct '+(up?'up':'down')+'">'+(up?'▲':'▼')+' '+pct+'%</span>'+
-          '</div>';
+      [0,1].forEach(function(){ // two copies for seamless scroll
+        TICKERS.forEach(function(t){
+          var item = document.createElement('div');
+          item.className = 'v2-tape-item';
+          item.innerHTML = '<span class="v2-tape-sym">'+t+'</span>'+
+            '<span class="v2-tape-px">—</span>'+
+            '<span class="v2-tape-pct">·</span>';
+          tape.appendChild(item);
+          quoteEls[t] = quoteEls[t] || { tapes: [] };
+          (quoteEls[t].tapes = quoteEls[t].tapes || []).push({ px: item.querySelector('.v2-tape-px'), pct: item.querySelector('.v2-tape-pct') });
+        });
       });
-      tape.innerHTML = html + html; // Duplicate for seamless scroll
     }
+
+    // ── Real quotes now + refresh every 60s ──
+    fetchQuotes();
+    setInterval(fetchQuotes, 60000);
 
     // ── CountUp ──
     function v2CountUp(el){
