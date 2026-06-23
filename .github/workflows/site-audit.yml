@@ -1,12 +1,10 @@
 name: Live Site Audit
 
-# Runs the Playwright render audit + Lighthouse against the LIVE site.
-# GitHub runners have open egress and a real Chromium, so this completes the
-# visual/perf half that the sandboxed Claude session cannot reach.
+# Renders + feature-tests the LIVE site with real Google Chrome, detects raw
+# source-code leaking into the page, runs Lighthouse, and (if a key is set)
+# Firecrawl. Results are committed back to the branch so they're readable via API.
 
 on:
-  # Push trigger lets the audit run from this branch before it lands on main
-  # (workflow_dispatch + schedule only arm once the file is on the default branch).
   push:
     branches: ["claude/pt-website-audit-playwright-iAQxp"]
     paths: ["audit/**", ".github/workflows/site-audit.yml"]
@@ -17,14 +15,16 @@ on:
         default: "https://aiphantomtraders.com"
         required: false
   schedule:
-    - cron: "0 14 * * 1" # Mondays 14:00 UTC — weekly freshness check
+    - cron: "0 14 * * 1" # Mondays 14:00 UTC — weekly freshness + leak canary
+
+permissions:
+  contents: write
 
 jobs:
   render-audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -33,10 +33,9 @@ jobs:
         working-directory: audit
         run: |
           npm install
-          # Install real Google Chrome stable (plus deps) for render fidelity.
           npx playwright install --with-deps chrome || npx playwright install --with-deps chromium
 
-      - name: Run render audit
+      - name: Run render + feature audit
         working-directory: audit
         env:
           AUDIT_BASE_URL: ${{ github.event.inputs.base_url || 'https://aiphantomtraders.com' }}
@@ -49,9 +48,22 @@ jobs:
           name: render-audit
           path: audit/out/
 
+      - name: Commit results back to branch
+        if: always()
+        run: |
+          git config user.name "phantom-audit-bot"
+          git config user.email "actions@github.com"
+          git add audit-results/report.md audit-results/report.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No result changes to commit."
+          else
+            git commit -m "audit: live render + feature-test results [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
+
       - name: Job summary
         if: always()
-        run: cat audit/out/report.md >> "$GITHUB_STEP_SUMMARY" || echo "no report" >> "$GITHUB_STEP_SUMMARY"
+        run: cat audit-results/report.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || echo "no report" >> "$GITHUB_STEP_SUMMARY"
 
   lighthouse:
     runs-on: ubuntu-latest
@@ -64,3 +76,29 @@ jobs:
           configPath: ./audit/lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
+
+  firecrawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Firecrawl scrape (if FIRECRAWL_API_KEY set)
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          AUDIT_BASE_URL: ${{ github.event.inputs.base_url || 'https://aiphantomtraders.com' }}
+        run: |
+          if [ -z "$FIRECRAWL_API_KEY" ]; then
+            echo "No FIRECRAWL_API_KEY secret set — skipping Firecrawl. Add it in repo Settings → Secrets to enable."
+            exit 0
+          fi
+          curl -sS -X POST https://api.firecrawl.dev/v1/scrape \
+            -H "Authorization: Bearer $FIRECRAWL_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "{\"url\":\"$AUDIT_BASE_URL\",\"formats\":[\"markdown\",\"rawHtml\"]}" \
+            -o firecrawl.json
+          echo "Firecrawl scrape saved ($(wc -c < firecrawl.json) bytes)."
+      - name: Upload Firecrawl output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: firecrawl
+          path: firecrawl.json
+          if-no-files-found: ignore
