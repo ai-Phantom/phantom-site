@@ -70,7 +70,11 @@ async function exerciseFeatures(pg, pageId) {
 }
 
 async function auditPage(browser, viewport, page, exercise) {
-  const ctx = await browser.newContext(viewport === 'mobile' ? { ...devices['iPhone 13'] } : { viewport: { width: 1440, height: 900 } });
+  const ctx = await browser.newContext(viewport === 'mobile'
+    ? { ...devices['iPhone 13'] }
+    : { viewport: { width: 1440, height: 900 },
+        // Realistic UA so Cloudflare doesn't serve its 403 bot-challenge to headless Chrome.
+        userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' });
   const pg = await ctx.newPage();
   const consoleErrors = [];
   pg.on('console', (m) => { if (m.type() === 'error') consoleErrors.push(m.text().slice(0, 200)); });

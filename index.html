@@ -1250,7 +1250,7 @@ window.v2Subscribe = function(plan){
               <div class="v2-discord-embed">
                 <div class="v2-discord-embed-head"><span class="v2-discord-embed-band low">▣ DAILY RECAP</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">MON · APR 28</span></div>
                 <div style="font-size:17px;font-weight:600;color:#f2f3f5;margin-bottom:4px;font-family:'Inter Tight',system-ui;">14 trades · 9W · 5L · <span style="color:#10b981;">+$1,847</span></div>
-                <div style="font-size:13px;color:#b5bac1;margin-bottom:14px;">Win rate <strong>64.3%</strong>. Profit factor <strong>2.18</strong>. Best fire <strong style="color:#10b981;">NVDA 1180C +38.7%</strong>.</div>
+                <div style="font-size:13px;color:#b5bac1;margin-bottom:14px;">Win rate <strong>64.3%</strong>. Profit factor <strong>2.18</strong>. Best win <strong style="color:#10b981;">SOFI 17C +140.7%</strong>.</div>
                 <div style="margin-bottom:14px;">
                   <div style="margin-bottom:8px;"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px;font-family:'JetBrains Mono',monospace;"><span style="color:#b5bac1;">SCALP · 0DTE</span><span style="color:#949ba4;">6W · 2L · <span style="color:#10b981;font-weight:600;">+$1,124</span></span></div><div style="height:4px;background:#1e1f22;border-radius:2px;"><div style="width:84%;height:100%;background:#10b981;border-radius:2px;"></div></div></div>
                   <div style="margin-bottom:8px;"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px;font-family:'JetBrains Mono',monospace;"><span style="color:#b5bac1;">DAY · weekly</span><span style="color:#949ba4;">2W · 2L · <span style="color:#10b981;font-weight:600;">+$483</span></span></div><div style="height:4px;background:#1e1f22;border-radius:2px;"><div style="width:36%;height:100%;background:#10b981;border-radius:2px;"></div></div></div>
@@ -1954,22 +1954,25 @@ const TICKER_SYMS = [
   'AAPL','MSFT','NVDA','GOOGL','META','AMZN','TSLA', // Mag 7
   'AMD','QCOM','ORCL','CRM','NFLX','UBER','COIN','INTC' // Tech
 ];
+// Fallback shown only until the live /market/quote fetch resolves (and if the
+// backend is cold). Snapshot of real day prices @ 2026-06-23 — refreshed so a
+// cold backend never shows stale quotes under the LIVE badge.
 let tickerData = [
-  {sym:'AAPL', price:213.49, chg:+0.82,  up:true},
-  {sym:'MSFT', price:415.32, chg:+0.44,  up:true},
-  {sym:'NVDA', price:121.44, chg:+1.62,  up:true},
-  {sym:'GOOGL',price:172.63, chg:+0.38,  up:true},
-  {sym:'META', price:612.18, chg:+0.96,  up:true},
-  {sym:'AMZN', price:208.84, chg:+0.72,  up:true},
-  {sym:'TSLA', price:248.71, chg:-0.94,  up:false},
-  {sym:'AMD',  price:156.22, chg:+1.28,  up:true},
-  {sym:'QCOM', price:152.44, chg:+0.56,  up:true},
-  {sym:'ORCL', price:168.92, chg:+0.34,  up:true},
-  {sym:'CRM',  price:318.66, chg:+0.88,  up:true},
-  {sym:'NFLX', price:974.14, chg:+0.62,  up:true},
-  {sym:'UBER', price:82.34,  chg:+0.44,  up:true},
-  {sym:'COIN', price:208.44, chg:-1.12,  up:false},
-  {sym:'INTC', price:22.84,  chg:-0.44,  up:false},
+  {sym:'AAPL', price:300.12, chg:+1.05,  up:true},
+  {sym:'MSFT', price:376.24, chg:+2.42,  up:true},
+  {sym:'NVDA', price:202.73, chg:-2.84,  up:false},
+  {sym:'GOOGL',price:348.13, chg:-0.44,  up:false},
+  {sym:'META', price:568.14, chg:+0.76,  up:true},
+  {sym:'AMZN', price:236.55, chg:+1.62,  up:true},
+  {sym:'TSLA', price:386.96, chg:-4.47,  up:false},
+  {sym:'AMD',  price:524.27, chg:-4.96,  up:false},
+  {sym:'QCOM', price:203.51, chg:-0.74,  up:false},
+  {sym:'ORCL', price:172.14, chg:-3.18,  up:false},
+  {sym:'CRM',  price:188.26, chg:+1.07,  up:true},
+  {sym:'NFLX', price:73.30,  chg:-2.40,  up:false},
+  {sym:'UBER', price:77.47,  chg:-0.03,  up:false},
+  {sym:'COIN', price:160.90, chg:-2.39,  up:false},
+  {sym:'INTC', price:137.50, chg:-2.44,  up:false},
 ];
 function buildTicker() {
   const track = document.getElementById('tickerTrack');
@@ -8160,7 +8163,7 @@ async function openBillingPortal() {
               <div class="v2-discord-embed">
                 <div class="v2-discord-embed-head"><span class="v2-discord-embed-band low">▣ DAILY RECAP</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">MON · APR 28</span></div>
                 <div style="font-size:17px;font-weight:600;color:#f2f3f5;margin-bottom:4px;font-family:'Inter Tight',system-ui;">14 trades · 9W · 5L · <span style="color:#10b981;">+$1,847</span></div>
-                <div style="font-size:13px;color:#b5bac1;margin-bottom:14px;">Win rate <strong>64.3%</strong>. Profit factor <strong>2.18</strong>. Best fire <strong style="color:#10b981;">NVDA 1180C +38.7%</strong>.</div>
+                <div style="font-size:13px;color:#b5bac1;margin-bottom:14px;">Win rate <strong>64.3%</strong>. Profit factor <strong>2.18</strong>. Best win <strong style="color:#10b981;">SOFI 17C +140.7%</strong>.</div>
                 <div style="margin-bottom:14px;">
                   <div style="margin-bottom:8px;"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px;font-family:'JetBrains Mono',monospace;"><span style="color:#b5bac1;">SCALP · 0DTE</span><span style="color:#949ba4;">6W · 2L · <span style="color:#10b981;font-weight:600;">+$1,124</span></span></div><div style="height:4px;background:#1e1f22;border-radius:2px;"><div style="width:84%;height:100%;background:#10b981;border-radius:2px;"></div></div></div>
                   <div style="margin-bottom:8px;"><div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px;font-family:'JetBrains Mono',monospace;"><span style="color:#b5bac1;">DAY · weekly</span><span style="color:#949ba4;">2W · 2L · <span style="color:#10b981;font-weight:600;">+$483</span></span></div><div style="height:4px;background:#1e1f22;border-radius:2px;"><div style="width:36%;height:100%;background:#10b981;border-radius:2px;"></div></div></div>
