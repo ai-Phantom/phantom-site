@@ -100,9 +100,20 @@ jobs:
             const cats=lhr.categories||{}, audits=lhr.audits||{};
             let out="# Lighthouse (desktop) — "+new Date().toISOString()+"\n\nURL: "+(lhr.finalUrl||lhr.requestedUrl||"")+"\n\n## Scores\n";
             for(const k of Object.keys(cats)) out+="- "+k+": "+Math.round((cats[k].score||0)*100)+"\n";
+            const seen=new Set();
             for(const k of Object.keys(cats)){
-              const fails=(cats[k].auditRefs||[]).filter(r=>r.weight>0).map(r=>audits[r.id]).filter(a=>a&&a.score!==null&&a.score<0.9);
-              if(fails.length){ out+="\n## "+k+" — opportunities\n"; for(const a of fails) out+="- "+a.title+(a.displayValue?" ("+a.displayValue+")":"")+"\n"; }
+              const fails=(cats[k].auditRefs||[]).map(r=>audits[r.id]).filter(a=>a&&a.score!==null&&a.score<0.9);
+              if(fails.length){
+                out+="\n## "+k+" — opportunities\n";
+                for(const a of fails){
+                  out+="- "+a.title+(a.displayValue?" ("+a.displayValue+")":"")+"\n";
+                  const items=(a.details&&a.details.items)||[];
+                  for(const it of items.slice(0,5)){
+                    let s=JSON.stringify(it); if(s&&s.length>240) s=s.slice(0,240)+"...";
+                    out+="    · "+s+"\n";
+                  }
+                }
+              }
             }
             fs.mkdirSync("audit-results",{recursive:true});
             fs.writeFileSync("audit-results/lighthouse.md",out);
