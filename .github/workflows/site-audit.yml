@@ -6,7 +6,7 @@ name: Live Site Audit
 
 on:
   push:
-    branches: ["claude/pt-website-audit-playwright-iAQxp"]
+    branches: ["claude/pt-website-audit-playwright-iAQxp", "main"]
     paths: ["index.html", "404.html", "functions/**", "_headers", "_redirects", "audit/**", ".github/workflows/site-audit.yml"]
   workflow_dispatch:
     inputs:
@@ -37,8 +37,9 @@ jobs:
 
       # Serve THIS branch's static site so the audit verifies our changes
       # (production at aiphantomtraders.com only reflects main once merged).
+      # On main, audit the live deployed site; on the feature branch, serve+audit the build.
       - name: Serve branch build
-        if: ${{ github.event.inputs.base_url == '' }}
+        if: ${{ github.ref_name != 'main' && github.event.inputs.base_url == '' }}
         run: |
           python3 -m http.server 8080 --directory "$GITHUB_WORKSPACE" &
           for i in $(seq 1 20); do curl -sf http://localhost:8080/ >/dev/null && break; sleep 0.5; done
@@ -46,7 +47,7 @@ jobs:
       - name: Run render + feature audit
         working-directory: audit
         env:
-          AUDIT_BASE_URL: ${{ github.event.inputs.base_url || 'http://localhost:8080' }}
+          AUDIT_BASE_URL: ${{ github.event.inputs.base_url || (github.ref_name == 'main' && 'https://aiphantomtraders.com' || 'http://localhost:8080') }}
         run: npm run audit
 
       - name: Upload screenshots + report
