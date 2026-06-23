@@ -1,11 +1,11 @@
 {
-  "base": "http://localhost:8080",
-  "startedAt": "2026-06-23T21:27:46.045Z",
+  "base": "https://aiphantomtraders.com",
+  "startedAt": "2026-06-23T22:51:54.496Z",
   "pages": [
     {
       "id": "home",
       "viewport": "desktop",
-      "url": "http://localhost:8080/",
+      "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -13,7 +13,7 @@
     {
       "id": "home",
       "viewport": "mobile",
-      "url": "http://localhost:8080/",
+      "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -21,7 +21,7 @@
     {
       "id": "features",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-features",
+      "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -29,15 +29,21 @@
     {
       "id": "features",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-features",
+      "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": []
+      "consoleErrors": [
+        "Connecting to 'https://www.googletagmanager.com/td?id=G-T8NHESJZ90&v=3&t=t&pid=1883776129&gtm=45je66h0v9247215280za200zd9247215280&seq=2&exp=115616985~115938466~115938469~118395335~119027224~119392696",
+        "Connecting to 'https://www.googletagmanager.com/td?id=G-T8NHESJZ90&v=3&t=t&pid=1883776129&gtm=45je66h0v9247215280za200zd9247215280&seq=2&exp=115616985~115938466~115938469~118395335~119027224~119392696",
+        "Fetch API cannot load https://www.googletagmanager.com/td?id=G-T8NHESJZ90&v=3&t=t&pid=1883776129&gtm=45je66h0v9247215280za200zd9247215280&seq=2&exp=115616985~115938466~115938469~118395335~119027224~11",
+        "Connecting to 'https://www.googletagmanager.com/td?id=G-T8NHESJZ90&v=3&t=t&pid=1883776129&gtm=45je66h0v9247215280za200zd9247215280&seq=2&exp=115616985~115938466~115938469~118395335~119027224~119392696",
+        "Connecting to 'https://www.googletagmanager.com/td?id=G-T8NHESJZ90&v=3&t=t&pid=1883776129&gtm=45je66h0v9247215280za200zd9247215280&seq=2&exp=115616985~115938466~115938469~118395335~119027224~119392696"
+      ]
     },
     {
       "id": "pricing",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-pricing",
+      "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -45,7 +51,7 @@
     {
       "id": "pricing",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-pricing",
+      "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -53,7 +59,7 @@
     {
       "id": "products",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-products",
+      "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -61,7 +67,7 @@
     {
       "id": "products",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-products",
+      "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -69,7 +75,7 @@
     {
       "id": "blog",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-blog",
+      "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -77,7 +83,7 @@
     {
       "id": "blog",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-blog",
+      "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -85,7 +91,7 @@
     {
       "id": "discord",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-discord",
+      "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -93,7 +99,7 @@
     {
       "id": "discord",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-discord",
+      "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -101,7 +107,7 @@
     {
       "id": "dashboard",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-dashboard",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -109,7 +115,7 @@
     {
       "id": "dashboard",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-dashboard",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -117,7 +123,7 @@
     {
       "id": "signup",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-signup",
+      "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -125,7 +131,7 @@
     {
       "id": "signup",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-signup",
+      "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -133,7 +139,7 @@
     {
       "id": "legal",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-legal",
+      "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -141,7 +147,7 @@
     {
       "id": "legal",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-legal",
+      "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -149,7 +155,7 @@
     {
       "id": "docs",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-docs",
+      "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -157,7 +163,7 @@
     {
       "id": "docs",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-docs",
+      "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -165,7 +171,7 @@
     {
       "id": "store",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-store",
+      "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -173,7 +179,7 @@
     {
       "id": "store",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-store",
+      "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -249,7 +255,7 @@
       "NKE": "42.38",
       "COF": "197.81"
     },
-    "clock": "MARKET · 21:27:56 ET"
+    "clock": "MARKET · 22:52:04 ET"
   },
   "marketApi": null,
   "featureErrors": [],
@@ -259,5 +265,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-06-23T21:31:30.011Z"
+  "finishedAt": "2026-06-23T22:55:33.790Z"
 }

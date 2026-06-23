@@ -1,6 +1,6 @@
-# Live audit + feature test — http://localhost:8080
+# Live audit + feature test — https://aiphantomtraders.com
 
-2026-06-23T21:27:46.045Z → 2026-06-23T21:31:30.011Z
+2026-06-23T22:51:54.496Z → 2026-06-23T22:55:33.790Z
 
 ## Findings
 
@@ -17,7 +17,7 @@ _No errors thrown while clicking tabs / dropdowns / FAQ / CTAs._
 
 ## Live ticker (homepage grid + tape)
 
-Clock `MARKET · 21:27:56 ET`
+Clock `MARKET · 22:52:04 ET`
 
 | Symbol | Grid % | Tape px |
 |---|---:|---:|
@@ -65,7 +65,7 @@ _no /market/quote call observed_
 | home | desktop | 200 | ✅ | 0 |
 | home | mobile | 200 | ✅ | 0 |
 | features | desktop | 200 | ✅ | 0 |
-| features | mobile | 200 | ✅ | 0 |
+| features | mobile | 200 | ✅ | 5 |
 | pricing | desktop | 200 | ✅ | 0 |
 | pricing | mobile | 200 | ✅ | 0 |
 | products | desktop | 200 | ✅ | 0 |
