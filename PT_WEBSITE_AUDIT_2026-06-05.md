@@ -217,3 +217,34 @@ everything checkable from source.
 
 ### Responsive — excellent
 - **31 max-width breakpoints** (120 → 1400px) plus min-width queries. Comprehensive coverage; no static red flags. Still worth a real-device pass at 375/768px once a browser is available.
+
+---
+
+## Live audit (CI Lighthouse) — fixes applied 2026-06-24
+
+Turns out the repo's CI pipeline *does* render the live site and writes results
+to `audit-results/` (the egress block only affects the dev sandbox). Live
+desktop Lighthouse 2026-06-23: **performance 76 · accessibility 94 ·
+best-practices 81 · seo 85**. All 22 page/viewport combos return 200. Acted on
+the concrete items:
+
+- **Fixed — analytics CSP bug (was dropping events + 5 console errors on
+  features/mobile):** GA4 sends to both `google-analytics.com` and
+  `googletagmanager.com/td`, but `connect-src` only allowed the former, so the
+  transport beacon was CSP-blocked. Added `https://www.googletagmanager.com` to
+  `connect-src` in **both** `_headers` (authoritative) and the meta CSP.
+- **Fixed — redundant alt:** the 3 `nav-logo-mark` images sit inside links that
+  already show "PHANTOM TRADERS", so the `alt="Phantom Traders"` was announced
+  twice. Set those to `alt=""` (decorative).
+
+Deferred (need live revalidation or are out of repo scope):
+- **robots.txt "unknown directive"** — the flagged `Content-Signal:` line is
+  injected by **Cloudflare** (AI-crawler signal), not in the repo's clean
+  `robots.txt`. Adjust in the Cloudflare dashboard if undesired; likely
+  intentional.
+- **Footer links "not crawlable"** — they use `href="#page-…"` for SPA nav.
+  Switching to real paths (`/features`) only helps if deep-linking is wired;
+  validate routing before changing or crawlers get dead links.
+- **Checkout-drawer contrast**, **CLS 0.149**, **DOM size 4745**, **unused
+  JS/CSS** — performance/contrast items best tuned against a live Lighthouse
+  re-run after each change.
