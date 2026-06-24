@@ -185,3 +185,35 @@ Requires a real browser the live host will serve:
   factual product counts (9 courses / 5 mastery guides / lifetime access); dead testimonials
   carousel (invented names/quotes) deleted; unused per-item `rating`/`reviews` data fields
   stripped. Real reviews still flow via the user submission form → `testimonials` table → admin tab.
+
+---
+
+## Static SEO / A11y / Perf pass (2026-06-24)
+
+The live-render half of the audit (Lighthouse, mobile breakpoints, walking the
+signup/checkout flow) still requires a browser the host will serve — egress to
+`aiphantomtraders.com` + the Render backend is **still blocked** by the
+environment network policy (proxy returns 403 on CONNECT), and no Playwright /
+Firecrawl / Chrome-DevTools MCP is connected. To finish it: allowlist those two
+domains in the environment's network policy, or connect a browser MCP. Below is
+everything checkable from source.
+
+### SEO — strong
+- `<title>` 43 chars ✅, brand now consistent across title/OG/Twitter/JS PAGE_TITLES.
+- canonical, viewport, `lang="en"`, robots, sitemap, 7+ OG tags, Twitter card, JSON-LD all present ✅
+- **Minor:** `meta description` is 201 chars — Google truncates ~155–160; keywords are front-loaded so impact is low. Left as-is (trimming would drop the "Start free" CTA).
+- **Minor/by-design:** 36 `<h1>` elements across the SPA's hidden page-sections — only one is visible at a time, but crawlers see all. Acceptable for this SPA pattern; revisit if SEO ranking suffers.
+
+### Accessibility — good, one fix applied
+- 21 images, **0 missing alt** ✅; 74 inputs / 76 `<label>` ✅ strong form labeling.
+- **Fixed (2026-06-24):** 9 icon-only buttons (password toggle, remove-ticker, set-alert, delete-alert, journal prev/next, close, delete-live-alert) had no accessible name → added `aria-label` to each.
+- **Note:** no ARIA landmark `role=`s; relies on native semantics. Adding `role="navigation"/"main"` would help screen-reader navigation — deferred (needs live SR testing to validate).
+
+### Performance — needs live Lighthouse; static signals
+- Single self-contained HTML (~774 KB built, inline CSS+JS, no framework, no render-blocking external CSS bundle). One request vs. no code-splitting — borderline for LCP on a marketing page; confirm with Lighthouse.
+- `preload: 0` — preloading the hero font/critical asset could improve LCP.
+- Only 2 of 21 images use `loading="lazy"` — add to below-the-fold images.
+- Keep-alive ping warms the cold Render free tier (mitigates auth/checkout cold start).
+
+### Responsive — excellent
+- **31 max-width breakpoints** (120 → 1400px) plus min-width queries. Comprehensive coverage; no static red flags. Still worth a real-device pass at 375/768px once a browser is available.

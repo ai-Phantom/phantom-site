@@ -1704,7 +1704,7 @@ window.v2Subscribe = function(plan){
         </label>
         <div class="password-wrap">
           <input type="password" class="form-input" placeholder="••••••••" id="loginPassword">
-          <button class="password-toggle" onclick="togglePassword('loginPassword',this)">◎</button>
+          <button class="password-toggle" onclick="togglePassword('loginPassword',this)" aria-label="Show password">◎</button>
         </div>
       </div>
 
@@ -2353,7 +2353,7 @@ function renderTickerChips() {
   return onboardData.tickers.map(t => `
     <div class="ticker-chip">
       <span>${t}</span>
-      <button onclick="removeTicker('${t}')" title="Remove">×</button>
+      <button onclick="removeTicker('${t}')" title="Remove" aria-label="Remove ticker">×</button>
     </div>`).join('');
 }
 function addTicker() {
@@ -3524,7 +3524,7 @@ function demoRefreshScreenerAI() {
       <div style="font-size:10px;font-family:var(--mono);color:var(--muted2);margin-bottom:8px;">P/E: ${s.pe||'N/A'} · YTD: <span style="color:${s.ytd>=0?'var(--green)':'var(--red)'};">${s.ytd>=0?'+':''}${s.ytd}%</span></div>
       <div style="display:flex;gap:5px;">
         <button onclick="showToast('${s.sym} added to watchlist ✓','success')" style="flex:1;padding:5px;background:var(--green-dim);border:1px solid rgba(126,255,92,.3);border-radius:6px;color:var(--green);font-size:9px;font-family:var(--mono);font-weight:700;cursor:pointer;">+ WL</button>
-        <button onclick="showDemoAlertModal('${s.sym}')" style="flex:1;padding:5px;background:var(--blue-dim);border:1px solid rgba(77,159,255,.3);border-radius:6px;color:var(--blue);font-size:9px;font-family:var(--mono);font-weight:700;cursor:pointer;">◷ Alert</button>
+        <button onclick="showDemoAlertModal('${s.sym}')" aria-label="Set price alert" style="flex:1;padding:5px;background:var(--blue-dim);border:1px solid rgba(77,159,255,.3);border-radius:6px;color:var(--blue);font-size:9px;font-family:var(--mono);font-weight:700;cursor:pointer;">◷ Alert</button>
       </div>
     </div>`).join('');
 }
@@ -3592,7 +3592,7 @@ function demoScreenerFilter() {
       <td class="demo-td" style="padding-right:16px;">
         <div style="display:flex;gap:4px;justify-content:flex-end;">
           <button onclick="showToast('${s.sym} added to watchlist ✓','success')" style="background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:3px 7px;color:var(--muted);font-size:9px;font-family:var(--mono);cursor:pointer;">+WL</button>
-          <button onclick="showDemoAlertModal('${s.sym}')" style="background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:3px 7px;color:var(--muted);font-size:9px;font-family:var(--mono);cursor:pointer;">◷</button>
+          <button onclick="showDemoAlertModal('${s.sym}')" aria-label="Set price alert" style="background:var(--bg3);border:1px solid var(--border2);border-radius:5px;padding:3px 7px;color:var(--muted);font-size:9px;font-family:var(--mono);cursor:pointer;">◷</button>
         </div>
       </td>`;
     tb.appendChild(tr);
@@ -3635,7 +3635,7 @@ function demoRenderAlerts() {
       </div>
       <div style="display:flex;align-items:center;gap:6px;">
         <span style="font-size:9px;font-family:var(--mono);padding:2px 7px;border-radius:4px;background:var(--green-dim);color:var(--green);">● Active</span>
-        <button onclick="demoDeleteAlert(${a.id})" style="background:transparent;border:none;color:var(--muted2);cursor:pointer;font-size:14px;">✕</button>
+        <button onclick="demoDeleteAlert(${a.id})" aria-label="Delete alert" style="background:transparent;border:none;color:var(--muted2);cursor:pointer;font-size:14px;">✕</button>
       </div>
     </div>`).join('');
 }
@@ -7788,9 +7788,9 @@ async function openBillingPortal() {
       <div class="demo-card">
         <div class="demo-card-header">
           <div style="display:flex;align-items:center;gap:12px;">
-            <button onclick="demoJournalNav(-1)" style="background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;color:var(--muted);cursor:pointer;font-size:14px;">‹</button>
+            <button onclick="demoJournalNav(-1)" aria-label="Previous month" style="background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;color:var(--muted);cursor:pointer;font-size:14px;">‹</button>
             <span style="font-family:var(--display);font-size:22px;letter-spacing:1px;" id="dJournalMonth">March 2026</span>
-            <button onclick="demoJournalNav(1)" style="background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;color:var(--muted);cursor:pointer;font-size:14px;">›</button>
+            <button onclick="demoJournalNav(1)" aria-label="Next month" style="background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;color:var(--muted);cursor:pointer;font-size:14px;">›</button>
           </div>
           <div style="display:flex;gap:10px;font-family:var(--mono);font-size:11px;">
             <span id="dJMonthPL" style="color:var(--green);font-size:16px;font-weight:700;">+$2,847 this month</span>
@@ -7814,7 +7814,7 @@ async function openBillingPortal() {
       <div id="dJournalDetail" style="display:none;margin-top:16px;" class="demo-card">
         <div class="demo-card-header">
           <span class="demo-card-title" id="dJDetailTitle">Trades for Mar 3</span>
-          <button onclick="document.getElementById('dJournalDetail').style.display='none'" style="background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:18px;">✕</button>
+          <button onclick="document.getElementById('dJournalDetail').style.display='none'" aria-label="Close" style="background:transparent;border:none;color:var(--muted);cursor:pointer;font-size:18px;">✕</button>
         </div>
         <div id="dJDetailBody" style="padding:16px 20px;"></div>
       </div>
@@ -10512,7 +10512,7 @@ function renderLiveAlerts() {
         <div style="font-size:10px;color:var(--muted);">Price ${a.condition} $${parseFloat(a.target_price).toFixed(2)}</div>
       </div>
       <div style="font-family:var(--mono);font-size:10px;color:var(--muted2);">${a.status.toUpperCase()}</div>
-      ${a.status === 'active' ? `<button onclick="deleteLiveAlert('${a.id}')" style="background:none;border:none;color:var(--muted2);cursor:pointer;font-size:14px;">×</button>` : ''}
+      ${a.status === 'active' ? `<button onclick="deleteLiveAlert('${a.id}')" aria-label="Delete alert" style="background:none;border:none;color:var(--muted2);cursor:pointer;font-size:14px;">×</button>` : ''}
     </div>
   `).join('');
 }
