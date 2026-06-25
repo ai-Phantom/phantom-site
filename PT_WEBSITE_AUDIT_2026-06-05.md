@@ -237,14 +237,16 @@ the concrete items:
   already show "PHANTOM TRADERS", so the `alt="Phantom Traders"` was announced
   twice. Set those to `alt=""` (decorative).
 
-Deferred (need live revalidation or are out of repo scope):
-- **robots.txt "unknown directive"** — the flagged `Content-Signal:` line is
-  injected by **Cloudflare** (AI-crawler signal), not in the repo's clean
-  `robots.txt`. Adjust in the Cloudflare dashboard if undesired; likely
-  intentional.
-- **Footer links "not crawlable"** — they use `href="#page-…"` for SPA nav.
-  Switching to real paths (`/features`) only helps if deep-linking is wired;
-  validate routing before changing or crawlers get dead links.
-- **Checkout-drawer contrast**, **CLS 0.149**, **DOM size 4745**, **unused
-  JS/CSS** — performance/contrast items best tuned against a live Lighthouse
-  re-run after each change.
+- **Fixed — contrast (2026-06-24):** `--muted` (#6b7a8d, 4.28:1) and `--muted2`
+  (#4a5568, 2.49:1) failed WCAG AA for body text wherever used <18px (Lighthouse
+  sampled the checkout drawer). Bumped to `--muted` #8a98a8 (6.4:1) and `--muted2`
+  #757e8c (4.6:1) — both clear AA site-wide, two-tier hierarchy preserved.
+- **Verified not-a-bug — fonts:** the second Google-Fonts `<link>` is inside
+  `<noscript>` (correct async + `display=swap` + preconnect pattern), not a
+  redundant render-blocking request.
+
+Still deferred (need live Lighthouse iteration; not safe to change blind on a live page):
+- **CLS 0.149 / DOM size 4745 / unused JS-CSS** — re-measure against a CI
+  Lighthouse run after each tweak; likely the dynamically-built ticker grid/tape.
+- **Footer links "not crawlable"** — needs deep-link routing validated first.
+- **robots.txt `Content-Signal`** — Cloudflare-injected, out of repo scope.
