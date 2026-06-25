@@ -6,3 +6,17 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Static assets — long cache (Lighthouse: "efficient cache policy").
+# Icons never change → immutable 1y. Logo/OG may change on rebrand → 30d.
+/icon-192.png
+  Cache-Control: public, max-age=31536000, immutable
+/icon-512.png
+  Cache-Control: public, max-age=31536000, immutable
+/logo.jpeg
+  Cache-Control: public, max-age=2592000
+/og-image.png
+  Cache-Control: public, max-age=2592000
+/manifest.json
+  Cache-Control: public, max-age=86400
+# sw.js intentionally NOT long-cached so the service worker can update.
