@@ -245,8 +245,27 @@ the concrete items:
   `<noscript>` (correct async + `display=swap` + preconnect pattern), not a
   redundant render-blocking request.
 
-Still deferred (need live Lighthouse iteration; not safe to change blind on a live page):
-- **CLS 0.149 / DOM size 4745 / unused JS-CSS** — re-measure against a CI
-  Lighthouse run after each tweak; likely the dynamically-built ticker grid/tape.
+- **Fixed — asset cache policy (2026-06-25):** added long `Cache-Control` to
+  `_headers` for static assets (icons immutable 1y; logo/OG 30d; manifest 1d;
+  sw.js left short so the service worker can update). Addresses Lighthouse's
+  "serve static assets with an efficient cache policy" finding for our own files.
+
+### CLS — attempted local measurement, blocked by egress (2026-06-25)
+Stood up a real local browser (Playwright + the pre-installed Chromium) driving
+a localhost serve of the built page to measure CLS with before/after rigor.
+Result: **CLS reads 0.000 locally** while production is 0.149 — because the
+production shift is network-dependent (Google-Fonts swap + the ticker populating
+from Supabase), and the sandbox egress policy blocks those exact resources from
+loading even in the local browser. DOM size *did* reproduce (4785 ≈ prod 4745),
+confirming the harness is sound. **Conclusion:** CLS can't be reproduced or
+validated in this sandbox. To iterate it properly, allowlist
+`aiphantomtraders.com` + `fonts.googleapis.com`/`fonts.gstatic.com` +
+the Supabase/Render hosts in the environment network policy, then re-run the
+harness — or use the CI Lighthouse runs as the (slower) before/after loop.
+
+Still deferred (need live Lighthouse iteration):
+- **CLS 0.149** — most likely font-swap reflow; mitigate with self-hosted fonts
+  + `size-adjust`/metric-override fallbacks (needs font files, currently egress-blocked).
+- **DOM size 4745 / unused JS-CSS** — structural; large refactor, low ROI, perf score is noisy (±8/run).
 - **Footer links "not crawlable"** — needs deep-link routing validated first.
 - **robots.txt `Content-Signal`** — Cloudflare-injected, out of repo scope.
