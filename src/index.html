@@ -601,11 +601,11 @@ window._supabaseReady = new Promise(function(resolve) {
     </a>
     <div class="v2-nav-links">
       <a href="#" onclick="showPage('landing');return false;" data-nav="landing">Home</a>
-      <a href="#page-features" onclick="showPage('features');return false;" data-nav="features">Features</a>
-      <a href="#page-pricing" onclick="showPage('pricing');return false;" data-nav="pricing">Pricing</a>
-      <a href="#page-products" onclick="showPage('products');return false;" data-nav="education">Education</a>
-      <a href="#page-blog" onclick="showPage('blog');return false;" data-nav="blog">Blog</a>
-      <a href="#page-discord" onclick="showPage('discord');return false;" data-nav="discord">Discord</a>
+      <a href="/features" onclick="showPage('features');return false;" data-nav="features">Features</a>
+      <a href="/pricing" onclick="showPage('pricing');return false;" data-nav="pricing">Pricing</a>
+      <a href="/products" onclick="showPage('products');return false;" data-nav="education">Education</a>
+      <a href="/blog" onclick="showPage('blog');return false;" data-nav="blog">Blog</a>
+      <a href="/discord" onclick="showPage('discord');return false;" data-nav="discord">Discord</a>
     </div>
     <div class="v2-nav-spacer"></div>
     <div class="v2-nav-status"><span class="v2-live-dot"></span><span id="navLiveClock">MARKET · LIVE</span></div>
@@ -629,11 +629,11 @@ window._supabaseReady = new Promise(function(resolve) {
   </div>
   <div class="mobile-menu-body">
     <a class="mobile-menu-link" href="#" onclick="showPage('landing');toggleMobileMenu();return false;">Home</a>
-    <a class="mobile-menu-link" href="#page-features" onclick="showPage('features');toggleMobileMenu();return false;">Features</a>
-    <a class="mobile-menu-link" href="#page-pricing" onclick="showPage('pricing');toggleMobileMenu();return false;">Pricing</a>
-    <a class="mobile-menu-link" href="#page-products" onclick="showPage('products');toggleMobileMenu();return false;">Education</a>
-    <a class="mobile-menu-link" href="#page-blog" onclick="showPage('blog');toggleMobileMenu();return false;">Blog</a>
-    <a class="mobile-menu-link" href="#page-discord" onclick="showPage('discord');toggleMobileMenu();return false;">Discord</a>
+    <a class="mobile-menu-link" href="/features" onclick="showPage('features');toggleMobileMenu();return false;">Features</a>
+    <a class="mobile-menu-link" href="/pricing" onclick="showPage('pricing');toggleMobileMenu();return false;">Pricing</a>
+    <a class="mobile-menu-link" href="/products" onclick="showPage('products');toggleMobileMenu();return false;">Education</a>
+    <a class="mobile-menu-link" href="/blog" onclick="showPage('blog');toggleMobileMenu();return false;">Blog</a>
+    <a class="mobile-menu-link" href="/discord" onclick="showPage('discord');toggleMobileMenu();return false;">Discord</a>
     <div class="mobile-menu-divider"></div>
     <button class="v2-btn v2-btn-ghost" style="width:100%;margin-bottom:10px;justify-content:center;" onclick="showPage('login');toggleMobileMenu()">Sign in</button>
     <button class="v2-btn v2-btn-primary" style="width:100%;justify-content:center;" onclick="showPage('signup');toggleMobileMenu()">Join Discord <span class="opacity-60">$15/mo</span></button>
@@ -1653,9 +1653,9 @@ window.v2Subscribe = function(plan){
           <p class="v2-footer-blurb">Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.</p>
           <div class="v2-footer-disclaimer">⚠ NOT FINANCIAL ADVICE · PAPER-TRADING ONLY</div>
         </div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="#page-features" onclick="showPage('features');return false;">Features</a><a href="#page-pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="#page-discord" onclick="showPage('discord');return false;">Discord</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="#page-blog" onclick="showPage('blog');return false;">Blog</a><a href="#page-discord" onclick="showPage('discord');return false;">Community</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="#page-legal" onclick="showPage('legal');return false;">Privacy</a><a href="#page-legal" onclick="showPage('legal');return false;">Terms</a><a href="#page-legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="#page-legal" onclick="showPage('legal');return false;">Risk</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="/features" onclick="showPage('features');return false;">Features</a><a href="/pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="/discord" onclick="showPage('discord');return false;">Discord</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="/blog" onclick="showPage('blog');return false;">Blog</a><a href="/discord" onclick="showPage('discord');return false;">Community</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="/legal" onclick="showPage('legal');return false;">Privacy</a><a href="/legal" onclick="showPage('legal');return false;">Terms</a><a href="/legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="/legal" onclick="showPage('legal');return false;">Risk</a></div>
       </div>
       <div class="v2-footer-bot"><span>© 2026 PHANTOM TRADERS · ALL RIGHTS RESERVED</span><span>FOUNDATION v3.4 · 87 ACTIVE CLUSTERS</span></div>
     </div>
@@ -1882,9 +1882,9 @@ function showPage(name) {
   document.title = PAGE_TITLES[name] || 'Phantom Traders';
   if (typeof gtag === 'function') gtag('event', 'page_view', {page_title: document.title, page_location: window.location.href, page_path: '/' + name});
   if (name !== 'landing') {
-    history.replaceState(null, '', '#' + name);
+    history.replaceState(null, '', '/' + name);
   } else {
-    history.replaceState(null, '', window.location.pathname);
+    history.replaceState(null, '', '/');
   }
   const navMap = {features:'features',pricing:'pricing',products:'products',store:'store',docs:'docs',blog:'blog',discord:'discord',demo:'demo'};
   document.querySelectorAll('.nav-links > a').forEach(a => a.classList.remove('nav-active'));
@@ -2779,22 +2779,28 @@ function subscribeNewsletter() {
 function openDemo() {
   showPage('demo');
 }
+function _routeFromUrl() {
+  // Never interfere with Supabase auth tokens / errors carried in the URL hash
+  // (detectSessionInUrl reads them on load). Leave the URL untouched.
+  if (window.location.hash && /access_token|refresh_token|provider_token|error=|type=recovery/.test(window.location.hash)) return;
+  // Primary: path-based routing (/features, /pricing, …) — crawlable real URLs.
+  var name = window.location.pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+  // Back-compat: legacy #page-X bookmarks/links still resolve.
+  if (!name && window.location.hash.indexOf('page-') !== -1) {
+    name = window.location.hash.replace('#', '').replace('page-', '');
+  }
+  if (name && document.getElementById('page-' + name)) {
+    showPage(name);
+  }
+  // else: leave the default landing page (already active in HTML); don't strip the URL.
+}
 document.addEventListener('DOMContentLoaded', () => {
   renderBlogGrid();
   if (typeof renderStore === 'function') renderStore();
-  const hash = window.location.hash.replace('#', '').replace('page-', '');
-  if (hash && document.getElementById('page-' + hash)) {
-    showPage(hash);
-  }
+  _routeFromUrl();
 });
-window.addEventListener('hashchange', () => {
-  const hash = window.location.hash.replace('#', '').replace('page-', '');
-  if (hash && document.getElementById('page-' + hash)) {
-    showPage(hash);
-  } else {
-    showPage('landing');
-  }
-});
+window.addEventListener('popstate', _routeFromUrl);
+window.addEventListener('hashchange', _routeFromUrl);
 const DEMO_PORTFOLIOS = {
   small: {
     name:'Starter Portfolio', sub:'10 positions · Small cap growth blend',
@@ -6919,9 +6925,9 @@ async function openBillingPortal() {
           <p class="v2-footer-blurb">Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.</p>
           <div class="v2-footer-disclaimer">⚠ NOT FINANCIAL ADVICE · PAPER-TRADING ONLY</div>
         </div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="#page-features" onclick="showPage('features');return false;">Features</a><a href="#page-pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="#page-discord" onclick="showPage('discord');return false;">Discord</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="#page-blog" onclick="showPage('blog');return false;">Blog</a><a href="#page-discord" onclick="showPage('discord');return false;">Community</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="#page-legal" onclick="showPage('legal');return false;">Privacy</a><a href="#page-legal" onclick="showPage('legal');return false;">Terms</a><a href="#page-legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="#page-legal" onclick="showPage('legal');return false;">Risk</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="/features" onclick="showPage('features');return false;">Features</a><a href="/pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="/discord" onclick="showPage('discord');return false;">Discord</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="/blog" onclick="showPage('blog');return false;">Blog</a><a href="/discord" onclick="showPage('discord');return false;">Community</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="/legal" onclick="showPage('legal');return false;">Privacy</a><a href="/legal" onclick="showPage('legal');return false;">Terms</a><a href="/legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="/legal" onclick="showPage('legal');return false;">Risk</a></div>
       </div>
       <div class="v2-footer-bot"><span>© 2026 PHANTOM TRADERS · ALL RIGHTS RESERVED</span><span>FOUNDATION v3.4 · 87 ACTIVE CLUSTERS</span></div>
     </div>
@@ -7400,9 +7406,9 @@ async function openBillingPortal() {
           <p class="v2-footer-blurb">Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.</p>
           <div class="v2-footer-disclaimer">⚠ NOT FINANCIAL ADVICE · PAPER-TRADING ONLY</div>
         </div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="#page-features" onclick="showPage('features');return false;">Features</a><a href="#page-pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="#page-discord" onclick="showPage('discord');return false;">Discord</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="#page-blog" onclick="showPage('blog');return false;">Blog</a><a href="#page-discord" onclick="showPage('discord');return false;">Community</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="#page-legal" onclick="showPage('legal');return false;">Privacy</a><a href="#page-legal" onclick="showPage('legal');return false;">Terms</a><a href="#page-legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="#page-legal" onclick="showPage('legal');return false;">Risk</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="/features" onclick="showPage('features');return false;">Features</a><a href="/pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="/discord" onclick="showPage('discord');return false;">Discord</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="/blog" onclick="showPage('blog');return false;">Blog</a><a href="/discord" onclick="showPage('discord');return false;">Community</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="/legal" onclick="showPage('legal');return false;">Privacy</a><a href="/legal" onclick="showPage('legal');return false;">Terms</a><a href="/legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="/legal" onclick="showPage('legal');return false;">Risk</a></div>
       </div>
       <div class="v2-footer-bot"><span>© 2026 PHANTOM TRADERS · ALL RIGHTS RESERVED</span><span>FOUNDATION v3.4 · 87 ACTIVE CLUSTERS</span></div>
     </div>
@@ -8036,9 +8042,9 @@ async function openBillingPortal() {
           <p class="v2-footer-blurb">Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.</p>
           <div class="v2-footer-disclaimer">⚠ NOT FINANCIAL ADVICE · PAPER-TRADING ONLY</div>
         </div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="#page-features" onclick="showPage('features');return false;">Features</a><a href="#page-pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="#page-discord" onclick="showPage('discord');return false;">Discord</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="#page-blog" onclick="showPage('blog');return false;">Blog</a><a href="#page-discord" onclick="showPage('discord');return false;">Community</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="#page-legal" onclick="showPage('legal');return false;">Privacy</a><a href="#page-legal" onclick="showPage('legal');return false;">Terms</a><a href="#page-legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="#page-legal" onclick="showPage('legal');return false;">Risk</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="/features" onclick="showPage('features');return false;">Features</a><a href="/pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="/discord" onclick="showPage('discord');return false;">Discord</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="/blog" onclick="showPage('blog');return false;">Blog</a><a href="/discord" onclick="showPage('discord');return false;">Community</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="/legal" onclick="showPage('legal');return false;">Privacy</a><a href="/legal" onclick="showPage('legal');return false;">Terms</a><a href="/legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="/legal" onclick="showPage('legal');return false;">Risk</a></div>
       </div>
       <div class="v2-footer-bot"><span>© 2026 PHANTOM TRADERS · ALL RIGHTS RESERVED</span><span>FOUNDATION v3.4 · 87 ACTIVE CLUSTERS</span></div>
     </div>
@@ -8336,9 +8342,9 @@ async function openBillingPortal() {
           <p class="v2-footer-blurb">Quant desk in a box. Two scanner bots, eight ported indicators, regime-conditioned edge scoring — delivered to Discord.</p>
           <div class="v2-footer-disclaimer">⚠ NOT FINANCIAL ADVICE · PAPER-TRADING ONLY</div>
         </div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="#page-features" onclick="showPage('features');return false;">Features</a><a href="#page-pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="#page-discord" onclick="showPage('discord');return false;">Discord</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="#page-blog" onclick="showPage('blog');return false;">Blog</a><a href="#page-discord" onclick="showPage('discord');return false;">Community</a><a href="#page-dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
-        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="#page-legal" onclick="showPage('legal');return false;">Privacy</a><a href="#page-legal" onclick="showPage('legal');return false;">Terms</a><a href="#page-legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="#page-legal" onclick="showPage('legal');return false;">Risk</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Product</div><a href="/features" onclick="showPage('features');return false;">Features</a><a href="/pricing" onclick="showPage('pricing');return false;">Pricing</a><a href="/discord" onclick="showPage('discord');return false;">Discord</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Dashboard</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Company</div><a href="/blog" onclick="showPage('blog');return false;">Blog</a><a href="/discord" onclick="showPage('discord');return false;">Community</a><a href="/dashboard" onclick="showPage('dashboard');return false;">Status</a></div>
+        <div class="v2-footer-col"><div class="v2-footer-col-h">Legal</div><a href="/legal" onclick="showPage('legal');return false;">Privacy</a><a href="/legal" onclick="showPage('legal');return false;">Terms</a><a href="/legal" onclick="showPage('legal');return false;">Disclaimers</a><a href="/legal" onclick="showPage('legal');return false;">Risk</a></div>
       </div>
       <div class="v2-footer-bot"><span>© 2026 PHANTOM TRADERS · ALL RIGHTS RESERVED</span><span>FOUNDATION v3.4 · 87 ACTIVE CLUSTERS</span></div>
     </div>

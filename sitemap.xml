@@ -6,42 +6,37 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-features</loc>
+    <loc>https://aiphantomtraders.com/features</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-pricing</loc>
+    <loc>https://aiphantomtraders.com/pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-products</loc>
+    <loc>https://aiphantomtraders.com/products</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-blog</loc>
+    <loc>https://aiphantomtraders.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-discord</loc>
+    <loc>https://aiphantomtraders.com/discord</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-dashboard</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aiphantomtraders.com/#page-signup</loc>
+    <loc>https://aiphantomtraders.com/signup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aiphantomtraders.com/#page-legal</loc>
+    <loc>https://aiphantomtraders.com/legal</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
