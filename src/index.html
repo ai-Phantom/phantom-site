@@ -569,6 +569,8 @@ window._supabaseReady = new Promise(function(resolve) {
   </script>
 </head>
 <body>
+<style>.skip-link{position:absolute;left:-9999px;top:0;z-index:10000;background:var(--reactor-blue,#4d9fff);color:#000;padding:10px 16px;border-radius:0 0 8px 0;font-family:var(--font-mono,ui-monospace,monospace);font-size:13px;font-weight:700;text-decoration:none;}.skip-link:focus{left:0;}</style>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- Splash screen -->
 <div id="splashScreen" style="position:fixed;inset:0;z-index:9999;background:#0a0c0f;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .5s,visibility .5s;">
@@ -878,6 +880,7 @@ window.v2Subscribe = function(plan){
 </script>
 
 <!-- ═══════════════════════════════════════ LANDING PAGE ═══ -->
+<span id="main-content" tabindex="-1"></span>
 <div id="page-landing" class="page active">
 
   <!-- ─── HERO ─── -->
