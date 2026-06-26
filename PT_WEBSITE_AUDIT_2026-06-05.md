@@ -267,5 +267,12 @@ Still deferred (need live Lighthouse iteration):
 - **CLS 0.149** — most likely font-swap reflow; mitigate with self-hosted fonts
   + `size-adjust`/metric-override fallbacks (needs font files, currently egress-blocked).
 - **DOM size 4745 / unused JS-CSS** — structural; large refactor, low ROI, perf score is noisy (±8/run).
-- **Footer links "not crawlable"** — needs deep-link routing validated first.
+- **Footer/nav links "not crawlable"** — FIXED (2026-06-25): converted the SPA
+  from hash routing (`#page-features`) to real paths (`/features`). All ~65 links
+  now use crawlable `/path` hrefs; on-load + popstate routing reads
+  `location.pathname` (with legacy `#page-X` fallback); `showPage` writes paths;
+  sitemap.xml updated to real URLs; `_redirects` already serves index.html for
+  `/*`. Validated locally with Playwright (9/9): direct deep-link visits, legacy
+  hash bookmarks, click-nav, and — critically — Supabase auth-token hashes
+  (`#access_token=…`) are left untouched so login still works.
 - **robots.txt `Content-Signal`** — Cloudflare-injected, out of repo scope.
