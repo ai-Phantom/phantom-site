@@ -1,71 +1,69 @@
-# Lighthouse (desktop) — 2026-08-03T16:27:36.168Z
+# Lighthouse (desktop) — 2026-08-10T15:00:01.272Z
 
 URL: https://aiphantomtraders.com/
 
 ## Scores
-- performance: 80
+- performance: 75
 - accessibility: 100
 - best-practices: 81
 - seo: 85
 
 ## performance — opportunities
-- Largest Contentful Paint (1.2 s)
-- Total Blocking Time (240 ms)
+- Total Blocking Time (330 ms)
 - Cumulative Layout Shift (0.149)
-    · {"cumulativeLayoutShiftMainFrame":0.14867339564487733,"newEngineResult":{"cumulativeLayoutShift":0.14867339564487733,"cumulativeLayoutShiftMainFrame":0.14867339564487733},"newEngineResultDiffered":false}
+    · {"cumulativeLayoutShiftMainFrame":0.1486921231320042,"newEngineResult":{"cumulativeLayoutShift":0.1486921231320042,"cumulativeLayoutShiftMainFrame":0.1486921231320042},"newEngineResultDiffered":false}
 - Speed Index (1.8 s)
 - Use efficient cache lifetimes (Est savings of 20 KiB)
-    · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/f70cb37711aa/main.js?","cacheLifetimeMs":14400000,"wastedBytes":6928.5199999999995}
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5464.299999999998}
-    · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496","cacheLifetimeMs":86400000,"wastedBytes":4630.8}
-    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2258.4}
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1175.4999999999998}
+    · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/8eb6d5cd556e/main.js?","cacheLifetimeMs":14400000,"wastedBytes":6858.48}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5490.899999999999}
+    · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496","cacheLifetimeMs":86400000,"wastedBytes":4618}
+    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2243.2000000000003}
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1111.8999999999999}
 - Layout shift culprits
     · {"type":"table","headings":[{"key":"node","valueType":"node","subItemsHeading":{"key":"extra"},"label":"Element"},{"key":"score","valueType":"numeric","subItemsHeading":{"key":"cause","valueType":"text"},"granularity":0.001,"label":"Layout ...
 - Optimize DOM size
     · {"statistic":"Total elements","value":{"type":"numeric","granularity":1,"value":4748}}
     · {"statistic":"Most children","node":{"type":"node","lhId":"page-11-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":86...
-    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-17-SPAN","path":"1,HTML,1,BODY,9,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,...
+    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-18-SPAN","path":"1,HTML,1,BODY,9,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,...
+- Forced reflow
+    · {"type":"table","headings":[{"key":"source","valueType":"source-location","label":"Source"},{"key":"reflowTime","valueType":"ms","granularity":1,"label":"Total reflow time"}],"items":[{"source":{"type":"text","value":"[unattributed]"},"refl...
 - Network dependency tree
-- Max Potential First Input Delay (190 ms)
+- Max Potential First Input Delay (200 ms)
 - Reduce unused CSS (Est savings of 15 KiB)
-    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":15858,"wastedPercent":77.11527914884282,"totalBytes":20564}
-- Reduce unused JavaScript (Est savings of 150 KiB)
-    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":166955,"wastedBytes":70308,"wastedPercent":42.111980591882244}
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","totalBytes":54288,"wastedBytes":45216,"wastedPercent":83.28926919869608}
-    · {"url":"https://aiphantomtraders.com/","totalBytes":74410,"wastedBytes":38393,"wastedPercent":51.596378329387726}
+    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":15863,"wastedPercent":77.11527914884282,"totalBytes":20570}
+- Reduce unused JavaScript (Est savings of 152 KiB)
+    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":169357,"wastedBytes":72070,"wastedPercent":42.555101547875445}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","totalBytes":54449,"wastedBytes":45370,"wastedPercent":83.32530302600874}
+    · {"url":"https://aiphantomtraders.com/","totalBytes":74435,"wastedBytes":38406,"wastedPercent":51.596378329387726}
 - Avoid serving legacy JavaScript to modern browsers
     · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","wastedBytes":0,"subItems":{"type":"subitems","items":[{"signal":"@babel/plugin-transform-regenerator","location":{"type":"source-location","url":"https://www.googletagmanage...
 - Serve static assets with an efficient cache policy (4 resources found)
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496","debugData":{"type":"debugdata","public":true,"max-age":86400},"cacheLifetimeMs":86400000,"cacheHitProbability":0.6,"totalBytes":115...
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":54643,"wastedBytes":5464.299...
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11755,"wastedBytes":1...
-    · {"url":"https://aiphantomtraders.com/logo.jpeg","debugData":{"type":"debugdata","public":true,"max-age":2592000},"cacheLifetimeMs":2592000000,"cacheHitProbability":0.9064245810055866,"totalBytes":2512,"wastedBytes":235.06145251396634}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":54909,"wastedBytes":5490.899...
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11119,"wastedBytes":1...
+    · {"url":"https://aiphantomtraders.com/logo.jpeg","debugData":{"type":"debugdata","public":true,"max-age":2592000},"cacheLifetimeMs":2592000000,"cacheHitProbability":0.9064245810055866,"totalBytes":1731,"wastedBytes":161.9790502793295}
 - Avoid an excessive DOM size (4,742 elements)
     · {"statistic":"Total DOM Elements","value":{"type":"numeric","granularity":1,"value":4742}}
     · {"node":{"type":"node","lhId":"1-113-SPAN","path":"1,HTML,1,BODY,9,DIV,3,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":2748,"bottom":2762,"left":1219,...
-    · {"node":{"type":"node","lhId":"1-114-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-348,"right":9446,"wi...
-- Minimize main-thread work (2.1 s)
-    · {"group":"scriptEvaluation","groupLabel":"Script Evaluation","duration":900.7669999999812}
-    · {"group":"other","groupLabel":"Other","duration":424.21299999999815}
-    · {"group":"styleLayout","groupLabel":"Style & Layout","duration":375.61199999999945}
-    · {"group":"paintCompositeRender","groupLabel":"Rendering","duration":196.41000000000344}
-    · {"group":"parseHTML","groupLabel":"Parse HTML & CSS","duration":135.34200000000004}
-- Largest Contentful Paint element (1,210 ms)
-    · {"type":"table","headings":[{"key":"node","valueType":"node","label":"Element"}],"items":[{"node":{"type":"node","lhId":"page-0-H1","path":"1,HTML,1,BODY,9,DIV,0,SECTION,2,DIV,1,DIV,0,DIV,1,H1","selector":"div.v2-hero-inner > div.v2-hero-gr...
-    · {"type":"table","headings":[{"key":"phase","valueType":"text","label":"Phase"},{"key":"percent","valueType":"text","label":"% of LCP"},{"key":"timing","valueType":"ms","label":"Timing"}],"items":[{"phase":"TTFB","timing":197.597,"percent":"...
+    · {"node":{"type":"node","lhId":"1-114-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-338,"right":9456,"wi...
+- Minimize main-thread work (2.2 s)
+    · {"group":"scriptEvaluation","groupLabel":"Script Evaluation","duration":954.0299999999849}
+    · {"group":"other","groupLabel":"Other","duration":462.27999999999787}
+    · {"group":"styleLayout","groupLabel":"Style & Layout","duration":405.3939999999999}
+    · {"group":"paintCompositeRender","groupLabel":"Rendering","duration":215.9610000000038}
+    · {"group":"parseHTML","groupLabel":"Parse HTML & CSS","duration":132.42700000000005}
 - Avoid large layout shifts (3 layout shifts found)
     · {"node":{"type":"node","lhId":"page-2-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,1,DIV","selector":"body > div#page-landing > section.v2-hero > div.v2-hero-glow","boundingRect":{"top":-175,"bottom":625,"left":268,"right":1068,"width":800,"h...
-    · {"node":{"type":"node","lhId":"page-6-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV,5,DIV","selector":"section.v2-hero > div.v2-tape > div#v2TapeTrack > div.v2-tape-item","boundingRect":{"top":847,"bottom":865,"left":363,"right":49...
+    · {"node":{"type":"node","lhId":"page-6-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV,5,DIV","selector":"section.v2-hero > div.v2-tape > div#v2TapeTrack > div.v2-tape-item","boundingRect":{"top":847,"bottom":865,"left":376,"right":50...
     · {"node":{"type":"node","lhId":"page-1-DIV","path":"1,DIV","selector":"div#splashScreen > div","boundingRect":{"top":0,"bottom":0,"left":0,"right":0,"width":0,"height":0},"snippet":"<div style=\"margin-top: 20px; width: 120px; height: 2px; b...
 - Image elements do not have explicit `width` and `height`
     · {"url":"https://aiphantomtraders.com/logo.jpeg","node":{"type":"node","lhId":"1-178-IMG","path":"1,HTML,1,BODY,9,DIV,5,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG","selector":"div.v2-footer-grid > div > div > img","boundingRect":{"top":3649,"botto...
 
 ## best-practices — opportunities
 - Uses deprecated APIs (3 warnings found)
-    · {"value":"SharedStorage","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1698}}
+    · {"value":"SharedStorage","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1599}}
     · {"value":"StorageType.persistent is deprecated. Please use standardized navigator.storage instead.","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"networ...
-    · {"value":"Fledge","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1698}}
+    · {"value":"Fledge","source":{"type":"source-location","url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","urlProvider":"network","line":0,"column":1599}}
 
 ## seo — opportunities
 - Links are not crawlable
