@@ -384,6 +384,26 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 .v2-feat-desc{font-size:13px;color:var(--text-secondary);line-height:1.6;margin-bottom:16px;flex:1;font-family:var(--font-body);}
 .v2-feat-tags{display:flex;flex-wrap:wrap;gap:4px;}
 .v2-feat-tag{font-family:var(--font-mono);font-size:9px;padding:3px 7px;background:var(--bg-elev-2);color:var(--text-tertiary);border-radius:3px;letter-spacing:0.1em;border:1px solid var(--border-default);}
+/* ── Bot roster (landing) ───────────────────────────────────────── */
+.v2-roster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+.v2-bot-card{position:relative;display:flex;flex-direction:column;background:var(--bg-elev-1);border:1px solid var(--border-default);border-radius:14px;padding:26px 24px 24px;transition:border-color .2s,transform .2s,box-shadow .2s;}
+.v2-bot-card:hover{border-color:var(--border-strong);transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.34);}
+.v2-bot-card.is-soon{background:linear-gradient(180deg,var(--bg-elev-1),var(--bg-base));border-style:dashed;border-color:rgba(245,200,66,.34);}
+.v2-bot-card.is-soon:hover{border-color:rgba(245,200,66,.55);}
+.v2-bot-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;}
+.v2-bot-status{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:4px 9px;border-radius:100px;white-space:nowrap;}
+.v2-bot-status.live{color:#062b00;background:var(--green);border:1px solid var(--green);}
+.v2-bot-status.soon{color:var(--gold);background:rgba(245,200,66,.12);border:1px solid rgba(245,200,66,.4);}
+.v2-bot-dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0;}
+.v2-bot-idx{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--text-tertiary);}
+.v2-bot-name{font-family:var(--font-display);font-size:26px;font-weight:600;letter-spacing:-.02em;color:var(--text-primary);margin:0 0 4px;line-height:1.1;}
+.v2-bot-role{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:12px;}
+.v2-bot-card.is-soon .v2-bot-role{color:var(--gold);}
+.v2-bot-desc{font-family:var(--font-body);font-size:14px;line-height:1.65;color:var(--text-secondary);margin:0 0 18px;flex:1;}
+.v2-bot-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.v2-bot-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(245,200,66,.35);padding-bottom:2px;align-self:flex-start;transition:border-color .2s;}
+.v2-bot-link:hover,.v2-bot-link:focus-visible{border-bottom-color:var(--gold);}
+@media(max-width:980px){.v2-roster-grid{grid-template-columns:1fr;gap:14px;}.v2-bot-name{font-size:23px;}}
 @media(max-width:900px){#page-features section:nth-child(2) > div{grid-template-columns:repeat(2,1fr)!important;}}
 @media(max-width:600px){#page-features section:nth-child(2) > div{grid-template-columns:1fr!important;}}
 
@@ -1057,6 +1077,61 @@ window.v2Subscribe = function(plan){
             <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:20%;background:var(--reactor-deep);"></div></div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── THE ROSTER ─── -->
+  <section class="v2-section">
+    <div class="v2-section-inner">
+      <div class="v2-label" style="margin-bottom:14px;">THE ROSTER</div>
+      <h2 class="v2-anatomy-h2">The desk that does the scanning.</h2>
+      <p style="color:var(--text-secondary);font-size:15px;line-height:1.6;max-width:640px;margin:12px 0 0;font-family:var(--font-body);">Each scanner runs its own model and its own lens on the tape — but every fire is graded through the same edge-scoring framework, so the score means the same thing no matter which bot sent it.</p>
+
+      <div class="v2-roster-grid">
+        <article class="v2-bot-card">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">01</span>
+            <span class="v2-bot-status live"><span class="v2-bot-dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="v2-bot-name">Phantom Bot</h3>
+          <div class="v2-bot-role">General options scanner</div>
+          <p class="v2-bot-desc">Sweeps 37 tickers every two minutes against the full eight-indicator stack. Every candidate is score-graded against two years of replay data before it ever reaches Discord.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">37 TICKERS</span>
+            <span class="v2-feat-tag">2-MIN SCAN</span>
+            <span class="v2-feat-tag">8 SIGNALS</span>
+          </div>
+        </article>
+
+        <article class="v2-bot-card">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">02</span>
+            <span class="v2-bot-status live"><span class="v2-bot-dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="v2-bot-name">Bullseye Bot</h3>
+          <div class="v2-bot-role">Squeeze specialist</div>
+          <p class="v2-bot-desc">A second model anchored on the Bollinger-band squeeze, tuned for weekly OTM day trades and LEAP entries. Different lens, same edge framework.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">BB SQUEEZE</span>
+            <span class="v2-feat-tag">DAY TRADE</span>
+            <span class="v2-feat-tag">LEAP</span>
+          </div>
+        </article>
+
+        <article class="v2-bot-card is-soon">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">03</span>
+            <span class="v2-bot-status soon"><span class="v2-bot-dot" aria-hidden="true"></span>Coming soon</span>
+          </div>
+          <h3 class="v2-bot-name">Scout Bot</h3>
+          <div class="v2-bot-role">In development</div>
+          <p class="v2-bot-desc">A third scanner is being built. We'll publish its rules, its backtest and its paper results here before it ever posts a live signal — the same way Phantom and Bullseye were shipped.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">IN DEVELOPMENT</span>
+          </div>
+          <a class="v2-bot-link" href="https://discord.gg/cU9ywjWh" target="_blank" rel="noopener noreferrer">Get notified in Discord →</a>
+        </article>
       </div>
     </div>
   </section>
