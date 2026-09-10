@@ -5877,7 +5877,7 @@ async function syncPlanFromBackend(session) {
       storedUser.plan      = storedUser.plan || 'free';
       localStorage.setItem('pt_user', JSON.stringify(storedUser));
       localStorage.setItem('pt_session', JSON.stringify(session));
-      console.log('✓ Session active:', session.user.email);
+      console.log('✓ Session active');
       setTimeout(async function() {
         if (typeof updateNavAuth === 'function') updateNavAuth();
         if (typeof updateDemoBar === 'function') updateDemoBar();
@@ -5899,7 +5899,7 @@ async function syncPlanFromBackend(session) {
   }
 })();
 window._supabaseReady.then(function(client){ if (!client) return; client.auth.onAuthStateChange((event, session) => {
-  console.log('Auth event:', event, session ? session.user.email : 'no session');
+  console.log('Auth event:', event, session ? 'session' : 'no session');
   if (session && (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED' || event === 'INITIAL_SESSION')) {
     window._ptSession = session;
     localStorage.setItem('pt_session', JSON.stringify(session));
