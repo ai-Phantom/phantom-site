@@ -384,6 +384,26 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 .v2-feat-desc{font-size:13px;color:var(--text-secondary);line-height:1.6;margin-bottom:16px;flex:1;font-family:var(--font-body);}
 .v2-feat-tags{display:flex;flex-wrap:wrap;gap:4px;}
 .v2-feat-tag{font-family:var(--font-mono);font-size:9px;padding:3px 7px;background:var(--bg-elev-2);color:var(--text-tertiary);border-radius:3px;letter-spacing:0.1em;border:1px solid var(--border-default);}
+/* ── Bot roster (landing) ───────────────────────────────────────── */
+.v2-roster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px;}
+.v2-bot-card{position:relative;display:flex;flex-direction:column;background:var(--bg-elev-1);border:1px solid var(--border-default);border-radius:14px;padding:26px 24px 24px;transition:border-color .2s,transform .2s,box-shadow .2s;}
+.v2-bot-card:hover{border-color:var(--border-strong);transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.34);}
+.v2-bot-card.is-soon{background:linear-gradient(180deg,var(--bg-elev-1),var(--bg-base));border-style:dashed;border-color:rgba(245,200,66,.34);}
+.v2-bot-card.is-soon:hover{border-color:rgba(245,200,66,.55);}
+.v2-bot-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;}
+.v2-bot-status{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:4px 9px;border-radius:100px;white-space:nowrap;}
+.v2-bot-status.live{color:#062b00;background:var(--green);border:1px solid var(--green);}
+.v2-bot-status.soon{color:var(--gold);background:rgba(245,200,66,.12);border:1px solid rgba(245,200,66,.4);}
+.v2-bot-dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0;}
+.v2-bot-idx{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--text-tertiary);}
+.v2-bot-name{font-family:var(--font-display);font-size:26px;font-weight:600;letter-spacing:-.02em;color:var(--text-primary);margin:0 0 4px;line-height:1.1;}
+.v2-bot-role{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:12px;}
+.v2-bot-card.is-soon .v2-bot-role{color:var(--gold);}
+.v2-bot-desc{font-family:var(--font-body);font-size:14px;line-height:1.65;color:var(--text-secondary);margin:0 0 18px;flex:1;}
+.v2-bot-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.v2-bot-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(245,200,66,.35);padding-bottom:2px;align-self:flex-start;transition:border-color .2s;}
+.v2-bot-link:hover,.v2-bot-link:focus-visible{border-bottom-color:var(--gold);}
+@media(max-width:980px){.v2-roster-grid{grid-template-columns:1fr;gap:14px;}.v2-bot-name{font-size:23px;}}
 @media(max-width:900px){#page-features section:nth-child(2) > div{grid-template-columns:repeat(2,1fr)!important;}}
 @media(max-width:600px){#page-features section:nth-child(2) > div{grid-template-columns:1fr!important;}}
 
@@ -909,26 +929,29 @@ window.v2Subscribe = function(plan){
 
           <div class="v2-hero-cta-row">
             <button class="v2-btn v2-btn-primary" onclick="showPage('pricing')">Join Discord <span class="opacity-60">$15/mo</span></button>
-            <button class="v2-btn v2-btn-ghost" onclick="showPage('dashboard')">See live performance →</button>
+            <button class="v2-btn v2-btn-ghost" onclick="showPage('demo')">Open the live demo →</button>
           </div>
 
-          <!-- Inline KPI strip -->
+          <!-- Inline system strip — architecture facts, not performance claims.
+               Performance numbers are deliberately not advertised here: the public
+               scorecard is being rebuilt to read from the live paper account
+               instead of a static snapshot. -->
           <div class="v2-kpi-strip-inline">
             <div>
-              <div class="v2-kpi-cell-label">30-D WIN RATE</div>
-              <div class="v2-kpi-value" data-countup="64.2" data-decimals="1" data-suffix="%">0.0%</div>
+              <div class="v2-kpi-cell-label">SIGNAL TYPES</div>
+              <div class="v2-kpi-value" data-countup="8" data-decimals="0">0</div>
             </div>
             <div>
-              <div class="v2-kpi-cell-label">PROFIT FACTOR</div>
-              <div class="v2-kpi-value" data-countup="2.41" data-decimals="2">0.00</div>
+              <div class="v2-kpi-cell-label">TRADE TYPES</div>
+              <div class="v2-kpi-value" data-countup="3" data-decimals="0">0</div>
             </div>
             <div>
-              <div class="v2-kpi-cell-label">TRADES</div>
-              <div class="v2-kpi-value" data-countup="387" data-decimals="0">0</div>
+              <div class="v2-kpi-cell-label">SCAN CYCLE</div>
+              <div class="v2-kpi-value">2<span style="font-size:0.5em;letter-spacing:0.04em;"> MIN</span></div>
             </div>
             <div>
-              <div class="v2-kpi-cell-label">NET RETURN</div>
-              <div class="v2-kpi-value green" data-countup="18.4" data-decimals="1" data-suffix="%" data-prefix="+">+0.0%</div>
+              <div class="v2-kpi-cell-label">EXECUTION</div>
+              <div class="v2-kpi-value green">Paper</div>
             </div>
           </div>
         </div>
@@ -951,17 +974,17 @@ window.v2Subscribe = function(plan){
 
           <div class="v2-card v2-card-pad-lg v2-card-divider">
             <div class="v2-card-head">
-              <div class="v2-label">BEST WIN</div>
-              <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-tertiary);">May 28 · #trade-log</div>
+              <div class="v2-label">WHAT A SIGNAL LOOKS LIKE</div>
+              <div style="font-family:var(--font-mono);font-size:10px;color:var(--gold);">ILLUSTRATIVE</div>
             </div>
             <div style="display:flex;align-items:center;gap:16px;">
               <div>
-                <div class="v2-display" style="font-size:22px;font-weight:600;">SOFI <span style="color:var(--green-bright);">17C</span></div>
+                <div class="v2-display" style="font-size:22px;font-weight:600;">TICKER <span style="color:var(--green-bright);">00C</span></div>
                 <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);">SWING · 1DTE · CALL</div>
               </div>
               <div style="flex:1;">
                 <div class="v2-score-bar"><div class="v2-score-bar-track"><div class="v2-score-bar-fill high" style="width:60%;"></div></div><span class="v2-score-bar-num high">60</span></div>
-                <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-tertiary);margin-top:6px;">EDGE +2.4R · STABILITY 0.79 · n=412</div>
+                <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-tertiary);margin-top:6px;">SCORE BANDS · HIGH ≥ 80 · MED 60–79 · LOW &lt; 60</div>
               </div>
             </div>
           </div>
@@ -977,86 +1000,134 @@ window.v2Subscribe = function(plan){
     </div>
   </section>
 
-  <!-- ─── PERFORMANCE STRIP ─── -->
+  <!-- ─── THE STACK ───
+       Replaces the former "30-Day Paper Performance" block. That block published
+       hardcoded metrics (64.2% win rate, 2.41 profit factor, +18.4% net return,
+       $100,000 -> $118,400) that did not come from the live paper account and were
+       not supported by it. Rather than dress up numbers, this section leads with
+       the architecture, which is verifiable. Restore a performance block only when
+       it reads from bot_paper_trades at runtime. -->
   <section class="v2-section">
     <div class="v2-section-inner compact">
       <div class="v2-section-head">
         <div>
-          <div class="v2-label-blue" style="margin-bottom:8px;">30-DAY PAPER PERFORMANCE</div>
-          <h2 class="v2-section-h2">Edge you can audit.</h2>
+          <div class="v2-label-blue" style="margin-bottom:8px;">HOW IT WORKS</div>
+          <h2 class="v2-section-h2">Eight indicators. One score.</h2>
         </div>
-        <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);">ALPACA L3 PAPER · $100K · UPDATED 14:23 ET</div>
+        <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);">ALPACA L3 PAPER · $100K</div>
       </div>
 
       <div class="v2-perf-strip">
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">WIN RATE</div>
-          <div class="v2-perf-value" data-countup="64.2" data-decimals="1" data-suffix="%">0.0%</div>
-          <div class="v2-perf-sub">248 W / 387 T</div>
+          <div class="v2-label" style="margin-bottom:10px;">SIGNAL TYPES</div>
+          <div class="v2-perf-value" data-countup="8" data-decimals="0">0</div>
+          <div class="v2-perf-sub">scored every sweep</div>
         </div>
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">PROFIT FACTOR</div>
-          <div class="v2-perf-value" data-countup="2.41" data-decimals="2">0.00</div>
-          <div class="v2-perf-sub">gross W / gross L</div>
+          <div class="v2-label" style="margin-bottom:10px;">TRADE TYPES</div>
+          <div class="v2-perf-value" data-countup="3" data-decimals="0">0</div>
+          <div class="v2-perf-sub">scalp · day · leap</div>
         </div>
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">SHARPE</div>
-          <div class="v2-perf-value" data-countup="2.07" data-decimals="2">0.00</div>
-          <div class="v2-perf-sub">risk-adjusted</div>
+          <div class="v2-label" style="margin-bottom:10px;">SCAN CYCLE</div>
+          <div class="v2-perf-value">2m</div>
+          <div class="v2-perf-sub">full watchlist sweep</div>
         </div>
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">AVG HOLD</div>
-          <div class="v2-perf-value">14m</div>
-          <div class="v2-perf-sub">time in trade</div>
+          <div class="v2-label" style="margin-bottom:10px;">ENTRY GATES</div>
+          <div class="v2-perf-value sm">ALL MUST PASS</div>
+          <div class="v2-perf-sub">or it doesn't fire</div>
         </div>
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">NET RETURN</div>
-          <div class="v2-perf-value green" data-countup="18.4" data-decimals="1" data-suffix="%" data-prefix="+">+0.0%</div>
-          <div class="v2-perf-sub">on $100K paper</div>
+          <div class="v2-label" style="margin-bottom:10px;">EXECUTION</div>
+          <div class="v2-perf-value sm green">PAPER ONLY</div>
+          <div class="v2-perf-sub">no funds custodied</div>
         </div>
         <div class="v2-perf-cell">
-          <div class="v2-label" style="margin-bottom:10px;">BEST CLUSTER</div>
-          <div class="v2-perf-value sm">NVDA·0DTE·C</div>
-          <div class="v2-perf-sub">edge +3.8R · n=412</div>
+          <div class="v2-label" style="margin-bottom:10px;">DELIVERY</div>
+          <div class="v2-perf-value sm">DISCORD</div>
+          <div class="v2-perf-sub">the moment it fires</div>
         </div>
       </div>
 
-      <!-- Equity curve + breakdown bars -->
       <div class="v2-equity-card">
         <div>
-          <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
-            <div class="v2-label">EQUITY CURVE · 30D</div>
-            <div style="font-family:var(--font-mono);font-size:11px;color:var(--green-bright);font-variant-numeric:tabular-nums;">$100,000 → $118,400</div>
-          </div>
-          <svg class="v2-equity-svg" viewBox="0 0 600 140" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="v2eqGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#7eff5c" stop-opacity="0.32"/>
-                <stop offset="100%" stop-color="#7eff5c" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <line x1="8" y1="40" x2="592" y2="40" stroke="rgba(255,255,255,0.06)" stroke-dasharray="2 4"/>
-            <line x1="8" y1="70" x2="592" y2="70" stroke="rgba(255,255,255,0.06)" stroke-dasharray="2 4"/>
-            <line x1="8" y1="100" x2="592" y2="100" stroke="rgba(255,255,255,0.06)" stroke-dasharray="2 4"/>
-            <path d="M 8 122 L 18 119 L 28 117 L 38 113 L 48 110 L 58 105 L 68 102 L 78 98 L 88 96 L 98 92 L 108 89 L 118 87 L 128 84 L 138 80 L 148 78 L 158 75 L 168 71 L 178 67 L 188 65 L 198 61 L 208 58 L 218 56 L 228 53 L 238 51 L 248 47 L 258 45 L 268 42 L 278 41 L 288 38 L 298 36 L 308 33 L 318 31 L 328 29 L 338 26 L 348 25 L 358 23 L 368 22 L 378 20 L 388 19 L 398 18 L 408 17 L 418 16 L 428 15 L 438 14 L 448 13 L 458 13 L 468 12 L 478 12 L 488 11 L 498 11 L 508 10 L 518 10 L 528 10 L 538 10 L 548 10 L 558 10 L 568 10 L 578 10 L 588 10 L 592 132 L 8 132 Z" fill="url(#v2eqGrad)"/>
-            <path d="M 8 122 L 18 119 L 28 117 L 38 113 L 48 110 L 58 105 L 68 102 L 78 98 L 88 96 L 98 92 L 108 89 L 118 87 L 128 84 L 138 80 L 148 78 L 158 75 L 168 71 L 178 67 L 188 65 L 198 61 L 208 58 L 218 56 L 228 53 L 238 51 L 248 47 L 258 45 L 268 42 L 278 41 L 288 38 L 298 36 L 308 33 L 318 31 L 328 29 L 338 26 L 348 25 L 358 23 L 368 22 L 378 20 L 388 19 L 398 18 L 408 17 L 418 16 L 428 15 L 438 14 L 448 13 L 458 13 L 468 12 L 478 12 L 488 11 L 498 11 L 508 10 L 518 10 L 528 10 L 538 10 L 548 10 L 558 10 L 568 10 L 578 10 L 588 10" fill="none" stroke="#aaff8a" stroke-width="1.5"/>
-          </svg>
+          <div class="v2-label" style="margin-bottom:12px;">ON PERFORMANCE REPORTING</div>
+          <p style="font-family:var(--font-body);font-size:14px;line-height:1.7;color:var(--text-secondary);margin:0;">We're rebuilding the public scorecard so it reads straight from the live paper account instead of a static snapshot. Until that's wired, we're not publishing a headline number here — a figure you can't audit isn't worth showing.</p>
+          <p style="font-family:var(--font-body);font-size:14px;line-height:1.7;color:var(--text-secondary);margin:12px 0 0;">Every fire, fill and close is posted to Discord as it happens, wins and losses alike.</p>
         </div>
         <div>
-          <div class="v2-label" style="margin-bottom:12px;">TRADE-TYPE BREAKDOWN</div>
+          <div class="v2-label" style="margin-bottom:12px;">TRADE TYPES</div>
+          <!-- Bar length = relative holding period, NOT allocation or performance. -->
           <div class="v2-bars-row">
-            <div class="v2-bars-row-head"><span>Scalp · 0DTE</span><span>42%</span></div>
-            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:42%;background:var(--reactor-bright);"></div></div>
+            <div class="v2-bars-row-head"><span>Scalp · 0DTE</span><span>intraday</span></div>
+            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:18%;background:var(--reactor-bright);"></div></div>
           </div>
           <div class="v2-bars-row">
-            <div class="v2-bars-row-head"><span>Day · weekly OTM</span><span>38%</span></div>
-            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:38%;background:var(--reactor-blue);"></div></div>
+            <div class="v2-bars-row-head"><span>Day · weekly OTM</span><span>1–5 days</span></div>
+            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:52%;background:var(--reactor-blue);"></div></div>
           </div>
           <div class="v2-bars-row">
-            <div class="v2-bars-row-head"><span>Leap · 9-mo ITM</span><span>20%</span></div>
-            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:20%;background:var(--reactor-deep);"></div></div>
+            <div class="v2-bars-row-head"><span>Leap · 9-mo ITM</span><span>months</span></div>
+            <div class="v2-bars-row-track"><div class="v2-bars-row-fill" style="width:100%;background:var(--reactor-deep);"></div></div>
           </div>
+          <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-tertiary);letter-spacing:.08em;margin-top:10px;">BAR = RELATIVE HOLD TIME</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── THE ROSTER ─── -->
+  <section class="v2-section">
+    <div class="v2-section-inner">
+      <div class="v2-label" style="margin-bottom:14px;">THE ROSTER</div>
+      <h2 class="v2-anatomy-h2">The desk that does the scanning.</h2>
+      <p style="color:var(--text-secondary);font-size:15px;line-height:1.6;max-width:640px;margin:12px 0 0;font-family:var(--font-body);">Each scanner runs its own model and its own lens on the tape — but every fire is graded through the same edge-scoring framework, so the score means the same thing no matter which bot sent it.</p>
+
+      <div class="v2-roster-grid">
+        <article class="v2-bot-card">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">01</span>
+            <span class="v2-bot-status live"><span class="v2-bot-dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="v2-bot-name">Phantom Bot</h3>
+          <div class="v2-bot-role">General options scanner</div>
+          <p class="v2-bot-desc">Sweeps 37 tickers every two minutes against the full eight-indicator stack. Every candidate is score-graded against two years of replay data before it ever reaches Discord.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">37 TICKERS</span>
+            <span class="v2-feat-tag">2-MIN SCAN</span>
+            <span class="v2-feat-tag">8 SIGNALS</span>
+          </div>
+        </article>
+
+        <article class="v2-bot-card">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">02</span>
+            <span class="v2-bot-status live"><span class="v2-bot-dot" aria-hidden="true"></span>Live</span>
+          </div>
+          <h3 class="v2-bot-name">Bullseye Bot</h3>
+          <div class="v2-bot-role">Squeeze specialist</div>
+          <p class="v2-bot-desc">A second model anchored on the Bollinger-band squeeze, tuned for weekly OTM day trades and LEAP entries. Different lens, same edge framework.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">BB SQUEEZE</span>
+            <span class="v2-feat-tag">DAY TRADE</span>
+            <span class="v2-feat-tag">LEAP</span>
+          </div>
+        </article>
+
+        <article class="v2-bot-card is-soon">
+          <div class="v2-bot-top">
+            <span class="v2-bot-idx">03</span>
+            <span class="v2-bot-status soon"><span class="v2-bot-dot" aria-hidden="true"></span>Coming soon</span>
+          </div>
+          <h3 class="v2-bot-name">Scout Bot</h3>
+          <div class="v2-bot-role">In development</div>
+          <p class="v2-bot-desc">A third scanner is being built. We'll publish its rules, its backtest and its paper results here before it ever posts a live signal — the same way Phantom and Bullseye were shipped.</p>
+          <div class="v2-bot-tags">
+            <span class="v2-feat-tag">IN DEVELOPMENT</span>
+          </div>
+          <a class="v2-bot-link" href="https://discord.gg/cU9ywjWh" target="_blank" rel="noopener noreferrer">Get notified in Discord →</a>
+        </article>
       </div>
     </div>
   </section>
@@ -5877,7 +5948,7 @@ async function syncPlanFromBackend(session) {
       storedUser.plan      = storedUser.plan || 'free';
       localStorage.setItem('pt_user', JSON.stringify(storedUser));
       localStorage.setItem('pt_session', JSON.stringify(session));
-      console.log('✓ Session active:', session.user.email);
+      console.log('✓ Session active');
       setTimeout(async function() {
         if (typeof updateNavAuth === 'function') updateNavAuth();
         if (typeof updateDemoBar === 'function') updateDemoBar();
@@ -5899,7 +5970,7 @@ async function syncPlanFromBackend(session) {
   }
 })();
 window._supabaseReady.then(function(client){ if (!client) return; client.auth.onAuthStateChange((event, session) => {
-  console.log('Auth event:', event, session ? session.user.email : 'no session');
+  console.log('Auth event:', event, session ? 'session' : 'no session');
   if (session && (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED' || event === 'INITIAL_SESSION')) {
     window._ptSession = session;
     localStorage.setItem('pt_session', JSON.stringify(session));
