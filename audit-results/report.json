@@ -1,6 +1,6 @@
 {
   "base": "http://localhost:8080",
-  "startedAt": "2026-09-10T21:35:03.877Z",
+  "startedAt": "2026-09-10T21:43:24.401Z",
   "pages": [
     {
       "id": "home",
@@ -249,7 +249,7 @@
       "NKE": "36.62",
       "COF": "207.11"
     },
-    "clock": "MARKET · 21:35:13 ET"
+    "clock": "MARKET · 21:43:33 ET"
   },
   "marketApi": null,
   "featureErrors": [],
@@ -259,5 +259,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-09-10T21:37:09.138Z"
+  "finishedAt": "2026-09-10T21:45:30.239Z"
 }
