@@ -912,7 +912,7 @@ window.v2Subscribe = function(plan){
       <!-- Status strip -->
       <div class="v2-status-strip">
         <div class="v2-status-left">
-          <div class="v2-status-item"><span class="v2-live-dot"></span> 2 BOTS LIVE · 37 TICKERS · 2-MIN SCAN</div>
+          <div class="v2-status-item"><span class="v2-live-dot"></span> 2 BOTS LIVE · 8 SIGNAL TYPES · 2-MIN SCAN</div>
           <div class="v2-status-item">FOUNDATION v3.4 · LAST REPLAY 6h AGO</div>
         </div>
         <div class="v2-status-item">REGIME: <span style="color:var(--green-bright);">TREND_UP_LOW_VOL</span></div>
@@ -960,7 +960,10 @@ window.v2Subscribe = function(plan){
         <div>
           <div class="v2-card v2-card-pad-lg">
             <div class="v2-card-head">
-              <div class="v2-label-blue">LIVE · 37 TICKERS</div>
+              <!-- Count is written by JS from the array that fills the grid, so
+                   the label and the grid can never disagree. It said 37 while
+                   the array held 32 and neither bot scanned 37. -->
+              <div class="v2-label-blue" id="v2LiveGridLabel">LIVE</div>
               <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-tertiary);">NEXT SCAN 0:47</div>
             </div>
             <div class="v2-live-grid" id="v2LiveGrid">
@@ -1092,9 +1095,9 @@ window.v2Subscribe = function(plan){
           </div>
           <h3 class="v2-bot-name">Phantom Bot</h3>
           <div class="v2-bot-role">General options scanner</div>
-          <p class="v2-bot-desc">Sweeps 37 tickers every two minutes against the full eight-indicator stack. Every candidate is score-graded against two years of replay data before it ever reaches Discord.</p>
+          <p class="v2-bot-desc">Sweeps 39 tickers every two minutes against the full eight-indicator stack. Every candidate is score-graded against two years of replay data before it ever reaches Discord.</p>
           <div class="v2-bot-tags">
-            <span class="v2-feat-tag">37 TICKERS</span>
+            <span class="v2-feat-tag">39 TICKERS</span>
             <span class="v2-feat-tag">2-MIN SCAN</span>
             <span class="v2-feat-tag">8 SIGNALS</span>
           </div>
@@ -1109,6 +1112,7 @@ window.v2Subscribe = function(plan){
           <div class="v2-bot-role">Squeeze specialist</div>
           <p class="v2-bot-desc">A second model anchored on the Bollinger-band squeeze, tuned for weekly OTM day trades and LEAP entries. Different lens, same edge framework.</p>
           <div class="v2-bot-tags">
+            <span class="v2-feat-tag">32 TICKERS</span>
             <span class="v2-feat-tag">BB SQUEEZE</span>
             <span class="v2-feat-tag">DAY TRADE</span>
             <span class="v2-feat-tag">LEAP</span>
@@ -1450,6 +1454,10 @@ window.v2Subscribe = function(plan){
     // ── Live ticker grid (real % from /market/quote) ──
     var grid = document.getElementById('v2LiveGrid');
     if(grid){
+      // Label the grid from the list that fills it. Hardcoding the count is how
+      // it came to read "37 TICKERS" above a grid of 32, matching neither bot.
+      var gridLabel = document.getElementById('v2LiveGridLabel');
+      if(gridLabel){ gridLabel.textContent = 'LIVE · ' + TICKERS.length + ' TICKERS'; }
       TICKERS.forEach(function(t){
         var el = document.createElement('div');
         el.className = 'v2-ticker-card';
@@ -6937,8 +6945,8 @@ async function openBillingPortal() {
       <div class="v2-feat-tile">
         <div class="v2-feat-num">01 · MODULE</div>
         <div class="v2-feat-title">Phantom Bot Scanner</div>
-        <p class="v2-feat-desc">Scans 37 tickers every 2 minutes against the full indicator stack. Score-graded against 2 years of replay data.</p>
-        <div class="v2-feat-tags"><span class="v2-feat-tag">37 TICKERS</span><span class="v2-feat-tag">2-MIN SCAN</span></div>
+        <p class="v2-feat-desc">Scans 39 tickers every 2 minutes against the full indicator stack. Score-graded against 2 years of replay data.</p>
+        <div class="v2-feat-tags"><span class="v2-feat-tag">39 TICKERS</span><span class="v2-feat-tag">2-MIN SCAN</span></div>
       </div>
       <div class="v2-feat-tile">
         <div class="v2-feat-num">02 · MODULE</div>
