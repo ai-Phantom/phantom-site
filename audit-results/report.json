@@ -1,11 +1,11 @@
 {
-  "base": "http://localhost:8080",
-  "startedAt": "2026-09-10T22:00:11.305Z",
+  "base": "https://aiphantomtraders.com",
+  "startedAt": "2026-09-14T19:05:05.269Z",
   "pages": [
     {
       "id": "home",
       "viewport": "desktop",
-      "url": "http://localhost:8080/",
+      "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -13,7 +13,7 @@
     {
       "id": "home",
       "viewport": "mobile",
-      "url": "http://localhost:8080/",
+      "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -21,7 +21,7 @@
     {
       "id": "features",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-features",
+      "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -29,7 +29,7 @@
     {
       "id": "features",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-features",
+      "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -37,7 +37,7 @@
     {
       "id": "pricing",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-pricing",
+      "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -45,7 +45,7 @@
     {
       "id": "pricing",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-pricing",
+      "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -53,7 +53,7 @@
     {
       "id": "products",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-products",
+      "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -61,7 +61,7 @@
     {
       "id": "products",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-products",
+      "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -69,7 +69,7 @@
     {
       "id": "blog",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-blog",
+      "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -77,7 +77,7 @@
     {
       "id": "blog",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-blog",
+      "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -85,7 +85,7 @@
     {
       "id": "discord",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-discord",
+      "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -93,7 +93,7 @@
     {
       "id": "discord",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-discord",
+      "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -101,7 +101,7 @@
     {
       "id": "dashboard",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-dashboard",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -109,7 +109,7 @@
     {
       "id": "dashboard",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-dashboard",
+      "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -117,7 +117,7 @@
     {
       "id": "signup",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-signup",
+      "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -125,7 +125,7 @@
     {
       "id": "signup",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-signup",
+      "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -133,7 +133,7 @@
     {
       "id": "legal",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-legal",
+      "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -141,7 +141,7 @@
     {
       "id": "legal",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-legal",
+      "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -149,7 +149,7 @@
     {
       "id": "docs",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-docs",
+      "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -157,7 +157,7 @@
     {
       "id": "docs",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-docs",
+      "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -165,7 +165,7 @@
     {
       "id": "store",
       "viewport": "desktop",
-      "url": "http://localhost:8080/#page-store",
+      "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -173,7 +173,7 @@
     {
       "id": "store",
       "viewport": "mobile",
-      "url": "http://localhost:8080/#page-store",
+      "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
       "consoleErrors": []
@@ -182,74 +182,74 @@
   "leaks": [],
   "ticker": {
     "grid": {
-      "SPY": "−0.60%",
-      "QQQ": "−1.06%",
-      "IWM": "−1.01%",
-      "NVDA": "−2.37%",
-      "TSLA": "−1.16%",
-      "AAPL": "+3.56%",
-      "MSFT": "+0.16%",
-      "AMZN": "−0.20%",
-      "META": "−1.42%",
-      "GOOGL": "+0.59%",
-      "AMD": "−3.36%",
-      "NFLX": "−0.03%",
-      "COIN": "−1.40%",
-      "PLTR": "−2.16%",
-      "MSTR": "−3.12%",
-      "SMCI": "−3.98%",
-      "CRWD": "+0.51%",
+      "SPY": "−0.30%",
+      "QQQ": "−0.45%",
+      "IWM": "−0.05%",
+      "NVDA": "−2.61%",
+      "TSLA": "−1.27%",
+      "AAPL": "+0.51%",
+      "MSFT": "+2.13%",
+      "AMZN": "−1.48%",
+      "META": "+2.66%",
+      "GOOGL": "+2.61%",
+      "AMD": "−3.57%",
+      "NFLX": "+4.07%",
+      "COIN": "+8.13%",
+      "PLTR": "+3.09%",
+      "MSTR": "+4.12%",
+      "SMCI": "−6.26%",
+      "CRWD": "+14.22%",
       "ORCL": "·",
-      "UBER": "+2.08%",
-      "PYPL": "+2.19%",
-      "MARA": "−4.11%",
-      "RIOT": "−5.07%",
-      "HOOD": "−1.69%",
-      "SOFI": "−0.69%",
-      "BAC": "−0.18%",
-      "INTC": "−5.57%",
-      "DIS": "+1.57%",
-      "SNAP": "+3.95%",
-      "LYFT": "+0.81%",
-      "TGT": "−1.14%",
-      "NKE": "−1.95%",
-      "COF": "−1.78%"
+      "UBER": "+0.99%",
+      "PYPL": "+0.60%",
+      "MARA": "−2.92%",
+      "RIOT": "−2.05%",
+      "HOOD": "+1.37%",
+      "SOFI": "+1.44%",
+      "BAC": "−5.76%",
+      "INTC": "−4.37%",
+      "DIS": "+2.16%",
+      "SNAP": "+2.82%",
+      "LYFT": "+2.28%",
+      "TGT": "+2.34%",
+      "NKE": "+1.11%",
+      "COF": "−0.85%"
     },
     "tape": {
-      "SPY": "757.83",
-      "QQQ": "708.69",
-      "IWM": "287.70",
-      "NVDA": "218.36",
-      "TSLA": "363.56",
-      "AAPL": "326.57",
-      "MSFT": "492.44",
-      "AMZN": "251.89",
-      "META": "644.38",
-      "GOOGL": "332.60",
-      "AMD": "503.60",
-      "NFLX": "76.01",
-      "COIN": "172.28",
-      "PLTR": "165.86",
-      "MSTR": "128.56",
-      "SMCI": "37.38",
-      "CRWD": "208.86",
+      "SPY": "762.02",
+      "QQQ": "711.67",
+      "IWM": "288.74",
+      "NVDA": "212.60",
+      "TSLA": "360.81",
+      "AAPL": "333.98",
+      "MSFT": "506.20",
+      "AMZN": "252.99",
+      "META": "665.29",
+      "GOOGL": "347.35",
+      "AMD": "497.71",
+      "NFLX": "80.55",
+      "COIN": "189.50",
+      "PLTR": "172.39",
+      "MSTR": "136.36",
+      "SMCI": "37.59",
+      "CRWD": "236.13",
       "ORCL": "—",
-      "UBER": "72.56",
-      "PYPL": "53.31",
-      "MARA": "11.43",
-      "RIOT": "20.95",
-      "HOOD": "113.33",
-      "SOFI": "17.21",
-      "BAC": "62.56",
-      "INTC": "100.32",
-      "DIS": "105.82",
-      "SNAP": "5.52",
-      "LYFT": "15.02",
-      "TGT": "155.73",
-      "NKE": "36.62",
-      "COF": "207.11"
+      "UBER": "72.38",
+      "PYPL": "54.04",
+      "MARA": "11.63",
+      "RIOT": "21.03",
+      "HOOD": "114.11",
+      "SOFI": "17.57",
+      "BAC": "59.08",
+      "INTC": "98.44",
+      "DIS": "108.85",
+      "SNAP": "5.84",
+      "LYFT": "15.67",
+      "TGT": "159.48",
+      "NKE": "37.21",
+      "COF": "206.53"
     },
-    "clock": "MARKET · 22:00:21 ET"
+    "clock": "MARKET · 19:05:15 ET"
   },
   "marketApi": null,
   "featureErrors": [],
@@ -259,5 +259,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-09-10T22:02:29.776Z"
+  "finishedAt": "2026-09-14T19:07:30.809Z"
 }
