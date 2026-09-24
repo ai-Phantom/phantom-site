@@ -47,7 +47,9 @@ Because one stock trades on many venues, the SEC's Regulation NMS (National Mark
 
 The practical result: for a large, liquid stock you will get a fill at or inside the national best price no matter which broker you use. The broker's routing choices matter more for how much price improvement you get and for thinly traded names.
 
-## Who is on the other side
+## Table
+
+Who is on the other side of your trade, what they want, and how much of the market they are.
 
 | Participant | What they want | Share of activity |
 | --- | --- | --- |
@@ -116,4 +118,3 @@ Notice what did not happen: Apple received nothing, no exchange listing fee was 
 - SEC, Regulation NMS adopting release (Rule 611, Order Protection): https://www.sec.gov/rules/final/34-51808.pdf
 - SEC, "Shortening the Securities Transaction Settlement Cycle" (T+1): https://www.sec.gov/tplus1
 - NYSE, Trading Hours and Calendars: https://www.nyse.com/markets/hours-calendars
-- FINRA BrokerCheck: https://brokercheck.finra.org/

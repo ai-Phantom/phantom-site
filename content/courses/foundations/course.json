@@ -4,14 +4,14 @@
   "tier": "beginner",
   "level": "Beginner",
   "title": "Stock Market Foundations",
-  "subtitle": "The complete starting point. Master how markets work before you spend a dollar.",
+  "subtitle": "How markets, quotes, orders, earnings and accounts actually work — before you spend a dollar.",
   "price": 9,
   "what_you_learn": [
-    "How stock markets actually work and who the participants are",
-    "How to read any stock quote in under 10 seconds",
-    "Every order type — market, limit, stop, stop-limit — and when to use each",
-    "What market cap, P/E, and dividend yield really mean",
-    "How to analyse an earnings report like a professional",
-    "Set up your first brokerage account and place your first trade safely"
+    "How a trade is matched, routed, cleared and settled, and who is on the other side of it",
+    "Read any quote, spread and order book, and choose the right order type and time-in-force",
+    "What market cap, sectors and index membership do to a stock's behaviour",
+    "How earnings and guidance move prices, and how to read a 10-K and an earnings release",
+    "Valuation basics (P/E, P/S, EV/EBITDA), dividends, buybacks and total return, ETFs vs single stocks",
+    "Brokerage accounts, T+1 settlement, margin, the PDT rule, taxes and account types, and a written first plan"
   ]
 }

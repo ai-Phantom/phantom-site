@@ -3,15 +3,15 @@
   "icon": "📊",
   "tier": "beginner",
   "level": "Beginner",
-  "title": "Technical Analysis Fundamentals",
-  "subtitle": "Read any chart with confidence. Identify trends, reversals, and high-probability entry points.",
+  "title": "Technical Analysis Complete",
+  "subtitle": "Price, volume and structure, tested against real data — including where the evidence is weak.",
   "price": 9,
   "what_you_learn": [
-    "Why technical analysis works and when to use it vs fundamental analysis",
-    "Read candlestick charts fluently — bodies, wicks, and what they reveal about buyer/seller battles",
-    "Identify support and resistance levels that actually hold",
-    "Apply moving averages to confirm trend direction and spot reversals",
-    "Use RSI and MACD to measure momentum and time entries",
-    "Recognise 5 high-probability chart patterns including flags, triangles, and head-and-shoulders"
+    "What technical analysis is and is not, and what the published evidence says about its edge",
+    "Candlesticks, support and resistance, trend and market structure, and how to read volume against price",
+    "Moving averages, RSI (including the 2-period variant), MACD, Bollinger Bands and ATR, with measured false-signal rates",
+    "Why most chart-pattern breakouts fail, measured on ten years of SPY data",
+    "Multiple timeframes and the opening range, tested on 60 sessions of 5-minute bars",
+    "Build a rules-based checklist, backtest it on history, and log 20 setups to compute win rate and expectancy"
   ]
 }
