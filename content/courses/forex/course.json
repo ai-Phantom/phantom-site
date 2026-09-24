@@ -4,7 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Forex: Pairs, Sessions & Carry",
-  "subtitle": "How currency pairs are quoted, priced and traded: pips, lots, sessions, swaps, carry and what moves them.",
+  "subtitle": "How currency pairs are quoted, priced and financed: pips, lots, spreads, leverage, sessions, swaps, carry and the calendar that moves them, with every number sourced and dated.",
   "price": 29,
-  "what_you_learn": []
+  "what_you_learn": [
+    "How the $9.6 trillion-a-day OTC market is layered (interbank, ECNs, your dealer as counterparty) using the BIS 2025 survey, and what that structure costs you",
+    "Read any pair, convert pips and pipettes to dollars for any quote currency, and size a position in lots from a stop in pips and a dollar risk",
+    "Price the true cost of a trade: published spreads and swaps turned into dollars and into a share of a one-sigma day, EUR/USD against USD/ZAR and USD/TRY",
+    "Leverage and margin under CFTC (50:1) and ESMA (30:1) rules, and the arithmetic that turns a leverage ratio into a probability of ruin",
+    "The four sessions, the London-New York overlap, the 2026 FOMC, ECB, BoJ, NFP and CPI calendar, and what each event did to daily ranges, measured",
+    "The carry trade priced from a broker's published swap table and interest parity, the 2008 and 2024 crashes by date, correlation across majors and crosses, and a plan and journal built on the same numbers"
+  ]
 }
