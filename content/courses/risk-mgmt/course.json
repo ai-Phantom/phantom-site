@@ -1,0 +1,18 @@
+{
+  "id": "risk-mgmt",
+  "icon": "🏛️",
+  "tier": "expert",
+  "level": "Advanced",
+  "title": "Portfolio Risk Management",
+  "subtitle": "Build a portfolio that survives bear markets and compounds through bull markets. Institutional-grade risk tools.",
+  "price": 39,
+  "what_you_learn": [
+    "Standard deviation, variance, and what they actually mean for your portfolio in practice",
+    "Calculate and manage your portfolio's weighted beta for precise market sensitivity control",
+    "Use HHI concentration scoring to identify dangerous over-concentration before it costs you",
+    "Apply Value at Risk (VaR) to quantify your downside in dollar terms",
+    "Build a stress test that simulates your portfolio through 2008, 2020, and other historical crashes",
+    "Implement risk parity — size positions by risk contribution, not by dollar amount",
+    "Hedge with options and inverse ETFs without over-hedging and capping your upside"
+  ]
+}

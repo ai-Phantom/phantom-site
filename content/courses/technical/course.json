@@ -1,0 +1,17 @@
+{
+  "id": "technical",
+  "icon": "📊",
+  "tier": "beginner",
+  "level": "Beginner",
+  "title": "Technical Analysis Complete",
+  "subtitle": "Price, volume and structure, tested against real data — including where the evidence is weak.",
+  "price": 9,
+  "what_you_learn": [
+    "What technical analysis is and is not, and what the published evidence says about its edge",
+    "Candlesticks, support and resistance, trend and market structure, and how to read volume against price",
+    "Moving averages, RSI (including the 2-period variant), MACD, Bollinger Bands and ATR, with measured false-signal rates",
+    "Why most chart-pattern breakouts fail, measured on ten years of SPY data",
+    "Multiple timeframes and the opening range, tested on 60 sessions of 5-minute bars",
+    "Build a rules-based checklist, backtest it on history, and log 20 setups to compute win rate and expectancy"
+  ]
+}
