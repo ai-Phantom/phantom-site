@@ -4087,6 +4087,22 @@ function bundleForCourse(courseId) {
 let activeCourse = null;
 let activeLesson = 1;
 const completedLessons = {};  // {courseId: Set of lesson ids}
+/* Lesson bodies live in courses/<id>.json (built from content/courses by
+   scripts/build-courses.mjs); the page carries only each course's lesson
+   index. The first open of a course fetches its file once. */
+const _courseLoads = {};
+function ensureCourseLoaded(id) {
+  const course = COURSES[id];
+  if (!course) return Promise.resolve(null);
+  if (course.loaded) return Promise.resolve(course);
+  if (!_courseLoads[id]) {
+    _courseLoads[id] = fetch('courses/' + id + '.json', { cache: 'no-cache' })
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(data => { course.lessons_data = data.lessons_data; course.loaded = true; return course; })
+      .catch(e => { console.warn('course load failed:', id, e && e.message); delete _courseLoads[id]; return course; });
+  }
+  return _courseLoads[id];
+}
 function openCourse(id) {
   const course = COURSES[id];
   if (!course) return;
@@ -4103,6 +4119,7 @@ function openCourse(id) {
   renderCourse(course, 1);
   requestAnimationFrame(() => overlay.classList.add('open'));
   document.body.style.overflow = 'hidden';
+  if (!course.loaded) ensureCourseLoaded(id).then(() => { if (activeCourse === id) renderCourse(COURSES[id], activeLesson || 1); });
 }
 function closeCourse() {
   const overlay = document.getElementById('courseOverlay');
@@ -4178,7 +4195,7 @@ function renderCourse(course, lessonId) {
         </div>
       </div>`;
   } else {
-    contentHtml = `<div style="padding:40px;text-align:center;color:var(--muted);">Content loading...</div>`;
+    contentHtml = `<div style="padding:40px;text-align:center;color:var(--muted);">Loading lesson…</div>`;
   }
   const prevLesson = course.lessons_data.find(l => l.id === lessonId - 1);
   const nextLesson = course.lessons_data.find(l => l.id === lessonId + 1);

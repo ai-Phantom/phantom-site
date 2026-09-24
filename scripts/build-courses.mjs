@@ -87,6 +87,7 @@ export async function buildCourses(contentDir) {
         },
       });
     }
+    if (lessons.length === 0) continue; // a course with no published lesson is not in the page
     courses[id] = {
       ...meta,
       id,
@@ -97,6 +98,20 @@ export async function buildCourses(contentDir) {
     manifest[id] = { lessons: lessons.length, duration: courses[id].duration, free: lessons.filter(l => l.free).length };
   }
   return { courses, manifest };
+}
+
+// The page carries every course's metadata and lesson INDEX (id, title,
+// duration, free) but not the lesson bodies: those ship as courses/<id>.json
+// and load when a course is opened. With twenty courses inline the page
+// would pass 3 MB; the index keeps it near the size it had before.
+export function splitCourses(courses) {
+  const inline = {};
+  const files = {};
+  for (const [id, c] of Object.entries(courses)) {
+    inline[id] = { ...c, lessons_data: c.lessons_data.map(({ id, title, duration, free }) => ({ id, title, duration, free })), loaded: false };
+    files[id] = { id, lessons_data: c.lessons_data };
+  }
+  return { inline, files };
 }
 
 // JSON is a valid JS object literal. `</` is escaped so a lesson body can
