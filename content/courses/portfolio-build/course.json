@@ -1,0 +1,17 @@
+{
+  "id": "portfolio-build",
+  "icon": "🏗️",
+  "tier": "beginner",
+  "level": "Beginner",
+  "title": "Building Your First Portfolio",
+  "subtitle": "From a blank brokerage account to a diversified, risk-scored portfolio in Phantom Traders.",
+  "price": 9,
+  "what_you_learn": [
+    "The three pillars of a good portfolio: diversification, risk management, return optimisation",
+    "What the 11 market sectors are and why you need exposure across at least 4",
+    "Position sizing — exactly how much to put in each stock based on conviction and risk",
+    "Build a real 10-stock portfolio inside Phantom Traders step by step",
+    "Understand your Phantom Traders risk score and what it means for your portfolio",
+    "When and how to rebalance — the discipline that separates long-term winners"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "options",
+  "icon": "🎯",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Options Trading Complete",
+  "subtitle": "From your first call option to running a consistent income strategy. The complete curriculum.",
+  "price": 29,
+  "what_you_learn": [
+    "Exactly what options are, why they exist, and the specific rights each contract gives you",
+    "How options are priced — intrinsic value, time value, and the role of implied volatility",
+    "All five Greeks: delta, gamma, theta, vega, and rho — and how each affects your position",
+    "Four core single-leg strategies: long calls, long puts, covered calls, cash-secured puts",
+    "Defined-risk spreads: bull call spreads, bear put spreads, iron condors, and calendar spreads",
+    "How to trade earnings using straddles and strangles — and when not to",
+    "Build a repeatable covered call income system generating monthly cash flow"
+  ]
+}

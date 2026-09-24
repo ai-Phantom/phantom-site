@@ -1,0 +1,18 @@
+{
+  "id": "momentum",
+  "icon": "⚡",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Momentum & Swing Trading",
+  "subtitle": "Build a rules-based system for identifying momentum setups with documented positive expectancy.",
+  "price": 29,
+  "what_you_learn": [
+    "The academic evidence behind momentum — why it persists and why most retail traders fail to capture it",
+    "Identify the 3 highest-probability momentum setups including the bull flag and volume breakout",
+    "Set precise entry triggers that separate strong setups from weak ones",
+    "Place stop-losses at technically correct levels, not arbitrary dollar amounts",
+    "Scale in and out of positions to maximise gains on winners",
+    "Build a pre-market routine to find daily setups using Phantom Traders screener",
+    "Backtest your rules and calculate your system's true expectancy before risking real money"
+  ]
+}

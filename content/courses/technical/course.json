@@ -1,0 +1,17 @@
+{
+  "id": "technical",
+  "icon": "📊",
+  "tier": "beginner",
+  "level": "Beginner",
+  "title": "Technical Analysis Fundamentals",
+  "subtitle": "Read any chart with confidence. Identify trends, reversals, and high-probability entry points.",
+  "price": 9,
+  "what_you_learn": [
+    "Why technical analysis works and when to use it vs fundamental analysis",
+    "Read candlestick charts fluently — bodies, wicks, and what they reveal about buyer/seller battles",
+    "Identify support and resistance levels that actually hold",
+    "Apply moving averages to confirm trend direction and spot reversals",
+    "Use RSI and MACD to measure momentum and time entries",
+    "Recognise 5 high-probability chart patterns including flags, triangles, and head-and-shoulders"
+  ]
+}
