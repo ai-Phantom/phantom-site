@@ -65,7 +65,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
     {"@type":"Offer","name":"Elite Plan Annual","price":"499","priceCurrency":"USD","billingIncrement":"year"}
   ]
 }</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Phantom Traders","url":"https://aiphantomtraders.com","logo":"https://aiphantomtraders.com/logo.jpeg","description":"AI options trading signals for independent traders — two scanner bots, eight indicators, regime-conditioned edge scoring, and real-time Discord alerts with a live dashboard.","sameAs":["https://discord.gg/cU9ywjWh"]},{"@type":"WebSite","name":"Phantom Traders","url":"https://aiphantomtraders.com","publisher":{"@type":"Organization","name":"Phantom Traders"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real money?","acceptedAnswer":{"@type":"Answer","text":"No. We trade a $100K Alpaca paper account on the live tape. Members can mirror trades manually or via TV-webhook on their own broker. We do not custody your funds."}},{"@type":"Question","name":"What's an “edge score”?","acceptedAnswer":{"@type":"Answer","text":"For each signal we look up its cluster (ticker × trade-type × side × regime) in the foundation table. Score = edge (avg R) × stability (consistency across replay) × n (sample size). Bands: HIGH ≥ 80, MED 60–79, LOW < 60."}},{"@type":"Question","name":"How many signals per day?","acceptedAnswer":{"@type":"Answer","text":"Across all 8 channels: 12–35 fires on a typical day. Scalps fire most (8–20), leaps fire least (0–2). #morning-brief consolidates the overnight setups at 8:45 ET."}},{"@type":"Question","name":"Can I cancel anytime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cancel from the Stripe portal in your dashboard. No retention scripts, no friction. Discord role drops within 60 seconds."}},{"@type":"Question","name":"Why Discord instead of an app?","acceptedAnswer":{"@type":"Answer","text":"Push notifications work, the social layer is free, and you're probably already there. The dashboard handles the deep work — Discord handles the moment."}},{"@type":"Question","name":"Is the Discord included with Elite?","acceptedAnswer":{"@type":"Answer","text":"Yes — Discord Community ($15/mo standalone) is bundled free with the Elite Trader plan. Bot signals from Phantom Bot and Bullseye Bot pipe directly into your Discord."}},{"@type":"Question","name":"What is the difference between courses and ebooks?","acceptedAnswer":{"@type":"Answer","text":"Courses are structured video + lesson modules with quizzes (8–20 lessons each). Ebook Mastery Courses are 100+ page deep-dive PDFs covering a single asset class end-to-end."}},{"@type":"Question","name":"Will I get rich quick?","acceptedAnswer":{"@type":"Answer","text":"No. This is a tool, not a magic box. We publish paper performance honestly, including losses. Your discipline matters more than our signal score."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Phantom Traders","url":"https://aiphantomtraders.com","logo":"https://aiphantomtraders.com/logo.jpeg","description":"AI options trading signals for independent traders — two scanner bots, eight indicators, regime-conditioned edge scoring, and real-time Discord alerts with a live dashboard.","sameAs":["https://discord.gg/GURRyUfU8Y"]},{"@type":"WebSite","name":"Phantom Traders","url":"https://aiphantomtraders.com","publisher":{"@type":"Organization","name":"Phantom Traders"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real money?","acceptedAnswer":{"@type":"Answer","text":"No. We trade a $100K Alpaca paper account on the live tape. Members can mirror trades manually or via TV-webhook on their own broker. We do not custody your funds."}},{"@type":"Question","name":"What's an “edge score”?","acceptedAnswer":{"@type":"Answer","text":"For each signal we look up its cluster (ticker × trade-type × side × regime) in the foundation table. Score = edge (avg R) × stability (consistency across replay) × n (sample size). Bands: HIGH ≥ 80, MED 60–79, LOW < 60."}},{"@type":"Question","name":"How many signals per day?","acceptedAnswer":{"@type":"Answer","text":"Across all 8 channels: 12–35 fires on a typical day. Scalps fire most (8–20), leaps fire least (0–2). #morning-brief consolidates the overnight setups at 8:45 ET."}},{"@type":"Question","name":"Can I cancel anytime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cancel from the Stripe portal in your dashboard. No retention scripts, no friction. Discord role drops within 60 seconds."}},{"@type":"Question","name":"Why Discord instead of an app?","acceptedAnswer":{"@type":"Answer","text":"Push notifications work, the social layer is free, and you're probably already there. The dashboard handles the deep work — Discord handles the moment."}},{"@type":"Question","name":"Is the Discord included with Elite?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Phantom Traders Discord is included with both Pro Trader and Elite; Elite also unlocks the Elite Lounge. Bot signals from Phantom Bot and Bullseye Bot pipe directly into your Discord."}},{"@type":"Question","name":"What is the difference between courses and ebooks?","acceptedAnswer":{"@type":"Answer","text":"Courses are structured video + lesson modules with quizzes (8–20 lessons each). Ebook Mastery Courses are 100+ page deep-dive PDFs covering a single asset class end-to-end."}},{"@type":"Question","name":"Will I get rich quick?","acceptedAnswer":{"@type":"Answer","text":"No. This is a tool, not a magic box. We publish paper performance honestly, including losses. Your discipline matters more than our signal score."}}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://gzdhauxqrfbhbrfcscna.supabase.co">
 <link rel="preconnect" href="https://phantom-traders-backend.onrender.com">
@@ -666,9 +666,8 @@ window._supabaseReady = new Promise(function(resolve) {
 <!-- ═══════════════════════════════════════ V2 GLOBALS (shared across surfaces) ═══ -->
 <script>
 window.PT_PRICES = {
-  discord: { monthly: 'price_1TEtzSPddnEAOUngkMj33ZcR', annual: 'price_1TEtzOPddnEAOUngbQNDLpUK' },
-  pro:     { monthly: 'price_1TEtzGPddnEAOUnglvzHtNyp', annual: 'price_1TEtzHPddnEAOUngGNi7WGaL' },
-  elite:   { monthly: 'price_1TEtzCPddnEAOUngECsp5vAH', annual: 'price_1TEtzCPddnEAOUngbl5QROXb' }
+  pro:     { monthly: 'price_1UIjXkPddnEAOUngjmwOjFZw', annual: 'price_1UIqL4PddnEAOUng559NtSZj' },
+  elite:   { monthly: 'price_1UIjYPPddnEAOUngRgNywZab', annual: 'price_1UIqMFPddnEAOUngxRQiTX48' }
 };
 window.PT_ONE_TIME = {
   bundle_beginner:     'price_1TEtzKPddnEAOUngrx36tJTm',
@@ -1126,7 +1125,7 @@ window.v2Subscribe = function(plan){
           <div class="v2-bot-tags">
             <span class="v2-feat-tag">IN DEVELOPMENT</span>
           </div>
-          <a class="v2-bot-link" href="https://discord.gg/cU9ywjWh" target="_blank" rel="noopener noreferrer">Get notified in Discord →</a>
+          <a class="v2-bot-link" href="https://discord.gg/GURRyUfU8Y" target="_blank" rel="noopener noreferrer">Get notified in Discord →</a>
         </article>
       </div>
     </div>
@@ -1598,13 +1597,13 @@ window.v2Subscribe = function(plan){
           <div style="margin-bottom:10px;color:var(--reactor-bright);">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V3M3 21h18M7 16v-5M11 16V8M15 16v-7M19 16v-3"/></svg>
           </div>
-          <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">PORTFOLIO MANAGER</div>
+          <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">PRO TRADER</div>
           <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Pro Tool</div>
           <div style="display:flex;align-items:baseline;margin-bottom:4px;">
-            <span class="v2-display v2-price-amt" data-mo="20" data-yr="199" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$199</span>
+            <span class="v2-display v2-price-amt" data-mo="15" data-yr="150" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$150</span>
             <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
           </div>
-          <div class="v2-price-savings" data-mo="20" data-yr="199" style="font-family:var(--font-mono);font-size:10px;color:var(--reactor-bright);margin-bottom:18px;letter-spacing:0.06em;min-height:14px;">SAVE $41 VS MONTHLY</div>
+          <div class="v2-price-savings" data-mo="15" data-yr="150" style="font-family:var(--font-mono);font-size:10px;color:var(--reactor-bright);margin-bottom:18px;letter-spacing:0.06em;min-height:14px;">SAVE $30 VS MONTHLY</div>
           <button onclick="v2Subscribe('pro')" class="v2-display" style="width:100%;padding:12px;font-size:12px;font-weight:600;background:transparent;color:var(--text-primary);border:1px solid var(--border-strong);border-radius:6px;margin-bottom:22px;cursor:pointer;">Start Tracking →</button>
           <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Live price feeds (30s refresh)</span></div>
@@ -1631,16 +1630,16 @@ window.v2Subscribe = function(plan){
           <div style="margin-bottom:10px;color:var(--reactor-bright);">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7l4 4 5-7 5 7 4-4v11H3z"/></svg>
           </div>
-          <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">ELITE TRADER</div>
+          <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">ELITE</div>
           <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Best Value</div>
           <div style="display:flex;align-items:baseline;margin-bottom:4px;">
-            <span class="v2-display v2-price-amt" data-mo="50" data-yr="499" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$499</span>
+            <span class="v2-display v2-price-amt" data-mo="25" data-yr="250" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$250</span>
             <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
           </div>
-          <div class="v2-price-savings" data-mo="50" data-yr="499" style="font-family:var(--font-mono);font-size:10px;color:var(--reactor-bright);margin-bottom:18px;letter-spacing:0.06em;min-height:14px;">SAVE $101 VS MONTHLY</div>
+          <div class="v2-price-savings" data-mo="25" data-yr="250" style="font-family:var(--font-mono);font-size:10px;color:var(--reactor-bright);margin-bottom:18px;letter-spacing:0.06em;min-height:14px;">SAVE $50 VS MONTHLY</div>
           <button onclick="v2Subscribe('elite')" class="v2-display" style="width:100%;padding:12px;font-size:12px;font-weight:600;background:var(--reactor-blue);color:#000;border:none;border-radius:6px;margin-bottom:22px;cursor:pointer;box-shadow:0 0 0 1px var(--reactor-bright),0 0 24px -6px var(--reactor-glow);">Go Elite →</button>
           <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Everything in Portfolio Manager</span></div>
+            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Everything in Pro Trader</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Multi-portfolio management</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Advanced AI insights</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>SMS price alerts</span></div>
@@ -1649,29 +1648,6 @@ window.v2Subscribe = function(plan){
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Discord Community included free</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>API access + webhooks</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Brokerage sync (coming soon)</span></div>
-          </div>
-        </div>
-
-        <!-- DISCORD COMMUNITY -->
-        <div class="v2-price-card" data-plan="discord" style="background:var(--bg-elev-1);border:1px solid var(--border-default);border-radius:12px;padding:32px 24px 24px;display:flex;flex-direction:column;position:relative;">
-          <div style="margin-bottom:10px;color:var(--reactor-bright);">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-9 8.5 9 9 0 01-4-1l-5 1 1.3-4A8.5 8.5 0 1121 11.5z"/></svg>
-          </div>
-          <div class="v2-label-blue" style="margin-bottom:4px;font-size:10px;">DISCORD COMMUNITY</div>
-          <div style="font-size:11px;color:var(--text-tertiary);margin-bottom:18px;min-height:28px;line-height:1.4;">Standalone</div>
-          <div style="display:flex;align-items:baseline;margin-bottom:4px;">
-            <span class="v2-display v2-price-amt" data-mo="15" data-yr="135" style="font-size:44px;font-weight:600;letter-spacing:-0.035em;">$135</span>
-            <span class="v2-price-period" style="font-size:12px;color:var(--text-secondary);margin-left:6px;">/yr</span>
-          </div>
-          <div class="v2-price-savings" data-mo="15" data-yr="135" style="font-family:var(--font-mono);font-size:10px;color:var(--reactor-bright);margin-bottom:18px;letter-spacing:0.06em;min-height:14px;">SAVE $45 VS MONTHLY</div>
-          <button onclick="v2Subscribe('discord')" class="v2-display" style="width:100%;padding:12px;font-size:12px;font-weight:600;background:transparent;color:var(--text-primary);border:1px solid var(--border-strong);border-radius:6px;margin-bottom:22px;cursor:pointer;">Join the Discord →</button>
-          <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>18 channels including trade signals</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Daily premarket + after-hours voice calls</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Phantom Bot + Bullseye Bot signals</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Monthly P&amp;L leaderboard + challenges</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Rookie → Desk role progression</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Free with Elite plan</span></div>
           </div>
         </div>
 
@@ -1705,7 +1681,7 @@ window.v2Subscribe = function(plan){
         </div>
         <div class="v2-faq-item">
           <button onclick="this.parentNode.classList.toggle('open')"><span class="v2-faq-q">Is the Discord included with Elite?</span><span class="v2-faq-toggle">+</span></button>
-          <div class="v2-faq-a">Yes — Discord Community ($15/mo standalone) is bundled free with the Elite Trader plan. Bot signals from Phantom Bot and Bullseye Bot pipe directly into your Discord.</div>
+          <div class="v2-faq-a">Yes — the Phantom Traders Discord is included with both Pro Trader and Elite; Elite also unlocks the Elite Lounge. Bot signals from Phantom Bot and Bullseye Bot pipe directly into your Discord.</div>
         </div>
         <div class="v2-faq-item">
           <button onclick="this.parentNode.classList.toggle('open')"><span class="v2-faq-q">What is the difference between courses and ebooks?</span><span class="v2-faq-toggle">+</span></button>
@@ -1855,9 +1831,8 @@ window.v2Subscribe = function(plan){
           <p style="font-size:13px;color:var(--text-secondary);margin-bottom:22px;font-family:var(--font-body);">Cancel any time. We bill once your account is created.</p>
           <div id="v2OnbPlans">
             <label class="v2-onb-plan" data-plan="free"><input type="radio" name="v2plan" value="free"><div><div class="v2-onb-plan-name">FREE</div><div class="v2-onb-plan-desc">Demo dashboard · Stock screener · No card required</div></div><div class="v2-onb-plan-price">$0<span>/mo</span></div></label>
-            <label class="v2-onb-plan" data-plan="discord"><input type="radio" name="v2plan" value="discord"><div><div class="v2-onb-plan-name">DISCORD</div><div class="v2-onb-plan-desc">Phantom Bot + Bullseye Bot · Daily recap · LEAP feed</div></div><div class="v2-onb-plan-price">$15<span>/mo</span></div></label>
-            <label class="v2-onb-plan selected" data-plan="pro"><input type="radio" name="v2plan" value="pro" checked><div><div class="v2-onb-plan-name">PORTFOLIO MANAGER</div><div class="v2-onb-plan-desc">Live prices · AI risk score · Tax engine · 6 alerts</div></div><div class="v2-onb-plan-price">$20<span>/mo</span></div></label>
-            <label class="v2-onb-plan" data-plan="elite"><input type="radio" name="v2plan" value="elite"><div><div class="v2-onb-plan-name">ELITE TRADER</div><div class="v2-onb-plan-desc">Everything + Discord included · Multi-portfolio · API</div></div><div class="v2-onb-plan-price">$50<span>/mo</span></div></label>
+            <label class="v2-onb-plan selected" data-plan="pro"><input type="radio" name="v2plan" value="pro" checked><div><div class="v2-onb-plan-name">PRO TRADER</div><div class="v2-onb-plan-desc">Live prices · AI risk score · Tax engine · 6 alerts</div></div><div class="v2-onb-plan-price">$15<span>/mo</span></div></label>
+            <label class="v2-onb-plan" data-plan="elite"><input type="radio" name="v2plan" value="elite"><div><div class="v2-onb-plan-name">ELITE</div><div class="v2-onb-plan-desc">Everything + Discord included · Multi-portfolio · API</div></div><div class="v2-onb-plan-price">$25<span>/mo</span></div></label>
           </div>
         </div>
 
@@ -2067,19 +2042,19 @@ function setPricePeriod(period) {
   const proBtn = document.getElementById('proCTA');
   const eliteBtn = document.getElementById('eliteCTA');
   if (period === 'annual') {
-    if (proP) proP.textContent = '$17';
-    if (deskP) deskP.textContent = '$42';
-    if (proT) proT.textContent = 'per month, billed $199/yr';
-    if (deskT) deskT.textContent = 'per month, billed $499/yr';
-    if (proBtn) proBtn.setAttribute('onclick', "startCheckout('price_1TEtzRPddnEAOUngVca0PJAu','subscription')");
-    if (eliteBtn) eliteBtn.setAttribute('onclick', "startCheckout('price_1TEtzQPddnEAOUngFbNfRqQe','subscription')");
+    if (proP) proP.textContent = '$13';
+    if (deskP) deskP.textContent = '$21';
+    if (proT) proT.textContent = 'per month, billed $150/yr';
+    if (deskT) deskT.textContent = 'per month, billed $250/yr';
+    if (proBtn) proBtn.setAttribute('onclick', "startCheckout('price_1UIqL4PddnEAOUng559NtSZj','subscription')");
+    if (eliteBtn) eliteBtn.setAttribute('onclick', "startCheckout('price_1UIqMFPddnEAOUngxRQiTX48','subscription')");
   } else {
-    if (proP) proP.textContent = '$20';
-    if (deskP) deskP.textContent = '$50';
+    if (proP) proP.textContent = '$15';
+    if (deskP) deskP.textContent = '$25';
     if (proT) proT.textContent = 'per month';
     if (deskT) deskT.textContent = 'per month';
-    if (proBtn) proBtn.setAttribute('onclick', "startCheckout('price_1TEtzRPddnEAOUngGm0Ri56o','subscription')");
-    if (eliteBtn) eliteBtn.setAttribute('onclick', "startCheckout('price_1TEtzRPddnEAOUngsJ9zcwkT','subscription')");
+    if (proBtn) proBtn.setAttribute('onclick', "startCheckout('price_1UIjXkPddnEAOUngjmwOjFZw','subscription')");
+    if (eliteBtn) eliteBtn.setAttribute('onclick', "startCheckout('price_1UIjYPPddnEAOUngRgNywZab','subscription')");
   }
 }
 function initPricing() { setPricePeriod('monthly'); }
@@ -2528,7 +2503,7 @@ const BLOG_POSTS = [
     <p>Before showing recommendations, the AI analyses your current holdings. It maps every position to a sector, calculates your sector weights, and identifies where you're underweight relative to a balanced portfolio.</p>
     <p>If you're 47% in Technology with almost nothing in Healthcare, the AI doesn't recommend more tech stocks — it recommends JNJ, LLY, or XLV to balance your exposure.</p>
     <h2>Income Gap Detection</h2>
-    <p>If your portfolio's dividend yield is below 1% and you have Pro or Desk plan with dividend tracking enabled, the AI will surface income-generating options — SCHD, VZ, O, or NEE — with a note explaining the yield benefit specific to your portfolio size.</p>
+    <p>If your portfolio's dividend yield is below 1% and you have Pro Trader or Elite plan with dividend tracking enabled, the AI will surface income-generating options — SCHD, VZ, O, or NEE — with a note explaining the yield benefit specific to your portfolio size.</p>
     <h2>Beta Balancing</h2>
     <p>If your weighted portfolio beta is above 1.25, the AI looks for defensive additions — Healthcare ETFs, Utilities, or low-beta dividend stocks — that would bring your overall market sensitivity closer to 1.0.</p>
     <blockquote>"Generic stock lists are noise. Recommendations derived from your specific portfolio are signal."</blockquote>
@@ -4740,54 +4715,54 @@ function answerQuiz(btn, chosen, correct) {
   parent.appendChild(msg);
 }
 const STORE_ITEMS = [
-  {id:'bundle-beginner', stripePrice:'price_1TE0VKBGuYguz5hx1iUpcCRq', icon:'🎓', tier:'bundle', level:'Beginner', title:'Beginner Bundle',
+  {id:'bundle-beginner', stripePrice:'price_1TEtzKPddnEAOUngrx36tJTm', icon:'🎓', tier:'bundle', level:'Beginner', title:'Beginner Bundle',
    price:20, origPrice:60, color:'#7eff5c',
    desc:'The complete starting point. 3 structured courses covering markets, charts, and portfolio building.',
    includes:['Stock Market Foundations (8 lessons)','Technical Analysis Complete (12 lessons)','Building Your First Portfolio (6 lessons)','Lesson recaps + quiz on every lesson','Lifetime access + updates'],
   },
-  {id:'bundle-intermediate', stripePrice:'price_1TDqm8BGuYguz5hx4W0u5ZZB', icon:'⚡', tier:'bundle', level:'Intermediate', title:'Intermediate Bundle',
+  {id:'bundle-intermediate', stripePrice:'price_1TEtzHPddnEAOUng7TIvW0qW', icon:'⚡', tier:'bundle', level:'Intermediate', title:'Intermediate Bundle',
    price:60, origPrice:170, color:'#4d9fff',
    desc:'Everything in Beginner plus Momentum, Options, and Tax Strategy. The full toolkit for an active trader.',
    includes:['All 3 Beginner courses included','Momentum & Swing Trading (15 lessons)','Options Trading Complete (18 lessons)','Tax Strategy for Traders (10 lessons)','Bonus: position sizing calculator'],
   },
-  {id:'bundle-expert', stripePrice:'price_1TDqmoBGuYguz5hxwIIce6ze', icon:'👑', tier:'bundle', level:'All levels', title:'Expert Bundle — All Access',
+  {id:'bundle-expert', stripePrice:'price_1TEtzLPddnEAOUnglXS0k1en', icon:'👑', tier:'bundle', level:'All levels', title:'Expert Bundle — All Access',
    price:100, origPrice:500, color:'#f5c842',
    desc:'All 9 courses unlocked. Every lesson, every strategy, every tool. The only bundle serious traders need.',
    includes:['All 9 courses — 86 lessons total','Everything in Beginner + Intermediate','Portfolio Risk Management (20 lessons)','Algorithmic Trading + API access (14 lessons)','Institutional Portfolio Management (16 lessons)','Lifetime access + all future updates'],
   },
-  {id:'foundations', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',    icon:'📗', tier:'beginner', level:'Beginner',     title:'Stock Market Foundations',
+  {id:'foundations', stripePrice:'price_1TEtzPPddnEAOUngDWkbcoUU',    icon:'📗', tier:'beginner', level:'Beginner',     title:'Stock Market Foundations',
    price:9,  origPrice:19, color:'#7eff5c',
    desc:'How markets work, order types, and your first trade. The foundation every trader needs.',
   },
-  {id:'technical', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',      icon:'📊', tier:'beginner', level:'Beginner',     title:'Technical Analysis Complete',
+  {id:'technical', stripePrice:'price_1TEtzMPddnEAOUngpgAEH3Rh',      icon:'📊', tier:'beginner', level:'Beginner',     title:'Technical Analysis Complete',
    price:9,  origPrice:19, color:'#4d9fff',
    desc:'Candlesticks, support/resistance, RSI, MACD, and chart patterns. Read any chart confidently.',
   },
-  {id:'portfolio-build', stripePrice:'price_1TDqfMBGuYguz5hxPFB8QGAE',icon:'🏗️', tier:'beginner', level:'Beginner',     title:'Building Your First Portfolio',
+  {id:'portfolio-build', stripePrice:'price_1TEtzLPddnEAOUngnRBaOHyM',icon:'🏗️', tier:'beginner', level:'Beginner',     title:'Building Your First Portfolio',
    price:9,  origPrice:19, color:'#7eff5c',
    desc:'Diversification, position sizing, and setting up your first 10-stock portfolio in Phantom Traders.',
   },
-  {id:'momentum', stripePrice:'price_1TDqgwBGuYguz5hxz3uWlJRr',       icon:'⚡', tier:'intermediate', level:'Intermediate', title:'Momentum & Swing Trading',
+  {id:'momentum', stripePrice:'price_1TEtzLPddnEAOUngZeAvHuKW',       icon:'⚡', tier:'intermediate', level:'Intermediate', title:'Momentum & Swing Trading',
    price:29, origPrice:97, color:'#7eff5c',
    desc:'Build a repeatable momentum system. Setup identification, entries, stops, and trade management.',
   },
-  {id:'options', stripePrice:'price_1TDqhaBGuYguz5hxusiFUDTn',        icon:'🎯', tier:'intermediate', level:'Intermediate', title:'Options Trading Complete',
+  {id:'options', stripePrice:'price_1TEtzNPddnEAOUngaYf5Omhf',        icon:'🎯', tier:'intermediate', level:'Intermediate', title:'Options Trading Complete',
    price:29, origPrice:127, color:'#4d9fff',
    desc:'Calls, puts, spreads, the Greeks, income strategies, and IV rank. The complete options curriculum.',
   },
-  {id:'tax-course', stripePrice:'price_1TDqiHBGuYguz5hxL2R3Casn',     icon:'🔥', tier:'intermediate', level:'Intermediate', title:'Tax Strategy for Traders',
+  {id:'tax-course', stripePrice:'price_1TEtzOPddnEAOUngUSuaLYUG',     icon:'🔥', tier:'intermediate', level:'Intermediate', title:'Tax Strategy for Traders',
    price:19, origPrice:79,  color:'#f5c842',
    desc:'Loss harvesting, wash-sale rules, quarterly payments, and working with your CPA.',
   },
-  {id:'risk-mgmt', stripePrice:'price_1TDqirBGuYguz5hxAjPXd2dL',      icon:'🏛️', tier:'expert',  level:'Advanced',     title:'Portfolio Risk Management',
+  {id:'risk-mgmt', stripePrice:'price_1TEtzNPddnEAOUng8xRKNf97',      icon:'🏛️', tier:'expert',  level:'Advanced',     title:'Portfolio Risk Management',
    price:39, origPrice:197, color:'#f5c842',
    desc:'HHI concentration scoring, Sharpe ratio, beta weighting, drawdown control, and factor exposure.',
   },
-  {id:'algo', stripePrice:'price_1TDqjLBGuYguz5hxljUZFCi1',           icon:'⚙️', tier:'expert',  level:'Advanced',     title:'Algorithmic Trading Intro',
+  {id:'algo', stripePrice:'price_1TEtzNPddnEAOUngRbRVnd7W',           icon:'⚙️', tier:'expert',  level:'Advanced',     title:'Algorithmic Trading Intro',
    price:39, origPrice:167, color:'#4d9fff',
    desc:'Build automated strategies with the Phantom Traders API. Python-based with working templates.',
   },
-  {id:'institutional', stripePrice:'price_1TDqkQBGuYguz5hx8pJEJ6tD',  icon:'&#128225;', tier:'expert',  level:'Advanced',     title:'Institutional Portfolio Management',
+  {id:'institutional', stripePrice:'price_1TEtzLPddnEAOUngJe2kklY3',  icon:'&#128225;', tier:'expert',  level:'Advanced',     title:'Institutional Portfolio Management',
    price:39, origPrice:247, color:'#f5c842',
    desc:'Multi-portfolio management, performance attribution, compliance, and $1M+ AUM frameworks.',
   },
@@ -4834,36 +4809,25 @@ const STORE_ITEMS = [
      {name:'Crypto Trading Mastery Course',url:'https://drive.google.com/file/d/1xkJCXg5efhYCSqt0D6jHr6GncmMiR40b/view?usp=sharing'},
    ],
   },
-
-  {id:'discord-monthly', stripePrice:'price_1TDqbqBGuYguz5hxzJTT61dK', icon:'&#128172;', tier:'subscription', level:'Community', title:'Discord Community — Monthly',
-   price:15, origPrice:null, billing:'month', color:'#5865F2',
-   desc:'Full access to 18 channels, live voice rooms, trade signals, leaderboard, and all server roles. Included free with Elite plan.',
-   includes:['18 channels including trade signals','Daily premarket + after-hours voice calls','PT alerts piped direct to Discord','Monthly P&L leaderboard + challenges','Rookie &#x2192; Desk role progression'],
-  },
-  {id:'discord-annual', stripePrice:'price_1TDqd9BGuYguz5hxu4tUrZMg', icon:'&#128172;', tier:'subscription', level:'Community', title:'Discord Community — Annual',
-   price:135, origPrice:180, billing:'year', color:'#5865F2',
-   desc:'Everything in monthly Discord access, billed annually. Save $25 vs monthly — or get it free with Elite.',
-   includes:['All monthly Discord features','Priority support response','Early access to new channels','Annual member badge + role','2 months free vs monthly'],
-  },
-  {id:'portfolio-mgr-monthly', stripePrice:'price_1TEtzRPddnEAOUngGm0Ri56o', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Portfolio Manager — Monthly',
-   price:20, origPrice:null, billing:'month', color:'#4d9fff',
+  {id:'portfolio-mgr-monthly', stripePrice:'price_1UIjXkPddnEAOUngjmwOjFZw', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Pro Trader — Monthly',
+   price:15, origPrice:null, billing:'month', color:'#4d9fff',
    desc:'The full Phantom Traders Pro dashboard. Live prices, AI risk scoring, tax harvesting, screener, trade journal, and alerts.',
    includes:['Live price feeds (30s refresh)','AI risk score + 3-mode insights','Tax harvesting engine + PDF export','Stock screener + AI recommendations','Price alerts: all 6 types + SMS','Unlimited trade journal entries'],
   },
-  {id:'portfolio-mgr-annual', stripePrice:'price_1TEtzRPddnEAOUngVca0PJAu', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Portfolio Manager — Annual',
-   price:199, origPrice:240, billing:'year', color:'#4d9fff',
+  {id:'portfolio-mgr-annual', stripePrice:'price_1UIqL4PddnEAOUng559NtSZj', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Pro Trader — Annual',
+   price:150, origPrice:240, billing:'year', color:'#4d9fff',
    desc:'Full Pro dashboard billed annually. Includes everything in monthly plus Elite features and API access.',
    includes:['Everything in monthly plan','Elite analytics suite','Discord Community included','API access for automation','Multi-portfolio support','2 months free vs monthly','Priority email support'],
   },
-  {id:'elite-monthly', stripePrice:'price_1TEtzRPddnEAOUngsJ9zcwkT', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite Trader — Monthly',
-   price:50, origPrice:null, billing:'month', color:'#f5c842',
+  {id:'elite-monthly', stripePrice:'price_1UIjYPPddnEAOUngRgNywZab', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite — Monthly',
+   price:25, origPrice:null, billing:'month', color:'#f5c842',
    desc:'The ultimate Phantom Traders experience. Everything in Pro plus multi-portfolio management, advanced AI insights, SMS alerts, priority support, early feature access, and Discord Community included.',
    includes:['Everything in Pro plan','Multi-portfolio management','Advanced AI insights','SMS price alerts','Priority support','Early access to new features','Discord Community included free'],
   },
-  {id:'elite-annual', stripePrice:'price_1TEtzQPddnEAOUngFbNfRqQe', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite Trader — Annual',
-   price:499, origPrice:600, billing:'year', color:'#f5c842',
-   desc:'Full Elite access at 17% off. Multi-portfolio, advanced AI, SMS alerts, priority support, early features, and Discord included. Save $101 vs monthly.',
-   includes:['Everything in Elite Monthly','Save $101 vs monthly billing','Priority email support','All future feature updates','Discord Community included','Annual member badge'],
+  {id:'elite-annual', stripePrice:'price_1UIqMFPddnEAOUngxRQiTX48', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite — Annual',
+   price:250, origPrice:600, billing:'year', color:'#f5c842',
+   desc:'Full Elite access at 17% off. Multi-portfolio, advanced AI, SMS alerts, priority support, early features, and Discord included. Save $50 vs monthly.',
+   includes:['Everything in Elite Monthly','Save $50 vs monthly billing','Priority email support','All future feature updates','Discord Community included','Annual member badge'],
   },
 ];
 let storeFilter = 'all';
@@ -6012,7 +5976,7 @@ function updateNavAuth() {
       signIn.setAttribute('style', 'background:linear-gradient(135deg,var(--green),#4d9fff);color:#000;border-radius:50%;width:32px;height:32px;padding:0;font-size:11px;font-weight:700;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;line-height:1;text-align:center;');
       signIn.onclick = function() { showPage('account'); };
       const plan = (user.plan || 'free');
-      const planLabel = plan === 'elite' ? 'Elite Trader' : plan === 'pro' ? 'Portfolio Mgr' : plan === 'discord' ? 'Discord' : 'Free';
+      const planLabel = plan === 'elite' ? 'Elite' : plan === 'pro' ? 'Portfolio Mgr' : plan === 'discord' ? 'Discord' : 'Free';
       const planColor = plan === 'elite' ? 'var(--gold)' : plan === 'pro' ? 'var(--green-bright)' : plan === 'discord' ? 'var(--reactor-bright)' : 'var(--text-tertiary)';
       startFree.innerHTML = planLabel + ' &rarr;';
       startFree.style.cssText += ';background:transparent;border:1px solid ' + planColor + ';color:' + planColor + ';box-shadow:none;';
@@ -6867,7 +6831,7 @@ async function openBillingPortal() {
         <div style="width:64px;height:64px;border-radius:50%;background:rgba(126,255,92,.12);border:2px solid rgba(126,255,92,.3);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 20px;">&#10003;</div>
         <div style="font-family:var(--display);font-size:28px;letter-spacing:1px;margin-bottom:8px;">YOU'RE IN.</div>
         <div style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;">Your plan is now active. Join the Phantom Traders Discord to connect with other traders, get live signals, and access exclusive channels.</div>
-        <a href="https://discord.gg/cU9ywjWh" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#5865F2;color:#fff;border:none;border-radius:10px;padding:14px 28px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;width:100%;transition:all .2s;margin-bottom:12px;" onmouseover="this.style.background='#4752c4'" onmouseout="this.style.background='#5865F2'">&#128172; Join Discord Server</a>
+        <a href="https://discord.gg/GURRyUfU8Y" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#5865F2;color:#fff;border:none;border-radius:10px;padding:14px 28px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;width:100%;transition:all .2s;margin-bottom:12px;" onmouseover="this.style.background='#4752c4'" onmouseout="this.style.background='#5865F2'">&#128172; Join Discord Server</a>
         <button onclick="this.closest('div').parentElement.remove()" style="background:transparent;border:1px solid var(--border2);border-radius:10px;padding:10px 24px;color:var(--muted);font-size:13px;cursor:pointer;width:100%;font-family:var(--mono);">Maybe later</button>
       `;
       overlay.appendChild(modal);
@@ -7138,7 +7102,7 @@ async function openBillingPortal() {
         <h2 class="doc-h2">Price Refresh</h2>
         <p class="doc-p">Prices auto-refresh every 30 seconds. The status badge in the holdings header shows:</p>
         <ul class="doc-list">
-          <li><span style="color:var(--green)">● Live</span> — real-time feed active (Pro/Desk)</li>
+          <li><span style="color:var(--green)">● Live</span> — real-time feed active (Pro Trader/Elite)</li>
           <li><span style="color:var(--gold)">◎ Delayed</span> — 15-minute delayed prices (Free)</li>
           <li><span style="color:var(--muted)">◌ Loading</span> — fetch in progress</li>
         </ul>
@@ -7303,12 +7267,12 @@ async function openBillingPortal() {
         <h1 class="doc-h1">Plan Comparison</h1>
         <div class="doc-table-wrap">
           <table class="doc-table">
-            <thead><tr><th>Feature</th><th>Free</th><th>Pro $20/mo</th><th>Elite $50/mo</th></tr></thead>
+            <thead><tr><th>Feature</th><th>Free</th><th>Pro Trader $15/mo</th><th>Elite $25/mo</th></tr></thead>
             <tbody>
               <tr><td>Holdings</td><td>10</td><td>Unlimited</td><td>Unlimited</td></tr>
               <tr><td>Price data</td><td>15-min delay</td><td>Real-time</td><td>Real-time</td></tr>
-              <tr><td>Monthly price</td><td>$0 / free</td><td style="color:var(--green);font-weight:700;">$20/mo</td><td style="color:var(--gold);font-weight:700;">$50/mo</td></tr>
-              <tr><td>Annual price</td><td>—</td><td style="color:var(--green);">$199/yr <span style="font-size:10px;color:var(--muted);">($17/mo · save 30%)</span></td><td style="color:var(--gold);">$499/yr <span style="font-size:10px;color:var(--muted);">($42/mo · save 17%)</span></td></tr>
+              <tr><td>Monthly price</td><td>$0 / free</td><td style="color:var(--green);font-weight:700;">$15/mo</td><td style="color:var(--gold);font-weight:700;">$25/mo</td></tr>
+              <tr><td>Annual price</td><td>—</td><td style="color:var(--green);">$150/yr <span style="font-size:10px;color:var(--muted);">($12.50/mo · 2 months free)</span></td><td style="color:var(--gold);">$250/yr <span style="font-size:10px;color:var(--muted);">($20.83/mo · 2 months free)</span></td></tr>
               <tr><td>AI risk score</td><td>✗</td><td>✓</td><td>✓</td></tr>
               <tr><td>Tax harvesting</td><td>✗</td><td>✓</td><td>✓</td></tr>
               <tr><td>Stock screener + AI</td><td>✗</td><td>✓</td><td>✓</td></tr>
@@ -7316,7 +7280,7 @@ async function openBillingPortal() {
               <tr><td>Email alerts</td><td>✗</td><td>✓</td><td>✓</td></tr>
               <tr><td>SMS alerts</td><td>✗</td><td>✗</td><td>✓</td></tr>
               <tr><td>API access</td><td>✗</td><td>✗</td><td>✓</td></tr>
-              <tr><td>Discord Community</td><td>✗</td><td>✗</td><td>✓ Included free</td></tr>
+              <tr><td>Discord Community</td><td>✗</td><td>✓ Included</td><td>✓ Included + Elite Lounge</td></tr>
               <tr><td>Brokerage sync (Plaid)</td><td>✗</td><td>✗</td><td>✓ Coming soon</td></tr>
               <tr><td>Team members</td><td>1</td><td>1</td><td>2</td></tr>
             </tbody>
@@ -7328,7 +7292,7 @@ async function openBillingPortal() {
         <div class="doc-breadcrumb">Plans & Billing → How to Upgrade</div>
         <h1 class="doc-h1">How to Upgrade</h1>
         <p class="doc-p">Click <strong>Billing</strong> in the sidebar → select your plan → click Upgrade. You'll be taken to Stripe's secure checkout. Upgrades take effect immediately.</p>
-        <div class="doc-callout green"><strong>Annual discount:</strong> Choose annual billing to save 30% — Pro drops from $20 to $14/month, Desk from $50 to $50/month.</div>
+        <div class="doc-callout green"><strong>Annual discount:</strong> Choose annual billing and get two months free — Pro Trader is $150/yr ($12.50/month), Elite is $250/yr ($20.83/month).</div>
       </div>
 
       <div class="doc-section" id="doc-cancel">
@@ -8465,7 +8429,7 @@ async function openBillingPortal() {
           <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#128200;</div><div style="font-weight:700;margin-bottom:6px;">Meaningful Equity</div><div style="font-size:12px;color:var(--muted);">Everyone gets equity. You own what you build.</div></div>
           <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#127979;</div><div style="font-weight:700;margin-bottom:6px;">Learning Budget</div><div style="font-size:12px;color:var(--muted);">$2,000/year for courses, books, and conferences.</div></div>
           <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#127968;</div><div style="font-weight:700;margin-bottom:6px;">Unlimited PTO</div><div style="font-size:12px;color:var(--muted);">We trust you to manage your time. Minimum 3 weeks enforced.</div></div>
-          <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#128200;</div><div style="font-weight:700;margin-bottom:6px;">Trading Perks</div><div style="font-size:12px;color:var(--muted);">Free Desk plan + $500 annual trading stipend for all employees.</div></div>
+          <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#128200;</div><div style="font-weight:700;margin-bottom:6px;">Trading Perks</div><div style="font-size:12px;color:var(--muted);">Free Elite plan + $500 annual trading stipend for all employees.</div></div>
           <div style="background:var(--bg3);border-radius:12px;padding:20px;"><div style="font-size:24px;margin-bottom:10px;">&#127775;</div><div style="font-weight:700;margin-bottom:6px;">Real Impact</div><div style="font-size:12px;color:var(--muted);">Small team means your work ships fast and reaches real users.</div></div>
         </div>
       </div>
@@ -8490,7 +8454,7 @@ async function openBillingPortal() {
               <label class="form-label">Topic</label>
               <select class="form-input" id="ctTopic" style="font-family:var(--mono);">
                 <option>General enquiry</option>
-                <option>Pro or Desk plan</option>
+                <option>Pro Trader or Elite plan</option>
                 <option>Bug report</option>
                 <option>Partnership</option>
                 <option>Press enquiry</option>
@@ -8642,7 +8606,7 @@ async function openBillingPortal() {
 
         <div class="roadmap-item status-shipping"><div class="roadmap-status shipping">&#x25CF; Shipping</div><div class="roadmap-body"><h4>Mobile App (iOS + Android)</h4><p>Native mobile app with push notifications, live portfolio view, and one-tap alert creation. All the power of the dashboard in your pocket.</p><div class="roadmap-votes">&#128293; 1,204 votes</div></div></div>
 
-        <div class="roadmap-item status-progress"><div class="roadmap-status progress">&#x25CF; In Progress</div><div class="roadmap-body"><h4>Backtesting Engine</h4><p>Test your trading strategy against historical data. Set entry/exit rules, run across any date range, and see simulated P&amp;L, win rate, and drawdown. Pro and Desk plans.</p><div class="roadmap-votes">&#128293; 632 votes</div></div></div>
+        <div class="roadmap-item status-progress"><div class="roadmap-status progress">&#x25CF; In Progress</div><div class="roadmap-body"><h4>Backtesting Engine</h4><p>Test your trading strategy against historical data. Set entry/exit rules, run across any date range, and see simulated P&amp;L, win rate, and drawdown. Pro Trader and Elite plans.</p><div class="roadmap-votes">&#128293; 632 votes</div></div></div>
 
         <div class="roadmap-item status-progress"><div class="roadmap-status progress">&#x25CF; In Progress</div><div class="roadmap-body"><h4>Options Chain Viewer</h4><p>Full options chain with live Greeks (delta, gamma, theta, vega), IV rank, and max pain level. Integrated directly into the stock detail panel.</p><div class="roadmap-votes">&#128293; 519 votes</div></div></div>
 
@@ -8704,7 +8668,7 @@ async function openBillingPortal() {
             <p class="legal-p"><strong>Payment data:</strong> Processed entirely by Stripe. We never store card numbers or banking credentials.</p>
             <p class="legal-p"><strong>Portfolio data you enter:</strong> Tickers, share counts, cost basis, trade journal entries, watchlist tickers, and alert configurations. This data belongs to you.</p>
             <p class="legal-p"><strong>Usage analytics:</strong> Page views and feature interactions collected via Plausible.io &#x2014; no cookies, no personal data, no cross-site tracking.</p>
-            <p class="legal-p"><strong>Brokerage data (Desk plan only):</strong> If you connect a brokerage via Plaid, Plaid handles authentication. We receive read-only holdings data only. We never store brokerage login credentials.</p>
+            <p class="legal-p"><strong>Brokerage data (Elite plan only):</strong> If you connect a brokerage via Plaid, Plaid handles authentication. We receive read-only holdings data only. We never store brokerage login credentials.</p>
           </div>
         </div>
 
@@ -8733,7 +8697,7 @@ async function openBillingPortal() {
               <li><strong>Supabase</strong> &#x2014; database and authentication (US-East-1 / AWS)</li>
               <li><strong>Twilio</strong> &#x2014; SMS alert delivery (only if you enable SMS)</li>
               <li><strong>Resend</strong> &#x2014; transactional email</li>
-              <li><strong>Plaid</strong> &#x2014; brokerage connection (Desk plan only)</li>
+              <li><strong>Plaid</strong> &#x2014; brokerage connection (Elite plan only)</li>
             </ul>
             <p class="legal-p">We may disclose information when required by law or to protect the rights and safety of Phantom Traders, our users, or the public.</p>
           </div>
@@ -9036,11 +9000,11 @@ async function openBillingPortal() {
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <div style="text-align:center;padding-right:14px;border-right:1px solid rgba(88,101,242,.2);">
             <div style="font-family:var(--display);font-size:28px;color:#7289da;letter-spacing:1px;">$15<span style="font-size:14px;color:var(--muted);font-family:var(--mono);">/mo</span></div>
-            <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Discord Community<br><span style="color:#7289da;font-size:9px;">Included in Elite</span></div>
+            <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Pro Trader<br><span style="color:#7289da;font-size:9px;">Discord included</span></div>
           </div>
           <div style="text-align:center;padding-right:14px;border-right:1px solid rgba(77,159,255,.2);">
-            <div style="font-family:var(--display);font-size:28px;color:#4d9fff;letter-spacing:1px;">$20<span style="font-size:14px;color:var(--muted);font-family:var(--mono);">/mo</span></div>
-            <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Portfolio Manager</div>
+            <div style="font-family:var(--display);font-size:28px;color:#4d9fff;letter-spacing:1px;">$25<span style="font-size:14px;color:var(--muted);font-family:var(--mono);">/mo</span></div>
+            <div style="font-size:10px;color:var(--muted);font-family:var(--mono);">Elite</div>
           </div>
           <div>
             <div style="font-size:13px;font-weight:700;margin-bottom:3px;">Active subscriptions</div>
@@ -9103,7 +9067,7 @@ async function openBillingPortal() {
         <div style="display:flex;align-items:center;gap:10px;">
           <span style="font-size:18px;">💡</span>
           <div>
-            <span style="font-size:13px;font-weight:700;color:var(--text);" id="annualBannerText">Switch to annual and save $41</span>
+            <span style="font-size:13px;font-weight:700;color:var(--text);" id="annualBannerText">Switch to annual and save $30</span>
             <span style="font-size:12px;color:var(--muted);margin-left:8px;">— same features, 2 months free</span>
           </div>
         </div>
@@ -9148,7 +9112,7 @@ async function openBillingPortal() {
       <div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:20px;">
         <div style="font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:12px;">DISCORD</div>
         <div id="acctDiscordStatus" style="font-size:14px;color:var(--muted);margin-bottom:12px;"></div>
-        <a href="https://discord.gg/cU9ywjWh" target="_blank" class="btn btn-ghost" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#7289da;border-color:rgba(88,101,242,.4);">&#128172; Join Discord Server</a>
+        <a href="https://discord.gg/GURRyUfU8Y" target="_blank" class="btn btn-ghost" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#7289da;border-color:rgba(88,101,242,.4);">&#128172; Join Discord Server</a>
       </div>
 
       <!-- Notifications -->
@@ -9968,7 +9932,10 @@ function updateAcctPage() {
     }
   }
   const discordEl = document.getElementById('acctDiscordStatus');
-  if (discordEl) discordEl.textContent = user.discord_linked ? 'Discord linked ✓' : 'Not linked yet — join the server to connect.';
+  if (discordEl) {
+    if (user.discord_linked) discordEl.textContent = 'Discord linked ✓';
+    else discordEl.innerHTML = 'Not linked yet — <a onclick="linkDiscord()" style="color:var(--green);cursor:pointer;font-weight:700">Link your Discord</a> to get your role.';
+  }
   // Show admin section if admin
   const adminSection = document.getElementById('acctAdminSection');
   // Only show admin section to verified admin email — hidden from all other users
@@ -11019,9 +10986,9 @@ updateDemoBar = function() {
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
         <div style="font-size:15px;font-weight:700;">Annual plan</div>
-        <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green);" id="annualModalPrice">$199/yr</div>
+        <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green);" id="annualModalPrice">$150/yr</div>
       </div>
-      <div style="background:var(--green-dim);border-radius:8px;padding:8px 12px;margin-top:12px;text-align:center;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);" id="annualModalSaving">YOU SAVE $41 — THAT'S 2 FREE MONTHS</div>
+      <div style="background:var(--green-dim);border-radius:8px;padding:8px 12px;margin-top:12px;text-align:center;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--green);" id="annualModalSaving">YOU SAVE $30 — THAT'S 2 FREE MONTHS</div>
     </div>
     <button onclick="switchToAnnual()" class="btn btn-primary" style="width:100%;padding:14px;font-size:14px;margin-bottom:10px;" id="annualModalBtn">Switch to Annual Now &#x2192;</button>
     <p style="text-align:center;font-size:11px;color:var(--muted2);font-family:var(--mono);">Billed once per year · Cancel any time · No interruption to your access</p>
@@ -11036,8 +11003,8 @@ updateDemoBar = function() {
 
 // ── Annual plan config ───────────────────────────────────────────
 const ANNUAL_PLANS = {
-  pro:   { monthlyTotal: 240, annualPrice: 199, saving: 41, stripePrice: 'price_1TEtzRPddnEAOUngVca0PJAu', label: 'Pro Trader Annual' },
-  elite: { monthlyTotal: 600, annualPrice: 499, saving: 101, stripePrice: 'price_1TEtzQPddnEAOUngFbNfRqQe', label: 'Elite Annual' },
+  pro:   { monthlyTotal: 240, annualPrice: 199, saving: 41, stripePrice: 'price_1UIqL4PddnEAOUng559NtSZj', label: 'Pro Trader Annual' },
+  elite: { monthlyTotal: 600, annualPrice: 499, saving: 101, stripePrice: 'price_1UIqMFPddnEAOUngxRQiTX48', label: 'Elite Annual' },
 };
 
 // ── Detect if user is on a monthly plan ─────────────────────────
@@ -11280,7 +11247,10 @@ window.addEventListener('load', () => {
     } catch(e) {}
   }
 })();
+</script> <script>
+/* Discord account linking — the site half of routers/discord_oauth.py. */
+async function linkDiscord(){try{const{data:sd}=await supabaseClient.auth.getSession();const session=sd&&sd.session;if(!session){showPage("login");return}const r=await fetch("https://phantom-traders-backend.onrender.com/discord/oauth/start",{method:"POST",headers:{Authorization:"Bearer "+session.access_token}});if(r.status===503){showToast("Discord linking isn't switched on yet — check back soon");return}if(!r.ok){showToast("Couldn't start Discord linking ("+r.status+")");return}const d=await r.json();if(d.url)location.href=d.url}catch(e){showToast("Couldn't start Discord linking")}}
+(function(){try{const q=new URLSearchParams(location.search),v=q.get("discord");if(!v)return;history.replaceState(null,"",location.pathname);if(v==="linked"){showToast("Discord linked ✓ — your role is being assigned");supabaseClient.auth.getSession().then(function(o){const s=o&&o.data&&o.data.session;if(s&&"function"==typeof syncPlanFromBackend)syncPlanFromBackend(s).then(function(){"function"==typeof updateAcctPage&&updateAcctPage()})})}else showToast("Discord linking failed: "+v.replace(/^error:/,"").replace(/_/g," "))}catch(e){}})();
 </script>
-
 </body>
 </html>
