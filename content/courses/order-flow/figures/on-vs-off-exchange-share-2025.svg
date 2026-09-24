@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Share of US consolidated equity volume, % (Cboe; FINRA TRF data)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Share of US consolidated equity volume, % (Cboe; FINRA TRF data)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0.0%</text>
+<line x1='64' y1='246.7' x2='740' y2='246.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='250.7' fill='#8a948e' text-anchor='end'>20.0%</text>
+<line x1='64' y1='145.3' x2='740' y2='145.3' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='149.3' fill='#8a948e' text-anchor='end'>40.0%</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>60.0%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% of consolidated volume</text>
+<rect x='89.7' y='97.7' width='83.8' height='250.3' fill='#4d9fff' rx='2'/>
+<text x='131.6' y='91.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>49.4%</text>
+<text x='131.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>Exchanges 2025</text>
+<rect x='224.9' y='139.8' width='83.8' height='208.2' fill='#ff4d6a' rx='2'/>
+<text x='266.8' y='133.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>41.1%</text>
+<text x='266.8' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>Off-exch. dealers 2025</text>
+<rect x='360.1' y='299.9' width='83.8' height='48.1' fill='#ff4d6a' rx='2'/>
+<text x='402.0' y='293.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>9.5%</text>
+<text x='402.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>Off-exch. ATS 2025</text>
+<rect x='495.3' y='120.0' width='83.8' height='228.0' fill='#f5c842' rx='2'/>
+<text x='537.2' y='114.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>45.0%</text>
+<text x='537.2' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>Off-exch. total Apr 2023</text>
+<rect x='630.5' y='91.6' width='83.8' height='256.4' fill='#f5c842' rx='2'/>
+<text x='672.4' y='85.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>50.6%</text>
+<text x='672.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>Off-exch. total 2025</text>
+</svg>
