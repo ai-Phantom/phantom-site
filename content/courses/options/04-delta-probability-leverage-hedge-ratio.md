@@ -6,14 +6,15 @@
   "status": "published",
   "quiz": [
     {"q": "The XYZ 100 call has delta 0.54. XYZ rises from 100.00 to 101.00. Ignoring other effects, the call moves from 4.16 to about:", "opts": ["4.70", "5.16", "4.16", "4.62"], "correct": 0, "explain": "A delta of 0.54 means about 0.54 per 1.00 move in the stock: 4.16 + 0.54 = 4.70. (Gamma will nudge it slightly higher; Lesson 7.)"},
-    {"q": "Which reading of delta is used when a trader says 'the 35-delta call'?", "opts": ["The call has 35% leverage", "The call is roughly 35% likely to expire ITM", "The call moves 35 cents per 1% stock move", "The call needs 35 shares to hedge"], "correct": 1, "explain": "Delta is widely used as a rough probability of finishing in the money. A 0.35-delta call is about a one-in-three shot; it is an approximation, not the exact model probability."},
+    {"q": "Which reading of delta is used when a trader says 'the 35-delta call'?", "opts": ["The call has 35% leverage", "The call needs 35 shares to hedge", "The call moves 35 cents per 1% stock move", "The call is roughly 35% likely to expire ITM"], "correct": 3, "explain": "Delta is widely used as a rough probability of finishing in the money. A 0.35-delta call is about a one-in-three shot; it is an approximation, not the exact model probability."},
     {"q": "You own 300 shares of XYZ and want to be approximately delta-neutral using the 100 put (delta -0.46). How many puts?", "opts": ["3", "6 to 7", "1", "46"], "correct": 1, "explain": "300 shares is +300 delta. Each put is -46 delta. 300 / 46 = 6.5, so 6 or 7 puts. Three puts would only hedge 138 shares' worth."},
     {"q": "Which option's delta will change the most for a 2.00 move in the stock?", "opts": ["A 0.96-delta deep ITM call", "A 0.54-delta ATM call", "A 0.09-delta far OTM call", "They change equally"], "correct": 1, "explain": "Delta changes fastest at the money, where gamma is highest. Deep ITM and far OTM deltas are near 1 and 0 and barely move."},
-    {"q": "Put deltas are:", "opts": ["Between 0 and +1", "Between -1 and 0", "Always exactly -0.50", "The same as call deltas at the same strike"], "correct": 1, "explain": "A put gains when the stock falls, so its delta is negative. At the same strike and expiry, call delta minus put delta equals about 1 (exactly e^(-qT) with dividends)."}
+    {"q": "Put deltas are:", "opts": ["Between -1 and 0", "Between 0 and +1", "Always exactly -0.50", "The same as call deltas at the same strike"], "correct": 0, "explain": "A put gains when the stock falls, so its delta is negative. At the same strike and expiry, call delta minus put delta equals about 1 (exactly e^(-qT) with dividends)."}
   ],
   "task": "On a real chain, find the call whose delta is closest to 0.30 and the put closest to -0.30 at 30 to 45 DTE, and note how far each strike sits from the stock price in percent."
 }
 ---
+
 
 ## One number, three jobs
 

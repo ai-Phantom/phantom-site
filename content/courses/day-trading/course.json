@@ -4,7 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Day Trading: Opening Range, VWAP & Scalps",
-  "subtitle": "Intraday structure, the opening range, VWAP, scalping mechanics and the costs that decide whether any of it pays.",
+  "subtitle": "Intraday structure, the opening range, VWAP and scalping mechanics, tested on 60 real SPY sessions, with the costs and base rates that decide whether any of it pays.",
   "price": 29,
-  "what_you_learn": []
+  "what_you_learn": [
+    "The published base rates for retail day traders, the intraday margin standard that replaced the pattern-day-trader rule in 2026, and how to read a 60-trade result with a confidence interval",
+    "Where volume and range live inside the session, measured from 60 real SPY sessions, and why the same dollar stop means different things at 09:35 and 12:30",
+    "The opening-range breakout defined precisely enough to test, with a 60-session result for twelve variants, an in-sample versus out-of-sample split, and what that split says about picking rules",
+    "VWAP as a benchmark and as a reference: how to compute it by hand, how often price reverts to it, and a tested pullback entry that lost money on the sample",
+    "Why round-trip cost as a share of risk decides whether scalping can work, why level 2 and the tape cannot tell you what people assume, and what a 0DTE version of the opening range does at 16:00",
+    "A one-setup playbook with stop-based sizing, a daily loss limit, time stops and a fourteen-field journal, and a 30-session capstone graded on the honesty of the evidence rather than its sign"
+  ]
 }

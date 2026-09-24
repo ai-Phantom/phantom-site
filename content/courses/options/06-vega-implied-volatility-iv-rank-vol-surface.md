@@ -6,7 +6,7 @@
   "status": "published",
   "quiz": [
     {"q": "The XYZ 100 call is 4.16 with vega 0.139. Implied volatility rises from 28% to 32% with nothing else changing. The call is now worth about:", "opts": ["4.30", "4.72", "3.60", "5.55"], "correct": 1, "explain": "Vega is the change per one-point move in IV: 4 points x 0.139 = 0.56, so 4.16 + 0.56 = 4.72. The full model gives 4.72."},
-    {"q": "Implied volatility is best described as:", "opts": ["The stock's realised volatility over the past 30 days", "The volatility input that makes a pricing model reproduce the option's market price", "The VIX", "The expected return of the stock"], "correct": 1, "explain": "IV is backed out of the market price: it is the sigma at which the model price equals the quoted price. It is a price for uncertainty, not a measurement of past movement."},
+    {"q": "Implied volatility is best described as:", "opts": ["The stock's realised volatility over the past 30 days", "The expected return of the stock", "The VIX", "The volatility input that makes a pricing model reproduce the option's market price"], "correct": 3, "explain": "IV is backed out of the market price: it is the sigma at which the model price equals the quoted price. It is a price for uncertainty, not a measurement of past movement."},
     {"q": "XYZ's 30-day IV has ranged from 16% to 44% over the past year and is 28% today. IV rank is:", "opts": ["28%", "63.6%", "42.9%", "12%"], "correct": 2, "explain": "IV rank = (current - low) / (high - low) = (28 - 16) / (44 - 16) = 12 / 28 = 42.9%."},
     {"q": "On most equity chains, OTM puts trade at higher implied volatility than OTM calls the same distance from the money. This pattern is called:", "opts": ["Contango", "Skew (or smile)", "Term structure", "Put-call parity"], "correct": 1, "explain": "Volatility skew describes IV varying by strike within one expiration; the downside-put premium reflects demand for crash protection and the tendency of stocks to fall faster than they rise."},
     {"q": "Which position has the most vega risk per contract?", "opts": ["An ATM call at 7 DTE (vega 0.055)", "An ATM call at 45 DTE (vega 0.139)", "An ATM call at 90 DTE (vega 0.196)", "A far OTM call at 45 DTE (vega 0.058)"], "correct": 2, "explain": "Vega grows with time to expiration because a change in expected volatility has more time to matter. Longer-dated ATM options are the most volatility-sensitive."}
@@ -14,6 +14,7 @@
   "task": "Find the IV rank or IV percentile field on your broker's platform for three different stocks and write down which one is highest, along with each stock's next earnings date."
 }
 ---
+
 
 ## The input you cannot see
 

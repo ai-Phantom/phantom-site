@@ -3,12 +3,14 @@
 <text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>SPY 5-minute bars, 2026-07-01: 15-minute opening range, VWAP, breakout long</text>
 <line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
 <text x='56' y='352.0' fill='#8a948e' text-anchor='end'>740</text>
-<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#2a3138' stroke-width='1'/>
-<text x='56' y='276.0' fill='#8a948e' text-anchor='end'>742</text>
-<line x1='64' y1='196.0' x2='740' y2='196.0' stroke='#2a3138' stroke-width='1'/>
-<text x='56' y='200.0' fill='#8a948e' text-anchor='end'>745</text>
-<line x1='64' y1='120.0' x2='740' y2='120.0' stroke='#2a3138' stroke-width='1'/>
-<text x='56' y='124.0' fill='#8a948e' text-anchor='end'>748</text>
+<line x1='64' y1='287.2' x2='740' y2='287.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='291.2' fill='#8a948e' text-anchor='end'>742</text>
+<line x1='64' y1='226.4' x2='740' y2='226.4' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='230.4' fill='#8a948e' text-anchor='end'>744</text>
+<line x1='64' y1='165.6' x2='740' y2='165.6' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='169.6' fill='#8a948e' text-anchor='end'>746</text>
+<line x1='64' y1='104.8' x2='740' y2='104.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='108.8' fill='#8a948e' text-anchor='end'>748</text>
 <line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
 <text x='56' y='48.0' fill='#8a948e' text-anchor='end'>750</text>
 <line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>

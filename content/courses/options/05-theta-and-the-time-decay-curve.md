@@ -65,7 +65,7 @@ Model values of the 100 call at each checkpoint:
 
 Reading it: by 21 DTE, a third of the premium is gone with the stock exactly where you bought it. By 7 DTE, 62%. The final week costs 1.58, more than the first 24 days combined (1.37). The quoted theta of -0.049 at entry described only the first few days; averaged over the full 45 days, decay ran at 4.16 / 45 = 0.092 a day, almost double.
 
-Now put a move in. Suppose XYZ rises to 104.00 by 16 October (21 DTE). The 100 call's model value is 5.35, so you are up 5.35 - 4.16 = 1.19. Your delta gain was roughly 0.54 x 4 = 2.16 plus gamma; theta took 1.37 of it back. The stock did what you wanted, and you kept about half the directional gain. Had the same 4.00 move happened by 7 October (30 DTE) instead, the call would have been worth 6.11 and you would have kept 1.95 of it. Timing is not a detail in long-option trades; it is the trade.
+Now put a move in. Suppose XYZ rises to 104.00 by 16 October (21 DTE). The 100 call's model value is 5.35, so you are up 5.35 - 4.16 = 1.19. Your delta gain was roughly 0.54 x 4 = 2.16 plus gamma; theta took 1.37 of it back. The stock did what you wanted, and you kept about half the directional gain. Had the same 4.00 move happened by 7 October (30 DTE) instead, the call would have been worth 5.87 and you would have kept 1.71 of it. Timing is not a detail in long-option trades; it is the trade.
 
 ## Chart
 

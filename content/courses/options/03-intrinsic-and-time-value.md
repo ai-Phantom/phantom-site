@@ -8,12 +8,13 @@
     {"q": "XYZ is 100.00. The 95 call trades at 7.15. Its time value is:", "opts": ["7.15", "5.00", "2.15", "0.00"], "correct": 2, "explain": "Intrinsic = 100 - 95 = 5.00. Time value = premium - intrinsic = 7.15 - 5.00 = 2.15."},
     {"q": "Which option has the most time value in absolute dollars on a given expiration?", "opts": ["The deepest ITM call", "The ATM option", "The farthest OTM put", "They are all equal"], "correct": 1, "explain": "Time value peaks at the money, where the outcome is most uncertain, and shrinks toward zero both deep ITM (the option behaves like stock) and far OTM (little chance of finishing ITM)."},
     {"q": "An option's time value at expiration is always:", "opts": ["Equal to the premium paid", "Zero", "Equal to intrinsic value", "Negative"], "correct": 1, "explain": "With no time left there is no uncertainty to pay for; an expiring option is worth exactly its intrinsic value, which may be zero."},
-    {"q": "XYZ is 100.00, the 105 put trades at 6.64 and the 95 call at 7.15. Both are 5.00 ITM. Why is the put's time value (1.64) lower than the call's (2.15)?", "opts": ["Puts are always cheaper", "Interest: the call holder keeps cash earning 4% while the put holder forgoes it, which put-call parity prices in", "The put is closer to expiration", "The put has a lower strike"], "correct": 1, "explain": "With a positive rate and no dividend, a call's value includes the benefit of delaying payment of the strike, while a put's is reduced by delaying receipt. The same effect shows in the ATM pair: 100 call 4.16 versus 100 put 3.67."},
-    {"q": "A put has strike 110 and the stock is at 100. Intrinsic value is:", "opts": ["0", "10", "-10", "Cannot be known without the premium"], "correct": 1, "explain": "Put intrinsic = max(strike - stock, 0) = max(110 - 100, 0) = 10. It does not depend on the premium."}
+    {"q": "XYZ is 100.00, the 105 put trades at 6.64 and the 95 call at 7.15. Both are 5.00 ITM. Why is the put's time value (1.64) lower than the call's (2.15)?", "opts": ["Interest: the call holder keeps cash earning 4% while the put holder forgoes it, which put-call parity prices in", "Puts are always cheaper", "The put is closer to expiration", "The put has a lower strike"], "correct": 0, "explain": "With a positive rate and no dividend, a call's value includes the benefit of delaying payment of the strike, while a put's is reduced by delaying receipt. The same effect shows in the ATM pair: 100 call 4.16 versus 100 put 3.67."},
+    {"q": "A put has strike 110 and the stock is at 100. Intrinsic value is:", "opts": ["0", "Cannot be known without the premium", "-10", "10"], "correct": 3, "explain": "Put intrinsic = max(strike - stock, 0) = max(110 - 100, 0) = 10. It does not depend on the premium."}
   ],
   "task": "On a real chain, take one expiration and compute intrinsic and time value for the ATM call, one ITM call and one OTM call; confirm time value peaks at the money."
 }
 ---
+
 
 ## Two parts to every premium
 
