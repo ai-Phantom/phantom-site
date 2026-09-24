@@ -67,6 +67,8 @@ As a trading rule (long from bullish cross to next bearish cross, no costs): 110
 
 ## Chart
 
+![SPY MACD(12, 26, 9) line, signal line and histogram, 1 Sep–30 Dec 2022; the 13 Oct bullish cross (the third signal-line cross in six sessions), the 28 Oct histogram peak of +3.58 and the 6 Dec bearish cross marked. Source: Yahoo Finance.](figures/spy-macd-sep-dec-2022.svg)
+
 Described chart: a two-panel daily chart of SPY from 1 September to 31 December 2022. The top panel shows the close, with the 12-EMA and 26-EMA drawn as two lines; the 12 crosses above the 26 (the zero-line cross) on 28 October at a close of 389.02. The bottom panel shows the MACD line and the signal line, both negative throughout September and October, with the histogram as bars. Mark the three signal-line crosses of 5, 11 and 13 October as vertical dashed lines: the histogram flips sign three times inside a band of ±0.5 while the MACD line itself stays between −11.4 and +1.6 across September and October. From 13 October the histogram widens steadily to a peak of +3.58 on 28 October, then shrinks through November even as price rises to 400: that shrinking histogram is the "deceleration" reading, and it preceded the 6 December bearish cross.
 
 ## Using MACD

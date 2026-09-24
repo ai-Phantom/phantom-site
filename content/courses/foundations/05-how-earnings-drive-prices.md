@@ -76,6 +76,8 @@ Even if earnings arrive exactly as expected, the P/E term changes when the repor
 
 Picture a bar chart with two bars for a hypothetical stock before and after a report. Before: EPS estimate 5.00 dollars, multiple 30, price 150. After: the company reports and guides to EPS of 5.50 dollars, a 10 percent increase, but slower growth causes the market to pay a multiple of 24. New price: 5.50 multiplied by 24 equals 132. The earnings bar grew 10 percent; the multiple bar shrank 20 percent; the price fell 12 percent. Every earnings-season "why did it fall on good numbers" question is this chart with different values.
 
+![EPS, P/E multiple and price before and after the hypothetical report, indexed to 100: EPS 5.00 to 5.50 (110), multiple 30 to 24 (80), price 150 to 132 (88). Numbers from the example above.](figures/earnings-times-multiple.svg)
+
 ## Worked example
 
 NVIDIA (NVDA) reported first-quarter fiscal 2026 results on 28 May 2025, after the close. The relevant figures, from the company's press release furnished on Form 8-K:

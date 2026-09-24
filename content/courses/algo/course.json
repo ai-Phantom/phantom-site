@@ -3,8 +3,8 @@
   "icon": "⚙️",
   "tier": "expert",
   "level": "Advanced",
-  "title": "Algorithmic Trading Intro",
-  "subtitle": "Write your first automated trading strategy. Connect to the Phantom Traders API. Run real backtests.",
+  "title": "Systematic Trading & Backtesting",
+  "subtitle": "Turn a rule into code, test it without fooling yourself, and run it: from data to a live paper book.",
   "price": 39,
   "what_you_learn": [
     "What algorithmic trading actually is — and what distinguishes systematic from discretionary trading",

@@ -82,6 +82,8 @@ Assume 10,000 dollars invested for 30 years and a gross index return of 7 percen
 - **0.75 percent active fund** (assume it matches the index before fees, which most do not): net 6.25 percent. Ending value: 10,000 × 1.0625^30 ≈ **61,600 dollars**.
 - **No fee at all** (the index itself): 10,000 × 1.07^30 ≈ 76,100 dollars.
 
+![10,000 dollars for 30 years at 7 percent gross, net of each expense ratio: no fee 76,100; VOO or IVV at 0.03 percent 75,500; SPY at 0.0945 percent 74,100; a 0.75 percent active fund 61,600. Expense ratios from the funds' 2024 prospectuses.](figures/expense-ratio-drag-30-years.svg)
+
 Reading it:
 
 - The gap between SPY and VOO is about 1,400 dollars over 30 years, under 2 percent of the ending value. Real, but small; SPY's far larger trading volume and tighter options market are why it remains the most-traded ETF despite the higher fee. For a buy-and-hold investor the cheaper fund wins; for someone trading it daily, the liquidity may be worth more than the fee.

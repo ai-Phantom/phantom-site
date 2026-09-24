@@ -110,6 +110,8 @@ What happened, step by step:
 3. Wednesday, 1 January 2025 was a market holiday, so T+1 settlement fell on Thursday, 2 January 2025. On that day DTC moved 10 shares into your broker's account, held in "street name" on your behalf, and 2,504.20 dollars moved out.
 4. From that point you owned ten fifteen-billionths of Apple, roughly 0.00000007 percent. Apple's next dividend after that date, 25 cents per share, would arrive in your account provided you held the shares through the ex-dividend date.
 
+![Trade lifecycle for 10 AAPL bought at the 31 December 2024 close: order sent, broker routes, fill at the NBBO, NSCC clears and nets, DTC settles T+1 on Thursday 2 January 2025. Prices from this worked example; the settlement rule from the SEC's T+1 release.](figures/trade-lifecycle.svg)
+
 Notice what did not happen: Apple received nothing, no exchange listing fee was charged to you, and the counterparty was almost certainly a market maker or another investor, not the company.
 
 ## Sources

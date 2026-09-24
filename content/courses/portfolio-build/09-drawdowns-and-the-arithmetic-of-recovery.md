@@ -36,6 +36,8 @@ Duration is the part people under-estimate. A drawdown is not over when prices s
 - February to March 2020: −33.9%. New high in August 2020. Duration about 6 months.
 - January to October 2022: −25.4%. New high in January 2024. Duration about 2 years.
 
+![The four largest S&P 500 price drawdowns since 2000, peak to trough, as dated in the list above: −49.1% (2000–02), −56.8% (2007–09), −33.9% (2020), −25.4% (2022).](figures/sp500-drawdowns-since-2000.svg)
+
 With dividends reinvested the durations are somewhat shorter, roughly four years for the 2007 episode. Either way, two of the four required the investor to sit with a loss for years while the news stayed bad. A plan that assumes recoveries take months has not been tested against the record.
 
 ## Worked example
@@ -76,6 +78,8 @@ The all-stock investor needed 131% and, at average returns, over twelve years. T
 | 90% | 900.0% | 47.2 | 34.0 | 24.2 |
 
 Years computed as ln(1 ÷ (1 − L)) ÷ ln(1 + r), assuming a constant return and no contributions. Real recoveries vary widely around these figures; the table shows the shape, which is that every step down the left column costs more than the step before.
+
+![Gain required to recover a drawdown, from the lesson's table: −10% needs +11.1%, −50% needs +100%, −75% needs +300%. The −90% row (+900%) is omitted so the smaller bars stay readable.](figures/recovery-arithmetic.svg)
 
 ## The behavioural half
 

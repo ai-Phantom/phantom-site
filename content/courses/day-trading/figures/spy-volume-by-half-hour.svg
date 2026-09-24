@@ -1,0 +1,58 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>SPY average volume per half-hour slot, 60 sessions, 2026-06-30 to 2026-09-23</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>SPY average volume per half-hour slot, 60 sessions, 2026-06-30 to 2026-09-23</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-2.5M</text>
+<line x1='64' y1='287.2' x2='740' y2='287.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='291.2' fill='#8a948e' text-anchor='end'>0.0M</text>
+<line x1='64' y1='226.4' x2='740' y2='226.4' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='230.4' fill='#8a948e' text-anchor='end'>2.5M</text>
+<line x1='64' y1='165.6' x2='740' y2='165.6' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='169.6' fill='#8a948e' text-anchor='end'>5.0M</text>
+<line x1='64' y1='104.8' x2='740' y2='104.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='108.8' fill='#8a948e' text-anchor='end'>7.5M</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>10.0M</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>millions of shares</text>
+<rect x='73.9' y='157.8' width='32.2' height='129.4' fill='#7eff5c' rx='2'/>
+<text x='90.0' y='151.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>5.3M</text>
+<text x='90.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>09:30</text>
+<rect x='125.9' y='211.3' width='32.2' height='75.9' fill='#7eff5c' rx='2'/>
+<text x='142.0' y='205.3' fill='#c9d1cc' text-anchor='middle' font-size='11'>3.1M</text>
+<text x='142.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>10:00</text>
+<rect x='177.9' y='224.5' width='32.2' height='62.7' fill='#7eff5c' rx='2'/>
+<text x='194.0' y='218.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>2.6M</text>
+<text x='194.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>10:30</text>
+<rect x='229.9' y='225.7' width='32.2' height='61.5' fill='#7eff5c' rx='2'/>
+<text x='246.0' y='219.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>2.5M</text>
+<text x='246.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>11:00</text>
+<rect x='281.9' y='239.0' width='32.2' height='48.2' fill='#7eff5c' rx='2'/>
+<text x='298.0' y='233.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>2.0M</text>
+<text x='298.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>11:30</text>
+<rect x='333.9' y='240.5' width='32.2' height='46.7' fill='#7eff5c' rx='2'/>
+<text x='350.0' y='234.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>1.9M</text>
+<text x='350.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>12:00</text>
+<rect x='385.9' y='246.1' width='32.2' height='41.1' fill='#7eff5c' rx='2'/>
+<text x='402.0' y='240.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>1.7M</text>
+<text x='402.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>12:30</text>
+<rect x='437.9' y='243.9' width='32.2' height='43.3' fill='#7eff5c' rx='2'/>
+<text x='454.0' y='237.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>1.8M</text>
+<text x='454.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>13:00</text>
+<rect x='489.9' y='251.2' width='32.2' height='36.0' fill='#7eff5c' rx='2'/>
+<text x='506.0' y='245.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>1.5M</text>
+<text x='506.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>13:30</text>
+<rect x='541.9' y='241.5' width='32.2' height='45.7' fill='#7eff5c' rx='2'/>
+<text x='558.0' y='235.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>1.9M</text>
+<text x='558.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>14:00</text>
+<rect x='593.9' y='232.2' width='32.2' height='55.0' fill='#7eff5c' rx='2'/>
+<text x='610.0' y='226.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>2.3M</text>
+<text x='610.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>14:30</text>
+<rect x='645.9' y='221.3' width='32.2' height='65.9' fill='#7eff5c' rx='2'/>
+<text x='662.0' y='215.3' fill='#c9d1cc' text-anchor='middle' font-size='11'>2.7M</text>
+<text x='662.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>15:00</text>
+<rect x='697.9' y='94.1' width='32.2' height='193.1' fill='#7eff5c' rx='2'/>
+<text x='714.0' y='88.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>7.9M</text>
+<text x='714.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>15:30</text>
+</svg>

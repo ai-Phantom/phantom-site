@@ -1,0 +1,10 @@
+{
+  "id": "order-flow",
+  "icon": "📊",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Market Structure & Order Flow",
+  "subtitle": "Auctions, the order book, the tape, dark pools, market makers and what order flow can and cannot tell you.",
+  "price": 29,
+  "what_you_learn": []
+}

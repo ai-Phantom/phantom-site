@@ -1,0 +1,29 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>ATR sizing: how much of the account one position gets</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>ATR sizing: how much of the account one position gets</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0%</text>
+<line x1='64' y1='206.4' x2='740' y2='206.4' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='210.4' fill='#8a948e' text-anchor='end'>50%</text>
+<line x1='64' y1='64.8' x2='740' y2='64.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='68.8' fill='#8a948e' text-anchor='end'>100%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% of account</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>1%</text>
+<text x='165.4' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='266.8' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='368.2' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='469.6' y='366' fill='#8a948e' text-anchor='middle'>4%</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='672.4' y='366' fill='#8a948e' text-anchor='middle'></text>
+<line x1='64' y1='64.8' x2='740' y2='64.8' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='59.8' fill='#8a948e' text-anchor='end' font-size='11'>100% = fully invested in one name</text>
+<polyline points='64.0,206.4 97.8,234.7 131.6,253.6 165.4,267.1 199.2,277.2 233.0,285.1 266.8,291.4 300.6,296.5 334.4,300.8 368.2,304.4 402.0,307.5 435.8,310.2 469.6,312.6 503.4,314.7 537.2,316.5 571.0,318.2 604.8,319.7 638.6,321.0 672.4,322.3 706.2,323.4 740.0,324.4' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='165.4' cy='267.1' r='4' fill='#ff4d6a'/>
+<text x='173.4' y='259.1' fill='#c9d1cc' text-anchor='start' font-size='11'>JNJ ATR 1.64% -&gt; 29% of account</text>
+<circle cx='503.4' cy='314.7' r='4' fill='#ff4d6a'/>
+<text x='495.4' y='306.7' fill='#c9d1cc' text-anchor='end' font-size='11'>AVGO ATR 4.19% -&gt; 12% of account</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>position value, % of account (1% risk, 2 x ATR stop)</text>
+</svg>

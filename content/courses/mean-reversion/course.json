@@ -1,0 +1,10 @@
+{
+  "id": "mean-reversion",
+  "icon": "🔁",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Mean Reversion & Pairs",
+  "subtitle": "When prices snap back, when they do not, and how to test it: RSI(2), Bollinger reversion, pairs and spreads.",
+  "price": 29,
+  "what_you_learn": []
+}

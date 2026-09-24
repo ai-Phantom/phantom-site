@@ -1,0 +1,27 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>50-day closing-high breakouts, 2016-2026: held vs closed below the level in 20 days</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>50-day closing-high breakouts, 2016-2026: held vs closed below the level in 20 days</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0</text>
+<line x1='64' y1='254.7' x2='740' y2='254.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='258.7' fill='#8a948e' text-anchor='end'>50</text>
+<line x1='64' y1='161.5' x2='740' y2='161.5' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='165.5' fill='#8a948e' text-anchor='end'>100</text>
+<line x1='64' y1='68.2' x2='740' y2='68.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='72.2' fill='#8a948e' text-anchor='end'>150</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>breakouts</text>
+<rect x='96.1' y='243.6' width='104.8' height='104.4' fill='#7eff5c' rx='2'/>
+<text x='148.5' y='237.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>56</text>
+<text x='148.5' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY held</text>
+<rect x='265.1' y='44.0' width='104.8' height='304.0' fill='#ff4d6a' rx='2'/>
+<text x='317.5' y='38.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>163</text>
+<text x='317.5' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY failed (74.4%)</text>
+<rect x='434.1' y='232.4' width='104.8' height='115.6' fill='#7eff5c' rx='2'/>
+<text x='486.5' y='226.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>62</text>
+<text x='486.5' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>AAPL held</text>
+<rect x='603.1' y='142.8' width='104.8' height='205.2' fill='#ff4d6a' rx='2'/>
+<text x='655.5' y='136.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>110</text>
+<text x='655.5' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>AAPL failed (64.0%)</text>
+</svg>

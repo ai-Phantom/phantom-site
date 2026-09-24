@@ -1,0 +1,10 @@
+{
+  "id": "crypto",
+  "icon": "🪙",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Crypto: Spot, Perpetuals & Funding",
+  "subtitle": "Spot, perpetual swaps, funding rates, basis and carry, custody and the venue risks that do not exist in equities.",
+  "price": 29,
+  "what_you_learn": []
+}
