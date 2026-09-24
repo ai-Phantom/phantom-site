@@ -1,6 +1,6 @@
 {
   "base": "https://aiphantomtraders.com",
-  "startedAt": "2026-09-23T16:04:36.000Z",
+  "startedAt": "2026-09-24T03:19:06.171Z",
   "pages": [
     {
       "id": "home",
@@ -8,9 +8,7 @@
       "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "home",
@@ -18,9 +16,7 @@
       "url": "https://aiphantomtraders.com/",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "features",
@@ -28,9 +24,7 @@
       "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "features",
@@ -38,9 +32,7 @@
       "url": "https://aiphantomtraders.com/#page-features",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "pricing",
@@ -48,9 +40,7 @@
       "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "pricing",
@@ -58,9 +48,7 @@
       "url": "https://aiphantomtraders.com/#page-pricing",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "products",
@@ -68,9 +56,7 @@
       "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "products",
@@ -78,9 +64,7 @@
       "url": "https://aiphantomtraders.com/#page-products",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "blog",
@@ -88,9 +72,7 @@
       "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "blog",
@@ -98,9 +80,7 @@
       "url": "https://aiphantomtraders.com/#page-blog",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "discord",
@@ -108,9 +88,7 @@
       "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "discord",
@@ -118,9 +96,7 @@
       "url": "https://aiphantomtraders.com/#page-discord",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "dashboard",
@@ -128,9 +104,7 @@
       "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "dashboard",
@@ -138,9 +112,7 @@
       "url": "https://aiphantomtraders.com/#page-dashboard",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "signup",
@@ -148,9 +120,7 @@
       "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "signup",
@@ -158,9 +128,7 @@
       "url": "https://aiphantomtraders.com/#page-signup",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "legal",
@@ -168,9 +136,7 @@
       "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "legal",
@@ -178,9 +144,7 @@
       "url": "https://aiphantomtraders.com/#page-legal",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "docs",
@@ -188,9 +152,7 @@
       "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "docs",
@@ -198,9 +160,7 @@
       "url": "https://aiphantomtraders.com/#page-docs",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "store",
@@ -208,9 +168,7 @@
       "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     },
     {
       "id": "store",
@@ -218,16 +176,80 @@
       "url": "https://aiphantomtraders.com/#page-store",
       "ok": true,
       "httpStatus": 200,
-      "consoleErrors": [
-        "pageerror: SyntaxError: Unexpected token '}'"
-      ]
+      "consoleErrors": []
     }
   ],
   "leaks": [],
   "ticker": {
-    "grid": {},
-    "tape": {},
-    "clock": "MARKET · LIVE"
+    "grid": {
+      "SPY": "−0.72%",
+      "QQQ": "−0.84%",
+      "IWM": "−1.84%",
+      "NVDA": "−1.47%",
+      "TSLA": "+0.32%",
+      "AAPL": "−0.80%",
+      "MSFT": "+0.52%",
+      "AMZN": "−2.24%",
+      "META": "+1.02%",
+      "GOOGL": "−3.80%",
+      "AMD": "−1.47%",
+      "NFLX": "−1.11%",
+      "COIN": "−1.46%",
+      "PLTR": "+3.68%",
+      "MSTR": "−3.07%",
+      "SMCI": "−0.24%",
+      "CRWD": "+4.97%",
+      "ORCL": "·",
+      "UBER": "−0.67%",
+      "PYPL": "−0.72%",
+      "MARA": "−2.05%",
+      "RIOT": "−0.96%",
+      "HOOD": "−1.25%",
+      "SOFI": "−3.55%",
+      "BAC": "−0.36%",
+      "INTC": "−1.02%",
+      "DIS": "−0.35%",
+      "SNAP": "−5.87%",
+      "LYFT": "−0.87%",
+      "TGT": "−1.74%",
+      "NKE": "−0.14%",
+      "COF": "−2.22%"
+    },
+    "tape": {
+      "SPY": "767.81",
+      "QQQ": "741.21",
+      "IWM": "281.92",
+      "NVDA": "225.51",
+      "TSLA": "380.12",
+      "AAPL": "337.02",
+      "MSFT": "500.59",
+      "AMZN": "249.27",
+      "META": "744.10",
+      "GOOGL": "337.83",
+      "AMD": "614.61",
+      "NFLX": "71.36",
+      "COIN": "198.13",
+      "PLTR": "191.79",
+      "MSTR": "162.20",
+      "SMCI": "41.44",
+      "CRWD": "262.49",
+      "ORCL": "—",
+      "UBER": "69.42",
+      "PYPL": "52.51",
+      "MARA": "13.35",
+      "RIOT": "24.69",
+      "HOOD": "122.70",
+      "SOFI": "16.55",
+      "BAC": "56.00",
+      "INTC": "122.60",
+      "DIS": "103.46",
+      "SNAP": "5.29",
+      "LYFT": "14.77",
+      "TGT": "156.26",
+      "NKE": "36.05",
+      "COF": "196.10"
+    },
+    "clock": "MARKET · 03:19:15 ET"
   },
   "marketApi": null,
   "featureErrors": [],
@@ -237,5 +259,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-09-23T16:06:47.193Z"
+  "finishedAt": "2026-09-24T03:21:15.114Z"
 }
