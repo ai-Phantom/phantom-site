@@ -87,7 +87,7 @@ export async function buildCourses(contentDir) {
         },
       });
     }
-    if (lessons.length === 0) continue; // a course with no published lesson is not in the page
+    if (lessons.length === 0) { manifest[id] = { lessons: 0, duration: '0 min', free: 0 }; continue; } // not in the page; store tokens read 0
     courses[id] = {
       ...meta,
       id,
