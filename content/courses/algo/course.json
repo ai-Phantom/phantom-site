@@ -1,0 +1,18 @@
+{
+  "id": "algo",
+  "icon": "⚙️",
+  "tier": "expert",
+  "level": "Advanced",
+  "title": "Algorithmic Trading Intro",
+  "subtitle": "Write your first automated trading strategy. Connect to the Phantom Traders API. Run real backtests.",
+  "price": 39,
+  "what_you_learn": [
+    "What algorithmic trading actually is — and what distinguishes systematic from discretionary trading",
+    "Set up your Python environment and authenticate with the Phantom Traders API in under 10 minutes",
+    "Fetch live and historical portfolio data programmatically",
+    "Create, manage, and respond to alerts via webhook — the core automation primitive",
+    "Build and backtest a complete moving average crossover strategy from scratch",
+    "Calculate all key performance metrics: Sharpe ratio, max drawdown, win rate, expectancy",
+    "Avoid the five most common backtesting mistakes that lead to overfitted, non-working strategies"
+  ]
+}

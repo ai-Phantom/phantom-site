@@ -1,0 +1,18 @@
+{
+  "id": "institutional",
+  "icon": "📡",
+  "tier": "expert",
+  "level": "Advanced",
+  "title": "Institutional Portfolio Management",
+  "subtitle": "Think, measure, and operate at an institutional level — regardless of your portfolio size.",
+  "price": 39,
+  "what_you_learn": [
+    "The core differences between institutional and retail portfolio management — and why the frameworks scale to any size",
+    "Write an Investment Policy Statement (IPS) that keeps you disciplined during volatile markets",
+    "Select an appropriate benchmark and understand tracking error, active share, and information ratio",
+    "Implement strategic and tactical asset allocation with rules-based rebalancing triggers",
+    "Attribute performance to understand exactly what drove returns — skill vs luck, allocation vs selection",
+    "Use Phantom Traders multi-portfolio support for managing separate strategies simultaneously",
+    "Manage compliance, reporting, and the client communication process professionally"
+  ]
+}

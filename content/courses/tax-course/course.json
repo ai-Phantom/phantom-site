@@ -1,0 +1,17 @@
+{
+  "id": "tax-course",
+  "icon": "🔥",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Tax Strategy for Traders",
+  "subtitle": "Keep more of what you earn. Legal, practical, and built around the Phantom Traders tax tools.",
+  "price": 19,
+  "what_you_learn": [
+    "The exact tax rates on short-term vs long-term capital gains and how a single holding period decision can save thousands",
+    "The wash-sale rule — how it works, common triggers most traders miss, and how to avoid it",
+    "Tax-loss harvesting step by step: identify, execute, document, and maximise",
+    "How to use the Phantom Traders harvesting engine to find every opportunity automatically",
+    "Estimated quarterly payment rules and how to avoid underpayment penalties",
+    "The deductions available to active traders that most people miss"
+  ]
+}

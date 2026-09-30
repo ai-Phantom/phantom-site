@@ -1,7 +1,7 @@
 # Course rebuild plan — Phantom Traders education catalog
 
 Written 2026-09-23 from an inventory of the deployed `index.html` (`const COURSES`,
-`const STORE_ITEMS`) and the Phantom Traders Stripe catalog. Status: **plan, not started**.
+`const STORE_ITEMS`) and the Phantom Traders Stripe catalog. Status: **Phase 1 built 2026-09-23** (pipeline + Beginner bundle); phases 2–5 await the catalog decisions in the plan package.
 
 ## What exists today
 
@@ -71,3 +71,31 @@ most courses, so the paywall gates nothing.
 ## Not in scope
 
 Pricing changes (decided separately), the Mastery PDFs (keep), video production.
+
+
+## 2026-09-23 — what was built (Phase 1)
+
+- **Pipeline.** `content/courses/<id>/course.json` + `NN-slug.md` (JSON frontmatter: title, duration, free,
+  status, quiz[], task; Markdown body). `scripts/build-courses.mjs` renders it; `build.mjs` injects the
+  result between `/*COURSES:BEGIN*/ … /*COURSES:END*/` in `src/index.html` and fills every
+  `{{lessons:<id>}}` token in `STORE_ITEMS` from the same manifest. Lessons with `status: "stub"` are left
+  out of the page (93 of the 133 titles were stubs).
+- **Gating.** Every non-free lesson locks unless `ptOwnsCourse(id)`: `course_purchases` rows for the
+  signed-in user (RLS: select own) loaded on auth change into `PT_OWNED`, bundles expanded by
+  `BUNDLE_COURSES`. A locked lesson renders the paywall, not the body.
+- **Purchases.** Backend PR #29: the Stripe webhook now writes one `course_purchases` row per unlocked
+  course (bundles expanded, all line items, idempotent). The table had been empty forever.
+- **Content.** Foundations, Technical Analysis, Building Your First Portfolio rewritten: 13 files each
+  (12 lessons + capstone), lessons 1–2 free, 1,250–1,820 words per lesson, one worked example with dated
+  real numbers, one table, a 5-question quiz with explanations, a task, 2–4 primary sources.
+- **Quizzes** may be an array; `answerQuiz` shows the explanation after answering.
+- **Full catalog map** (20 courses, 4 tracks) and the phased build order live in the plan package:
+  https://claude.ai/artifact/QKtUCQcmQUnseeQ7mC2Bky
+
+### Known follow-ups
+
+- Page weight: the built `index.html` grew from ~780 KB to ~1.2 MB with three full courses inline.
+  With all twenty it would pass 3 MB. Before Phase 3, emit one `courses/<id>.json` per course and fetch
+  it in `openCourse()` instead of inlining.
+- The capstone files carry their single table under `## Rubric`, not `## Table` (by design).
+- Tax Strategy stays off the store until a CPA has reviewed it.

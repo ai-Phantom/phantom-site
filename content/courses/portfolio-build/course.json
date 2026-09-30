@@ -1,0 +1,17 @@
+{
+  "id": "portfolio-build",
+  "icon": "🏗️",
+  "tier": "beginner",
+  "level": "Beginner",
+  "title": "Building Your First Portfolio",
+  "subtitle": "Construct, size, rebalance and stress-test a real portfolio, with the arithmetic shown.",
+  "price": 9,
+  "what_you_learn": [
+    "What a portfolio is for, and the risks that volatility alone misses",
+    "Diversification and correlation with real numbers: what five tech stocks do and do not diversify",
+    "Asset classes and what each does, position sizing (fixed-fractional, risk-per-trade, the 1–2% rule, Kelly)",
+    "Core-and-satellite construction and a 10-position portfolio built step by step",
+    "Rebalancing rules, drawdowns and the arithmetic of recovery, behavioural pre-commitment",
+    "Measure performance honestly (time- vs money-weighted, benchmarks), write an investment plan, and stress-test a 5-position portfolio"
+  ]
+}

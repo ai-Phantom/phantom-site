@@ -5,11 +5,15 @@
 // by inline onclick="..." handlers are never renamed.
 import { minify } from 'html-minifier-terser';
 import { readFile, writeFile } from 'node:fs/promises';
+import { buildCourses, injectCourses } from './scripts/build-courses.mjs';
 
 const SRC = new URL('./src/index.html', import.meta.url);
 const OUT = new URL('./index.html', import.meta.url);
 
-const src = await readFile(SRC, 'utf8');
+const template = await readFile(SRC, 'utf8');
+const { courses, manifest } = await buildCourses(new URL('./content/courses/', import.meta.url).pathname);
+const src = injectCourses(template, courses, manifest);
+console.log('courses:', Object.entries(manifest).map(([id, m]) => `${id}=${m.lessons}`).join(' '));
 
 const out = await minify(src, {
   collapseWhitespace: true,

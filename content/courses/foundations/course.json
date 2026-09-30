@@ -1,0 +1,17 @@
+{
+  "id": "foundations",
+  "icon": "📗",
+  "tier": "beginner",
+  "level": "Beginner",
+  "title": "Stock Market Foundations",
+  "subtitle": "How markets, quotes, orders, earnings and accounts actually work — before you spend a dollar.",
+  "price": 9,
+  "what_you_learn": [
+    "How a trade is matched, routed, cleared and settled, and who is on the other side of it",
+    "Read any quote, spread and order book, and choose the right order type and time-in-force",
+    "What market cap, sectors and index membership do to a stock's behaviour",
+    "How earnings and guidance move prices, and how to read a 10-K and an earnings release",
+    "Valuation basics (P/E, P/S, EV/EBITDA), dividends, buybacks and total return, ETFs vs single stocks",
+    "Brokerage accounts, T+1 settlement, margin, the PDT rule, taxes and account types, and a written first plan"
+  ]
+}
