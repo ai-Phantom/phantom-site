@@ -4057,10 +4057,12 @@ const COURSES = {};
 /* Course ownership. course_purchases holds one row per course the user
    owns (the backend expands a bundle into its member courses when the
    Stripe checkout completes). RLS lets a user read only their own rows. */
+const ALL_COURSES = ['foundations','technical','portfolio-build','psychology','momentum','options','day-trading','options-income','mean-reversion','event-trading','tax-course','futures','forex','crypto','order-flow','risk-mgmt','algo','institutional','macro-regimes','data-gate-stack'];
 const BUNDLE_COURSES = {
-  'bundle-beginner': ['foundations','technical','portfolio-build'],
-  'bundle-intermediate': ['foundations','technical','portfolio-build','momentum','options','tax-course'],
-  'bundle-expert': ['foundations','technical','portfolio-build','momentum','options','tax-course','risk-mgmt','algo','institutional'],
+  'bundle-beginner': ['foundations','technical','portfolio-build','psychology'],
+  'bundle-intermediate': ['foundations','technical','portfolio-build','psychology','momentum','options','day-trading','options-income','mean-reversion','event-trading','tax-course'],
+  'bundle-markets': ['futures','forex','crypto','order-flow'],
+  'bundle-expert': ALL_COURSES,
 };
 window.PT_OWNED = new Set();
 function ptOwnsCourse(courseId) {
@@ -4080,7 +4082,7 @@ async function loadOwnedCourses() {
   if (typeof activeCourse !== 'undefined' && activeCourse && COURSES[activeCourse] && document.querySelector('.course-overlay.open')) renderCourse(COURSES[activeCourse], activeLesson || 1);
 }
 function bundleForCourse(courseId) {
-  for (const b of ['bundle-beginner','bundle-intermediate','bundle-expert']) if (BUNDLE_COURSES[b].includes(courseId)) return b;
+  for (const b of ['bundle-beginner','bundle-markets','bundle-intermediate','bundle-expert']) if (BUNDLE_COURSES[b].includes(courseId)) return b;
   return 'bundle-expert';
 }
 
