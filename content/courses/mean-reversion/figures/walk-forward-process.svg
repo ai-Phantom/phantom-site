@@ -1,0 +1,58 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Walk-forward validation as run in this course (SPY RSI(2), test years 2019 to 2026)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Walk-forward validation as run in this course (SPY RSI(2), test years 2019 to 2026)</text>
+<rect x='64.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='109.5' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Fix the rule</text>
+<text x='109.5' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>family and</text>
+<text x='109.5' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>grid</text>
+<line x1='159.0' y1='116.0' x2='175.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='175.0,111.0 181.0,116.0 175.0,121.0' fill='#8a948e'/>
+<text x='109.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>32</text>
+<text x='109.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>combinations:</text>
+<text x='109.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>threshold,</text>
+<text x='109.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>exit, 200-day</text>
+<text x='109.5' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>filter</text>
+<rect x='181.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='226.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Train: 3</text>
+<text x='226.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>prior years</text>
+<line x1='276.0' y1='116.0' x2='292.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='292.0,111.0 298.0,116.0 292.0,121.0' fill='#8a948e'/>
+<text x='226.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>e.g. 2016-2018</text>
+<text x='226.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>for the 2019</text>
+<text x='226.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>test</text>
+<rect x='298.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='343.5' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Pick the</text>
+<text x='343.5' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>best</text>
+<text x='343.5' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>combination</text>
+<line x1='393.0' y1='116.0' x2='409.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='409.0,111.0 415.0,116.0 409.0,121.0' fill='#8a948e'/>
+<text x='343.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>highest net</text>
+<text x='343.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>return, at</text>
+<text x='343.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>least 10</text>
+<text x='343.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>trades</text>
+<rect x='415.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='460.5' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Test: next 1</text>
+<text x='460.5' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>year,</text>
+<text x='460.5' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>untouched</text>
+<line x1='510.0' y1='116.0' x2='526.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='526.0,111.0 532.0,116.0 526.0,121.0' fill='#8a948e'/>
+<text x='460.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>record every</text>
+<text x='460.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>trade; never</text>
+<text x='460.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>re-pick</text>
+<rect x='532.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='577.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Roll forward</text>
+<text x='577.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>1 year</text>
+<line x1='627.0' y1='116.0' x2='643.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='643.0,111.0 649.0,116.0 643.0,121.0' fill='#8a948e'/>
+<text x='577.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>2020 test</text>
+<text x='577.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>trains on</text>
+<text x='577.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>2017-2019, and</text>
+<text x='577.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>so on</text>
+<rect x='649.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='694.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Stitch the</text>
+<text x='694.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>test years</text>
+<text x='694.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>111 trades,</text>
+<text x='694.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>+81.4% vs</text>
+<text x='694.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>+59.0% fixed</text>
+<text x='694.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>rule</text>
+</svg>

@@ -4,7 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Mean Reversion & Pairs",
-  "subtitle": "When prices snap back, when they do not, and how to test it: RSI(2), Bollinger reversion, pairs and spreads.",
+  "subtitle": "Where prices snap back, where they do not, and how to test it on real data: RSI(2), Bollinger reversion, gap fades, cointegrated pairs and the stop every reversion trade needs.",
   "price": 29,
-  "what_you_learn": []
+  "what_you_learn": [
+    "Where reversion actually lives, measured on eleven years of SPY and VIX data: extreme days, volatility spikes and spreads revert; index levels random-walk and six-to-twelve-month horizons continue",
+    "The three statistical tools that decide whether a series can be faded, autocorrelation, variance ratios and the Dickey-Fuller unit-root test, each applied to real series with the critical values and a simulation check of the test itself",
+    "Short-term reversal in stocks from Jegadeesh and Lehmann to a 611-week test on twenty mega-caps, showing a +0.09% weekly gross spread that turns negative at 5 basis points per side",
+    "RSI(2), Bollinger %B and gap fades tested trade by trade on SPY, QQQ and IWM with dated entries, four exits compared, the short side shown losing, and costs that flip the sign of the gap fade",
+    "Pairs trading done properly: cointegration versus correlation on seven popular pairs (none pass at 5% on 2023-2025), hedge-ratio drift, z-score construction, half-life, and a full year of XLE/XOP trades logged with spread and borrow costs",
+    "Why win rate misleads, how the 2020 blowouts took a 2-sigma entry to 14 sigma, the z-stop, time stop and re-arm rule that bound the loss, sizing from the stop distance, and a walk-forward test that cuts an in-sample +159% to +81% out of sample"
+  ]
 }
