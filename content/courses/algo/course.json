@@ -4,15 +4,14 @@
   "tier": "expert",
   "level": "Advanced",
   "title": "Systematic Trading & Backtesting",
-  "subtitle": "Turn a rule into code, test it without fooling yourself, and run it: from data to a live paper book.",
+  "subtitle": "Turn a trading rule into pandas code, test it without fooling yourself, and decide with a written gate stack whether it ever trades.",
   "price": 39,
   "what_you_learn": [
-    "What algorithmic trading actually is — and what distinguishes systematic from discretionary trading",
-    "Set up your Python environment and authenticate with the Phantom Traders API in under 10 minutes",
-    "Fetch live and historical portfolio data programmatically",
-    "Create, manage, and respond to alerts via webhook — the core automation primitive",
-    "Build and backtest a complete moving average crossover strategy from scratch",
-    "Calculate all key performance metrics: Sharpe ratio, max drawdown, win rate, expectancy",
-    "Avoid the five most common backtesting mistakes that lead to overfitted, non-working strategies"
+    "Write a rule as code with next-bar execution and no look-ahead, and run it on real SPY bars pulled from Yahoo Finance with verified row counts",
+    "Model spread, commission and impact per side and see exactly how a 10 bps cost takes a mean-reversion edge from +3.5% to +1.2% a year",
+    "Catch leakage with the truncation-invariance test and the intrabar-fill check, including the leak that turns a 0.14 Sharpe into 2.69",
+    "Run a parameter sweep, measure that in-sample ranking predicts nothing out-of-sample (Spearman -0.15), and compute a deflated Sharpe ratio",
+    "Split data into anchored walk-forward folds, report expectancy, exposure-diluted Sharpe, drawdown and tail against a T-bill cash benchmark",
+    "Write and apply a pass/fail gate stack with real thresholds, then carry a survivor to a reconciled paper book with a kill switch"
   ]
 }
