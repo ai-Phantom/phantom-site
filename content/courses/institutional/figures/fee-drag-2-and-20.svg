@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>$500,000 at 8% gross for 10 years: what the fee structure keeps</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>$500,000 at 8% gross for 10 years: what the fee structure keeps</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>400k</text>
+<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='276.0' fill='#8a948e' text-anchor='end'>600k</text>
+<line x1='64' y1='196.0' x2='740' y2='196.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='200.0' fill='#8a948e' text-anchor='end'>800k</text>
+<line x1='64' y1='120.0' x2='740' y2='120.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='124.0' fill='#8a948e' text-anchor='end'>1,000k</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>1,200k</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>$</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>0</text>
+<text x='199.2' y='366' fill='#8a948e' text-anchor='middle'>2</text>
+<text x='334.4' y='366' fill='#8a948e' text-anchor='middle'>4</text>
+<text x='469.6' y='366' fill='#8a948e' text-anchor='middle'>6</text>
+<text x='604.8' y='366' fill='#8a948e' text-anchor='middle'>8</text>
+<text x='740.0' y='366' fill='#8a948e' text-anchor='middle'>10</text>
+<polyline points='64.0,310.0 131.6,294.8 199.2,278.4 266.8,260.7 334.4,241.5 402.0,220.8 469.6,198.5 537.2,174.4 604.8,148.3 672.4,120.2 740.0,89.8' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,310.0 131.6,294.9 199.2,278.6 266.8,261.0 334.4,242.0 402.0,221.5 469.6,199.3 537.2,175.4 604.8,149.6 672.4,121.8 740.0,91.7' fill='none' stroke='#4d9fff' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,310.0 131.6,299.0 199.2,287.3 266.8,275.0 334.4,261.9 402.0,248.1 469.6,233.5 537.2,218.1 604.8,201.7 672.4,184.4 740.0,166.1' fill='none' stroke='#f5c842' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,310.0 131.6,300.9 199.2,291.3 266.8,281.3 334.4,270.8 402.0,259.8 469.6,248.3 537.2,236.2 604.8,223.5 672.4,210.3 740.0,196.4' fill='none' stroke='#ff4d6a' stroke-width='2' stroke-linejoin='round'/>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>Gross 8%</text>
+<rect x='161' y='379' width='12' height='12' fill='#4d9fff' rx='2'/>
+<text x='178' y='389' fill='#c9d1cc'>Index fund 0.05%</text>
+<rect x='314' y='379' width='12' height='12' fill='#f5c842' rx='2'/>
+<text x='331' y='389' fill='#c9d1cc'>2-and-20, 5% hurdle</text>
+<rect x='488' y='379' width='12' height='12' fill='#ff4d6a' rx='2'/>
+<text x='505' y='389' fill='#c9d1cc'>2-and-20, no hurdle</text>
+</svg>

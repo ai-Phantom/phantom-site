@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>2022 total returns: stocks, bonds and real estate fell together</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>2022 total returns: stocks, bonds and real estate fell together</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-40.0%</text>
+<line x1='64' y1='278.5' x2='740' y2='278.5' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='282.5' fill='#8a948e' text-anchor='end'>-30.0%</text>
+<line x1='64' y1='209.0' x2='740' y2='209.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='213.0' fill='#8a948e' text-anchor='end'>-20.0%</text>
+<line x1='64' y1='139.5' x2='740' y2='139.5' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='143.5' fill='#8a948e' text-anchor='end'>-10.0%</text>
+<line x1='64' y1='70.0' x2='740' y2='70.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='74.0' fill='#8a948e' text-anchor='end'>+0.0%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% total return</text>
+<rect x='85.4' y='70.0' width='69.9' height='126.3' fill='#ff4d6a' rx='2'/>
+<text x='120.3' y='210.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>-18.2%</text>
+<text x='120.3' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY</text>
+<rect x='198.1' y='70.0' width='69.9' height='142.3' fill='#ff4d6a' rx='2'/>
+<text x='233.0' y='226.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>-20.5%</text>
+<text x='233.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>IWM</text>
+<rect x='310.7' y='70.0' width='69.9' height='100.0' fill='#ff4d6a' rx='2'/>
+<text x='345.7' y='184.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>-14.4%</text>
+<text x='345.7' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>EFA</text>
+<rect x='423.4' y='70.0' width='69.9' height='182.4' fill='#ff4d6a' rx='2'/>
+<text x='458.3' y='266.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>-26.2%</text>
+<text x='458.3' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>VNQ</text>
+<rect x='536.1' y='70.0' width='69.9' height='90.5' fill='#ff4d6a' rx='2'/>
+<text x='571.0' y='174.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>-13.0%</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>AGG</text>
+<rect x='648.7' y='70.0' width='69.9' height='217.0' fill='#ff4d6a' rx='2'/>
+<text x='683.7' y='301.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>-31.2%</text>
+<text x='683.7' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>TLT</text>
+</svg>

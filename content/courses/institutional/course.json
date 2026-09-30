@@ -4,15 +4,14 @@
   "tier": "expert",
   "level": "Advanced",
   "title": "Institutional Portfolio Management",
-  "subtitle": "Think, measure, and operate at an institutional level — regardless of your portfolio size.",
+  "subtitle": "How pensions, endowments and sovereign funds actually run money, and which of their habits a $500,000 account can borrow.",
   "price": 39,
   "what_you_learn": [
-    "The core differences between institutional and retail portfolio management — and why the frameworks scale to any size",
-    "Write an Investment Policy Statement (IPS) that keeps you disciplined during volatile markets",
-    "Select an appropriate benchmark and understand tracking error, active share, and information ratio",
-    "Implement strategic and tactical asset allocation with rules-based rebalancing triggers",
-    "Attribute performance to understand exactly what drove returns — skill vs luck, allocation vs selection",
-    "Use Phantom Traders multi-portfolio support for managing separate strategies simultaneously",
-    "Manage compliance, reporting, and the client communication process professionally"
+    "Name the liability behind every institutional portfolio (CalPERS, Yale, Harvard, Norway's GPFG) and derive the required return from it",
+    "Write an investment policy statement with liability-derived objectives, hard constraints, policy bands and a review rule",
+    "Build a strategic allocation from published capital-market assumptions and compute its expected return, volatility and risk contributions",
+    "Judge benchmarks, tracking error, active share and fee per unit of active share, and read the evidence on closet indexing and 2-and-20",
+    "Rebalance by rule, budget liquidity for a 2008-style shock, and measure results the GIPS way: time-weighted, net of fees, with Brinson attribution",
+    "Separate the five institutional habits that scale down to an individual from the five that do not, and prove it with a graded capstone IPS"
   ]
 }

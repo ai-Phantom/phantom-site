@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Fama-French factors, growth of 100, end-2013 to end-2025 (annual data)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Fama-French factors, growth of 100, end-2013 to end-2025 (annual data)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0</text>
+<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='276.0' fill='#8a948e' text-anchor='end'>100</text>
+<line x1='64' y1='196.0' x2='740' y2='196.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='200.0' fill='#8a948e' text-anchor='end'>200</text>
+<line x1='64' y1='120.0' x2='740' y2='120.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='124.0' fill='#8a948e' text-anchor='end'>300</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>400</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>growth of 100</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>2013</text>
+<text x='176.7' y='366' fill='#8a948e' text-anchor='middle'>2015</text>
+<text x='289.3' y='366' fill='#8a948e' text-anchor='middle'>2017</text>
+<text x='402.0' y='366' fill='#8a948e' text-anchor='middle'>2019</text>
+<text x='514.7' y='366' fill='#8a948e' text-anchor='middle'>2021</text>
+<text x='627.3' y='366' fill='#8a948e' text-anchor='middle'>2023</text>
+<text x='740.0' y='366' fill='#8a948e' text-anchor='middle'>2025</text>
+<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='267.0' fill='#8a948e' text-anchor='end' font-size='11'>start</text>
+<polyline points='64.0,272.0 120.3,263.1 176.7,262.9 233.0,251.6 289.3,230.8 345.7,238.8 402.0,207.8 458.3,174.6 514.7,133.3 571.0,179.1 627.3,142.3 683.7,101.7 740.0,68.9' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,272.0 120.3,277.9 176.7,280.5 233.0,276.1 289.3,279.8 345.7,282.0 402.0,286.3 458.3,277.9 514.7,280.6 571.0,285.3 627.3,287.5 683.7,294.3 740.0,300.1' fill='none' stroke='#4d9fff' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,272.0 120.3,273.4 176.7,280.5 233.0,265.1 289.3,276.2 345.7,283.1 402.0,289.9 458.3,317.1 514.7,309.2 571.0,299.3 627.3,306.1 683.7,309.6 740.0,306.3' fill='none' stroke='#f5c842' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,272.0 120.3,271.4 176.7,255.9 233.0,275.4 289.3,271.9 345.7,264.7 402.0,266.5 458.3,260.4 514.7,262.5 571.0,248.9 627.3,273.0 683.7,258.2 740.0,260.2' fill='none' stroke='#ff4d6a' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='458.3' cy='174.6' r='4' fill='#ff4d6a'/>
+<text x='450.3' y='166.6' fill='#c9d1cc' text-anchor='end' font-size='11'>HML 2020: -46.9%</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>Mkt-RF</text>
+<rect x='147' y='379' width='12' height='12' fill='#4d9fff' rx='2'/>
+<text x='164' y='389' fill='#c9d1cc'>SMB (size)</text>
+<rect x='258' y='379' width='12' height='12' fill='#f5c842' rx='2'/>
+<text x='275' y='389' fill='#c9d1cc'>HML (value)</text>
+<rect x='376' y='379' width='12' height='12' fill='#ff4d6a' rx='2'/>
+<text x='393' y='389' fill='#c9d1cc'>MOM (momentum)</text>
+</svg>
