@@ -4,15 +4,14 @@
   "tier": "expert",
   "level": "Advanced",
   "title": "Portfolio Risk Management",
-  "subtitle": "Build a portfolio that survives bear markets and compounds through bull markets. Institutional-grade risk tools.",
+  "subtitle": "Measure, stress and bound the risk of a book you already run: exposure, VaR, correlation collapse, drawdown rules, the gate stack, tail hedges, margin and the daily risk report, all computed on real data.",
   "price": 39,
   "what_you_learn": [
-    "Standard deviation, variance, and what they actually mean for your portfolio in practice",
-    "Calculate and manage your portfolio's weighted beta for precise market sensitivity control",
-    "Use HHI concentration scoring to identify dangerous over-concentration before it costs you",
-    "Apply Value at Risk (VaR) to quantify your downside in dollar terms",
-    "Build a stress test that simulates your portfolio through 2008, 2020, and other historical crashes",
-    "Implement risk parity — size positions by risk contribution, not by dollar amount",
-    "Hedge with options and inverse ETFs without over-hedging and capping your upside"
+    "Measure a ten-position long/short book's gross, net, beta-adjusted, sector and factor exposure from shares times price, on two beta windows",
+    "Compute realised, EWMA and implied volatility, run a vol-target rule, and build one-day parametric and historical VaR and expected shortfall with every step shown",
+    "Stress a book with a March 2020 correlation matrix and see why 2008 and 2020 broke VaR, then decompose variance to find the positions that actually carry the risk",
+    "Test a drawdown de-risking rule against 2008, 2020, 2022 and 2025 and measure what it costs when it fires too late and too early",
+    "Run a strategy through a written five-gate stack (sample size, out-of-sample replication, costs, overlap, cash) and price tail hedges (puts, VIX, trend) from their real track records",
+    "Set gross from Reg T and portfolio-margin arithmetic, install a kill switch and daily reconciliation, and write the daily, weekly and monthly risk report with its action triggers"
   ]
 }

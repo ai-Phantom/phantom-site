@@ -1,0 +1,97 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Pairwise correlation, calm 2017 (blue) vs Feb-Apr 2020 (red)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Pairwise correlation, calm 2017 (blue) vs Feb-Apr 2020 (red)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-1.00</text>
+<line x1='64' y1='276.8' x2='740' y2='276.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='280.8' fill='#8a948e' text-anchor='end'>-0.50</text>
+<line x1='64' y1='205.6' x2='740' y2='205.6' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='209.6' fill='#8a948e' text-anchor='end'>+0.00</text>
+<line x1='64' y1='134.4' x2='740' y2='134.4' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='138.4' fill='#8a948e' text-anchor='end'>+0.50</text>
+<line x1='64' y1='63.2' x2='740' y2='63.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='67.2' fill='#8a948e' text-anchor='end'>+1.00</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>correlation</text>
+<rect x='72.0' y='152.9' width='26.2' height='52.7' fill='#4d9fff' rx='2'/>
+<text x='85.1' y='146.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.37</text>
+<text x='85.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='114.3' y='74.6' width='26.2' height='131.0' fill='#ff4d6a' rx='2'/>
+<text x='127.4' y='68.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.92</text>
+<text x='127.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='156.5' y='205.6' width='26.2' height='4.3' fill='#4d9fff' rx='2'/>
+<text x='169.6' y='223.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>-0.03</text>
+<text x='169.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='198.8' y='111.7' width='26.2' height='94.0' fill='#ff4d6a' rx='2'/>
+<text x='211.9' y='105.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.66</text>
+<text x='211.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='241.0' y='150.1' width='26.2' height='55.5' fill='#4d9fff' rx='2'/>
+<text x='254.1' y='144.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.39</text>
+<text x='254.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='283.3' y='78.9' width='26.2' height='126.7' fill='#ff4d6a' rx='2'/>
+<text x='296.4' y='72.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.89</text>
+<text x='296.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='325.5' y='107.4' width='26.2' height='98.2' fill='#4d9fff' rx='2'/>
+<text x='338.6' y='101.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.69</text>
+<text x='338.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='367.8' y='68.9' width='26.2' height='136.7' fill='#ff4d6a' rx='2'/>
+<text x='380.9' y='62.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.96</text>
+<text x='380.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='410.0' y='117.4' width='26.2' height='88.3' fill='#4d9fff' rx='2'/>
+<text x='423.1' y='111.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.62</text>
+<text x='423.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='452.3' y='73.2' width='26.2' height='132.4' fill='#ff4d6a' rx='2'/>
+<text x='465.4' y='67.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.93</text>
+<text x='465.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='494.5' y='108.8' width='26.2' height='96.8' fill='#4d9fff' rx='2'/>
+<text x='507.6' y='102.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.68</text>
+<text x='507.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='536.8' y='86.0' width='26.2' height='119.6' fill='#ff4d6a' rx='2'/>
+<text x='549.9' y='80.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.84</text>
+<text x='549.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='579.0' y='205.6' width='26.2' height='47.0' fill='#4d9fff' rx='2'/>
+<text x='592.1' y='266.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>-0.33</text>
+<text x='592.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='621.3' y='205.6' width='26.2' height='71.2' fill='#ff4d6a' rx='2'/>
+<text x='634.4' y='290.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>-0.50</text>
+<text x='634.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='663.5' y='205.6' width='26.2' height='35.6' fill='#4d9fff' rx='2'/>
+<text x='676.6' y='255.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>-0.25</text>
+<text x='676.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<rect x='705.8' y='174.3' width='26.2' height='31.3' fill='#ff4d6a' rx='2'/>
+<text x='718.9' y='168.3' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.22</text>
+<text x='718.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'></text>
+<text x='85.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLK-XLF</text>
+<text x='85.1' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='127.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLK-XLF</text>
+<text x='127.4' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='169.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLE-XLU</text>
+<text x='169.6' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='211.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLE-XLU</text>
+<text x='211.9' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='254.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLV-XLY</text>
+<text x='254.1' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='296.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>XLV-XLY</text>
+<text x='296.4' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='338.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-EFA</text>
+<text x='338.6' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='380.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-EFA</text>
+<text x='380.9' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='423.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-EEM</text>
+<text x='423.1' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='465.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-EEM</text>
+<text x='465.4' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='507.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-HYG</text>
+<text x='507.6' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='549.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-HYG</text>
+<text x='549.9' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='592.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-TLT</text>
+<text x='592.1' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='634.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-TLT</text>
+<text x='634.4' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<text x='676.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-GLD</text>
+<text x='676.6' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<text x='718.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>SPY-GLD</text>
+<text x='718.9' y='379' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+</svg>
