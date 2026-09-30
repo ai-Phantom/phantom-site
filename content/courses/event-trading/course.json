@@ -6,5 +6,12 @@
   "title": "Earnings & Event Trading",
   "subtitle": "Earnings, FOMC, CPI and index rebalances: implied moves, the vol crush, and positioning around known dates.",
   "price": 29,
-  "what_you_learn": []
+  "what_you_learn": [
+    "What a scheduled event is to a market and where the record lives: company IR pages and 8-Ks, the Fed's FOMC calendar, the BLS release schedules, S&P DJI and FTSE Russell announcements",
+    "How to read the implied move from the ATM straddle, strip the event out of the term structure by variance subtraction, and compare it to realised moves and to the published evidence (Dubinsky et al., Chung and Louis)",
+    "What the post-earnings drift is (Bernard and Thomas) and what is left of it after costs in liquid names, worked on NVIDIA's own guidance-versus-actual surprises",
+    "The IV crush with real term-structure data, and the long straddle, short strangle and calendar priced on a labelled representative chain across four real NVDA reports with P&L at the reaction close and at expiry",
+    "FOMC-day mechanics minute by minute (2:00 statement, 2:30 press conference, the Lucca-Moench pre-drift), CPI and NFP consensus-surprise-reaction on real 2026 prints, and what the S&P inclusion effect and Russell reconstitution still do",
+    "LULD halts and the first 15 minutes after a gap, gap-based position sizing and why stops fail through events, an event journal with the t-statistic that tells you how many events an edge needs, and a quarterly calendar with written rules"
+  ]
 }

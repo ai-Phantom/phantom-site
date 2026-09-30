@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>NVDA ATM implied volatility by expiration, Cboe snapshot 2026-09-23</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>NVDA ATM implied volatility by expiration, Cboe snapshot 2026-09-23</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>28%</text>
+<line x1='64' y1='287.2' x2='740' y2='287.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='291.2' fill='#8a948e' text-anchor='end'>30%</text>
+<line x1='64' y1='226.4' x2='740' y2='226.4' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='230.4' fill='#8a948e' text-anchor='end'>32%</text>
+<line x1='64' y1='165.6' x2='740' y2='165.6' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='169.6' fill='#8a948e' text-anchor='end'>34%</text>
+<line x1='64' y1='104.8' x2='740' y2='104.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='108.8' fill='#8a948e' text-anchor='end'>36%</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>38%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% annualised</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>Sep 25</text>
+<text x='199.2' y='366' fill='#8a948e' text-anchor='middle'>Oct 2</text>
+<text x='334.4' y='366' fill='#8a948e' text-anchor='middle'>Oct 16</text>
+<text x='469.6' y='366' fill='#8a948e' text-anchor='middle'>Oct 30</text>
+<text x='604.8' y='366' fill='#8a948e' text-anchor='middle'>Dec 18</text>
+<text x='740.0' y='366' fill='#8a948e' text-anchor='middle'>Feb 19</text>
+<polyline points='64.0,241.6 131.6,290.2 199.2,247.7 266.8,256.8 334.4,247.7 402.0,250.7 469.6,232.5 537.2,89.6 604.8,95.7 672.4,98.7 740.0,95.7' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='537.2' cy='89.6' r='4' fill='#ff4d6a'/>
+<text x='529.2' y='81.6' fill='#c9d1cc' text-anchor='end' font-size='11'>Nov 20: first expiry after the Nov 17 report</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>ATM implied vol</text>
+</svg>
