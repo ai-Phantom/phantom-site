@@ -4,7 +4,14 @@
   "tier": "beginner",
   "level": "Beginner",
   "title": "Trading Psychology & Process",
-  "subtitle": "The habits, pre-commitments and review loops that keep a good plan alive under stress.",
+  "subtitle": "The measured reasons retail traders lose, and the written rules, pre-commitment devices and review loops that route around them, with every claim cited and every calculation shown.",
   "price": 9,
-  "what_you_learn": []
+  "what_you_learn": [
+    "The measured base rates: Barber and Odean's 66,465 households (the most active fifth netted 11.4% against a 17.9% market), the Brazilian day-trader record (97% of 1,551 persistent traders lost), and the regulator-mandated broker disclosures, with the cost arithmetic that explains the gaps",
+    "The disposition effect from Odean's own table (14.8% of gains realized against 9.8% of losses, reversed in December when the tax code supplied a rule), prospect theory's 2.25 loss-aversion coefficient, and why a 2:1 loss-to-win asymmetry turns a 55% win rate into -0.35R per trade",
+    "How sample size fools you: a 60% coin shows 4 or fewer heads in 10 flips 17% of the time, a fair coin shows 7 or more 17% of the time, and why 100 trades is the minimum before any win-rate claim means anything; plus recency, anchoring, the conjunction fallacy and the gambler's fallacy with their original experiments",
+    "The physiology of tilt (cortisol tracking P&L variance, a 68% cortisol rise cutting risk appetite 44%, sleep loss blunting the response to losses) and the martingale arithmetic that makes a 2R daily loss limit the circuit breaker rather than resolve",
+    "How to write a plan as a contract in nine if-then sections that another person could execute, the pre-commitment devices that enforce it (bracket orders, size from prior-day equity, a seven-item spoken checklist backed by the surgical and cockpit checklist evidence), and the fifteen-field journal whose only score is expectancy with its standard error",
+    "Streak and drawdown arithmetic: the 17.9% chance of a seven-loss run in 100 trades at 55%, a 12R drawdown rule derived from 10,000 simulated runs (fires on 6.6% of healthy plans, 51% of broken ones), the break and return criteria, and a capstone that writes the full plan and simulates 100 trades to compute expectancy, longest streak and maximum drawdown"
+  ]
 }
