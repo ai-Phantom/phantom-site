@@ -6,6 +6,7 @@
 import { minify } from 'html-minifier-terser';
 import { readFile, writeFile } from 'node:fs/promises';
 import { buildCourses, injectCourses, splitCourses } from './scripts/build-courses.mjs';
+import { buildBlog, injectBlog } from './scripts/build-blog.mjs';
 import { mkdir } from 'node:fs/promises';
 
 const SRC = new URL('./src/index.html', import.meta.url);
@@ -19,8 +20,18 @@ await mkdir(coursesDir, { recursive: true });
 for (const [id, data] of Object.entries(files)) {
   await writeFile(new URL(`./${id}.json`, coursesDir), JSON.stringify(data));
 }
-const src = injectCourses(template, inline, manifest);
+const withCourses = injectCourses(template, inline, manifest);
 console.log('courses:', Object.entries(manifest).map(([id, m]) => `${id}=${m.lessons}`).join(' '));
+
+// Blog / Free Library: index inline, bodies as posts/<slug>.json
+const { index: blogIndex, bodies: blogBodies } = await buildBlog(new URL('./content/blog/', import.meta.url).pathname);
+const postsDir = new URL('./posts/', import.meta.url);
+await mkdir(postsDir, { recursive: true });
+for (const [id, data] of Object.entries(blogBodies)) {
+  await writeFile(new URL(`./${id}.json`, postsDir), JSON.stringify(data));
+}
+const src = injectBlog(withCourses, blogIndex);
+console.log('blog posts:', blogIndex.length, Object.entries(blogIndex.reduce((a, p) => (a[p.cat] = (a[p.cat] || 0) + 1, a), {})).map(([c, n]) => `${c}=${n}`).join(' '));
 
 const out = await minify(src, {
   collapseWhitespace: true,

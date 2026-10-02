@@ -9,4 +9,5 @@
 /content/* /content/:splat 200
 /courses/* /courses/:splat 200
 /img/* /img/:splat 200
+/posts/* /posts/:splat 200
 /* / 200

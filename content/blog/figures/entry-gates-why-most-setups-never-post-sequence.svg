@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Gates a setup passes before a paper open</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Gates a setup passes before a paper open</text>
+<rect x='64.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='109.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Fresh setup</text>
+<line x1='159.0' y1='116.0' x2='175.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='175.0,111.0 181.0,116.0 175.0,121.0' fill='#8a948e'/>
+<text x='109.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>skip if</text>
+<text x='109.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>today&#x27;s move</text>
+<text x='109.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>is over 2.5x</text>
+<text x='109.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>ATR</text>
+<rect x='181.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='226.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Trend and</text>
+<text x='226.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>score</text>
+<line x1='276.0' y1='116.0' x2='292.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='292.0,111.0 298.0,116.0 292.0,121.0' fill='#8a948e'/>
+<text x='226.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>with-trend</text>
+<text x='226.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>only; 35+</text>
+<text x='226.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>points and a</text>
+<text x='226.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>premium signal</text>
+<rect x='298.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='343.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Earnings and</text>
+<text x='343.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>confirm</text>
+<line x1='393.0' y1='116.0' x2='409.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='409.0,111.0 415.0,116.0 409.0,121.0' fill='#8a948e'/>
+<text x='343.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>5 days before</text>
+<text x='343.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>to 1 day</text>
+<text x='343.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>after; under</text>
+<text x='343.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>80 must repeat</text>
+<rect x='415.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='460.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Clock and</text>
+<text x='460.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>VIX</text>
+<line x1='510.0' y1='116.0' x2='526.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='526.0,111.0 532.0,116.0 526.0,121.0' fill='#8a948e'/>
+<text x='460.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>9:45 ET start,</text>
+<text x='460.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>macro window,</text>
+<text x='460.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>VIX 30 or</text>
+<text x='460.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>below</text>
+<rect x='532.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='577.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Contract</text>
+<text x='577.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>checks</text>
+<line x1='627.0' y1='116.0' x2='643.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='643.0,111.0 649.0,116.0 643.0,121.0' fill='#8a948e'/>
+<text x='577.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>spread cap,</text>
+<text x='577.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>$0.50 premium,</text>
+<text x='577.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>OTM ceiling,</text>
+<text x='577.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>live quote</text>
+<rect x='649.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='694.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Paper open</text>
+<text x='694.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>position caps</text>
+<text x='694.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>still apply</text>
+</svg>
