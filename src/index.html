@@ -4199,7 +4199,9 @@ function renderCourse(course, lessonId) {
             ${(function(){const b=bundleForCourse(course.id);const it=STORE_ITEMS.find(x=>x.id===b);return `Lessons 1–2 are free. Included in the ${it?it.title:'bundle'} ($${it?it.price:''}) or buy this course alone ($${course.price}).`})()}
           </p>
           <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-            <button class="btn btn-primary" onclick="addToCart('${course.id}');closeCourse();">Buy Course — $${course.price} &#x2192;</button>
+            ${(function(){const it=STORE_ITEMS.find(x=>x.id===course.id);return (it && it.stripePrice && !it.comingSoon)
+              ? `<button class="btn btn-primary" onclick="addToCart('${course.id}');closeCourse();">Buy Course — $${course.price} &#x2192;</button>`
+              : `<button class="btn btn-ghost" style="color:var(--muted2);cursor:default;" disabled>${it && it.comingSoon ? it.comingSoon + ' · ' : ''}On sale soon</button>`})()}
             <button class="btn btn-ghost" onclick="showPage('store');">View All Bundles</button>
           </div>
         </div>
