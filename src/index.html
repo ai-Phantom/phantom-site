@@ -2050,8 +2050,8 @@ function setPricePeriod(period) {
   const proBtn = document.getElementById('proCTA');
   const eliteBtn = document.getElementById('eliteCTA');
   if (period === 'annual') {
-    if (proP) proP.textContent = '$13';
-    if (deskP) deskP.textContent = '$21';
+    if (proP) proP.textContent = '$12.50';
+    if (deskP) deskP.textContent = '$20.83';
     if (proT) proT.textContent = 'per month, billed $150/yr';
     if (deskT) deskT.textContent = 'per month, billed $250/yr';
     if (proBtn) proBtn.setAttribute('onclick', "startCheckout('price_1UIqL4PddnEAOUng559NtSZj','subscription')");
@@ -4407,9 +4407,9 @@ const STORE_ITEMS = [
    includes:['Live price feeds (30s refresh)','AI risk score + 3-mode insights','Tax harvesting engine + PDF export','Stock screener + AI recommendations','Price alerts: all 6 types + SMS','Unlimited trade journal entries'],
   },
   {id:'portfolio-mgr-annual', stripePrice:'price_1UIqL4PddnEAOUng559NtSZj', icon:'&#128200;', tier:'subscription', level:'Pro Tool', title:'Pro Trader — Annual',
-   price:150, origPrice:240, billing:'year', color:'#4d9fff',
-   desc:'Full Pro dashboard billed annually. Includes everything in monthly plus Elite features and API access.',
-   includes:['Everything in monthly plan','Elite analytics suite','Discord Community included','API access for automation','Multi-portfolio support','2 months free vs monthly','Priority email support'],
+   price:150, origPrice:180, billing:'year', color:'#4d9fff',
+   desc:'The full Pro Trader plan billed yearly: $12.50 a month, two months free compared with monthly billing.',
+   includes:['Everything in Pro Trader Monthly','2 months free vs monthly ($150 vs $180)','Live price feeds (30s refresh)','AI risk score + 3-mode insights','Tax harvesting engine + PDF export','Price alerts: all 6 types + SMS'],
   },
   {id:'elite-monthly', stripePrice:'price_1UIjYPPddnEAOUngRgNywZab', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite — Monthly',
    price:25, origPrice:null, billing:'month', color:'#f5c842',
@@ -4417,7 +4417,7 @@ const STORE_ITEMS = [
    includes:['Everything in Pro plan','Multi-portfolio management','Advanced AI insights','SMS price alerts','Priority support','Early access to new features','Discord Community included free'],
   },
   {id:'elite-annual', stripePrice:'price_1UIqMFPddnEAOUngxRQiTX48', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite — Annual',
-   price:250, origPrice:600, billing:'year', color:'#f5c842',
+   price:250, origPrice:300, billing:'year', color:'#f5c842',
    desc:'Full Elite access at 17% off. Multi-portfolio, advanced AI, SMS alerts, priority support, early features, and Discord included. Save $50 vs monthly.',
    includes:['Everything in Elite Monthly','Save $50 vs monthly billing','Priority email support','All future feature updates','Discord Community included','Annual member badge'],
   },
@@ -10579,7 +10579,7 @@ updateDemoBar = function() {
     <div style="background:linear-gradient(135deg,rgba(126,255,92,.08),rgba(77,159,255,.06));border:1px solid rgba(126,255,92,.2);border-radius:14px;padding:20px;margin-bottom:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
         <div style="font-size:13px;color:var(--muted);">Monthly cost right now</div>
-        <div style="font-family:var(--mono);font-size:14px;color:var(--muted);text-decoration:line-through;" id="annualModalMonthly">$240/yr</div>
+        <div style="font-family:var(--mono);font-size:14px;color:var(--muted);text-decoration:line-through;" id="annualModalMonthly">$180/yr</div>
       </div>
       <div style="display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
         <div style="font-size:15px;font-weight:700;">Annual plan</div>
@@ -10600,8 +10600,8 @@ updateDemoBar = function() {
 
 // ── Annual plan config ───────────────────────────────────────────
 const ANNUAL_PLANS = {
-  pro:   { monthlyTotal: 240, annualPrice: 199, saving: 41, stripePrice: 'price_1UIqL4PddnEAOUng559NtSZj', label: 'Pro Trader Annual' },
-  elite: { monthlyTotal: 600, annualPrice: 499, saving: 101, stripePrice: 'price_1UIqMFPddnEAOUngxRQiTX48', label: 'Elite Annual' },
+  pro:   { monthlyTotal: 180, annualPrice: 150, saving: 30, stripePrice: 'price_1UIqL4PddnEAOUng559NtSZj', label: 'Pro Trader Annual' },
+  elite: { monthlyTotal: 300, annualPrice: 250, saving: 50, stripePrice: 'price_1UIqMFPddnEAOUngxRQiTX48', label: 'Elite Annual' },
 };
 
 // ── Detect if user is on a monthly plan ─────────────────────────
