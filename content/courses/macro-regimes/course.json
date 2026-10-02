@@ -4,7 +4,14 @@
   "tier": "expert",
   "level": "Expert",
   "title": "Macro & Market Regimes",
-  "subtitle": "Rates, inflation, liquidity and volatility regimes: how to classify the environment and size to it.",
+  "subtitle": "Read growth, inflation, rates, liquidity and volatility from FRED and market data, classify the regime with stated rules, and size to it honestly.",
   "price": 39,
-  "what_you_learn": []
+  "what_you_learn": [
+    "Read the yield curve with dates: every 2s10s and 3m10y inversion since 1976, the 6-to-24-month leads to recession, and the 2022-2024 inversion that has not been followed by one",
+    "Track inflation through CPI, PCE, breakevens and real yields, and see why the +2.62-point rise in the 10-year real yield, not the CPI print, explains SPY -18.2%, TLT -31.2% and GLD -0.8% in 2022",
+    "Gauge liquidity and credit from the Fed balance sheet, the reverse repo facility and high-yield spreads, and tell a credit event (2008, 2020) from a rates event (2022) and an equity shock (2025)",
+    "Measure volatility regimes from VIX levels, VIX/VIX3M term structure and realised vs implied volatility, including what SPY did in months that began with the VIX above 30",
+    "Test the 200-day SMA filter honestly on SPY (9.15% vs 10.88% a year, -22.1% vs -55.2% drawdown, 60 losing whipsaws) and measure how late every filter fired in 2008, 2020, 2022 and 2025",
+    "Build a two-indicator, four-state classifier, measure how each state treated SPY, TLT and GLD, and size to it with vol targeting and exposure caps, reporting where the policy lost to buy-and-hold"
+  ]
 }
