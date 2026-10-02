@@ -1,0 +1,45 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Ten largest trades in R, labelled by stop distance as % of price (SPY 3-bar pullback, 2010-2025)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Ten largest trades in R, labelled by stop distance as % of price (SPY 3-bar pullback, 2010-2025)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0.0</text>
+<line x1='64' y1='259.1' x2='740' y2='259.1' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='263.1' fill='#8a948e' text-anchor='end'>50.0</text>
+<line x1='64' y1='170.1' x2='740' y2='170.1' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='174.1' fill='#8a948e' text-anchor='end'>100.0</text>
+<line x1='64' y1='81.2' x2='740' y2='81.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='85.2' fill='#8a948e' text-anchor='end'>150.0</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>R multiple</text>
+<rect x='76.8' y='76.6' width='41.9' height='271.4' fill='#ff4d6a' rx='2'/>
+<text x='97.8' y='70.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>152.6</text>
+<text x='97.8' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.025%</text>
+<rect x='144.4' y='224.6' width='41.9' height='123.4' fill='#7eff5c' rx='2'/>
+<text x='165.4' y='218.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>69.4</text>
+<text x='165.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.120%</text>
+<rect x='212.0' y='290.7' width='41.9' height='57.3' fill='#7eff5c' rx='2'/>
+<text x='233.0' y='284.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>32.2</text>
+<text x='233.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.290%</text>
+<rect x='279.6' y='294.6' width='41.9' height='53.4' fill='#ff4d6a' rx='2'/>
+<text x='300.6' y='288.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>30.0</text>
+<text x='300.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.099%</text>
+<rect x='347.2' y='311.7' width='41.9' height='36.3' fill='#7eff5c' rx='2'/>
+<text x='368.2' y='305.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>20.4</text>
+<text x='368.2' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.355%</text>
+<rect x='414.8' y='311.7' width='41.9' height='36.3' fill='#7eff5c' rx='2'/>
+<text x='435.8' y='305.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>20.4</text>
+<text x='435.8' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.358%</text>
+<rect x='482.4' y='322.0' width='41.9' height='26.0' fill='#7eff5c' rx='2'/>
+<text x='503.4' y='316.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>14.6</text>
+<text x='503.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.289%</text>
+<rect x='550.0' y='329.1' width='41.9' height='18.9' fill='#7eff5c' rx='2'/>
+<text x='571.0' y='323.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>10.6</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.284%</text>
+<rect x='617.6' y='329.9' width='41.9' height='18.1' fill='#7eff5c' rx='2'/>
+<text x='638.6' y='323.9' fill='#c9d1cc' text-anchor='middle' font-size='11'>10.2</text>
+<text x='638.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.334%</text>
+<rect x='685.2' y='330.0' width='41.9' height='18.0' fill='#7eff5c' rx='2'/>
+<text x='706.2' y='324.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>10.1</text>
+<text x='706.2' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>0.103%</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>The gate stack: data first, inference after, a forward record last</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>The gate stack: data first, inference after, a forward record last</text>
+<rect x='64.0' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='101.1' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>D0-D6 Data</text>
+<text x='101.1' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>gates</text>
+<line x1='142.3' y1='116.0' x2='158.3' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='158.3,111.0 164.3,116.0 158.3,121.0' fill='#8a948e'/>
+<text x='101.1' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>second</text>
+<text x='101.1' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>source,</text>
+<text x='101.1' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>adjustments,</text>
+<text x='101.1' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>empty bars,</text>
+<text x='101.1' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>seams</text>
+<rect x='164.3' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='201.4' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>P Trade</text>
+<text x='201.4' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>definition</text>
+<line x1='242.6' y1='116.0' x2='258.6' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='258.6,111.0 264.6,116.0 258.6,121.0' fill='#8a948e'/>
+<text x='201.4' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>R</text>
+<text x='201.4' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>denominator,</text>
+<text x='201.4' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>overlap,</text>
+<text x='201.4' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>timestamps</text>
+<rect x='264.6' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='301.7' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G1-G2</text>
+<text x='301.7' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Geometry</text>
+<text x='301.7' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>and cash</text>
+<line x1='342.9' y1='116.0' x2='358.9' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='358.9,111.0 364.9,116.0 358.9,121.0' fill='#8a948e'/>
+<text x='301.7' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>win rate vs</text>
+<text x='301.7' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>breakeven,</text>
+<text x='301.7' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>beats</text>
+<text x='301.7' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>T-bills over</text>
+<text x='301.7' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>the hold</text>
+<rect x='364.9' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='402.0' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G3</text>
+<text x='402.0' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Random-entry</text>
+<text x='402.0' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>null</text>
+<line x1='443.1' y1='116.0' x2='459.1' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='459.1,111.0 465.1,116.0 459.1,121.0' fill='#8a948e'/>
+<text x='402.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>percentile</text>
+<text x='402.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>vs matched</text>
+<text x='402.0' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>random entry</text>
+<rect x='465.1' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='502.3' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G4-G6</text>
+<text x='502.3' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Power,</text>
+<text x='502.3' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>eras,</text>
+<line x1='543.4' y1='116.0' x2='559.4' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='559.4,111.0 565.4,116.0 559.4,121.0' fill='#8a948e'/>
+<text x='502.3' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>required n,</text>
+<text x='502.3' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>edge repeats</text>
+<text x='502.3' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>per era,</text>
+<text x='502.3' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>holdout sign</text>
+<rect x='565.4' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='602.6' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G7</text>
+<text x='602.6' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Benchmark</text>
+<text x='602.6' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>and</text>
+<line x1='643.7' y1='116.0' x2='659.7' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='659.7,111.0 665.7,116.0 659.7,121.0' fill='#8a948e'/>
+<text x='602.6' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>buy-and-hold,</text>
+<text x='602.6' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>fresh</text>
+<text x='602.6' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>pre-registered</text>
+<text x='602.6' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>universe</text>
+<rect x='665.7' y='84' width='74.3' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='702.9' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Forward</text>
+<text x='702.9' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>record</text>
+<text x='702.9' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>entry, exit</text>
+<text x='702.9' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>fill, R,</text>
+<text x='702.9' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>stop</text>
+<text x='702.9' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>condition</text>
+</svg>
