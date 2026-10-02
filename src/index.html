@@ -4249,19 +4249,24 @@ function answerQuiz(btn, chosen, correct) {
 }
 const STORE_ITEMS = [
   {id:'bundle-beginner', stripePrice:'price_1TEtzKPddnEAOUngrx36tJTm', icon:'🎓', tier:'bundle', level:'Beginner', title:'Beginner Bundle',
-   price:20, origPrice:60, color:'#7eff5c',
-   desc:'The complete starting point. 3 structured courses covering markets, charts, and portfolio building.',
-   includes:['Stock Market Foundations ({{lessons:foundations}} lessons)','Technical Analysis Complete ({{lessons:technical}} lessons)','Building Your First Portfolio ({{lessons:portfolio-build}} lessons)','Lesson recaps + quiz on every lesson','Lifetime access + updates'],
+   price:20, origPrice:36, color:'#7eff5c',
+   desc:'The complete starting point. 4 courses covering markets, charts, your first portfolio and the process that keeps you in the game.',
+   includes:['Stock Market Foundations ({{lessons:foundations}} lessons)','Technical Analysis Complete ({{lessons:technical}} lessons)','Building Your First Portfolio ({{lessons:portfolio-build}} lessons)','Trading Psychology & Process ({{lessons:psychology}} lessons)','Lesson recaps + quiz on every lesson','Lifetime access + updates'],
   },
   {id:'bundle-intermediate', stripePrice:'price_1TEtzHPddnEAOUng7TIvW0qW', icon:'⚡', tier:'bundle', level:'Intermediate', title:'Intermediate Bundle',
-   price:60, origPrice:170, color:'#4d9fff',
-   desc:'Everything in Beginner plus Momentum, Options, and Tax Strategy. The full toolkit for an active trader.',
-   includes:['All 3 Beginner courses included','Momentum & Swing Trading ({{lessons:momentum}} lessons)','Options Trading Complete ({{lessons:options}} lessons)','Tax Strategy for Traders ({{lessons:tax-course}} lessons)','Bonus: position sizing calculator'],
+   price:60, origPrice:229, color:'#4d9fff',
+   desc:'Everything in Beginner plus every strategy course: momentum, options, day trading, options income, mean reversion, event trading and tax. 11 courses.',
+   includes:['All 4 Beginner courses included','Momentum & Swing Trading ({{lessons:momentum}} lessons)','Options Trading Complete ({{lessons:options}} lessons)','Day Trading: Opening Range, VWAP & Scalps ({{lessons:day-trading}} lessons)','Options Income: Spreads, the Wheel, Condors ({{lessons:options-income}} lessons)','Mean Reversion & Pairs ({{lessons:mean-reversion}} lessons)','Earnings & Event Trading ({{lessons:event-trading}} lessons)','Tax Strategy for Traders ({{lessons:tax-course}} lessons)','Bonus: position sizing calculator'],
+  },
+  {id:'bundle-markets', stripePrice:null /* TODO: Stripe price for Markets Bundle $60 */, icon:'🌍', tier:'bundle', level:'All levels', title:'Markets Bundle',
+   price:60, origPrice:116, color:'#4d9fff',
+   desc:'Every market on its own terms: futures margin and rolls, forex sessions and carry, crypto perpetuals and funding, and the order book underneath all of them. 4 courses.',
+   includes:['Futures: ES/NQ, Margin & Contract Specs ({{lessons:futures}} lessons)','Forex: Pairs, Sessions & Carry ({{lessons:forex}} lessons)','Crypto: Spot, Perpetuals & Funding ({{lessons:crypto}} lessons)','Market Structure & Order Flow ({{lessons:order-flow}} lessons)','Pairs with the Futures, Forex and Crypto Mastery PDFs'],
   },
   {id:'bundle-expert', stripePrice:'price_1TEtzLPddnEAOUnglXS0k1en', icon:'👑', tier:'bundle', level:'All levels', title:'Expert Bundle — All Access',
-   price:100, origPrice:500, color:'#f5c842',
-   desc:'All 9 courses unlocked. Every lesson, every strategy, every tool. The only bundle serious traders need.',
-   includes:['All 9 courses — every lesson','Everything in Beginner + Intermediate','Portfolio Risk Management ({{lessons:risk-mgmt}} lessons)','Algorithmic Trading + API access ({{lessons:algo}} lessons)','Institutional Portfolio Management ({{lessons:institutional}} lessons)','Lifetime access + all future updates'],
+   price:100, origPrice:540, color:'#f5c842',
+   desc:'All 20 courses unlocked: every track, every lesson, every capstone. $5 a course.',
+   includes:['All 20 courses — every lesson','Everything in Beginner + Intermediate + Markets','Portfolio Risk Management ({{lessons:risk-mgmt}} lessons)','Systematic Trading & Backtesting ({{lessons:algo}} lessons)','Institutional Portfolio Management ({{lessons:institutional}} lessons)','Macro & Market Regimes ({{lessons:macro-regimes}} lessons)','Data, Backtests & the Gate Stack ({{lessons:data-gate-stack}} lessons)','Lifetime access + all future updates'],
   },
   {id:'foundations', stripePrice:'price_1TEtzPPddnEAOUngDWkbcoUU',    icon:'📗', tier:'beginner', level:'Beginner',     title:'Stock Market Foundations',
    price:9,  origPrice:19, color:'#7eff5c',
@@ -4275,6 +4280,10 @@ const STORE_ITEMS = [
    price:9,  origPrice:19, color:'#7eff5c',
    desc:'Diversification, position sizing, and setting up your first 10-stock portfolio in Phantom Traders.',
   },
+  {id:'psychology', stripePrice:null /* TODO: Stripe price $9 */, icon:'🧠', tier:'beginner', level:'Beginner', title:'Trading Psychology & Process',
+   price:9, origPrice:19, color:'#7eff5c',
+   desc:'Why retail traders lose, measured. The written rules, pre-commitment devices and review loops that keep you trading your plan.',
+  },
   {id:'momentum', stripePrice:'price_1TEtzLPddnEAOUngZeAvHuKW',       icon:'⚡', tier:'intermediate', level:'Intermediate', title:'Momentum & Swing Trading',
    price:29, origPrice:97, color:'#7eff5c',
    desc:'Build a repeatable momentum system. Setup identification, entries, stops, and trade management.',
@@ -4283,21 +4292,61 @@ const STORE_ITEMS = [
    price:29, origPrice:127, color:'#4d9fff',
    desc:'Calls, puts, spreads, the Greeks, income strategies, and IV rank. The complete options curriculum.',
   },
-  {id:'tax-course', stripePrice:'price_1TEtzOPddnEAOUngUSuaLYUG',     icon:'🔥', tier:'intermediate', level:'Intermediate', title:'Tax Strategy for Traders',
+  {id:'day-trading', stripePrice:null /* TODO: Stripe price $29 */, icon:'⚡', tier:'intermediate', level:'Intermediate', title:'Day Trading: Opening Range, VWAP & Scalps',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Intraday structure, the opening range, VWAP and scalping mechanics, tested on 60 real SPY sessions with the costs shown.',
+  },
+  {id:'options-income', stripePrice:null /* TODO: Stripe price $29 */, icon:'💵', tier:'intermediate', level:'Intermediate', title:'Options Income: Spreads, the Wheel, Condors',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Selling premium with defined risk: covered calls, cash-secured puts, the wheel, credit spreads and iron condors on one model chain.',
+  },
+  {id:'mean-reversion', stripePrice:null /* TODO: Stripe price $29 */, icon:'🔁', tier:'intermediate', level:'Intermediate', title:'Mean Reversion & Pairs',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Where prices snap back and where they do not: RSI(2), Bollinger reversion, gap fades and cointegrated pairs, tested on real data.',
+  },
+  {id:'event-trading', stripePrice:null /* TODO: Stripe price $29 */, icon:'📅', tier:'intermediate', level:'Intermediate', title:'Earnings & Event Trading',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Earnings, FOMC, CPI and index rebalances: implied moves, the vol crush, and positioning around known dates.',
+  },
+  {id:'tax-course', stripePrice:'price_1TEtzOPddnEAOUngUSuaLYUG', comingSoon:'CPA review',     icon:'🔥', tier:'intermediate', level:'Intermediate', title:'Tax Strategy for Traders',
    price:19, origPrice:79,  color:'#f5c842',
    desc:'Loss harvesting, wash-sale rules, quarterly payments, and working with your CPA.',
   },
+  {id:'futures', stripePrice:null /* TODO: Stripe price $29 */, icon:'📈', tier:'intermediate', level:'Intermediate', title:'Futures: ES/NQ, Margin & Contract Specs',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Index, energy and rate futures from the contract spec up: multipliers, margin, mark-to-market, rolls, sessions and sizing per contract.',
+  },
+  {id:'forex', stripePrice:null /* TODO: Stripe price $29 */, icon:'💱', tier:'intermediate', level:'Intermediate', title:'Forex: Pairs, Sessions & Carry',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'How currency pairs are quoted, priced and financed: pips, lots, spreads, leverage, sessions, swaps and the carry trade.',
+  },
+  {id:'crypto', stripePrice:null /* TODO: Stripe price $29 */, icon:'🪙', tier:'intermediate', level:'Intermediate', title:'Crypto: Spot, Perpetuals & Funding',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'Spot books and fees, perpetual swaps and funding, basis and cash-and-carry, leverage and liquidation, custody and exchange risk.',
+  },
+  {id:'order-flow', stripePrice:null /* TODO: Stripe price $29 */, icon:'📊', tier:'intermediate', level:'Intermediate', title:'Market Structure & Order Flow',
+   price:29, origPrice:97, color:'#4d9fff',
+   desc:'The order book, the auctions, Reg NMS, wholesalers and dark pools, market makers, the tape, and what order flow can and cannot tell you.',
+  },
   {id:'risk-mgmt', stripePrice:'price_1TEtzNPddnEAOUng8xRKNf97',      icon:'🏛️', tier:'expert',  level:'Advanced',     title:'Portfolio Risk Management',
    price:39, origPrice:197, color:'#f5c842',
-   desc:'HHI concentration scoring, Sharpe ratio, beta weighting, drawdown control, and factor exposure.',
+   desc:'Measure, stress and bound the risk of a book you already run: exposure, VaR, correlation collapse, drawdown rules, leverage and the daily risk report.',
   },
-  {id:'algo', stripePrice:'price_1TEtzNPddnEAOUngRbRVnd7W',           icon:'⚙️', tier:'expert',  level:'Advanced',     title:'Algorithmic Trading Intro',
+  {id:'algo', stripePrice:'price_1TEtzNPddnEAOUngRbRVnd7W',           icon:'⚙️', tier:'expert',  level:'Advanced',     title:'Systematic Trading & Backtesting',
    price:39, origPrice:167, color:'#4d9fff',
-   desc:'Build automated strategies with the Phantom Traders API. Python-based with working templates.',
+   desc:'Turn a trading rule into pandas code, test it without fooling yourself, and decide with a written gate stack whether it should ever trade.',
   },
   {id:'institutional', stripePrice:'price_1TEtzLPddnEAOUngJe2kklY3',  icon:'&#128225;', tier:'expert',  level:'Advanced',     title:'Institutional Portfolio Management',
    price:39, origPrice:247, color:'#f5c842',
-   desc:'Multi-portfolio management, performance attribution, compliance, and $1M+ AUM frameworks.',
+   desc:'How endowments, pensions and sovereign funds run money: the policy statement, benchmarks, allocation, manager selection, risk budgets and what scales down to a $500k book.',
+  },
+  {id:'macro-regimes', stripePrice:null /* TODO: Stripe price $39 */, icon:'🌐', tier:'expert', level:'Advanced', title:'Macro & Market Regimes',
+   price:39, origPrice:197, color:'#f5c842',
+   desc:'Rates, inflation, liquidity and volatility regimes: how to classify the environment, measure what each state did to stocks, bonds and gold, and size to it.',
+  },
+  {id:'data-gate-stack', stripePrice:null /* TODO: Stripe price $39 */, icon:'🧪', tier:'expert', level:'Advanced', title:'Data, Backtests & the Gate Stack',
+   price:39, origPrice:197, color:'#f5c842',
+   desc:'Clean data, honest backtests and the gate stack a strategy must pass before it trades: nulls, benchmarks, walk-forward, replication and the forward record.',
   },
   // ── EBOOK + COURSE BUNDLES ────────────────────────────────────
     {id:'mastery-stock',   stripePrice:'price_1TEtzEPddnEAOUngrgFeMNUo', icon:'&#128200;', tier:'bundle', level:'All Levels',
@@ -4458,12 +4507,16 @@ function renderStore() {
               ? `<button class="btn btn-primary" style="font-size:11px;padding:6px 12px;background:${tc};color:${tc==='#5865F2'||tc==='#4d9fff'?'#fff':'#000'};border-color:${tc};"
                   onclick="addToCart('${item.id}');renderStore()">Subscribe</button>`
               : isBundle
-              ? `<button class="btn btn-primary" style="font-size:11px;padding:6px 12px;background:${tc};color:#000;border-color:${tc};"
+              ? (item.stripePrice
+                  ? `<button class="btn btn-primary" style="font-size:11px;padding:6px 12px;background:${tc};color:#000;border-color:${tc};"
                   onclick="addToCart('${item.id}');renderStore()">Add to Cart</button>`
+                  : `<button class="btn btn-ghost" style="font-size:11px;padding:6px 12px;border-color:var(--border2);color:var(--muted2);cursor:default;" disabled>Coming soon</button>`)
               : `<button class="btn btn-ghost" style="font-size:11px;padding:6px 12px;border-color:var(--border2);color:var(--muted);"
                   onclick="showPage('products');setTimeout(()=>openCourse('${item.id}'),80)">Preview →</button>
-                <button class="btn btn-primary" style="font-size:11px;padding:6px 12px;background:${tc};color:#000;border-color:${tc};"
-                  onclick="addToCart('${item.id}');renderStore()">Add to Cart</button>`
+                ${(item.comingSoon || !item.stripePrice)
+                  ? `<button class="btn btn-ghost" style="font-size:11px;padding:6px 12px;border-color:var(--border2);color:var(--muted2);cursor:default;" disabled>${item.comingSoon ? item.comingSoon + ' · ' : ''}Coming soon</button>`
+                  : `<button class="btn btn-primary" style="font-size:11px;padding:6px 12px;background:${tc};color:#000;border-color:${tc};"
+                  onclick="addToCart('${item.id}');renderStore()">Add to Cart</button>`}`
             }
           </div>
         </div>
