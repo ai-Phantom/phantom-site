@@ -1,6 +1,6 @@
 {
   "base": "https://aiphantomtraders.com",
-  "startedAt": "2026-10-02T05:33:06.358Z",
+  "startedAt": "2026-10-02T06:14:11.261Z",
   "pages": [
     {
       "id": "home",
@@ -249,7 +249,7 @@
       "NKE": "35.15",
       "COF": "194.48"
     },
-    "clock": "MARKET · 05:33:16 ET"
+    "clock": "MARKET · 06:14:21 ET"
   },
   "marketApi": null,
   "featureErrors": [],
@@ -259,5 +259,5 @@
       "finding": "No /market/quote response observed — backend likely cold (Render free tier)."
     }
   ],
-  "finishedAt": "2026-10-02T05:35:23.891Z"
+  "finishedAt": "2026-10-02T06:16:10.895Z"
 }
