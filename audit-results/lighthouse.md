@@ -1,60 +1,53 @@
-# Lighthouse (desktop) — 2026-10-02T05:25:44.678Z
+# Lighthouse (desktop) — 2026-10-02T05:33:03.712Z
 
 URL: https://aiphantomtraders.com/
 
 ## Scores
-- performance: 72
+- performance: 87
 - accessibility: 100
 - best-practices: 81
 - seo: 92
 
 ## performance — opportunities
-- Total Blocking Time (520 ms)
-- Speed Index (2.1 s)
+- Cumulative Layout Shift (0.216)
+    · {"cumulativeLayoutShiftMainFrame":0.2160016470827614,"newEngineResult":{"cumulativeLayoutShift":0.2160016470827614,"cumulativeLayoutShiftMainFrame":0.2160016470827614},"newEngineResultDiffered":false}
 - Use efficient cache lifetimes (Est savings of 19 KiB)
     · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/d76008a69eab/main.js?","cacheLifetimeMs":14400000,"wastedBytes":6370.919999999999}
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5662.399999999999}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","cacheLifetimeMs":604800000,"wastedBytes":5630.899999999999}
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495","cacheLifetimeMs":86400000,"wastedBytes":4135.2}
-    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2258.4}
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1198.1999999999998}
+    · {"url":"https://js.sentry-cdn.com/6eb1dc678aa80aa6854d7acfbe8c4056.min.js","cacheLifetimeMs":3600000,"wastedBytes":2255.2000000000003}
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","cacheLifetimeMs":604800000,"wastedBytes":1173.7999999999997}
+- Layout shift culprits
+    · {"type":"table","headings":[{"key":"node","valueType":"node","subItemsHeading":{"key":"extra"},"label":"Element"},{"key":"score","valueType":"numeric","subItemsHeading":{"key":"cause","valueType":"text"},"granularity":0.001,"label":"Layout ...
 - Optimize DOM size
-    · {"statistic":"Total elements","value":{"type":"numeric","granularity":1,"value":4861}}
-    · {"statistic":"Most children","node":{"type":"node","lhId":"page-17-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":86...
-    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-18-SPAN","path":"1,HTML,1,BODY,9,DIV,4,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":3411,...
+    · {"statistic":"Total elements","value":{"type":"numeric","granularity":1,"value":4912}}
+    · {"statistic":"Most children","node":{"type":"node","lhId":"page-9-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865...
+    · {"statistic":"DOM depth","node":{"type":"node","lhId":"page-16-SPAN","path":"1,HTML,1,BODY,9,DIV,4,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":3411,...
 - Network dependency tree
-- Max Potential First Input Delay (280 ms)
+- Max Potential First Input Delay (150 ms)
 - Reduce unused CSS (Est savings of 16 KiB)
-    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":16216,"wastedPercent":75.72829854709049,"totalBytes":21414}
-- Reduce unused JavaScript (Est savings of 157 KiB)
-    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":178224,"wastedBytes":74859,"wastedPercent":42.00287065401882}
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","totalBytes":55884,"wastedBytes":46673,"wastedPercent":83.51654897791789}
-    · {"url":"https://aiphantomtraders.com/","totalBytes":73078,"wastedBytes":38789,"wastedPercent":53.07959716707934}
+    · {"url":":root{--bg-base:#0a0c0f;--bg-elev-1:#14161a;--bg-elev-2:#1c1f25;--bg-elev-3:#262a31;--reactor-blue:…","wastedBytes":16248,"wastedPercent":75.72829854709049,"totalBytes":21455}
+- Reduce unused JavaScript (Est savings of 155 KiB)
+    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","totalBytes":178240,"wastedBytes":73051,"wastedPercent":40.984703006004516}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","totalBytes":55848,"wastedBytes":46643,"wastedPercent":83.51654897791789}
+    · {"url":"https://aiphantomtraders.com/","totalBytes":73227,"wastedBytes":38872,"wastedPercent":53.084376996903735}
 - Avoid serving legacy JavaScript to modern browsers (Est savings of 10 KiB)
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495","wastedBytes":10645,"subItems":{"type":"subitems","items":[{"signal":"Array.prototype.at","location":{"type":"source-location","url"...
     · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","wastedBytes":0,"subItems":{"type":"subitems","items":[{"signal":"@babel/plugin-transform-regenerator","location":{"type":"source-location","url":"https://www.googletagmanage...
 - Serve static assets with an efficient cache policy (4 resources found)
     · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495","debugData":{"type":"debugdata","public":true,"max-age":86400},"cacheLifetimeMs":86400000,"cacheHitProbability":0.6,"totalBytes":103...
-    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":56624,"wastedBytes":5662.399...
-    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11982,"wastedBytes":1...
-    · {"url":"https://aiphantomtraders.com/logo.jpeg","debugData":{"type":"debugdata","public":true,"max-age":2592000},"cacheLifetimeMs":2592000000,"cacheHitProbability":0.9064245810055866,"totalBytes":2574,"wastedBytes":240.86312849161996}
-- Avoid an excessive DOM size (4,855 elements)
-    · {"statistic":"Total DOM Elements","value":{"type":"numeric","granularity":1,"value":4855}}
-    · {"node":{"type":"node","lhId":"1-114-SPAN","path":"1,HTML,1,BODY,9,DIV,4,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":3411,"bottom":3425,"left":1219,...
-    · {"node":{"type":"node","lhId":"1-115-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-410,"right":9436,"wi...
-- Reduce JavaScript execution time (1.3 s)
-    · {"url":"https://aiphantomtraders.com/","total":1663.6670000000001,"scripting":491.5699999999995,"scriptParseCompile":29.108000000000004}
-    · {"url":"https://aiphantomtraders.com/cdn-cgi/challenge-platform/scripts/jsd/main.js","total":552.3149999999963,"scripting":549.9309999999963,"scriptParseCompile":0.504}
-    · {"url":"Unattributable","total":187.1819999999965,"scripting":5.507999999999997,"scriptParseCompile":0}
-    · {"url":"https://www.googletagmanager.com/gtag/js?id=G-T8NHESJZ90","total":182.17599999999925,"scripting":144.11099999999925,"scriptParseCompile":24.687}
-    · {"url":"https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495","total":62.15900000000003,"scripting":56.904000000000025,"scriptParseCompile":0.022}
-- Minimize main-thread work (2.7 s)
-    · {"group":"scriptEvaluation","groupLabel":"Script Evaluation","duration":1274.1739999999836}
-    · {"group":"other","groupLabel":"Other","duration":482.13799999999765}
-    · {"group":"styleLayout","groupLabel":"Style & Layout","duration":349.62300000000045}
-    · {"group":"paintCompositeRender","groupLabel":"Rendering","duration":314.0750000000005}
-    · {"group":"parseHTML","groupLabel":"Parse HTML & CSS","duration":201.50100000000015}
+    · {"url":"https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":56309,"wastedBytes":5630.899...
+    · {"url":"https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js","debugData":{"type":"debugdata","public":true,"max-age":604800,"s-maxage":"43200"},"cacheLifetimeMs":604800000,"cacheHitProbability":0.9,"totalBytes":11738,"wastedBytes":1...
+    · {"url":"https://aiphantomtraders.com/logo.jpeg","debugData":{"type":"debugdata","public":true,"max-age":2592000},"cacheLifetimeMs":2592000000,"cacheHitProbability":0.9064245810055866,"totalBytes":1724,"wastedBytes":161.32402234636862}
+- Avoid an excessive DOM size (4,906 elements)
+    · {"statistic":"Total DOM Elements","value":{"type":"numeric","granularity":1,"value":4906}}
+    · {"node":{"type":"node","lhId":"1-115-SPAN","path":"1,HTML,1,BODY,9,DIV,4,SECTION,0,DIV,1,DIV,2,DIV,1,DIV,1,DIV,1,DIV,3,DIV,0,DIV,0,DIV,1,SPAN,1,SPAN","selector":"div > div > span > span","boundingRect":{"top":3411,"bottom":3425,"left":1219,...
+    · {"node":{"type":"node","lhId":"1-116-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,3,DIV,0,DIV","selector":"div#page-landing > section.v2-hero > div.v2-tape > div#v2TapeTrack","boundingRect":{"top":847,"bottom":865,"left":-325,"right":9522,"wi...
+- Avoid large layout shifts (2 layout shifts found)
+    · {"node":{"type":"node","lhId":"page-1-DIV","path":"1,HTML,1,BODY,9,DIV,0,SECTION,1,DIV","selector":"body > div#page-landing > section.v2-hero > div.v2-hero-glow","boundingRect":{"top":-175,"bottom":625,"left":268,"right":1068,"width":800,"h...
+    · {"node":{"type":"node","lhId":"page-0-H1","path":"1,HTML,1,BODY,9,DIV,0,SECTION,2,DIV,1,DIV,0,DIV,1,H1","selector":"div.v2-hero-inner > div.v2-hero-grid > div > h1.v2-headline","boundingRect":{"top":225,"bottom":444,"left":40,"right":668,"w...
 - Image elements do not have explicit `width` and `height`
-    · {"url":"https://aiphantomtraders.com/logo.jpeg","node":{"type":"node","lhId":"1-177-IMG","path":"1,HTML,1,BODY,9,DIV,6,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG","selector":"div.v2-footer-grid > div > div > img","boundingRect":{"top":4313,"botto...
+    · {"url":"https://aiphantomtraders.com/logo.jpeg","node":{"type":"node","lhId":"1-178-IMG","path":"1,HTML,1,BODY,9,DIV,6,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG","selector":"div.v2-footer-grid > div > div > img","boundingRect":{"top":4313,"botto...
 
 ## best-practices — opportunities
 - Uses deprecated APIs (2 warnings found)
