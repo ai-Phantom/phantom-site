@@ -395,6 +395,48 @@ def m_gates(d, box, a):
         d.rectangle([cx - w / 2, y, cx + w / 2, y + h * 0.5], fill=col)
 
 
+
+def m_feed(d, box, a):
+    """Six signal channels as lanes; each mark is an alert in the feed."""
+    x0, y0, x1, y1 = box
+    rnd = random.Random(21)
+    lanes = 6
+    h = (y1 - y0) / lanes
+    for i in range(lanes):
+        y = y0 + h * (i + 0.5)
+        d.line([x0, y, x1, y], fill=MUTED, width=SCALE)
+        for _ in range(9 + i % 4):
+            x = x0 + 8 * SCALE + rnd.random() * (x1 - x0 - 16 * SCALE)
+            big = rnd.random() < 0.4
+            dot(d, x, y, (10 if big else 6) * SCALE, a if big or rnd.random() < 0.35 else MUTED)
+
+
+def m_ping(d, box, a):
+    """The feed with one priority alert pinging outward."""
+    m_feed(d, box, a)
+    x0, y0, x1, y1 = box
+    cx, cy = x0 + (x1 - x0) * 0.62, y0 + (y1 - y0) / 12
+    for k, r in enumerate((18, 38, 60, 84)):
+        rr = r * SCALE
+        d.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], outline=a if k == 0 else MUTED, width=SCALE * 2)
+    dot(d, cx, cy, 11 * SCALE, a)
+
+
+def m_library(d, box, a):
+    """Five volumes on a shelf."""
+    x0, y0, x1, y1 = box
+    n = 5
+    w = (x1 - x0) / n
+    heights = [0.92, 0.78, 0.86, 0.72, 0.82]
+    for i, hgt in enumerate(heights):
+        xa = x0 + i * w + w * 0.14
+        xb = x0 + (i + 1) * w - w * 0.14
+        top = y1 - hgt * (y1 - y0)
+        d.rectangle([xa, top, xb, y1], outline=a if i == 2 else MUTED, width=SCALE * 2)
+        for k in range(1, 4):
+            yy = top + k * (y1 - top) / 4
+            d.line([xa + 8 * SCALE, yy, xb - 8 * SCALE, yy], fill=FAINT, width=SCALE)
+
 MOTIFS = {k[2:]: v for k, v in globals().items() if k.startswith("m_")}
 
 
@@ -487,4 +529,17 @@ for j, (bid, title, members, meta) in enumerate(BUNDLES):
     accent = {"bundle-beginner": FAMILY["foundations"], "bundle-intermediate": FAMILY["strategy"],
               "bundle-markets": FAMILY["markets"], "bundle-expert": FAMILY["systematic"]}[bid]
     plate(bid, f"B{j + 1} / 4", accent, title, f"Bundle · {meta}", bundle_fn(members))
+EXTRA_FAMILY = {"discord": (88, 101, 242), "elite": (245, 200, 66), "mastery": (232, 140, 80)}
+EXTRAS = [
+    ("pro-trader", "Pro Trader", "discord", "Discord tier · $15 a month", "feed"),
+    ("elite", "Elite", "elite", "Discord tier · $25 a month", "ping"),
+    ("mastery-stock", "Stock Trading Mastery", "mastery", "PDF ebook + slide deck", "candles"),
+    ("mastery-options", "Options Trading Mastery", "mastery", "PDF ebook + slide deck", "payoff"),
+    ("mastery-futures", "Futures Trading Mastery", "mastery", "PDF ebook + slide deck", "curve"),
+    ("mastery-forex", "Forex Trading Mastery", "mastery", "PDF ebook + slide deck", "sessions"),
+    ("mastery-crypto", "Crypto Trading Mastery", "mastery", "PDF ebook + slide deck", "funding"),
+    ("mastery-library", "Complete Trading Library", "mastery", "All 5 Mastery PDFs + decks", "library"),
+]
+for k, (pid, title, family, meta, motif) in enumerate(EXTRAS, start=1):
+    plate(pid, f"X{k} / {len(EXTRAS)}", EXTRA_FAMILY[family], title, meta, MOTIFS[motif])
 print("wrote", len(list(OUT.glob("*.png"))), "plates to", OUT)
