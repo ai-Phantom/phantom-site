@@ -1,0 +1,38 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Trend Reversal Probability on SPY daily, Jan-Jul 2026</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Trend Reversal Probability on SPY daily, Jan-Jul 2026</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0</text>
+<line x1='64' y1='274.6' x2='740' y2='274.6' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='278.6' fill='#8a948e' text-anchor='end'>25</text>
+<line x1='64' y1='201.1' x2='740' y2='201.1' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='205.1' fill='#8a948e' text-anchor='end'>50</text>
+<line x1='64' y1='127.7' x2='740' y2='127.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='131.7' fill='#8a948e' text-anchor='end'>75</text>
+<line x1='64' y1='54.3' x2='740' y2='54.3' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='58.3' fill='#8a948e' text-anchor='end'>100</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>%</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>2026-01-02</text>
+<text x='153.2' y='366' fill='#8a948e' text-anchor='middle'>2026-01-30</text>
+<text x='242.4' y='366' fill='#8a948e' text-anchor='middle'>2026-02-27</text>
+<text x='331.6' y='366' fill='#8a948e' text-anchor='middle'>2026-03-26</text>
+<text x='420.8' y='366' fill='#8a948e' text-anchor='middle'>2026-04-23</text>
+<text x='510.0' y='366' fill='#8a948e' text-anchor='middle'>2026-05-20</text>
+<text x='599.2' y='366' fill='#8a948e' text-anchor='middle'>2026-06-17</text>
+<text x='688.4' y='366' fill='#8a948e' text-anchor='middle'>2026-07-16</text>
+<line x1='64' y1='101.3' x2='740' y2='101.3' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='96.3' fill='#8a948e' text-anchor='end' font-size='11'>0.84 high</text>
+<line x1='64' y1='60.2' x2='740' y2='60.2' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='55.2' fill='#8a948e' text-anchor='end' font-size='11'>0.98 extreme</text>
+<polyline points='64.0,279.6 68.7,269.3 73.4,258.1 78.1,245.8 82.8,233.2 87.5,219.9 92.2,195.6 96.9,193.5 101.6,181.5 106.2,169.4 110.9,159.1 115.6,308.3 120.3,301.0 125.0,292.5 129.7,283.7 134.4,274.6 139.1,271.0 143.8,308.3 148.5,302.8 153.2,294.0 157.9,288.4 162.6,311.3 167.3,303.1 172.0,298.7 176.7,289.3 181.4,281.0 186.1,270.8 190.8,259.0 195.4,245.2 200.1,239.0 204.8,233.7 209.5,220.2 214.2,211.7 218.9,202.3 223.6,192.9 228.3,182.9 233.0,150.6 237.7,137.4 242.4,124.5 247.1,141.8 251.8,131.5 256.5,121.5 261.2,112.1 265.9,103.0 270.6,71.6 275.2,65.1 279.9,61.3 284.6,56.0 289.3,54.9 294.0,54.6 298.7,54.3 303.4,54.3 308.1,54.3 312.8,54.3 317.5,54.3 322.2,57.2 326.9,77.2 331.6,73.4 336.3,70.1 341.0,67.2 345.7,64.6 350.4,62.2 355.1,60.4 359.8,59.0 364.4,57.8 369.1,295.4 373.8,290.7 378.5,285.7 383.2,280.2 387.9,274.6 392.6,268.1 397.3,261.4 402.0,254.3 406.7,246.7 411.4,238.7 416.1,230.2 420.8,221.4 425.5,202.6 430.2,182.6 434.9,163.0 439.6,154.7 444.2,135.1 448.9,124.5 453.6,114.5 458.3,106.0 463.0,98.0 467.7,91.6 472.4,104.2 477.1,97.8 481.8,99.5 486.5,92.5 491.2,86.3 495.9,80.7 500.6,75.7 505.3,71.6 510.0,68.1 514.7,65.1 519.4,62.5 524.1,60.7 528.8,59.0 533.4,57.8 538.1,56.9 542.8,56.3 547.5,55.7 552.2,55.5 556.9,55.2 561.6,305.1 566.3,298.9 571.0,292.5 575.7,285.1 580.4,277.5 585.1,269.0 589.8,260.5 594.5,259.0 599.2,268.1 603.9,240.5 608.6,231.7 613.2,222.3 617.9,212.3 622.6,202.6 627.3,192.6 632.0,182.9 636.7,173.5 641.4,164.1 646.1,177.1 650.8,167.7 655.5,158.3 660.2,149.7 664.9,140.9 669.6,133.0 674.3,125.4 679.0,118.0 683.7,111.6 688.4,105.4 693.1,99.5 697.8,94.5 702.4,89.8 707.1,85.4 711.8,81.9 716.5,78.7 721.2,80.4 725.9,76.9 730.6,74.3 735.3,71.3 740.0,69.6' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='284.6' cy='56.0' r='4' fill='#ff4d6a'/>
+<text x='292.6' y='48.0' fill='#c9d1cc' text-anchor='start' font-size='11'>3/12: 99.4%</text>
+<circle cx='369.1' cy='295.4' r='4' fill='#ff4d6a'/>
+<text x='377.1' y='287.4' fill='#c9d1cc' text-anchor='start' font-size='11'>phase flips 4/8</text>
+<circle cx='528.8' cy='59.0' r='4' fill='#ff4d6a'/>
+<text x='520.8' y='51.0' fill='#c9d1cc' text-anchor='end' font-size='11'>5/27: 98.4%</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>Reversal probability, % (trailing 250 bars)</text>
+</svg>
