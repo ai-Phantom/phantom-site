@@ -1,0 +1,17 @@
+{
+  "id": "options-income",
+  "icon": "💵",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Options Income: Spreads, the Wheel, Condors",
+  "subtitle": "Selling premium with defined risk on one model chain: covered calls, cash-secured puts, the wheel, credit spreads and iron condors, with the sizing, rolling, tax and measurement rules that keep the plan honest.",
+  "price": 29,
+  "what_you_learn": [
+    "What the variance risk premium is, the evidence for it (Carr and Wu, Bakshi and Kapadia, Cboe BXM and PUT histories with dates), and the tail a premium seller is paid to carry",
+    "Covered calls and cash-secured puts priced on one model chain: strike selection, static and if-called returns, assignment as the intended outcome, the true capital at risk, and what the BXM and PUT records say against the S&P 500",
+    "The wheel run through a full cycle with real numbers, including the two paths on which it loses to simply holding the shares",
+    "Credit spreads and iron condors: defined risk, why probability of profit is not expected value, wing width, managing at 21 DTE and the 50% rule, with calendars and diagonals at survey depth",
+    "IV rank and percentile as a gate, the arithmetic of rolling and the fresh-trade test that separates a decision from denial, and sizing by max-loss budget under Reg T and portfolio margin",
+    "The tax and cost side from IRS Publication 550 (assignment basis, wash sales with options, qualified covered calls) and an income plan measured honestly against buy-and-hold"
+  ]
+}

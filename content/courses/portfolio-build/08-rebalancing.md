@@ -113,6 +113,8 @@ Not fully back to 60%, but inside the band, with no sale and no tax. The next co
 
 Check weights on two fixed dates a year. If any core holding is more than 5 points from target, or any satellite more than a quarter of its target away, restore it: first with contributions, dividends and the cash reserve; then, if still outside the band, by selling the highest-basis, longest-held lots of the overweight holding. Do nothing between the dates unless a satellite hits its stop. Lesson 12 puts this sentence into your investment plan.
 
+![The rule above as a sequence: a fixed check date twice a year, compare weights to targets, do nothing inside the band (core ±5 points, satellite ±25% of target), otherwise use contributions, dividends and the cash reserve first, and sell highest-basis, longest-held lots only if still outside the band.](figures/rebalancing-rule-flow.svg)
+
 ## Sources
 
 - Vanguard Research (Jaconetti, Kinniry, Zilbering), "Best practices for portfolio rebalancing", 2010: https://www.vanguard.com/pdf/icrpr.pdf

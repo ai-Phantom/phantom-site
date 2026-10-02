@@ -1,0 +1,32 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Deribit BTC-PERPETUAL funding, 2026-06-26 to 2026-09-24 (8h rate, daily mean)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Deribit BTC-PERPETUAL funding, 2026-06-26 to 2026-09-24 (8h rate, daily mean)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-0.010%</text>
+<line x1='64' y1='248.7' x2='740' y2='248.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='252.7' fill='#8a948e' text-anchor='end'>0.000%</text>
+<line x1='64' y1='149.5' x2='740' y2='149.5' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='153.5' fill='#8a948e' text-anchor='end'>0.010%</text>
+<line x1='64' y1='50.2' x2='740' y2='50.2' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='54.2' fill='#8a948e' text-anchor='end'>0.020%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% per 8 hours</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>06-26</text>
+<text x='154.1' y='366' fill='#8a948e' text-anchor='middle'>07-08</text>
+<text x='244.3' y='366' fill='#8a948e' text-anchor='middle'>07-20</text>
+<text x='334.4' y='366' fill='#8a948e' text-anchor='middle'>08-01</text>
+<text x='424.5' y='366' fill='#8a948e' text-anchor='middle'>08-13</text>
+<text x='514.7' y='366' fill='#8a948e' text-anchor='middle'>08-25</text>
+<text x='604.8' y='366' fill='#8a948e' text-anchor='middle'>09-06</text>
+<text x='694.9' y='366' fill='#8a948e' text-anchor='middle'>09-18</text>
+<line x1='64' y1='248.7' x2='740' y2='248.7' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='243.7' fill='#8a948e' text-anchor='end' font-size='11'>zero: longs and shorts pay nothing</text>
+<line x1='64' y1='149.5' x2='740' y2='149.5' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='144.5' fill='#8a948e' text-anchor='end' font-size='11'>0.01% = the &#x27;interest&#x27; floor many venues default to</text>
+<polyline points='64.0,205.1 71.5,221.0 79.0,243.8 86.5,209.0 94.0,226.9 101.6,237.8 109.1,229.9 116.6,211.0 124.1,247.8 131.6,237.8 139.1,159.4 146.6,196.1 154.1,215.0 161.6,203.1 169.2,169.3 176.7,183.2 184.2,216.0 191.7,182.2 199.2,232.9 206.7,231.9 214.2,213.0 221.7,236.8 229.2,232.9 236.8,176.3 244.3,201.1 251.8,200.1 259.3,172.3 266.8,238.8 274.3,232.9 281.8,240.8 289.3,238.8 296.8,181.3 304.4,228.9 311.9,179.3 319.4,139.6 326.9,219.0 334.4,224.9 341.9,228.9 349.4,197.1 356.9,214.0 364.4,233.9 372.0,234.8 379.5,243.8 387.0,247.8 394.5,248.7 402.0,240.8 409.5,224.9 417.0,188.2 424.5,183.2 432.0,177.3 439.6,234.8 447.1,247.8 454.6,212.0 462.1,238.8 469.6,217.0 477.1,148.5 484.6,192.2 492.1,158.4 499.6,182.2 507.2,190.2 514.7,227.9 522.2,214.0 529.7,193.2 537.2,241.8 544.7,232.9 552.2,232.9 559.7,162.4 567.2,181.3 574.8,189.2 582.3,212.0 589.8,234.8 597.3,275.5 604.8,248.7 612.3,246.8 619.8,230.9 627.3,188.2 634.8,240.8 642.4,235.8 649.9,248.7 657.4,233.9 664.9,243.8 672.4,228.9 679.9,193.2 687.4,183.2 694.9,228.9 702.4,166.4 710.0,161.4 717.5,61.2 725.0,130.6 732.5,156.4 740.0,211.0' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='717.5' cy='61.2' r='4' fill='#ff4d6a'/>
+<text x='709.5' y='53.2' fill='#c9d1cc' text-anchor='end' font-size='11'>2026-09-21: 0.0189% (20.7% annualised)</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>8-hour funding rate, daily average (%)</text>
+</svg>

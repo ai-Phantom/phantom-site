@@ -50,6 +50,8 @@ SPY, 13 October 2022, from Yahoo Finance historical daily data. The 20 closes en
 
 The day's low of 348.11 was below the lower band (350.79) by 2.68 points; the close was back inside at %B 0.40. That is the shape of a failed breakdown expressed in band terms.
 
+![SPY daily candles with the 20-day SMA and 2-standard-deviation Bollinger Bands, 1 Sep–30 Nov 2022; 13 Oct 2022 marked, when the low of 348.11 printed below the lower band of 350.79 and the close returned inside. Source: Yahoo Finance.](figures/spy-bollinger-bands-sep-nov-2022.svg)
+
 **True range and ATR.** Prior close (12 October) 356.56; high 367.51; low 348.11. The three candidates: high − low = 19.40; |high − prior close| = 10.95; |low − prior close| = 8.45. True range = **19.40**. The 14 true ranges ending 13 October were 7.18, 9.53, 9.70, 10.83, 8.87, 11.37, 11.43, 8.51, 6.04, 12.35, 6.54, 7.32, 3.52 and 19.40; their simple average is 132.59 / 14 = **9.47**. Wilder-smoothed ATR(14) on the same day was 8.96. As a percentage of the close: 9.47 / 365.97 = **2.6%**. A stop placed 1 ATR below a 365.97 entry would sit near 356.50; 2 ATR, near 347.00.
 
 For scale: on 19 February 2020, the pre-crash high, bandwidth was 6.0% and ATR(14) was 0.86% of the close. On 16 March 2020 bandwidth was 36.6% and ATR was 5.7% of the close. On 23 September 2026, the last day in the sample, bandwidth was 2.8% and ATR was 0.88%. The same 1-ATR stop is 4.7 times further away in dollars (13.75 against 2.90) in March 2020 than in February 2020, and 6.7 times further as a share of price. That is what ATR is for.

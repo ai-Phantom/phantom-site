@@ -1,0 +1,32 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>How far price must move against you before liquidation (isolated, 0.5% maintenance)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>How far price must move against you before liquidation (isolated, 0.5% maintenance)</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0.0%</text>
+<line x1='64' y1='246.7' x2='740' y2='246.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='250.7' fill='#8a948e' text-anchor='end'>20.0%</text>
+<line x1='64' y1='145.3' x2='740' y2='145.3' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='149.3' fill='#8a948e' text-anchor='end'>40.0%</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>60.0%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% move</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>2x</text>
+<text x='160.6' y='366' fill='#8a948e' text-anchor='middle'>3x</text>
+<text x='257.1' y='366' fill='#8a948e' text-anchor='middle'>5x</text>
+<text x='353.7' y='366' fill='#8a948e' text-anchor='middle'>10x</text>
+<text x='450.3' y='366' fill='#8a948e' text-anchor='middle'>20x</text>
+<text x='546.9' y='366' fill='#8a948e' text-anchor='middle'>25x</text>
+<text x='643.4' y='366' fill='#8a948e' text-anchor='middle'>50x</text>
+<text x='740.0' y='366' fill='#8a948e' text-anchor='middle'>100x</text>
+<line x1='64' y1='335.6' x2='740' y2='335.6' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='330.6' fill='#8a948e' text-anchor='end' font-size='11'>one daily standard deviation, BTC 2026 YTD (2.45%)</text>
+<polyline points='64.0,97.2 160.6,181.7 257.1,249.2 353.7,299.9 450.3,325.2 546.9,330.3 643.4,340.4 740.0,345.5' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='740.0' cy='345.5' r='4' fill='#ff4d6a'/>
+<text x='732.0' y='337.5' fill='#c9d1cc' text-anchor='end' font-size='11'>100x: 0.5%, one fifth of a normal day</text>
+<circle cx='160.6' cy='181.7' r='4' fill='#ff4d6a'/>
+<text x='168.6' y='173.7' fill='#c9d1cc' text-anchor='start' font-size='11'>3x: 32.8%</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>adverse move that liquidates (%)</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "id": "data-gate-stack",
+  "icon": "🧪",
+  "tier": "expert",
+  "level": "Expert",
+  "title": "Data, Backtests & the Gate Stack",
+  "subtitle": "Clean data, honest backtests and a gate stack that a strategy must pass before it trades: the research process end to end.",
+  "price": 39,
+  "what_you_learn": [
+    "Run seven data gates (D0-D6) before any test, including a returns-based cross-check of Yahoo SPY against Cboe's S&P 500 index that separates ex-dividend artefacts from real disagreements",
+    "Find lookahead through stale timestamps and collapsed R denominators, with worked SPY cases where a stale stamp quadrupled a signal's return and a one-tick stop turned a 3.9% move into 152 R",
+    "Score a rule against a matched random-entry null and read the percentile correctly: a Donchian breakout that made money on SPY sat at the 42nd percentile, and beating the null is information, not profit",
+    "Hold every rule to cash and buy-and-hold benchmarks and to per-era scoring, and see why an RSI(2) rule at the 95th percentile on SPY still fails at 0.49x of buy-and-hold and 1 of 4 eras",
+    "Replicate on a fresh pre-registered universe, de-duplicate passes by ticker, and convert correlated tests into effective independent looks before comparing against a noise floor or a family bar",
+    "Price costs and capacity from raw spreads and measured hurdles, design a forward record that logs exit fills and a computable stop condition, and write a run ledger entry for turn-of-month on SPY in the capstone"
+  ]
+}

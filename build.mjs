@@ -5,14 +5,21 @@
 // by inline onclick="..." handlers are never renamed.
 import { minify } from 'html-minifier-terser';
 import { readFile, writeFile } from 'node:fs/promises';
-import { buildCourses, injectCourses } from './scripts/build-courses.mjs';
+import { buildCourses, injectCourses, splitCourses } from './scripts/build-courses.mjs';
+import { mkdir } from 'node:fs/promises';
 
 const SRC = new URL('./src/index.html', import.meta.url);
 const OUT = new URL('./index.html', import.meta.url);
 
 const template = await readFile(SRC, 'utf8');
 const { courses, manifest } = await buildCourses(new URL('./content/courses/', import.meta.url).pathname);
-const src = injectCourses(template, courses, manifest);
+const { inline, files } = splitCourses(courses);
+const coursesDir = new URL('./courses/', import.meta.url);
+await mkdir(coursesDir, { recursive: true });
+for (const [id, data] of Object.entries(files)) {
+  await writeFile(new URL(`./${id}.json`, coursesDir), JSON.stringify(data));
+}
+const src = injectCourses(template, inline, manifest);
 console.log('courses:', Object.entries(manifest).map(([id, m]) => `${id}=${m.lessons}`).join(' '));
 
 const out = await minify(src, {

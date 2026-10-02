@@ -57,6 +57,8 @@ For RSI(2), Wilder smoothing with k = 1/2. On 11 October the running values were
 
 For RSI(14) on the same day: average gain 1.6949, average loss 3.1970, RS = 0.5302, RSI(14) = 100 − 100 / 1.5302 = **34.65**. The 14-period reading was not even "oversold" by the conventional 30 threshold at the bear-market low. For comparison, on 8 April 2025, after a 7.90-point drop, RSI(2) was 1.67 and RSI(14) was 21.42.
 
+![SPY RSI(2) and RSI(14), 1 Sep–30 Nov 2022, with the 10, 30 and 90 lines; 12 Oct 2022 marked at RSI(2) 5.3 and RSI(14) 34.7. Source: Yahoo Finance.](figures/spy-rsi2-rsi14-sep-nov-2022.svg)
+
 **Conditional statistics.** For each day, the forward 1-day and 5-day returns (close to close). Base rates over 2,512 days: 1-day +0.057%, 5-day **+0.281%**, and 61.0% of 5-day forward returns were positive.
 
 The conditional-statistics table under the Table heading below gives the figures. Read it against the base rate, row by row.

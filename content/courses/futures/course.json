@@ -1,0 +1,17 @@
+{
+  "id": "futures",
+  "icon": "📈",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Futures: ES/NQ, Margin & Contract Specs",
+  "subtitle": "Index, energy and rate futures from the contract spec up: multipliers, margin, roll, sessions and the risks of leverage.",
+  "price": 29,
+  "what_you_learn": [
+    "Read a CME contract specification and turn it into dollars: multiplier, tick value, hours, expiry and settlement for ES, NQ, MES and MNQ",
+    "Why futures margin is a performance bond, how SPAN sets it, and the leverage arithmetic of a 2% and 5% move against the CME margin table",
+    "How daily mark-to-market and variation margin work, and exactly when and how large a margin call is, on a real June 2026 ES sequence",
+    "Contango, backwardation and cost-of-carry fair value, and how to roll a quarterly position with a calendar spread while reading continuous charts correctly",
+    "The Globex clock: where ES volume actually sits by hour, the 9:30 open, the 4:00 close, holiday sessions, and what that does to fills and slippage",
+    "Survey-depth working knowledge of crude oil (CL) and Treasury (ZN/ZB) futures, Section 1256 60/40 tax treatment, and a per-contract risk plan sized for a $25,000 account"
+  ]
+}

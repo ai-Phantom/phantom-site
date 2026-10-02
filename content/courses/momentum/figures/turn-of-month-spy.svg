@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>SPY average daily return by trading day around month end, 1993-02-01 to 2026-09-23</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>SPY average daily return by trading day around month end, 1993-02-01 to 2026-09-23</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-10</text>
+<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='276.0' fill='#8a948e' text-anchor='end'>+0</text>
+<line x1='64' y1='196.0' x2='740' y2='196.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='200.0' fill='#8a948e' text-anchor='end'>+10</text>
+<line x1='64' y1='120.0' x2='740' y2='120.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='124.0' fill='#8a948e' text-anchor='end'>+20</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>+30</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>basis points per day (all other days: 2.4 bp)</text>
+<rect x='76.8' y='250.0' width='41.9' height='22.0' fill='#7eff5c' rx='2'/>
+<text x='97.8' y='244.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>+3</text>
+<text x='97.8' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>-5</text>
+<rect x='144.4' y='162.6' width='41.9' height='109.4' fill='#7eff5c' rx='2'/>
+<text x='165.4' y='156.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>+14</text>
+<text x='165.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>-4</text>
+<rect x='212.0' y='222.6' width='41.9' height='49.4' fill='#7eff5c' rx='2'/>
+<text x='233.0' y='216.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>+6</text>
+<text x='233.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>-3</text>
+<rect x='279.6' y='194.5' width='41.9' height='77.5' fill='#7eff5c' rx='2'/>
+<text x='300.6' y='188.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>+10</text>
+<text x='300.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>-2</text>
+<rect x='347.2' y='272.0' width='41.9' height='30.4' fill='#ff4d6a' rx='2'/>
+<text x='368.2' y='316.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>-4</text>
+<text x='368.2' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>-1</text>
+<rect x='414.8' y='105.6' width='41.9' height='166.4' fill='#7eff5c' rx='2'/>
+<text x='435.8' y='99.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>+22</text>
+<text x='435.8' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>+1</text>
+<rect x='482.4' y='215.8' width='41.9' height='56.2' fill='#7eff5c' rx='2'/>
+<text x='503.4' y='209.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>+7</text>
+<text x='503.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>+2</text>
+<rect x='550.0' y='223.4' width='41.9' height='48.6' fill='#7eff5c' rx='2'/>
+<text x='571.0' y='217.4' fill='#c9d1cc' text-anchor='middle' font-size='11'>+6</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>+3</text>
+<rect x='617.6' y='250.0' width='41.9' height='22.0' fill='#7eff5c' rx='2'/>
+<text x='638.6' y='244.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>+3</text>
+<text x='638.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>+4</text>
+<rect x='685.2' y='236.3' width='41.9' height='35.7' fill='#7eff5c' rx='2'/>
+<text x='706.2' y='230.3' fill='#c9d1cc' text-anchor='middle' font-size='11'>+5</text>
+<text x='706.2' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>+5</text>
+</svg>

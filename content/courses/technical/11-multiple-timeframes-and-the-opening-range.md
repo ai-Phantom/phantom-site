@@ -47,6 +47,8 @@ SPY, 5-minute bars, regular session only, 30 June to 23 September 2026 (60 sessi
 
 **16 September 2026.** The opening range: high 760.43 (set at 9:50), low 758.72 (set at 9:40), range 1.71 points. Price sat inside the range for an hour. The 11:00 bar closed at 760.53, 0.10 above the range high: long entry at 760.53, stop at 758.72, risk per share = 760.53 − 758.72 = **1.81**. The 11:05 bar reached 761.03, the high of the trade. Price then sank; the 14:30 bar traded through 758.72 and the stop was filled at −1.81. SPY went on to close at 754.07, with an intraday low of 749.60. Without the stop the loss would have been 754.07 − 760.53 = **−6.46**, 3.8 times the opening range.
 
+![SPY 5-minute bars, regular session of 16 Sep 2026, with the 30-minute opening range of 758.72 to 760.43; the 11:00 long entry at 760.53 and the 14:30 stop at 758.72 marked; the session closed at 754.07. Source: Yahoo Finance intraday data.](figures/spy-opening-range-2026-09-16.svg)
+
 **21 September 2026**, for contrast. Range 766.03 to 767.72 (1.69 points). The 10:10 bar closed at 767.79: long at 767.79, stop 766.03, risk 1.76. The stop was never touched; the close was 773.52, for +5.73, or 3.3 times the risk.
 
 **The 60-session record.** Every one of the 60 sessions broke its range on a 5-minute close: 27 long, 33 short. Outcomes:

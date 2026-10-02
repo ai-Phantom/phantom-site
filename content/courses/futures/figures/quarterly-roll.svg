@@ -1,0 +1,52 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Rolling a long ES position across the Dec 2026 expiry</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Rolling a long ES position across the Dec 2026 expiry</text>
+<rect x='64.0' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='121.2' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Expiring</text>
+<text x='121.2' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>contract</text>
+<text x='121.2' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>(ESZ26)</text>
+<line x1='182.4' y1='116.0' x2='198.4' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='198.4,111.0 204.4,116.0 198.4,121.0' fill='#8a948e'/>
+<text x='121.2' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>last trade 9:30 am</text>
+<text x='121.2' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>ET Fri 2026-12-18,</text>
+<text x='121.2' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>cash-settled to</text>
+<text x='121.2' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>the SOQ</text>
+<rect x='204.4' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='261.6' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Roll date: Thu</text>
+<text x='261.6' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>before 3rd Fri</text>
+<line x1='322.8' y1='116.0' x2='338.8' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='338.8,111.0 344.8,116.0 338.8,121.0' fill='#8a948e'/>
+<text x='261.6' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>volume migrates to</text>
+<text x='261.6' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>Mar on Thu</text>
+<text x='261.6' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>2026-12-10; most</text>
+<text x='261.6' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>brokers</text>
+<text x='261.6' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>auto-liquidate</text>
+<rect x='344.8' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='402.0' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Sell Dec / buy</text>
+<text x='402.0' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Mar as a spread</text>
+<line x1='463.2' y1='116.0' x2='479.2' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='479.2,111.0 485.2,116.0 479.2,121.0' fill='#8a948e'/>
+<text x='402.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>one order, one</text>
+<text x='402.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>fill on the</text>
+<text x='402.0' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>calendar spread,</text>
+<text x='402.0' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>spread tick 0.05 =</text>
+<text x='402.0' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>$2.50</text>
+<rect x='485.2' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='542.4' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Spread = carry</text>
+<text x='542.4' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>+ friction</text>
+<line x1='603.6' y1='116.0' x2='619.6' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='619.6,111.0 625.6,116.0 619.6,121.0' fill='#8a948e'/>
+<text x='542.4' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>fair spread about</text>
+<text x='542.4' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>61 pts at r 4.14%,</text>
+<text x='542.4' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>q 0.99%; friction</text>
+<text x='542.4' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>is 2 commissions</text>
+<text x='542.4' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>plus spread ticks</text>
+<rect x='625.6' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='682.8' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Continuous</text>
+<text x='682.8' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>chart splices</text>
+<text x='682.8' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>unadjusted charts</text>
+<text x='682.8' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>show a gap at the</text>
+<text x='682.8' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>splice;</text>
+<text x='682.8' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>back-adjusted</text>
+<text x='682.8' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>charts change past</text>
+</svg>

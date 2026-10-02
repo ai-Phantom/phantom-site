@@ -1,0 +1,33 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Carry collected vs spot move, % of notional: 2008, 2024 and a 30-day hold in 2026</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Carry collected vs spot move, % of notional: 2008, 2024 and a 30-day hold in 2026</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>-60.0%</text>
+<line x1='64' y1='257.9' x2='740' y2='257.9' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='261.9' fill='#8a948e' text-anchor='end'>-40.0%</text>
+<line x1='64' y1='167.8' x2='740' y2='167.8' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='171.8' fill='#8a948e' text-anchor='end'>-20.0%</text>
+<line x1='64' y1='77.7' x2='740' y2='77.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='81.7' fill='#8a948e' text-anchor='end'>+0.00%</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>% of notional</text>
+<rect x='85.4' y='69.6' width='69.9' height='8.1' fill='#7eff5c' rx='2'/>
+<text x='120.3' y='63.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>+1.8%</text>
+<text x='120.3' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>AUDJPY 08 carry</text>
+<rect x='198.1' y='77.7' width='69.9' height='205.4' fill='#ff4d6a' rx='2'/>
+<text x='233.0' y='297.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>-45.6%</text>
+<text x='233.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>AUDJPY 08 spot</text>
+<rect x='310.7' y='75.5' width='69.9' height='2.3' fill='#7eff5c' rx='2'/>
+<text x='345.7' y='69.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.50%</text>
+<text x='345.7' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>USDJPY 24 carry</text>
+<rect x='423.4' y='77.7' width='69.9' height='54.5' fill='#ff4d6a' rx='2'/>
+<text x='458.3' y='146.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>-12.1%</text>
+<text x='458.3' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>USDJPY 24 spot</text>
+<rect x='536.1' y='77.1' width='69.9' height='1.0' fill='#7eff5c' rx='2'/>
+<text x='571.0' y='71.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>+0.15%</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>USDJPY 30d carry</text>
+<rect x='648.7' y='77.7' width='69.9' height='10.6' fill='#ff4d6a' rx='2'/>
+<text x='683.7' y='102.3' fill='#c9d1cc' text-anchor='middle' font-size='11'>-2.4%</text>
+<text x='683.7' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>USDJPY 30d 1-sigma</text>
+</svg>

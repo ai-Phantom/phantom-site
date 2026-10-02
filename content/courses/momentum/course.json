@@ -4,15 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Momentum & Swing Trading",
-  "subtitle": "Build a rules-based system for identifying momentum setups with documented positive expectancy.",
+  "subtitle": "Rank a universe on relative strength, time entries on the daily chart, size by ATR, and test the whole rule on real data with costs.",
   "price": 29,
   "what_you_learn": [
-    "The academic evidence behind momentum — why it persists and why most retail traders fail to capture it",
-    "Identify the 3 highest-probability momentum setups including the bull flag and volume breakout",
-    "Set precise entry triggers that separate strong setups from weak ones",
-    "Place stop-losses at technically correct levels, not arbitrary dollar amounts",
-    "Scale in and out of positions to maximise gains on winners",
-    "Build a pre-market routine to find daily setups using Phantom Traders screener",
-    "Backtest your rules and calculate your system's true expectancy before risking real money"
+    "The academic evidence for momentum (Jegadeesh-Titman, the 12-1 formation) and the specific way it crashes after bear markets, worked on 2009 sector data",
+    "Rank a 20-stock universe on six-month relative strength from Yahoo Finance closes and read the ranking honestly, including when it lags the index",
+    "Three entry triggers, breakout, pullback to a rising average and the opening range, each worked on real dated bars",
+    "Stops at technically valid levels and ATR-based sizing, with the share count and dollar risk computed for every stock in the universe",
+    "Exits compared on 100 real trades: why the trailing stop beat targets and time stops, and why no exit rescued random entries",
+    "A complete swing system backtested with 0.10% per-side costs, reported by year and by exit reason, plus turn-of-month and earnings-gap evidence you can recompute"
   ]
 }

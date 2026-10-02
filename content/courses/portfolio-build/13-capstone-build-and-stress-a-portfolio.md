@@ -105,6 +105,8 @@ Now check the stops against the beta-scaled prices, which is the step most submi
 
 **Part 6.** The market shock was worse in size (−14.7% with stops honoured, versus −2% for the single-name shock after its stop). The single change that would have reduced it most is 10 points from VTI to BND, taking the beta to 0.785 and the shock to −15.7%, at a cost of roughly 0.4 to 0.5 points of expected annual return using long-run stock and bond averages. For a goal requiring under 5%, that cost is affordable.
 
+![The sample portfolio's return under each shock from Parts 4 and 5: the −20% market shock gives −17.7% on beta alone and −14.7% with both stops honoured; the NVDA −50% shock gives −6.25% with no stop and about −2% with the $151 stop. The grey bar is the 25% risk budget from Part 1.](figures/capstone-stress-shocks.svg)
+
 ## Rubric
 
 | Criterion | What earns full marks | Points |

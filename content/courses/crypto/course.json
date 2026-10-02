@@ -1,0 +1,17 @@
+{
+  "id": "crypto",
+  "icon": "🪙",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Crypto: Spot, Perpetuals & Funding",
+  "subtitle": "Spot books and fees, perpetual swaps and funding, basis and cash-and-carry, leverage and liquidation, custody and the venue risks that do not exist in equities, priced with real dated numbers.",
+  "price": 29,
+  "what_you_learn": [
+    "What you actually hold: keys, addresses and why an exchange balance is an unsecured claim (Mt. Gox and FTX from the court record)",
+    "Spot order books, maker-taker fee tiers and 24/7 trading, with a live Kraken and Coinbase snapshot and the arithmetic of a round trip",
+    "Stablecoins and the dollar plumbing: reserves, redemption, the USDC and USDT depegs, and the GENIUS Act",
+    "Perpetual swaps: funding, mark vs index, liquidation, and the funding arithmetic from 8-hour prints to annualised cost using exchange history",
+    "Basis and cash-and-carry against dated futures and perps, compared to the T-bill; leverage as a distance and why 100x liquidates on noise",
+    "BTC/ETH realised volatility and Nasdaq correlation from 2022 to 2026, AMMs, slippage and MEV, IRS property treatment, and sizing for an 80% drawdown with a venue-failure plan"
+  ]
+}

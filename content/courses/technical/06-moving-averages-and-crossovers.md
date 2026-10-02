@@ -51,6 +51,8 @@ SPY, daily closes, 26 September 2016 to 23 September 2026, from Yahoo Finance hi
 
 **1 July 2025.** The sum of the 50 closes ending that day was 29,154.89, so SMA(50) = 29,154.89 / 50 = **583.10**. The sum of the 200 closes ending that day was 116,408.31, so SMA(200) = 116,408.31 / 200 = **582.04**. The previous day, SMA(50) was 581.27 and SMA(200) was 581.73. The 50 was below the 200 on 30 June and above it on 1 July: a golden cross. SPY closed at 617.65 that day, which was 617.65 / 582.04 − 1 = **6.1% above** the 200-day SMA at the moment of the "buy" signal, and 24.4% above the 8 April 2025 closing low of 496.48. The EMA(20) that day was 602.94; check: prior EMA 601.39 + 0.0952 × (617.65 − 601.39) = 601.39 + 1.55 = 602.94.
 
+![SPY daily candles with the 50- and 200-day SMAs, 2 Jan–30 Sep 2025; the 14 Apr 2025 death cross (close 539.12) and the 1 Jul 2025 golden cross (close 617.65, SMA 50 at 583.10 over SMA 200 at 582.04) marked. Source: Yahoo Finance.](figures/spy-sma-50-200-cross-2025.svg)
+
 **Every 50/200 cross in the sample.** The table at the end of this lesson lists all nine, with the SPY close at each cross and the return from that close to the close at the next cross. The accounting below uses those rows.
 
 Now the accounting. A rule that holds SPY only between a golden cross and the next death cross compounds the five golden-row returns: 1.0802 × 0.9154 × 1.3264 × 1.2935 × 1.2431 = 2.109, or **+110.9%**. Buy-and-hold from the first golden cross (244.01) to the last close in the sample (767.81) is 767.81 / 244.01 − 1 = **+214.7%**. The gap is the four death-row periods, during which SPY compounded 1.0845 × 1.2015 × 0.9995 × 1.1457 = 1.492, or **+49.2%**, while the rule was in cash.

@@ -1,0 +1,65 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>A one-cent round trip on SPY in bps of the year&#x27;s median close, 2010-2025</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>A one-cent round trip on SPY in bps of the year&#x27;s median close, 2010-2025</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0.00</text>
+<line x1='64' y1='272.0' x2='740' y2='272.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='276.0' fill='#8a948e' text-anchor='end'>0.25</text>
+<line x1='64' y1='196.0' x2='740' y2='196.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='200.0' fill='#8a948e' text-anchor='end'>0.50</text>
+<line x1='64' y1='120.0' x2='740' y2='120.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='124.0' fill='#8a948e' text-anchor='end'>0.75</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>1.00</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>bps</text>
+<rect x='72.0' y='80.8' width='26.2' height='267.2' fill='#7eff5c' rx='2'/>
+<text x='85.1' y='74.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.88</text>
+<text x='85.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2010</text>
+<rect x='114.3' y='111.2' width='26.2' height='236.8' fill='#7eff5c' rx='2'/>
+<text x='127.4' y='105.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.78</text>
+<text x='127.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2011</text>
+<rect x='156.5' y='128.5' width='26.2' height='219.5' fill='#7eff5c' rx='2'/>
+<text x='169.6' y='122.5' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.72</text>
+<text x='169.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2012</text>
+<rect x='198.8' y='164.1' width='26.2' height='183.9' fill='#7eff5c' rx='2'/>
+<text x='211.9' y='158.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.60</text>
+<text x='211.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2013</text>
+<rect x='241.0' y='191.1' width='26.2' height='156.9' fill='#7eff5c' rx='2'/>
+<text x='254.1' y='185.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.52</text>
+<text x='254.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2014</text>
+<rect x='283.3' y='201.8' width='26.2' height='146.2' fill='#7eff5c' rx='2'/>
+<text x='296.4' y='195.8' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.48</text>
+<text x='296.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2015</text>
+<rect x='325.5' y='203.6' width='26.2' height='144.4' fill='#7eff5c' rx='2'/>
+<text x='338.6' y='197.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.47</text>
+<text x='338.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2016</text>
+<rect x='367.8' y='223.1' width='26.2' height='124.9' fill='#7eff5c' rx='2'/>
+<text x='380.9' y='217.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.41</text>
+<text x='380.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2017</text>
+<rect x='410.0' y='237.0' width='26.2' height='111.0' fill='#7eff5c' rx='2'/>
+<text x='423.1' y='231.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.36</text>
+<text x='423.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2018</text>
+<rect x='452.3' y='243.7' width='26.2' height='104.3' fill='#7eff5c' rx='2'/>
+<text x='465.4' y='237.7' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.34</text>
+<text x='465.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2019</text>
+<rect x='494.5' y='255.0' width='26.2' height='93.0' fill='#7eff5c' rx='2'/>
+<text x='507.6' y='249.0' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.31</text>
+<text x='507.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2020</text>
+<rect x='536.8' y='277.2' width='26.2' height='70.8' fill='#7eff5c' rx='2'/>
+<text x='549.9' y='271.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.23</text>
+<text x='549.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2021</text>
+<rect x='579.0' y='272.6' width='26.2' height='75.4' fill='#7eff5c' rx='2'/>
+<text x='592.1' y='266.6' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.25</text>
+<text x='592.1' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2022</text>
+<rect x='621.3' y='277.2' width='26.2' height='70.8' fill='#7eff5c' rx='2'/>
+<text x='634.4' y='271.2' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.23</text>
+<text x='634.4' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2023</text>
+<rect x='663.5' y='292.1' width='26.2' height='55.9' fill='#7eff5c' rx='2'/>
+<text x='676.6' y='286.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.18</text>
+<text x='676.6' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2024</text>
+<rect x='705.8' y='299.1' width='26.2' height='48.9' fill='#7eff5c' rx='2'/>
+<text x='718.9' y='293.1' fill='#c9d1cc' text-anchor='middle' font-size='11'>0.16</text>
+<text x='718.9' y='366' fill='#8a948e' text-anchor='middle' font-size='11'>2025</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "id": "order-flow",
+  "icon": "📊",
+  "tier": "intermediate",
+  "level": "Intermediate",
+  "title": "Market Structure & Order Flow",
+  "subtitle": "The order book, the auctions, Reg NMS, wholesalers and dark pools, market makers, the tape and what order flow can and cannot tell you, measured on real data.",
+  "price": 29,
+  "what_you_learn": [
+    "Walk a market order through a limit order book, compute its average fill and effective spread, and see why displayed depth is not a commitment",
+    "Read the opening and closing auction feeds, find a clearing price from an imbalance, and measure on 60 sessions of SPY bars why the close is the day's biggest print",
+    "Explain Reg NMS, the NBBO and order protection, maker-taker fees from Nasdaq's schedule, and the 2024 and 2026 rule changes that alter them",
+    "Quantify off-exchange trading from FINRA and Cboe data (50.6% of 2025 volume), read a Rule 606 report, and convert payment for order flow into basis points",
+    "Derive a dealer's spread from Glosten-Milgrom, classify prints by aggressor with Lee-Ready, compute delta and cumulative delta, and cite the evidence for and against them",
+    "Estimate dealer gamma hedging, market impact by the square-root law and implementation shortfall; recognise spoofing from the prosecuted cases; and build a nine-rule set from the evidence"
+  ]
+}

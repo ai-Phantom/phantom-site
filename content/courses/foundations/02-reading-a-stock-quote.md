@@ -96,6 +96,8 @@ Reading it:
 
 Now compare a hypothetical thin stock: a 4-dollar company with a bid of 3.98 and an ask of 4.06, an 8-cent spread. That is 8 divided by 4.02, or 199 basis points, nearly two percent per round trip, 500 times AAPL's cost. Same broker, same order type, a completely different game.
 
+![Round-trip spread cost in basis points of price: AAPL at 250.42 with a one-cent spread is 0.4 bps; a 5-cent spread on a 5-dollar stock is 100 bps; the hypothetical 4-dollar stock with an 8-cent spread is 199 bps; a 20-cent spread on a 10-dollar stock is 200 bps. Figures from this lesson's examples.](figures/spread-cost-basis-points.svg)
+
 ## What the quote cannot tell you
 
 A quote says nothing about why the price is where it is, whether the company is cheap or expensive, or where it will be tomorrow. It tells you the cost and feasibility of transacting right now. That is exactly what you need before you press the button, and nothing more. The lessons on earnings and valuation cover the "why"; the lesson on order types covers how to act on what the quote shows.

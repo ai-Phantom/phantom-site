@@ -1,0 +1,23 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Anchored walk-forward, three folds, 24-point grid re-fitted each fold (5 bps)</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Anchored walk-forward, three folds, 24-point grid re-fitted each fold (5 bps)</text>
+<rect x='64.0' y='84' width='208.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='168.0' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Fold 1: train 2016-19, test</text>
+<text x='168.0' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>2020-21</text>
+<line x1='276.0' y1='116.0' x2='292.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='292.0,111.0 298.0,116.0 292.0,121.0' fill='#8a948e'/>
+<text x='168.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>picked RSI&lt;30 / SMA20; train</text>
+<text x='168.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>Sharpe 0.53, test 0.48</text>
+<rect x='298.0' y='84' width='208.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='402.0' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Fold 2: train 2016-21, test</text>
+<text x='402.0' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>2022-23</text>
+<line x1='510.0' y1='116.0' x2='526.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='526.0,111.0 532.0,116.0 526.0,121.0' fill='#8a948e'/>
+<text x='402.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>picked RSI&lt;25 / SMA5; train</text>
+<text x='402.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>Sharpe 0.56, test 0.25</text>
+<rect x='532.0' y='84' width='208.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='636.0' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Fold 3: train 2016-23, test</text>
+<text x='636.0' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>2024-25</text>
+<text x='636.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>picked RSI&lt;25 / SMA5; train</text>
+<text x='636.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>Sharpe 0.48, test 0.86</text>
+</svg>

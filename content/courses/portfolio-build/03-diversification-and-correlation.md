@@ -83,6 +83,8 @@ Approximate correlations of daily returns, 2019 to 2023, rounded to one decimal.
 | SPY | 0.8 | 0.8 | 0.7 | 0.7 | 0.7 | 1.0 | 0.1 |
 | BND | 0.1 | 0.1 | 0.1 | 0.1 | 0.0 | 0.1 | 1.0 |
 
+![The ten pairwise correlations among AAPL, MSFT, GOOGL, AMZN and NVDA from the table above (daily returns, 2019 to 2023, rounded to one decimal). They run from 0.5 to 0.7 and average about 0.6, the ρ used in the worked example.](figures/tech-pairwise-correlations.svg)
+
 Two things to read off the table. First, each of the five stocks correlates more strongly with SPY than with the others, because the index is what they have in common; a holder of all five has largely bought the index with extra single-name noise. Second, BND sits near zero against everything, which is the property that made the bond calculation above work.
 
 ## How many stocks is enough

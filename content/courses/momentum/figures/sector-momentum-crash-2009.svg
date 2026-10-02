@@ -1,0 +1,28 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Nine SPDR sector ETFs, 12-1 momentum long/short, Dec 2007 = 100</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Nine SPDR sector ETFs, 12-1 momentum long/short, Dec 2007 = 100</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>80</text>
+<line x1='64' y1='246.7' x2='740' y2='246.7' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='250.7' fill='#8a948e' text-anchor='end'>100</text>
+<line x1='64' y1='145.3' x2='740' y2='145.3' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='149.3' fill='#8a948e' text-anchor='end'>120</text>
+<line x1='64' y1='44.0' x2='740' y2='44.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='48.0' fill='#8a948e' text-anchor='end'>140</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>index</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='157.9' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='251.8' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='345.7' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='439.6' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='533.4' y='366' fill='#8a948e' text-anchor='middle'>2010-01</text>
+<text x='627.3' y='366' fill='#8a948e' text-anchor='middle'></text>
+<text x='721.2' y='366' fill='#8a948e' text-anchor='middle'></text>
+<polyline points='64.0,246.7 82.8,279.8 101.6,239.8 120.3,233.9 139.1,235.0 157.9,207.8 176.7,162.6 195.4,218.0 214.2,237.7 233.0,245.8 251.8,226.8 270.6,175.8 289.3,173.3 308.1,115.8 326.9,94.9 345.7,158.8 364.4,258.1 383.2,284.5 402.0,264.4 420.8,272.6 439.6,290.1 458.3,297.9 477.1,295.2 495.9,278.4 514.7,268.4 533.4,292.6 552.2,278.3 571.0,252.8 589.8,229.5 608.6,236.0 627.3,259.4 646.1,246.7 664.9,267.3 683.7,261.7 702.4,261.5 721.2,257.1 740.0,269.5' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<circle cx='364.4' cy='258.1' r='4' fill='#ff4d6a'/>
+<text x='372.4' y='250.1' fill='#c9d1cc' text-anchor='start' font-size='11'>Apr 2009: -16.7% in one month</text>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>12-1 sector momentum, long top 3 / short bottom 3, monthly</text>
+</svg>

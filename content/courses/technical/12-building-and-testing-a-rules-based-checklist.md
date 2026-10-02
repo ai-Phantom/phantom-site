@@ -27,6 +27,8 @@ A usable checklist has five parts. Each must be answerable yes or no from the da
 4. **Exit if wrong** and **exit if right**. Example: stop 1 ATR below entry; target 2 ATR above; time stop of 10 days. Or: exit on the first close above the 5-day SMA.
 5. **Size**. Example: shares = (0.5% of account) / (entry − stop).
 
+![The five-part checklist as a flow, regime filter to size, with the worked example's rules under each step: close above the 200-day SMA, RSI(2) below 10, next day's open, the Rule A and Rule B exits, and shares sized so a stop-out risks 0.5% of the account.](figures/rules-checklist-flow.svg)
+
 Write it down before you look at any outcomes. The order of operations is the discipline: rules first, data second, results third. If you look at results and then adjust a rule, you are fitting, and the number you get afterward is not an estimate of anything.
 
 ## Testing it

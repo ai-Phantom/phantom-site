@@ -101,6 +101,8 @@ Microsoft (MSFT) closed at 421.50 dollars on 31 December 2024. You have 10,000 d
 
 **A 30 percent decline.** MSFT at 295.05, below the call price. Position value 13,867.35; equity 4,056.85; equity ratio 29.3 percent. The broker demands you restore 30 percent, which means depositing about 103 dollars, or, if you do not respond in time, sells shares for you. If the decline happened overnight on an earnings gap, the call and the liquidation may arrive together at the open.
 
+![Dollars lost of your 10,000 when MSFT falls 10 or 30 percent from 421.50: cash account (23 shares) 969 and 2,908; margin account (47 shares, 9,810.50 borrowed) 1,981 and 5,943, or 19.8 and 59.4 percent of your capital. Computed from this worked example.](figures/margin-vs-cash-loss.svg)
+
 **Day-trade count.** If, over the next week, you buy and sell MSFT within the same day four times and make no other trades, you are a pattern day trader. With 10,000 dollars of equity, well below 25,000, day trading in this account is then prohibited until the equity is restored. The same four trades in a cash account, funded each day with settled cash, would be permitted.
 
 ## Sources

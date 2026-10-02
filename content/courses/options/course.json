@@ -4,15 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Options Trading Complete",
-  "subtitle": "From your first call option to running a consistent income strategy. The complete curriculum.",
+  "subtitle": "Contract mechanics, the Greeks, pricing intuition, long options and vertical spreads, expiration risk and sizing, on one worked chain from start to finish.",
   "price": 29,
   "what_you_learn": [
-    "Exactly what options are, why they exist, and the specific rights each contract gives you",
-    "How options are priced — intrinsic value, time value, and the role of implied volatility",
-    "All five Greeks: delta, gamma, theta, vega, and rho — and how each affects your position",
-    "Four core single-leg strategies: long calls, long puts, covered calls, cash-secured puts",
-    "Defined-risk spreads: bull call spreads, bear put spreads, iron condors, and calendar spreads",
-    "How to trade earnings using straddles and strangles — and when not to",
-    "Build a repeatable covered call income system generating monthly cash flow"
+    "What an option contract is: the 100 multiplier, the OCC guarantee, expiration, exercise and assignment, and American versus European style",
+    "How to read a chain and price its parts: bid/ask, volume and open interest, moneyness, intrinsic and time value, and the round-trip cost hurdle",
+    "Delta, theta, vega and gamma as working numbers: delta as probability, leverage and hedge ratio; the decay curve; IV rank and the vol surface; why 0DTE moves violently",
+    "Pricing without calculus: put-call parity, what each Black-Scholes input does, and a one-step binomial tree",
+    "Long calls and puts with strike, DTE and exit rules, and all four vertical spreads with payoff, break-even and margin math",
+    "Expiration mechanics (pin risk, assignment, early exercise around dividends), fixed-fraction position sizing, and a 22-point pre-trade checklist"
   ]
 }

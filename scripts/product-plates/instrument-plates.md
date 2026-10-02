@@ -1,0 +1,13 @@
+# Instrument Plates
+
+A movement that treats every subject as something measured on a dark bench. Each work is a plate pulled from an imaginary observatory's archive: a single trace, held still against a field of fine reference marks, recorded with the patience of someone who has watched the same instrument for years. The plate does not explain. It shows the one shape that the subject keeps making when you look at it long enough.
+
+Space is a black-green field, never pure black, with a faint dot lattice laid down at one exact pitch so the eye always knows where it is. The lattice is the discipline; the trace is the event. Margins are wide and identical on every plate, and the trace lives in a fixed window inside them, so a whole series reads as one drawer of the same archive. Nothing touches an edge. Nothing crowds the label. The emptiness is measured as carefully as the marks, the product of painstaking attention to interval and proportion.
+
+Colour is rationed. One luminous accent per plate, a single hue chosen by the family the plate belongs to, carries the trace and nothing else. Everything secondary, the reference lines, the ghost of a second series, the tick marks, is drawn in a cool grey-green that sits barely above the ground. The accent is never used for decoration, only for the thing being observed. A viewer should be able to sort a stack of plates by colour alone and find the families intact.
+
+Line is thin and certain. Traces are drawn at one weight, rendered at twice their final size and reduced, so every curve is crisp and every endpoint deliberate. Repetition is the method: rows of identical bars, lattices of identical cells, a single form echoed at shrinking scale. The meaning accumulates through patient repetition rather than through any one bold gesture, as though each plate were the hundredth of its kind, the result of countless refinements by a master of the craft.
+
+Type is clinical and sparse. A small monospaced catalogue line names the archive and the plate's number; a single serif title, light and quiet, names the subject; one monospaced line beneath records its contents. The words sit in fixed positions on every plate, aligned to the same baseline grid, so typography becomes part of the instrument rather than a caption on top of it. There are never more words than that.
+
+The finished series must feel meticulously crafted: twenty-four plates that could hang in a row and read as one body of work, each one obviously labored over, each one obviously belonging. Master-level execution means the second pass removes rather than adds, until only the trace, the lattice and the three lines of type remain, and each is exactly where it should be.

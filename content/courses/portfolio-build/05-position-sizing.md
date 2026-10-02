@@ -59,6 +59,8 @@ The risk-per-trade formula is satisfied: a stop at $47.50 loses $250. But the po
 
 So the second rule applies alongside the first: **no position larger than a stated maximum weight**, typically 5% to 15% for individual stocks in a first portfolio. With a 15% cap, the maximum here is $3,750 or 75 shares, regardless of what the stop formula says. You take the smaller of the two numbers, always.
 
+![Position weight implied by the risk-per-trade formula, risk ÷ stop distance, for 1% and 2% risk per position on the lesson's $25,000 account. The two marked points are the worked example: a $45 stop (10% below a $50 entry) gives 50 shares and a 10% weight; a $47.50 stop (5% below) gives 100 shares and 20%. The dashed line is the 15% weight cap.](figures/position-weight-vs-stop-distance.svg)
+
 **What the two rules are protecting.** The risk-per-trade rule protects against the ordinary case: the thesis was wrong and the stop takes you out with a small, planned loss. The weight cap protects against the extraordinary case: the exit you planned does not happen. Bessembinder's finding from lesson 2, that most individual stocks lose to T-bills over their lives, is the reason both are needed.
 
 ## Why 1% to 2% and not more

@@ -70,6 +70,8 @@ Picture a line chart with three lines over 20 years, starting at 10,000 dollars 
 - **Dividends taken as cash, not reinvested:** the price line above plus accumulated dividends. Each year's dividend is 3 percent of the growing share value, totalling about 9,920 dollars over the period. Combined: about 36,450 dollars.
 - **Dividends reinvested** (total return): 10,000 × 1.08^20 = 46,610 dollars.
 
+![10,000 dollars over 20 years at 5 percent price growth and a 3 percent yield: price only ends at 26,533, dividends taken as cash at about 36,450, dividends reinvested at 46,610. Computed from the assumptions above.](figures/total-return-vs-price-return.svg)
+
 The gap between the first and third lines, more than 20,000 dollars on a 10,000 dollar start, is what a price-only chart hides. The gap between the second and third, about 10,000 dollars, is compounding: dividends buying shares that pay dividends.
 
 ## Worked example

@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Cash-and-carry, Deribit snapshot 2026-09-24 07:28 UTC</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Cash-and-carry, Deribit snapshot 2026-09-24 07:28 UTC</text>
+<rect x='64.0' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='121.2' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Buy 1 BTC spot</text>
+<line x1='182.4' y1='116.0' x2='198.4' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='198.4,111.0 204.4,116.0 198.4,121.0' fill='#8a948e'/>
+<text x='121.2' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>index 84,256.40;</text>
+<text x='121.2' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>pay maker or taker</text>
+<text x='121.2' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>fee on the spot</text>
+<text x='121.2' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>venue</text>
+<rect x='204.4' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='261.6' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Sell 1 BTC</text>
+<text x='261.6' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>dated future</text>
+<text x='261.6' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>(or perp)</text>
+<line x1='322.8' y1='116.0' x2='338.8' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='338.8,111.0 344.8,116.0 338.8,121.0' fill='#8a948e'/>
+<text x='261.6' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>BTC-30OCT26 mark</text>
+<text x='261.6' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>84,719.61: basis</text>
+<text x='261.6' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>$463.21 = 0.55%</text>
+<text x='261.6' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>for 36 days; the</text>
+<text x='261.6' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>perp instead pays</text>
+<rect x='344.8' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='402.0' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Hold to expiry</text>
+<line x1='463.2' y1='116.0' x2='479.2' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='479.2,111.0 485.2,116.0 479.2,121.0' fill='#8a948e'/>
+<text x='402.0' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>price risk is</text>
+<text x='402.0' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>hedged; you carry</text>
+<text x='402.0' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>venue risk on both</text>
+<text x='402.0' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>legs and margin</text>
+<text x='402.0' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>risk on the short</text>
+<rect x='485.2' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='542.4' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Future settles</text>
+<text x='542.4' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>at index</text>
+<line x1='603.6' y1='116.0' x2='619.6' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='619.6,111.0 625.6,116.0 619.6,121.0' fill='#8a948e'/>
+<text x='542.4' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>36 days later the</text>
+<text x='542.4' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>future</text>
+<text x='542.4' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>cash-settles to</text>
+<text x='542.4' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>the index; basis</text>
+<text x='542.4' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>is fully captured</text>
+<rect x='625.6' y='84' width='114.4' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='682.8' y='96' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Sell spot,</text>
+<text x='682.8' y='111' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>compare to</text>
+<text x='682.8' y='126' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>T-bill</text>
+<text x='682.8' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>gross 5.57%</text>
+<text x='682.8' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>annualised vs</text>
+<text x='682.8' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>4.03% 13-week</text>
+<text x='682.8' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>T-bill; fees</text>
+<text x='682.8' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>decide the rest</text>
+</svg>

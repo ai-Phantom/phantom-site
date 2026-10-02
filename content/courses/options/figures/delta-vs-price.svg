@@ -1,0 +1,31 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>Delta of the XYZ 100 call vs underlying price</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>Delta of the XYZ 100 call vs underlying price</text>
+<line x1='64' y1='348.0' x2='740' y2='348.0' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='352.0' fill='#8a948e' text-anchor='end'>0.0</text>
+<line x1='64' y1='207.3' x2='740' y2='207.3' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='211.3' fill='#8a948e' text-anchor='end'>0.5</text>
+<line x1='64' y1='66.5' x2='740' y2='66.5' stroke='#2a3138' stroke-width='1'/>
+<text x='56' y='70.5' fill='#8a948e' text-anchor='end'>1.0</text>
+<line x1='64' y1='44' x2='64' y2='348' stroke='#3a434b'/>
+<line x1='64' y1='348' x2='740' y2='348' stroke='#3a434b'/>
+<text x='64' y='34' fill='#8a948e' font-size='11'>delta</text>
+<text x='64.0' y='366' fill='#8a948e' text-anchor='middle'>80</text>
+<text x='165.4' y='366' fill='#8a948e' text-anchor='middle'>86</text>
+<text x='266.8' y='366' fill='#8a948e' text-anchor='middle'>92</text>
+<text x='368.2' y='366' fill='#8a948e' text-anchor='middle'>98</text>
+<text x='469.6' y='366' fill='#8a948e' text-anchor='middle'>104</text>
+<text x='571.0' y='366' fill='#8a948e' text-anchor='middle'>110</text>
+<text x='672.4' y='366' fill='#8a948e' text-anchor='middle'>116</text>
+<line x1='64' y1='207.3' x2='740' y2='207.3' stroke='#8a948e' stroke-dasharray='4 4'/>
+<text x='736' y='202.3' fill='#8a948e' text-anchor='end' font-size='11'>ATM: delta ~0.50</text>
+<polyline points='64.0,343.8 80.9,342.4 97.8,340.4 114.7,337.9 131.6,334.8 148.5,331.1 165.4,326.6 182.3,321.5 199.2,315.6 216.1,308.9 233.0,301.6 249.9,293.1 266.8,284.1 283.7,274.5 300.6,264.1 317.5,253.4 334.4,242.2 351.3,230.6 368.2,219.1 385.1,207.5 402.0,196.0 418.9,185.0 435.8,174.0 452.7,163.6 469.6,153.5 486.5,144.2 503.4,135.2 520.3,127.0 537.2,119.7 554.1,113.0 571.0,106.8 587.9,101.1 604.8,96.1 621.7,91.9 638.6,87.9 655.5,84.5 672.4,81.7 689.3,79.2 706.2,76.9 723.1,75.2 740.0,73.6' fill='none' stroke='#7eff5c' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,348.0 80.9,348.0 97.8,348.0 114.7,348.0 131.6,348.0 148.5,348.0 165.4,348.0 182.3,348.0 199.2,347.7 216.1,347.4 233.0,346.9 249.9,345.7 266.8,343.2 283.7,338.7 300.6,331.1 317.5,319.9 334.4,304.4 351.3,283.8 368.2,259.3 385.1,231.7 402.0,202.8 418.9,174.6 435.8,148.4 452.7,125.9 469.6,107.9 486.5,93.8 503.4,84.0 520.3,76.9 537.2,72.4 554.1,69.9 571.0,68.2 587.9,67.4 604.8,67.1 621.7,66.8 638.6,66.5 655.5,66.5 672.4,66.5 689.3,66.5 706.2,66.5 723.1,66.5 740.0,66.5' fill='none' stroke='#4d9fff' stroke-width='2' stroke-linejoin='round'/>
+<polyline points='64.0,348.0 80.9,348.0 97.8,348.0 114.7,348.0 131.6,348.0 148.5,348.0 165.4,348.0 182.3,348.0 199.2,348.0 216.1,348.0 233.0,348.0 249.9,348.0 266.8,348.0 283.7,348.0 300.6,348.0 317.5,348.0 334.4,347.2 351.3,342.4 368.2,323.8 385.1,277.3 402.0,205.6 418.9,135.2 435.8,90.7 452.7,72.4 469.6,67.6 486.5,66.5 503.4,66.5 520.3,66.5 537.2,66.5 554.1,66.5 571.0,66.5 587.9,66.5 604.8,66.5 621.7,66.5 638.6,66.5 655.5,66.5 672.4,66.5 689.3,66.5 706.2,66.5 723.1,66.5 740.0,66.5' fill='none' stroke='#f5c842' stroke-width='2' stroke-linejoin='round'/>
+<rect x='64' y='379' width='12' height='12' fill='#7eff5c' rx='2'/>
+<text x='81' y='389' fill='#c9d1cc'>45 DTE</text>
+<rect x='147' y='379' width='12' height='12' fill='#4d9fff' rx='2'/>
+<text x='164' y='389' fill='#c9d1cc'>7 DTE</text>
+<rect x='223' y='379' width='12' height='12' fill='#f5c842' rx='2'/>
+<text x='240' y='389' fill='#c9d1cc'>1 DTE</text>
+</svg>

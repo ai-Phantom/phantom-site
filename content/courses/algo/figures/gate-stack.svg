@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 400' role='img' font-family='ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif' font-size='12'>
+<title>The gate stack: a rule trades only after every gate passes, in order</title>
+<text x='64' y='24' fill='#c9d1cc' font-size='15' font-weight='700'>The gate stack: a rule trades only after every gate passes, in order</text>
+<rect x='64.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='109.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G1 Data</text>
+<line x1='159.0' y1='116.0' x2='175.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='175.0,111.0 181.0,116.0 175.0,121.0' fill='#8a948e'/>
+<text x='109.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>rows verified,</text>
+<text x='109.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>adjusted,</text>
+<text x='109.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>point-in-time,</text>
+<text x='109.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>no padding</text>
+<rect x='181.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='226.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G2 Leakage</text>
+<line x1='276.0' y1='116.0' x2='292.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='292.0,111.0 298.0,116.0 292.0,121.0' fill='#8a948e'/>
+<text x='226.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>truncation-invariant;</text>
+<text x='226.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>next-bar fills</text>
+<text x='226.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>only</text>
+<rect x='298.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='343.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G3 Costs</text>
+<line x1='393.0' y1='116.0' x2='409.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='409.0,111.0 415.0,116.0 409.0,121.0' fill='#8a948e'/>
+<text x='343.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>positive at 10</text>
+<text x='343.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>bps/side and</text>
+<text x='343.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>above cash</text>
+<rect x='415.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='460.5' y='103' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G4</text>
+<text x='460.5' y='118' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>Out-of-sample</text>
+<line x1='510.0' y1='116.0' x2='526.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='526.0,111.0 532.0,116.0 526.0,121.0' fill='#8a948e'/>
+<text x='460.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>OOS Sharpe &gt;=</text>
+<text x='460.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>0.5 and &gt;=</text>
+<text x='460.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>half of</text>
+<text x='460.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>in-sample; DSR</text>
+<text x='460.5' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>&gt;= 0.95</text>
+<rect x='532.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='577.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G5 Portfolio</text>
+<line x1='627.0' y1='116.0' x2='643.0' y2='116.0' stroke='#8a948e' stroke-width='2'/>
+<polygon points='643.0,111.0 649.0,116.0 643.0,121.0' fill='#8a948e'/>
+<text x='577.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>corr &lt; 0.5</text>
+<text x='577.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>with the book;</text>
+<text x='577.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>max DD &lt; 20%;</text>
+<text x='577.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>capacity</text>
+<rect x='649.0' y='84' width='91.0' height='64' rx='8' fill='#141a1f' stroke='#7eff5c' stroke-width='1.5'/>
+<text x='694.5' y='110' fill='#c9d1cc' text-anchor='middle' font-size='12' font-weight='600'>G6 Paper</text>
+<text x='694.5' y='170' fill='#8a948e' text-anchor='middle' font-size='11'>60 sessions,</text>
+<text x='694.5' y='185' fill='#8a948e' text-anchor='middle' font-size='11'>fills</text>
+<text x='694.5' y='200' fill='#8a948e' text-anchor='middle' font-size='11'>reconciled,</text>
+<text x='694.5' y='215' fill='#8a948e' text-anchor='middle' font-size='11'>kill switch</text>
+<text x='694.5' y='230' fill='#8a948e' text-anchor='middle' font-size='11'>armed</text>
+</svg>
