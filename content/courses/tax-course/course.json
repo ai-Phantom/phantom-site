@@ -4,14 +4,14 @@
   "tier": "intermediate",
   "level": "Intermediate",
   "title": "Tax Strategy for Traders",
-  "subtitle": "Keep more of what you earn. Legal, practical, and built around the Phantom Traders tax tools.",
+  "subtitle": "US federal tax rules for active traders, from holding periods and wash sales to section 1256, section 475 and Form 8949, each figure cited to its IRS source and tax year.",
   "price": 19,
   "what_you_learn": [
-    "The exact tax rates on short-term vs long-term capital gains and how a single holding period decision can save thousands",
-    "The wash-sale rule — how it works, common triggers most traders miss, and how to avoid it",
-    "Tax-loss harvesting step by step: identify, execute, document, and maximise",
-    "How to use the Phantom Traders harvesting engine to find every opportunity automatically",
-    "Estimated quarterly payment rules and how to avoid underpayment penalties",
-    "The deductions available to active traders that most people miss"
+    "How short- and long-term gains are taxed: the 2025 and 2026 brackets, the 0/15/20% rates, the 3.8% NIIT and the day-after holding-period count",
+    "How FIFO, specific identification and average basis change a bill, and how losses net on Schedule D under the $3,000 limit and carryforward rules",
+    "The section 1091 wash-sale rule across accounts, spouses and IRAs, and a dated tax-loss harvesting walk-through including the replacement-security question",
+    "Section 1256 futures and index options (60/40, year-end mark, Form 6781) and equity options: premiums, exercise, assignment and qualified covered calls",
+    "Trader tax status, the section 475(f) election and its deadline, trader deductions, estimated-tax safe harbours, retirement accounts, crypto and forex",
+    "How to reconcile a 1099-B to Form 8949 and Schedule D, what records to keep and for how long, and a graded twelve-trade capstone return"
   ]
 }
