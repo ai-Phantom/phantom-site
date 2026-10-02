@@ -1654,6 +1654,9 @@ window.v2Subscribe = function(plan){
 
       </div>
     </div>
+  <div style="text-align:center;margin-top:28px;font-family:var(--font-mono);font-size:12px;color:var(--text-secondary);letter-spacing:0.04em;">
+      Every plan is a Discord role. <a href="#" onclick="showPage('docs');setTimeout(()=>showDocSection('discord-roles'),120);return false;" style="color:var(--reactor-bright);">See every role and what it unlocks →</a>
+    </div>
   </section>
 
   <!-- ─── EDUCATION CROSS-LINK ─── -->
@@ -2436,7 +2439,8 @@ function showDocSection(id, el) {
   document.querySelectorAll('.doc-section').forEach(s => s.classList.remove('active'));
   if (el) el.classList.add('active');
   const sideLink = [...document.querySelectorAll('.doc-link')].find(l =>
-    l.getAttribute('onclick') && l.getAttribute('onclick').includes("'" + id + "'")
+    // The minifier rewrites the onclick quotes, so match either quote style.
+    l.getAttribute('onclick') && /showDocSection\(\s*['"]([^'"]+)['"]/.exec(l.getAttribute('onclick'))?.[1] === id
   );
   if (sideLink) sideLink.classList.add('active');
   const section = document.getElementById('doc-' + id);
@@ -6588,6 +6592,7 @@ async function openBillingPortal() {
       <div style="padding:0 24px;margin-bottom:24px;">
         <div style="font-family:var(--mono);font-size:10px;color:var(--muted2);letter-spacing:1px;text-transform:uppercase;margin-bottom:12px;">Plans & Billing</div>
         <div class="doc-link" onclick="showDocSection('plans',this)">Plan Comparison</div>
+        <div class="doc-link" onclick="showDocSection('discord-roles',this)">Discord Roles</div>
         <div class="doc-link" onclick="showDocSection('upgrade',this)">How to Upgrade</div>
         <div class="doc-link" onclick="showDocSection('cancel',this)">Cancellation</div>
       </div>
@@ -6875,6 +6880,32 @@ async function openBillingPortal() {
 </tbody>
           </table>
         </div>
+      </div>
+
+      <div class="doc-section" id="doc-discord-roles">
+        <div class="doc-breadcrumb">Plans & Billing → Discord Roles</div>
+        <h1 class="doc-h1">Discord Roles</h1>
+        <p class="doc-p">Every plan is a role in the Phantom Traders Discord, and the role decides which channels you can see. These are all the roles a person can hold in the server.</p>
+        <div class="doc-table-wrap">
+          <table class="doc-table">
+            <thead><tr><th>Role</th><th>How you get it</th><th>What it unlocks</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Rookie</strong></td><td>Free. Given automatically when you join the server.</td><td>Welcome &amp; info channels (#welcome, #rules, #getting-started, #announcements, #how-to-get-roles), community chat (#general, #introductions, #wins-and-losses, #off-topic), #education-portal, and the Pre-Market and After Hours voice rooms.</td></tr>
+              <tr><td><strong>Pro Trader Trial</strong></td><td>Free and automatic for every new member. You hold the Pro Trader role for 72 weekday hours; the clock pauses from Friday 4:00 PM to Monday 9:30 AM ET. When it ends you return to Rookie.</td><td>Everything in Pro Trader while the trial runs.</td></tr>
+              <tr><td><strong>Pro Trader</strong></td><td>$15 a month or $150 a year. Assigned automatically once your Discord account is linked on the Account page.</td><td>Everything in Rookie, plus Market Intel (#morning-brief at 8:45 AM ET, #macro-news), Trade Signals (#scalps, #day-trades, #weekly, #leaps, #futures, #flow-alerts, #scout-alerts), Phantom Tools (#trade-log, #trade-recap), the Pro Trader Room voice channel and full message history.</td></tr>
+              <tr><td><strong>Elite</strong></td><td>$25 a month or $250 a year. Elite members also keep the Pro Trader role.</td><td>Everything in Pro Trader, plus the Elite Lounge (#elite-discussion, #portfolio-reviews), the Elite Room voice channel, MACD reversal alerts and @here pings on priority signals.</td></tr>
+              <tr><td><strong>Analyst</strong></td><td>Staff. Given by the team.</td><td>Marks the people who post analysis. It adds no channels on its own; analysts see what their plan role allows.</td></tr>
+              <tr><td><strong>Moderator · MODS</strong></td><td>Staff. Given by the team.</td><td>Moderation, plus the staff channels (#pt-bot-commands, #mod-log, #ops).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="doc-h2">How roles change</h2>
+        <ul class="doc-list">
+          <li>Subscribing, upgrading or renewing assigns the matching role as soon as Stripe confirms the payment, as long as Discord is linked on your Account page.</li>
+          <li>Moving from Pro Trader to Elite adds Elite and keeps Pro Trader.</li>
+          <li>Cancelling removes Pro Trader and Elite at the end of the paid period. You keep Rookie and everything free.</li>
+          <li>The server's bots (Phantom Traders Bot, Phantom Bullseye and the other bot roles) post signals and manage roles; they are not member tiers.</li>
+        </ul>
       </div>
 
       <div class="doc-section" id="doc-upgrade">
