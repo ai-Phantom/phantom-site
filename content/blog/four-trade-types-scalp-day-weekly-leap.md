@@ -76,7 +76,7 @@ LEAPs are long-dated options. They are the slowest Phantom trade.
 
 The setup is a trend filter. Price must be more than 1% beyond its 50-day average. The 50-day must be at least 2% away from the 200-day. Then a confirming day is required.
 
-The LEAP loop runs every 15 minutes, but entries are only attempted from :45 to :59 in the 9 a.m., 12 p.m. and 3 p.m. ET hours. LEAP opens also have a 3:30 p.m. ET entry cutoff, which falls before that last window. Each ticker gets at most one LEAP entry per day.
+The LEAP loop runs every 15 minutes. By default it attempts entries from :45 to :59 in the 9 a.m., 12 p.m. and 2 p.m. ET hours, and an operator setting can open it to every scan. LEAP opens stop at a 3:30 p.m. ET cutoff. A setup refused only because of the time of day, such as inside the first 15 minutes of the session, stays eligible for a later scan. Any other refusal ends that ticker's LEAP attempts for the day, and each ticker gets at most one LEAP entry per day.
 
 Contracts run 120 to 365 days to expiration, with delta between 0.65 and 0.80. That puts them in the money.
 

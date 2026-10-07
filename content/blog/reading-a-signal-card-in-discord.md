@@ -1,5 +1,5 @@
 ---
-{"title": "Reading a Signal Card in Discord", "cat": "bots", "tag": "Bots & Signals", "emoji": "📡", "excerpt": "What each field on a Phantom signal card means, which numbers are display values, and how to follow the paper trade in #trade-log and #trade-recap.", "date": "2026-10-02", "read": "6 min", "status": "published"}
+{"title": "Reading a Signal Card in Discord", "cat": "bots", "tag": "Bots & Signals", "emoji": "📡", "excerpt": "What each field on a Phantom signal card means, where its contract and exits come from, and how to follow the paper trade in #trade-log and #trade-recap.", "date": "2026-10-02", "read": "6 min", "status": "published"}
 ---
 
 A signal card packs a lot into a small box. Ticker, direction, contract, score, entry, stop, targets. It is easy to read it as an instruction. It is not. It is a summary of what a bot saw and what its paper trade is set up to do.
@@ -42,11 +42,9 @@ Read every other field in light of the type. A 20% drop means very different thi
 
 The card names an option: a strike and an expiration.
 
-Here is a subtlety. On some cards, the contract shown is a suggestion from a quick rule of thumb. For day trades, that rule aims for about 30 days to expiration on HIGH setups and 45 days on MEDIUM and LOW ones, with an out-of-the-money strike sized from the stock's typical move.
+On a Phantom trade card, that is the contract the paper trade bought. The bot opens the trade first, picking a contract from the live option chain inside a fixed range of days to expiration and delta. For day trades that range is 1 to 35 days and a delta of roughly 0.40 to 0.55, shifted higher for more volatile tickers. The card is drawn afterwards, from the stored trade.
 
-The paper trade does not use that rule. When it opens, it picks a contract from the live option chain, inside a fixed range of days to expiration and delta. For day trades that range is 1 to 35 days and a delta of roughly 0.40 to 0.55, shifted higher for more volatile tickers.
-
-So the contract on the card and the contract in the paper trade can differ. If you want to know what was actually opened, check #trade-log.
+Two kinds of post work differently. Posts in #screener marked LOW CONF go out before any trade is attempted, so their contract is a rule-of-thumb suggestion. Cards posted before October 7, 2026 used that same rule of thumb for day trades, so their contract can differ from the one bought. For those, check #trade-log.
 
 ## Score and confidence tier
 
@@ -72,30 +70,34 @@ By the time you read a card, the price has probably moved. The entry is a refere
 
 This is the field most often misread.
 
-The stop and targets printed on a card are display values. The bot's paper trade follows its own managed exit, which can be different.
+The exit line on a card is the exit the paper trade follows. It is read from the stored trade, so it shows the exit profile the bot picked for that setup.
 
-For example, a day-trade card may show a target and stop such as "+50 / −30." The paper trade behind it actually runs on these rules:
+A typical day-trade card reads "trail starts +10%, trails 5% · stop −12%." That means:
 
-- A 22% stop.
+- The trade closes if the option falls 12% from entry.
 - Once the option is up 10%, a trailing stop arms.
 - The trail follows the best price 5% behind it.
-- Positions with one day or less to expiration are closed at 3:50 p.m. ET.
+- Positions with one day or less to expiration are also closed at 3:50 p.m. ET. The card does not print this rule.
 
-The other types have their own managed exits:
+Recent day trades have mostly used a 12% stop from tuned exit profiles. Without a profile, the default day-trade stop is 22%.
+
+The default exits for the other types are:
 
 - **Scalp:** 45% stop, no trail, 180-minute maximum hold.
 - **Weekly:** 15% stop, trail arms at +20%, trails 8%. The swing-trend weekly uses a 35% stop, arms at +40% and trails 20%.
 - **LEAP:** 25% stop, trail arms at +25%, trails 10%.
 
-Hold-time hints on a card are display text too. When the card and the managed exit disagree, **the managed exit is what the paper trade follows.**
+A card shows a maximum hold only when the trade has one. Cards posted before October 7, 2026 printed fixed values instead, such as "+50 / −30" on day trades or "9mo hold" on LEAPs. For an older card, **#trade-log has the exits the paper trade followed.**
 
 ## Following a trade after the card
 
-A card and a paper open are separate steps. Do not assume a card means a paper position exists. Gates at the moment of opening can still stop a trade: a spread that is too wide, a full position cap, or a missing live quote.
+Phantom posts a trade card only after its paper trade has opened. The gates that can stop a trade run first: a spread that is too wide, a full position cap, or a missing live quote. A refused setup never posts a card.
+
+Two posts have no paper trade behind them when they appear. #screener LOW CONF posts go out before a trade is attempted. Bullseye alerts have none at all, because Bullseye's paper trading is off.
 
 Here is how to follow up:
 
-1. **Check #trade-log.** Every paper trade Phantom opens is journaled there. If the open is not there, assume it did not happen.
+1. **Check #trade-log.** Every paper trade Phantom opens is journaled there, with the same contract and exits as its card.
 2. **Watch the clock for the type.** A scalp resolves within hours. A LEAP can run for months.
 3. **Check #trade-recap** for the bots' recaps of what happened.
 
@@ -106,8 +108,8 @@ When a new card lands, run through this:
 - Which channel, and so which bot and type?
 - CALL or PUT, and does it match the market trend?
 - What tier? HIGH, MEDIUM or LOW?
-- Is the contract on the card the one in #trade-log?
-- What is the managed exit for this type, regardless of the card's targets?
+- Is it a trade card, or a LOW CONF screener post with no trade behind it?
+- Where is the stop, and when does the trail start?
 
 Five questions. Thirty seconds. You will read cards far more accurately.
 
