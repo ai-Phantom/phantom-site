@@ -6017,31 +6017,6 @@ async function openBillingPortal() {
         <button class="btn btn-primary" style="width:100%;font-size:12px;" onclick="showPage('admin')">Open Admin Dashboard</button>
       </div>
 
-      <!-- Referral Program -->
-      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:20px;">
-        <div style="font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:12px;">&#127873; REFERRAL PROGRAM</div>
-        <div style="font-size:14px;font-weight:600;margin-bottom:6px;">Earn rewards for referring traders</div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:16px;line-height:1.6;">Share your link — earn 20% commission or a free month for every member who signs up through you.</div>
-        <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;margin-bottom:12px;">
-          <input type="text" id="referralLinkInput" class="form-input" style="flex:1;font-family:var(--mono);font-size:12px;background:transparent;border:none;padding:0;outline:none;" readonly>
-          <button onclick="copyReferralLink()" style="background:var(--green-dim);border:1px solid rgba(126,255,92,.3);border-radius:8px;padding:7px 14px;color:var(--green);font-family:var(--mono);font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;" id="referralCopyBtn">Copy Link</button>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;">
-          <div style="background:var(--bg3);border-radius:8px;padding:10px 8px;">
-            <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green);" id="referralClicks">0</div>
-            <div style="font-size:11px;color:var(--muted);">Clicks</div>
-          </div>
-          <div style="background:var(--bg3);border-radius:8px;padding:10px 8px;">
-            <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green);" id="referralSignups">0</div>
-            <div style="font-size:11px;color:var(--muted);">Signups</div>
-          </div>
-          <div style="background:var(--bg3);border-radius:8px;padding:10px 8px;">
-            <div style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--gold);" id="referralEarned">$0</div>
-            <div style="font-size:11px;color:var(--muted);">Earned</div>
-          </div>
-        </div>
-      </div>
-
       <!-- Danger zone -->
       <div style="background:var(--bg2);border:1px solid rgba(255,77,106,.2);border-radius:14px;padding:24px;">
         <div style="font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:1px;margin-bottom:12px;">DANGER ZONE</div>
@@ -7031,7 +7006,7 @@ const _origShowPage = showPage;
 <script>
 // ═══════════════════════════════════════════════════
 // REVENUE UPGRADES — Annual Banner, 30-day Modal,
-// Checkout Email Capture, Referral Program
+// Checkout Email Capture
 // ═══════════════════════════════════════════════════
 
 // ── Annual plan config ───────────────────────────────────────────
@@ -7193,66 +7168,12 @@ if (_origToggleCheckout) {
   });
 }
 
-// ── Referral program ─────────────────────────────────────────────
-function initReferralSection() {
-  const user = JSON.parse(localStorage.getItem('pt_user') || 'null');
-  const linkInput = document.getElementById('referralLinkInput');
-  if (!linkInput) return;
-
-  if (user && user.id) {
-    // Build referral link using user ID as ref param
-    const refCode = btoa(user.id).replace(/=/g,'').substring(0, 10);
-    linkInput.value = `https://aiphantomtraders.com?ref=${refCode}`;
-    // Store ref code for tracking
-    localStorage.setItem('pt_ref_code', refCode);
-    // Load referral stats from Supabase if table exists
-    loadReferralStats(refCode);
-  } else {
-    linkInput.value = 'Sign in to get your referral link';
-    linkInput.style.color = 'var(--muted)';
-  }
-}
-
-async function loadReferralStats(refCode) {
-  try {
-    if (!supabaseClient) return;
-    const { data } = await supabaseClient
-      .from('referrals')
-      .select('clicks, signups, earned_usd')
-      .eq('ref_code', refCode)
-      .single();
-    if (data) {
-      const clicks  = document.getElementById('referralClicks');
-      const signups = document.getElementById('referralSignups');
-      const earned  = document.getElementById('referralEarned');
-      if (clicks)  clicks.textContent  = data.clicks  || 0;
-      if (signups) signups.textContent = data.signups || 0;
-      if (earned)  earned.textContent  = `$${(data.earned_usd || 0).toFixed(0)}`;
-    }
-  } catch(e) { /* table may not exist yet */ }
-}
-
-function copyReferralLink() {
-  const input = document.getElementById('referralLinkInput');
-  const btn   = document.getElementById('referralCopyBtn');
-  if (!input || !input.value || input.value.includes('Sign in')) return;
-  navigator.clipboard.writeText(input.value).then(() => {
-    if (btn) { btn.textContent = 'Copied ✓'; btn.style.color = 'var(--green)'; }
-    setTimeout(() => { if (btn) { btn.textContent = 'Copy Link'; btn.style.color = ''; } }, 2000);
-    if (typeof gtag === 'function') gtag('event', 'referral_link_copied');
-  }).catch(() => {
-    input.select();
-    document.execCommand('copy');
-  });
-}
-
 // ── Hook into updateAcctPage to init all account upgrades ────────
 const _origUpdateAcctPage = typeof updateAcctPage === 'function' ? updateAcctPage : null;
 if (_origUpdateAcctPage) {
   updateAcctPage = function() {
     _origUpdateAcctPage();
     initAnnualBanner();
-    initReferralSection();
   };
 }
 
@@ -7264,22 +7185,6 @@ window.addEventListener('load', () => {
   try { fetch('https://phantom-traders-backend.onrender.com/health', { mode: 'no-cors' }).catch(function(){}); } catch(e) {}
 });
 
-// ── Track referral source on landing ─────────────────────────────
-(function trackRefSource() {
-  const params = new URLSearchParams(window.location.search);
-  const ref = params.get('ref');
-  if (ref) {
-    sessionStorage.setItem('pt_ref_source', ref);
-    // Ping backend to register click
-    try {
-      fetch('https://phantom-traders-backend.onrender.com/referrals/click', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ref_code: ref }),
-      }).catch(() => {});
-    } catch(e) {}
-  }
-})();
 </script> <script>
 /* Discord account linking — the site half of routers/discord_oauth.py. */
 async function linkDiscord(){try{const{data:sd}=await supabaseClient.auth.getSession();const session=sd&&sd.session;if(!session){showPage("login");return}const r=await fetch("https://phantom-traders-backend.onrender.com/discord/oauth/start",{method:"POST",headers:{Authorization:"Bearer "+session.access_token}});if(r.status===503){showToast("Discord linking isn't switched on yet — check back soon");return}if(!r.ok){showToast("Couldn't start Discord linking ("+r.status+")");return}const d=await r.json();if(d.url)location.href=d.url}catch(e){showToast("Couldn't start Discord linking")}}
