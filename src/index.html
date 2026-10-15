@@ -65,7 +65,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
     {"@type":"Offer","name":"Elite Plan Annual","price":"499","priceCurrency":"USD","billingIncrement":"year"}
   ]
 }</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Phantom Traders","url":"https://aiphantomtraders.com","logo":"https://aiphantomtraders.com/logo.jpeg","description":"AI options trading signals for independent traders — two scanner bots, eight indicators, regime-conditioned edge scoring, and real-time Discord alerts with a live dashboard.","sameAs":["https://discord.gg/GURRyUfU8Y"]},{"@type":"WebSite","name":"Phantom Traders","url":"https://aiphantomtraders.com","publisher":{"@type":"Organization","name":"Phantom Traders"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real money?","acceptedAnswer":{"@type":"Answer","text":"No. The bots trade an Alpaca paper account at live quotes, and every open and close is posted in #trade-log. You decide whether to act on a signal in your own brokerage account. We never hold your money."}},{"@type":"Question","name":"What's an “edge score”?","acceptedAnswer":{"@type":"Answer","text":"It's the setup's point total. Each indicator or classic signal that fires adds points to the CALL or PUT side, multiplied by a weight the bots learn from replays and from their own closed paper trades. A setup needs at least 35 points from at least three signals to post; 80 and above is HIGH confidence, 50 and above MEDIUM."}},{"@type":"Question","name":"How many signals per day?","acceptedAnswer":{"@type":"Answer","text":"In the 60 days to October 2, 2026 the bots opened 317 paper trades over 42 trading days, about seven a day. Bullseye's weekly signals and Scout's alerts come on top of that."}},{"@type":"Question","name":"Can I cancel anytime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cancel from Account → Manage Billing. You keep your Discord role until the end of the period you paid for, then return to Rookie."}},{"@type":"Question","name":"Why Discord instead of an app?","acceptedAnswer":{"@type":"Answer","text":"Push notifications work, the community is in the same place as the signals, and you're probably already there. The site holds the courses, the Free Library and the docs."}},{"@type":"Question","name":"Is the Discord included with Elite?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Phantom Traders Discord is included with both Pro Trader and Elite; Elite also unlocks the Elite Lounge. Signals from Phantom, Bullseye and Scout post straight into the Discord channels your role unlocks."}},{"@type":"Question","name":"What is the difference between courses and ebooks?","acceptedAnswer":{"@type":"Answer","text":"Courses are structured written lesson modules — each lesson has a worked example, a quiz with explanations and a task — with the first two lessons of every course free. Ebook Mastery Courses are 100+ page deep-dive PDFs covering a single asset class end-to-end."}},{"@type":"Question","name":"Will I get rich quick?","acceptedAnswer":{"@type":"Answer","text":"No. This is a tool, not a magic box. We publish paper performance honestly, including losses. Your discipline matters more than our signal score."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Phantom Traders","url":"https://aiphantomtraders.com","logo":"https://aiphantomtraders.com/logo.jpeg","description":"AI options trading signals for independent traders — two scanner bots, eight indicators, regime-conditioned edge scoring, and real-time Discord alerts with a live dashboard.","sameAs":["https://discord.gg/GURRyUfU8Y"]},{"@type":"WebSite","name":"Phantom Traders","url":"https://aiphantomtraders.com","publisher":{"@type":"Organization","name":"Phantom Traders"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real money?","acceptedAnswer":{"@type":"Answer","text":"No. The bots trade an Alpaca paper account at live quotes, and the results are reviewed nightly and weekly in #trade-recap. You decide whether to act on a signal in your own brokerage account. We never hold your money."}},{"@type":"Question","name":"What's an “edge score”?","acceptedAnswer":{"@type":"Answer","text":"It's the setup's point total. Each indicator or classic signal that fires adds points to the CALL or PUT side, multiplied by a weight the bots learn from replays and from their own closed paper trades. A setup needs at least 35 points from at least three signals to post; 80 and above is HIGH confidence, 50 and above MEDIUM."}},{"@type":"Question","name":"How many signals per day?","acceptedAnswer":{"@type":"Answer","text":"In the 60 days to October 2, 2026 the bots opened 317 paper trades over 42 trading days, about seven a day. Bullseye's weekly signals and Scout's alerts come on top of that."}},{"@type":"Question","name":"Can I cancel anytime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cancel from Account → Manage Billing. You keep your Discord role until the end of the period you paid for, then return to Rookie."}},{"@type":"Question","name":"Why Discord instead of an app?","acceptedAnswer":{"@type":"Answer","text":"Push notifications work, the community is in the same place as the signals, and you're probably already there. The site holds the courses, the Free Library and the docs."}},{"@type":"Question","name":"Is the Discord included with Elite?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Phantom Traders Discord is included with both Pro Trader and Elite; Elite also unlocks the Elite Lounge. Signals from Phantom, Bullseye and Scout post straight into the Discord channels your role unlocks."}},{"@type":"Question","name":"What is the difference between courses and ebooks?","acceptedAnswer":{"@type":"Answer","text":"Courses are structured written lesson modules — each lesson has a worked example, a quiz with explanations and a task — with the first two lessons of every course free. Ebook Mastery Courses are 100+ page deep-dive PDFs covering a single asset class end-to-end."}},{"@type":"Question","name":"Will I get rich quick?","acceptedAnswer":{"@type":"Answer","text":"No. This is a tool, not a magic box. We publish paper performance honestly, including losses. Your discipline matters more than our signal score."}}]}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://gzdhauxqrfbhbrfcscna.supabase.co">
 <link rel="preconnect" href="https://phantom-traders-backend.onrender.com">
@@ -282,6 +282,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 
 /* ── V2 discord embed preview (mini) ── */
 .v2-discord-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.v2-discord-preview-grid.two{grid-template-columns:repeat(2,1fr);}
 .v2-discord-chrome{background:#313338;border-radius:8px;overflow:hidden;font-family:'gg sans','Helvetica Neue',system-ui,sans-serif;font-size:14px;color:#dbdee1;}
 .v2-discord-channel-head{padding:10px 14px;border-bottom:1px solid #1f2125;display:flex;align-items:center;gap:8px;}
 .v2-discord-channel-hash{color:#80848e;font-size:18px;font-weight:600;}
@@ -513,7 +514,7 @@ gtag('js',new Date());gtag('config','G-T8NHESJZ90');
 
 /* ── V2 responsive ── */
 @media(max-width:1100px){.v2-hero-grid{grid-template-columns:1fr;gap:40px;}.v2-headline{font-size:64px;}}
-@media(max-width:900px){.v2-anatomy-grid{grid-template-columns:1fr;gap:32px;}.v2-anatomy-side{position:static;}.v2-discord-preview-grid{grid-template-columns:1fr;}.v2-faq-grid{grid-template-columns:1fr;gap:32px;}.v2-footer-grid{grid-template-columns:1fr 1fr;gap:32px;}.v2-perf-strip{grid-template-columns:repeat(2,1fr);}.v2-perf-cell{border-right:none;border-bottom:1px solid var(--border-subtle);}.v2-equity-card{grid-template-columns:1fr;}.v2-section-inner{padding:48px 20px;}.v2-hero-inner{padding:40px 20px 32px;}}
+@media(max-width:900px){.v2-anatomy-grid{grid-template-columns:1fr;gap:32px;}.v2-anatomy-side{position:static;}.v2-discord-preview-grid,.v2-discord-preview-grid.two{grid-template-columns:1fr;}.v2-faq-grid{grid-template-columns:1fr;gap:32px;}.v2-footer-grid{grid-template-columns:1fr 1fr;gap:32px;}.v2-perf-strip{grid-template-columns:repeat(2,1fr);}.v2-perf-cell{border-right:none;border-bottom:1px solid var(--border-subtle);}.v2-equity-card{grid-template-columns:1fr;}.v2-section-inner{padding:48px 20px;}.v2-hero-inner{padding:40px 20px 32px;}}
 @media(max-width:600px){.v2-headline{font-size:42px;}.v2-section-h2,.v2-section-h2.lg,.v2-section-h2.xl{font-size:28px;}.v2-kpi-strip-inline{grid-template-columns:repeat(2,1fr);}.v2-anatomy-cards{grid-template-columns:1fr;}.v2-live-grid{grid-template-columns:repeat(5,1fr);}.v2-footer-grid{grid-template-columns:1fr;gap:24px;}}
 
 /* ════════════════════════════════════════════════════════════════
@@ -966,7 +967,7 @@ window.v2Subscribe = function(plan){
           <div class="v2-status-item"><span class="v2-live-dot"></span> PHANTOM · 2-MIN SCAN · BULLSEYE 15-MIN · SCOUT 5-MIN</div>
           <div class="v2-status-item">WEIGHTS RE-LEARNED WEEKLY</div>
         </div>
-        <div class="v2-status-item">PAPER-TRADED · <span style="color:var(--green-bright);">EVERY FILL IN #TRADE-LOG</span></div>
+        <div class="v2-status-item">PAPER-TRADED · <span style="color:var(--green-bright);">DAILY RESULTS IN #TRADE-RECAP</span></div>
       </div>
 
       <!-- Headline + grid split -->
@@ -1107,7 +1108,7 @@ window.v2Subscribe = function(plan){
         <div>
           <div class="v2-label" style="margin-bottom:12px;">ON PERFORMANCE REPORTING</div>
           <p style="font-family:var(--font-body);font-size:14px;line-height:1.7;color:var(--text-secondary);margin:0;">We're rebuilding the public scorecard so it reads straight from the live paper account instead of a static snapshot. Until that's wired, we're not publishing a headline number here — a figure you can't audit isn't worth showing.</p>
-          <p style="font-family:var(--font-body);font-size:14px;line-height:1.7;color:var(--text-secondary);margin:12px 0 0;">Every fire, fill and close is posted to Discord as it happens, wins and losses alike.</p>
+          <p style="font-family:var(--font-body);font-size:14px;line-height:1.7;color:var(--text-secondary);margin:12px 0 0;">Every signal is posted to Discord as it fires, and every paper result, wins and losses alike, is reviewed nightly and weekly in #trade-recap.</p>
         </div>
         <div>
           <div class="v2-label" style="margin-bottom:12px;">TRADE TYPES</div>
@@ -1322,7 +1323,7 @@ window.v2Subscribe = function(plan){
         <button onclick="showPage('discord')" style="font-family:var(--font-mono);font-size:11px;color:var(--reactor-bright);letter-spacing:0.12em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--border-reactor);border-radius:6px;background:transparent;cursor:pointer;">See full embed stack →</button>
       </div>
 
-      <div class="v2-discord-preview-grid">
+      <div class="v2-discord-preview-grid two">
         <!-- HIGH SCALP signal -->
         <div class="v2-discord-chrome">
           <div class="v2-discord-channel-head"><span class="v2-discord-channel-hash">#</span><span class="v2-discord-channel-name">scalps</span></div>
@@ -1340,32 +1341,6 @@ window.v2Subscribe = function(plan){
                   <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Conf</div><div class="v2-discord-embed-field-val">MEDIUM</div></div>
                 </div>
                 <div class="v2-discord-embed-foot"><span>phantom_bot · 18:36 ET · paper</span><span class="v2-discord-embed-foot-link">View on dashboard →</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- OPEN trade -->
-        <div class="v2-discord-chrome">
-          <div class="v2-discord-channel-head"><span class="v2-discord-channel-hash">#</span><span class="v2-discord-channel-name">trade-log</span></div>
-          <div class="v2-discord-bot-row">
-            <div class="v2-discord-avatar"><img src="logo.jpeg" alt="Phantom"></div>
-            <div style="flex:1;min-width:0;">
-              <div class="v2-discord-bot-meta"><span class="v2-discord-bot-name">Phantom</span><span class="v2-discord-app-tag">APP</span><span class="v2-discord-time">Today at 2:23 PM</span></div>
-              <div class="v2-discord-embed">
-                <div class="v2-discord-embed-head"><span class="v2-discord-embed-band high">✓ WIN</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">TRAIL_STOP</span></div>
-                <div class="v2-discord-embed-title"><span class="v2-discord-embed-ticker">SOFI</span><span class="v2-discord-embed-strike">17C</span><span class="v2-discord-embed-price">· 18 contracts</span></div>
-                <div style="background:#1e1f22;border-radius:4px;padding:10px 12px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
-                  <div><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">REALIZED</div><div style="font-size:22px;font-weight:700;color:#10b981;font-family:'JetBrains Mono',monospace;">+$1,354</div></div>
-                  <div style="text-align:right;"><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">RETURN</div><div style="font-size:18px;font-weight:600;color:#10b981;font-family:'JetBrains Mono',monospace;">+140.7%</div></div>
-                  <div style="text-align:right;"><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">HOLD</div><div style="font-size:18px;font-weight:600;color:#b5bac1;font-family:'JetBrains Mono',monospace;">~1h</div></div>
-                </div>
-                <div class="v2-discord-embed-fields">
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Entry</div><div class="v2-discord-embed-field-val">$0.54</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Exit</div><div class="v2-discord-embed-field-val green">$1.30</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Closed</div><div class="v2-discord-embed-field-val">May 28</div></div>
-                </div>
-                <div class="v2-discord-embed-foot"><span>pt-pb-sofi · #trade-log · paper</span><span class="v2-discord-embed-foot-link">View on dashboard →</span></div>
               </div>
             </div>
           </div>
@@ -1407,7 +1382,7 @@ window.v2Subscribe = function(plan){
         <div class="v2-faq-list">
           <div class="v2-faq-item">
             <button onclick="this.parentNode.classList.toggle('open')"><span class="v2-faq-q">Is this real money?</span><span class="v2-faq-toggle">+</span></button>
-            <div class="v2-faq-a">No. The bots trade an Alpaca paper account at live quotes, and every open and close is posted in #trade-log. You decide whether to act on a signal in your own brokerage account. We never hold your money.</div>
+            <div class="v2-faq-a">No. The bots trade an Alpaca paper account at live quotes, and the results are reviewed nightly and weekly in #trade-recap. You decide whether to act on a signal in your own brokerage account. We never hold your money.</div>
           </div>
           <div class="v2-faq-item">
             <button onclick="this.parentNode.classList.toggle('open')"><span class="v2-faq-q">What's an "edge score"?</span><span class="v2-faq-toggle">+</span></button>
@@ -1675,7 +1650,7 @@ window.v2Subscribe = function(plan){
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Trade Signals: #scalps, #day-trades, #weekly, #leaps</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>#futures and #flow-alerts</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>#scout-alerts scanner drops</span></div>
-            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>#trade-log and #trade-recap</span></div>
+            <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>#trade-recap nightly and weekly reviews</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Pro Trader Room voice channel</span></div>
             <div class="v2-pf-row"><span class="v2-pf-check">✓</span><span>Full message history</span></div>
             <div class="v2-annual-bonus" style="margin-top:6px;padding-top:10px;border-top:1px dashed var(--border-default);">
@@ -1892,7 +1867,7 @@ window.v2Subscribe = function(plan){
           <p style="font-size:13px;color:var(--text-secondary);margin-bottom:22px;font-family:var(--font-body);">Cancel any time. We bill once your account is created.</p>
           <div id="v2OnbPlans">
             <label class="v2-onb-plan" data-plan="free"><input type="radio" name="v2plan" value="free"><div><div class="v2-onb-plan-name">FREE</div><div class="v2-onb-plan-desc">Discord Rookie · Community + education portal · No card</div></div><div class="v2-onb-plan-price">$0<span>/mo</span></div></label>
-            <label class="v2-onb-plan selected" data-plan="pro"><input type="radio" name="v2plan" value="pro" checked><div><div class="v2-onb-plan-name">PRO TRADER</div><div class="v2-onb-plan-desc">Discord signals · Market Intel · Scout alerts · Trade log</div></div><div class="v2-onb-plan-price">$15<span>/mo</span></div></label>
+            <label class="v2-onb-plan selected" data-plan="pro"><input type="radio" name="v2plan" value="pro" checked><div><div class="v2-onb-plan-name">PRO TRADER</div><div class="v2-onb-plan-desc">Discord signals · Market Intel · Scout alerts · Trade recaps</div></div><div class="v2-onb-plan-price">$15<span>/mo</span></div></label>
             <label class="v2-onb-plan" data-plan="elite"><input type="radio" name="v2plan" value="elite"><div><div class="v2-onb-plan-name">ELITE</div><div class="v2-onb-plan-desc">Everything in Pro + Elite Lounge · MACD reversals · @here</div></div><div class="v2-onb-plan-price">$25<span>/mo</span></div></label>
           </div>
         </div>
@@ -3133,13 +3108,13 @@ const STORE_ITEMS = [
   },
   {id:'portfolio-mgr-monthly', stripePrice:'price_1UIjXkPddnEAOUngjmwOjFZw', icon:'&#128200;', tier:'subscription', level:'Discord', title:'Pro Trader — Monthly',
    price:15, origPrice:null, billing:'month', color:'#4d9fff',
-   desc:'Phantom Traders Discord, Pro Trader role: Market Intel, every Trade Signals channel, scanner drops and the trade log.',
-   includes:['Everything in Rookie','Market Intel: #morning-brief + #macro-news','Trade Signals: #scalps, #day-trades, #weekly, #leaps','#futures, #flow-alerts, #scout-alerts','#trade-log and #trade-recap','Pro Trader Room voice + full message history'],
+   desc:'Phantom Traders Discord, Pro Trader role: Market Intel, every Trade Signals channel, scanner drops and the trade recaps.',
+   includes:['Everything in Rookie','Market Intel: #morning-brief + #macro-news','Trade Signals: #scalps, #day-trades, #weekly, #leaps','#futures, #flow-alerts, #scout-alerts','#trade-recap','Pro Trader Room voice + full message history'],
   },
   {id:'portfolio-mgr-annual', stripePrice:'price_1UIqL4PddnEAOUng559NtSZj', icon:'&#128200;', tier:'subscription', level:'Discord', title:'Pro Trader — Annual',
    price:150, origPrice:180, billing:'year', color:'#4d9fff',
    desc:'The Pro Trader Discord role billed yearly: $12.50 a month, two months free compared with monthly billing.',
-   includes:['Everything in Pro Trader Monthly','2 months free vs monthly ($150 vs $180)','Market Intel + every Trade Signals channel','#scout-alerts, #trade-log, #trade-recap'],
+   includes:['Everything in Pro Trader Monthly','2 months free vs monthly ($150 vs $180)','Market Intel + every Trade Signals channel','#scout-alerts, #trade-recap'],
   },
   {id:'elite-monthly', stripePrice:'price_1UIjYPPddnEAOUngRgNywZab', icon:'&#128081;', tier:'subscription', level:'Elite', title:'Elite — Monthly',
    price:25, origPrice:null, billing:'month', color:'#f5c842',
@@ -4678,7 +4653,7 @@ async function openBillingPortal() {
       <div class="v2-feat-tile">
         <div class="v2-feat-num">07 · MODULE</div>
         <div class="v2-feat-title">Paper execution</div>
-        <p class="v2-feat-desc">Every Phantom signal is traded on an Alpaca paper account at live quotes, and every open and close is posted to #trade-log. No real money is traded.</p>
+        <p class="v2-feat-desc">Every Phantom signal is traded on an Alpaca paper account at live quotes, and the results are reviewed nightly and weekly in #trade-recap. No real money is traded.</p>
         <div class="v2-feat-tags"><span class="v2-feat-tag">PAPER ONLY</span><span class="v2-feat-tag">LIVE QUOTES</span></div>
       </div>
       <div class="v2-feat-tile">
@@ -4750,13 +4725,13 @@ async function openBillingPortal() {
       <div class="doc-section active" id="doc-intro">
         <div class="doc-breadcrumb">Getting Started → Welcome to Phantom Traders</div>
         <h1 class="doc-h1">Welcome to Phantom Traders</h1>
-        <p class="doc-p">Phantom Traders is a Discord community built around trading bots. The bots score options setups with a stack of ported TradingView indicators, paper-trade every signal they post, and publish every open and close in Discord. This documentation explains how the bots decide, what each channel carries, and how your plan maps to Discord access.</p>
+        <p class="doc-p">Phantom Traders is a Discord community built around trading bots. The bots score options setups with a stack of ported TradingView indicators, paper-trade every signal they post, and review the paper results nightly and weekly in Discord. This documentation explains how the bots decide, what each channel carries, and how your plan maps to Discord access.</p>
         <div class="doc-callout green"><strong>New here?</strong> Start with the Quick Start, then read how a signal is scored. Everything is paper-traded; nothing here is financial advice.</div>
         <h2 class="doc-h2">What you get</h2>
         <ul class="doc-list">
           <li><strong>Signals in Discord</strong> — scalps, day trades, weekly swings and LEAPs, each with its contract, score and managed exit</li>
           <li><strong>Market intel</strong> — the 8:45 AM ET #morning-brief and #macro-news around economic releases</li>
-          <li><strong>A public paper record</strong> — every open and close in #trade-log, with nightly and weekly reviews in #trade-recap</li>
+          <li><strong>A public paper record</strong> — nightly and weekly reviews of every paper trade in #trade-recap</li>
           <li><strong>Education</strong> — 20 courses, the free lessons from each, and the Free Library</li>
         </ul>
 
@@ -4850,7 +4825,7 @@ async function openBillingPortal() {
       <div class="doc-section" id="doc-channels">
         <div class="doc-breadcrumb">The Bots → Channels</div>
         <h1 class="doc-h1">Channels</h1>
-        <div class="doc-table-wrap"><table class="doc-table"><thead><tr><th>Channel</th><th>What posts there</th><th>Tier</th></tr></thead><tbody><tr><td>#morning-brief</td><td>8:45 AM ET brief: premarket movers, earnings, macro, sectors, swing watchlist</td><td>Pro Trader</td></tr><tr><td>#macro-news</td><td>Economic calendar and the figure when each release drops</td><td>Pro Trader</td></tr><tr><td>#scalps · #day-trades · #weekly · #leaps</td><td>Signals by trade type</td><td>Pro Trader</td></tr><tr><td>#futures</td><td>ES/NQ paper signals</td><td>Pro Trader</td></tr><tr><td>#flow-alerts</td><td>Unusual options activity</td><td>Pro Trader</td></tr><tr><td>#scout-alerts</td><td>Scout scanner alerts</td><td>Pro Trader</td></tr><tr><td>#trade-log · #trade-recap</td><td>Every paper open and close; nightly and weekly reviews</td><td>Pro Trader</td></tr><tr><td>#elite-discussion · #portfolio-reviews</td><td>Elite Lounge</td><td>Elite</td></tr><tr><td>#education-portal</td><td>Course material and free lessons</td><td>Everyone</td></tr></tbody></table></div>
+        <div class="doc-table-wrap"><table class="doc-table"><thead><tr><th>Channel</th><th>What posts there</th><th>Tier</th></tr></thead><tbody><tr><td>#morning-brief</td><td>8:45 AM ET brief: premarket movers, earnings, macro, sectors, swing watchlist</td><td>Pro Trader</td></tr><tr><td>#macro-news</td><td>Economic calendar and the figure when each release drops</td><td>Pro Trader</td></tr><tr><td>#scalps · #day-trades · #weekly · #leaps</td><td>Signals by trade type</td><td>Pro Trader</td></tr><tr><td>#futures</td><td>ES/NQ paper signals</td><td>Pro Trader</td></tr><tr><td>#flow-alerts</td><td>Unusual options activity</td><td>Pro Trader</td></tr><tr><td>#scout-alerts</td><td>Scout scanner alerts</td><td>Pro Trader</td></tr><tr><td>#trade-recap</td><td>Nightly and weekly reviews of the paper trades</td><td>Pro Trader</td></tr><tr><td>#elite-discussion · #portfolio-reviews</td><td>Elite Lounge</td><td>Elite</td></tr><tr><td>#education-portal</td><td>Course material and free lessons</td><td>Everyone</td></tr></tbody></table></div>
         <div class="doc-callout blue">See every role and what it unlocks under <span class="doc-link-inline" onclick="showDocSection('discord-roles')">Discord Roles</span>.</div>
 
       </div>
@@ -4870,7 +4845,7 @@ async function openBillingPortal() {
 <tr><td>Pre-Market and After Hours voice rooms</td><td>✓</td><td>✓</td><td>✓</td></tr>
 <tr><td>Market Intel: #morning-brief, #macro-news</td><td>72-hour trial</td><td>✓</td><td>✓</td></tr>
 <tr><td>Trade Signals: #scalps, #day-trades, #weekly, #leaps, #futures, #flow-alerts</td><td>72-hour trial</td><td>✓</td><td>✓</td></tr>
-<tr><td>#scout-alerts, #trade-log, #trade-recap</td><td>72-hour trial</td><td>✓</td><td>✓</td></tr>
+<tr><td>#scout-alerts, #trade-recap</td><td>72-hour trial</td><td>✓</td><td>✓</td></tr>
 <tr><td>Pro Trader Room voice + full message history</td><td>✗</td><td>✓</td><td>✓</td></tr>
 <tr><td>Elite Lounge: #elite-discussion, #portfolio-reviews</td><td>✗</td><td>✗</td><td>✓</td></tr>
 <tr><td>Elite Room voice channel</td><td>✗</td><td>✗</td><td>✓</td></tr>
@@ -4890,7 +4865,7 @@ async function openBillingPortal() {
             <tbody>
               <tr><td><strong>Rookie</strong></td><td>Free. Given automatically when you join the server.</td><td>Welcome &amp; info channels (#welcome, #rules, #getting-started, #announcements, #how-to-get-roles), community chat (#general, #introductions, #wins-and-losses, #off-topic), #education-portal, and the Pre-Market and After Hours voice rooms.</td></tr>
               <tr><td><strong>Pro Trader Trial</strong></td><td>Free and automatic for every new member. You hold the Pro Trader role for 72 weekday hours; the clock pauses from Friday 4:00 PM to Monday 9:30 AM ET. When it ends you return to Rookie.</td><td>Everything in Pro Trader while the trial runs.</td></tr>
-              <tr><td><strong>Pro Trader</strong></td><td>$15 a month or $150 a year. Assigned automatically once your Discord account is linked on the Account page.</td><td>Everything in Rookie, plus Market Intel (#morning-brief at 8:45 AM ET, #macro-news), Trade Signals (#scalps, #day-trades, #weekly, #leaps, #futures, #flow-alerts, #scout-alerts), Phantom Tools (#trade-log, #trade-recap), the Pro Trader Room voice channel and full message history.</td></tr>
+              <tr><td><strong>Pro Trader</strong></td><td>$15 a month or $150 a year. Assigned automatically once your Discord account is linked on the Account page.</td><td>Everything in Rookie, plus Market Intel (#morning-brief at 8:45 AM ET, #macro-news), Trade Signals (#scalps, #day-trades, #weekly, #leaps, #futures, #flow-alerts, #scout-alerts), Phantom Tools (#trade-recap), the Pro Trader Room voice channel and full message history.</td></tr>
               <tr><td><strong>Elite</strong></td><td>$25 a month or $250 a year. Elite members also keep the Pro Trader role.</td><td>Everything in Pro Trader, plus the Elite Lounge (#elite-discussion, #portfolio-reviews), the Elite Room voice channel, MACD reversal alerts and @here pings on priority signals.</td></tr>
               <tr><td><strong>Analyst</strong></td><td>Staff. Given by the team.</td><td>Marks the people who post analysis. It adds no channels on its own; analysts see what their plan role allows.</td></tr>
               <tr><td><strong>Moderator · MODS</strong></td><td>Staff. Given by the team.</td><td>Moderation, plus the staff channels (#pt-bot-commands, #mod-log, #ops).</td></tr>
@@ -5003,14 +4978,10 @@ async function openBillingPortal() {
   <!-- ─── 3-COLUMN LABEL HEADER ─── -->
   <section class="v2-section">
     <div class="v2-section-inner compact">
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:24px;">
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:24px;">
         <div class="v2-label" style="padding-bottom:8px;border-bottom:1px solid var(--border-default);">
           <span style="color:var(--reactor-bright);">SIGNAL FIRE</span>
           <div style="font-family:var(--font-mono);text-transform:none;letter-spacing:0;color:var(--text-tertiary);font-size:11px;margin-top:4px;">HIGH-conviction call · cluster lookup · indicator stack</div>
-        </div>
-        <div class="v2-label" style="padding-bottom:8px;border-bottom:1px solid var(--border-default);">
-          <span style="color:var(--reactor-bright);">OPEN TRADE</span>
-          <div style="font-family:var(--font-mono);text-transform:none;letter-spacing:0;color:var(--text-tertiary);font-size:11px;margin-top:4px;">Fill confirmation · live P&amp;L · stop / target · order id</div>
         </div>
         <div class="v2-label" style="padding-bottom:8px;border-bottom:1px solid var(--border-default);">
           <span style="color:var(--reactor-bright);">DAILY RECAP</span>
@@ -5019,7 +4990,7 @@ async function openBillingPortal() {
       </div>
 
       <!-- 3 full Discord embed cards -->
-      <div class="v2-discord-preview-grid">
+      <div class="v2-discord-preview-grid two">
         <!-- HIGH SCALP signal -->
         <div class="v2-discord-chrome">
           <div class="v2-discord-channel-head"><span class="v2-discord-channel-hash">#</span><span class="v2-discord-channel-name">scalps</span></div>
@@ -5046,37 +5017,6 @@ async function openBillingPortal() {
                   <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Order ID</div><div class="v2-discord-embed-field-val">pt-pb-2841</div></div>
                 </div>
                 <div class="v2-discord-embed-foot"><span>Foundation v3.4 · 14:21:08 ET</span><span class="v2-discord-embed-foot-link">View on dashboard →</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- OPEN trade -->
-        <div class="v2-discord-chrome">
-          <div class="v2-discord-channel-head"><span class="v2-discord-channel-hash">#</span><span class="v2-discord-channel-name">trade-log</span></div>
-          <div class="v2-discord-bot-row">
-            <div class="v2-discord-avatar"><img src="logo.jpeg" alt="Phantom"></div>
-            <div style="flex:1;min-width:0;">
-              <div class="v2-discord-bot-meta"><span class="v2-discord-bot-name">Phantom</span><span class="v2-discord-app-tag">APP</span><span class="v2-discord-time">Today at 2:23 PM</span></div>
-              <div class="v2-discord-embed">
-                <div class="v2-discord-embed-head"><span class="v2-discord-embed-band low">◐ OPEN</span><span class="v2-discord-embed-tag">·</span><span class="v2-discord-embed-tag">FILLED 14:21:08</span></div>
-                <div class="v2-discord-embed-title"><span class="v2-discord-embed-ticker">NVDA</span><span class="v2-discord-embed-strike">1180C</span><span class="v2-discord-embed-price">· 4 contracts</span></div>
-                <div style="background:#1e1f22;border-radius:4px;padding:10px 12px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
-                  <div><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">UNREALIZED</div><div style="font-size:22px;font-weight:700;color:#10b981;font-family:'JetBrains Mono',monospace;">+$276</div></div>
-                  <div style="text-align:right;"><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">ROI</div><div style="font-size:18px;font-weight:600;color:#10b981;font-family:'JetBrains Mono',monospace;">+14.2%</div></div>
-                  <div style="text-align:right;"><div style="font-size:10px;color:#949ba4;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace;">PEAK</div><div style="font-size:18px;font-weight:600;color:#b5bac1;font-family:'JetBrains Mono',monospace;">+18.7%</div></div>
-                </div>
-                <div class="v2-discord-embed-fields">
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Entry</div><div class="v2-discord-embed-field-val">4.85</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Mid</div><div class="v2-discord-embed-field-val">5.54</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Age</div><div class="v2-discord-embed-field-val">2m</div></div>
-                </div>
-                <div class="v2-discord-embed-fields">
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Stop</div><div class="v2-discord-embed-field-val red">3.88 (-20%)</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">Target</div><div class="v2-discord-embed-field-val green">6.79 (+40%)</div></div>
-                  <div class="v2-discord-embed-field"><div class="v2-discord-embed-field-label">TIF</div><div class="v2-discord-embed-field-val">DAY</div></div>
-                </div>
-                <div class="v2-discord-embed-foot"><span>pt-pb-2841 · #scalps source</span><span class="v2-discord-embed-foot-link">View on dashboard →</span></div>
               </div>
             </div>
           </div>

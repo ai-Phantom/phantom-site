@@ -1,5 +1,5 @@
 ---
-{"title": "Reading a Signal Card in Discord", "cat": "bots", "tag": "Bots & Signals", "emoji": "📡", "excerpt": "What each field on a Phantom signal card means, where its contract and exits come from, and how to follow the paper trade in #trade-log and #trade-recap.", "date": "2026-10-02", "read": "6 min", "status": "published"}
+{"title": "Reading a Signal Card in Discord", "cat": "bots", "tag": "Bots & Signals", "emoji": "📡", "excerpt": "What each field on a Phantom signal card means, where its contract and exits come from, and how to follow the paper results in #trade-recap.", "date": "2026-10-02", "read": "6 min", "status": "published"}
 ---
 
 A signal card packs a lot into a small box. Ticker, direction, contract, score, entry, stop, targets. It is easy to read it as an instruction. It is not. It is a summary of what a bot saw and what its paper trade is set up to do.
@@ -14,12 +14,11 @@ Where a card appears tells you what kind of signal it is before you read a word:
 - **#screener-drops:** LOW-confidence setups that did not reach the day-trade bar.
 - **#scalps:** Phantom scalps.
 - **#leaps:** Phantom LEAPs.
-- **#trade-log:** a journal of every paper trade Phantom opens. Phantom's weeklies also post here.
 - **#weekly:** Bullseye's weekly alerts. Bullseye's paper trading is switched off, so these are alerts only.
 - **#scout:** Scout alerts. Scout never opens trades.
 - **#trade-recap:** recaps of what the bots did.
 
-So a weekly CALL in #weekly and a weekly CALL in #trade-log come from different bots with different scorers.
+Phantom's own weekly loop is paused, so a weekly CALL in #weekly comes from Bullseye and its scorer.
 
 ## Ticker and direction
 
@@ -44,7 +43,7 @@ The card names an option: a strike and an expiration.
 
 On a Phantom trade card, that is the contract the paper trade bought. The bot opens the trade first, picking a contract from the live option chain inside a fixed range of days to expiration and delta. For day trades that range is 1 to 35 days and a delta of roughly 0.40 to 0.55, shifted higher for more volatile tickers. The card is drawn afterwards, from the stored trade.
 
-Two kinds of post work differently. Posts in #screener marked LOW CONF go out before any trade is attempted, so their contract is a rule-of-thumb suggestion. Cards posted before October 7, 2026 used that same rule of thumb for day trades, so their contract can differ from the one bought. For those, check #trade-log.
+Two kinds of post work differently. Posts in #screener marked LOW CONF go out before any trade is attempted, so their contract is a rule-of-thumb suggestion. Cards posted before October 7, 2026 used that same rule of thumb for day trades, so their contract can differ from the one bought. For those, the #trade-log history (journal paused October 14, 2026) shows the contract bought.
 
 ## Score and confidence tier
 
@@ -87,7 +86,7 @@ The default exits for the other types are:
 - **Weekly:** 15% stop, trail arms at +20%, trails 8%. The swing-trend weekly uses a 35% stop, arms at +40% and trails 20%.
 - **LEAP:** 25% stop, trail arms at +25%, trails 10%.
 
-A card shows a maximum hold only when the trade has one. Cards posted before October 7, 2026 printed fixed values instead, such as "+50 / −30" on day trades or "9mo hold" on LEAPs. For an older card, **#trade-log has the exits the paper trade followed.**
+A card shows a maximum hold only when the trade has one. Cards posted before October 7, 2026 printed fixed values instead, such as "+50 / −30" on day trades or "9mo hold" on LEAPs. For an older card, **the #trade-log history has the exits the paper trade followed.**
 
 ## Following a trade after the card
 
@@ -97,9 +96,8 @@ Two posts have no paper trade behind them when they appear. #screener LOW CONF p
 
 Here is how to follow up:
 
-1. **Check #trade-log.** Every paper trade Phantom opens is journaled there, with the same contract and exits as its card.
-2. **Watch the clock for the type.** A scalp resolves within hours. A LEAP can run for months.
-3. **Check #trade-recap** for the bots' recaps of what happened.
+1. **Watch the clock for the type.** A scalp resolves within hours. A LEAP can run for months.
+2. **Check #trade-recap** for the nightly and weekly reviews of what the paper trades did.
 
 ## A quick checklist
 
