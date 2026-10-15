@@ -15,7 +15,7 @@ They are not three copies of one bot. They watch different tickers, scan on diff
 | Trade types | Scalp, day trade, weekly, LEAP | Weekly | None |
 | Signal basis | Additive points, no hard cap | Normalized to 0-100, minimum 65 | 15-minute bars, 5-minute confirmation |
 | Paper trades? | Yes | No, switched off | No, alert-only |
-| Where it posts | #day-trades, #scalps, #leaps, #trade-log | #weekly | #scout |
+| Where it posts | #day-trades, #scalps, #leaps | #weekly | #scout |
 
 ## Phantom: the main bot
 
@@ -27,7 +27,7 @@ Phantom is the workhorse. It is the only source here that opens paper trades, an
 
 **Scoring.** Phantom adds points from eight indicators ported from TradingView scripts, plus classic signals like RSI, MACD, Bollinger bands and volume surges. Each signal's points are multiplied by a learned weight. CALL and PUT points are tallied separately, and the bigger side wins. A setup needs at least 35 points, at least three agreeing signals (or two with a premium one), and at least one premium signal.
 
-**Trades.** Every Phantom open is a paper trade, journaled in #trade-log. Day trades post to #day-trades, scalps to #scalps, LEAPs to #leaps. Phantom's weeklies go to #trade-log, not #weekly.
+**Trades.** Every Phantom signal is paper traded, and the results are reviewed nightly and weekly in #trade-recap. Day trades post to #day-trades, scalps to #scalps, LEAPs to #leaps. Phantom's own weekly loop is paused.
 
 ## Bullseye: weekly alerts
 
@@ -82,7 +82,7 @@ Each source answers a different question:
 A few practical rules:
 
 1. **Do not compare scores across bots.** A Bullseye 80 is on a 0-100 scale. A Phantom 80 is additive points. They are built differently.
-2. **Check for a paper position.** Only Phantom opens paper trades. Look for the open in #trade-log.
+2. **Know which posts are paper traded.** Only Phantom opens paper trades. Its results show up in #trade-recap.
 3. **Mind the time frame.** Scout works from 15-minute bars. Phantom's trade types run from minutes to months. A Scout alert and a Phantom signal on the same ticker can point different ways.
 4. **Remember Phantom's trend filter.** By default, Phantom will not post PUTs in an up-trending market or CALLs in a down-trending one. Scout and Bullseye may still alert in that direction.
 

@@ -14,7 +14,7 @@ Every trade described here is a paper trade. No real money is at risk.
 |---|---|---|---|---|---|---|
 | Scalp | Every 2 min, 9:45-11:30 a.m. and 2:30-3:45 p.m. | 1-35 DTE, delta 0.75-0.88 | -45% | None; 180-min max hold | $1,000 | #scalps |
 | Day trade | Every 2 min by default; opens 9:45 a.m. to a 3:00 p.m. cutoff | 1-35 DTE, delta 0.40-0.55 base | -22% | Arms at +10%, trails 5% | $1,000 | #day-trades |
-| Weekly | Every 15 min; entries before 1:00 p.m. | 7-60 DTE, delta 0.40-0.55 | -15% | Arms at +20%, trails 8% | $1,000 | #trade-log |
+| Weekly | Every 15 min; entries before 1:00 p.m. | 7-60 DTE, delta 0.40-0.55 | -15% | Arms at +20%, trails 8% | $1,000 | Paused |
 | LEAP | Every 15 min; short entry windows | 120-365 DTE, delta 0.65-0.80 | -25% | Arms at +25%, trails 10% | $5,000 | #leaps |
 
 All times are Eastern. DTE means days to expiration. Delta is how much the option's price moves for a $1 move in the stock. Higher delta means the contract behaves more like the stock.
@@ -68,7 +68,7 @@ Exits differ too:
 - **Default weekly:** 15% stop, trail arms at +20%, trails 8%.
 - **Swing-trend weekly:** 35% stop, trail arms at +40%, trails 20%.
 
-One detail trips people up. Phantom posts its weeklies to **#trade-log**, not #weekly. The #weekly channel carries Bullseye's alerts.
+One detail trips people up. Phantom's own weekly loop is paused, so Phantom does not post weeklies right now. The #weekly channel carries Bullseye's alerts.
 
 ## LEAPs
 
